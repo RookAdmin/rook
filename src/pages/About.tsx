@@ -147,7 +147,7 @@ const About = () => {
           >
             Leadership Team
           </h2>
-          <div className="flex justify-center gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center max-w-4xl mx-auto">
             {[
               {
                 name: "Aravind Ravichandran",
@@ -162,14 +162,14 @@ const About = () => {
             ].map((member, index) => (
               <div
                 key={index}
-                className="bg-white border border-borderLight rounded-lg overflow-hidden shadow-card hover:shadow-premium transition-all animate-fade-up"
+                className="flex flex-col items-center bg-white border border-borderLight rounded-lg overflow-hidden shadow-card hover:shadow-premium transition-all animate-fade-up max-w-md w-full"
                 style={{ animationDelay: `${0.1 + index * 0.1}s` }}
               >
-                <div className="h-64 flex justify-center items-center bg-gray-100">
+                <div className="w-full h-64 flex justify-center items-center bg-gray-100">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="h-56 w-56 object-cover  hover:scale-105 transition-transform duration-500"
+                    className="h-56 w-56 object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-4 text-center">
