@@ -1,8 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { RocketIcon, ChevronDown } from "lucide-react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -14,6 +13,12 @@ import {
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  // whenever the location (URL) changes, close the mobile menu
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location]);
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-black border-b border-[#333333]">
@@ -146,7 +151,7 @@ export const Navbar = () => {
         <div className="md:hidden bg-black py-4">
           <div className="container mx-auto px-4 space-y-4">
             <div className="border-b border-[#333333] pb-2">
-              <p className="text-white mb-2 font-medium">Products</p>
+              <p className="text-white mb-2 font-medium">What We Do</p>
               <Link to="#product" className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]">Paym.me</Link>
               <Link to="#product" className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]">Realm by Rook</Link>
             </div>
@@ -160,7 +165,7 @@ export const Navbar = () => {
             </div>
 
             <div className="border-b border-[#333333] pb-2">
-              <Link to="/about" className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]">About</Link>
+              <Link to="/about" className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]">About US</Link>
             </div>
 
             <div className="pt-2">

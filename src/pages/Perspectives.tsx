@@ -1,11 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { Sparkles } from "lucide-react";
+import { Sparkles, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { client1, urlForClient1 } from "../../lib/sanity";
 import Categories from "@/components/perspectives-categories";
-
-// Import the CATEGORIES to ensure consistency
 import { CATEGORIES } from "@/components/perspectives-categories";
 
 type Post = {
@@ -25,6 +23,7 @@ const Perspectives = () => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   const sectionRef = useRef(null);
   const location = useLocation();
 
@@ -38,7 +37,6 @@ const Perspectives = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        // Modify the query to filter by perspectiveCategory
         const categoryFilter =
           selectedCategory === "All"
             ? ""
@@ -130,9 +128,9 @@ const Perspectives = () => {
         }}
       />
 
-      <div className="container mx-auto px-4 relative z-10 flex">
+      <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row">
         {/* Main Content */}
-        <div className="flex-grow pr-8 w-[calc(100%-380px)]">
+        <div className="flex-grow lg:pr-8 w-full lg:w-[calc(100%-380px)]">
           <div className="mb-16">
             <div className="h-1 w-20 bg-primary mb-6"></div>
             <div className="flex items-end gap-3">
@@ -152,6 +150,45 @@ const Perspectives = () => {
               the future of productivity tools and digital transformation.
             </p>
           </div>
+
+          {/* Mobile Filter Dropdown (only shows on mobile) */}
+          <div className="lg:hidden mb-8 relative">
+            <button
+              onClick={() => setMobileFilterOpen(!mobileFilterOpen)}
+              className="w-full flex items-center justify-between px-4 py-3 bg-white border border-borderLight rounded-lg shadow-sm"
+            >
+              <span>Filter: {selectedCategory}</span>
+              <ChevronDown
+                className={`h-5 w-5 transition-transform ${
+                  mobileFilterOpen ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+
+            {mobileFilterOpen && (
+              <div className="absolute z-10 mt-1 w-full bg-white border border-borderLight rounded-lg shadow-lg">
+                {["All", ...CATEGORIES.filter((cat) => cat !== "All")].map(
+                  (category) => (
+                    <button
+                      key={category}
+                      onClick={() => {
+                        setSelectedCategory(category);
+                        setMobileFilterOpen(false);
+                      }}
+                      className={`block w-full text-left px-4 py-2 hover:bg-gray-50 ${
+                        selectedCategory === category
+                          ? "bg-primary/10 text-primary"
+                          : ""
+                      }`}
+                    >
+                      {category}
+                    </button>
+                  )
+                )}
+              </div>
+            )}
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {posts.map((post, index) => (
               <div
@@ -168,7 +205,6 @@ const Perspectives = () => {
                     />
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                  {/* Category badge on image */}
                   <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
                     <span
                       className="text-xs font-medium text-primary"
@@ -216,11 +252,13 @@ const Perspectives = () => {
           </div>
         </div>
 
-        {/* Categories Sidebar */}
-        <Categories
-          selectedCategory={selectedCategory}
-          onCategoryChange={setSelectedCategory}
-        />
+        {/* Desktop Categories Sidebar (only shows on desktop) */}
+        <div className="hidden lg:block w-[380px] flex-shrink-0">
+          <Categories
+            selectedCategory={selectedCategory}
+            onCategoryChange={setSelectedCategory}
+          />
+        </div>
       </div>
     </div>
   );
