@@ -203,7 +203,7 @@ const CEOLetterContent = () => {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary tracking-tight animate-fade-up">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-black tracking-tight animate-fade-up">
             {ceoLetter.title}
           </h1>
 
