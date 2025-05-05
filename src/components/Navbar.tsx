@@ -43,26 +43,32 @@ export const Navbar = () => {
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[200px] bg-white shadow-lg">
-                      <li className="row-span-1">
-                        <NavigationMenuLink asChild>
-                          <Link
-                            to="#product"
-                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
-                          >
-                            Paym.me
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <li className="row-span-1">
-                        <NavigationMenuLink asChild>
-                          <Link
-                            to="#product"
-                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
-                          >
-                            Realm by Rook
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
+                   
+  <li className="row-span-1">
+    <NavigationMenuLink asChild>
+      <a
+        href="https://paym.me/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+      >
+        Paym.me
+      </a>
+    </NavigationMenuLink>
+  </li>
+  <li className="row-span-1">
+    <NavigationMenuLink asChild>
+      <a
+        href="https://realmrook.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+      >
+        Realm by Rook
+      </a>
+    </NavigationMenuLink>
+  </li>
+
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -187,21 +193,26 @@ export const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-black py-4">
           <div className="container mx-auto px-4 space-y-4">
-            <div className="border-b border-[#333333] pb-2">
-              <p className="text-white mb-2 font-medium">What We Do ?</p>
-              <Link
-                to="#product"
-                className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
-              >
-                Paym.me
-              </Link>
-              <Link
-                to="#product"
-                className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
-              >
-                Realm by Rook
-              </Link>
-            </div>
+          <div className="border-b border-[#333333] pb-2">
+  <p className="text-white mb-2 font-medium">What We Do ?</p>
+  <a
+    href="https://paym.me/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
+  >
+    Paym.me
+  </a>
+  <a
+    href="https://realmrook.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
+  >
+    Realm by Rook
+  </a>
+</div>
+
 
             <div className="border-b border-[#333333] pb-2">
               <p className="text-white mb-2 font-medium">Happenings</p>

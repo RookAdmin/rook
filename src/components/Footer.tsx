@@ -56,17 +56,28 @@ export const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-white">What We Do ?</h3>
             <ul className="space-y-2">
-              <li>
-                <Link to="#" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  Paym.me
-                </Link>
-              </li>
-              <li>
-                <Link to="#" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  Realm by Rook
-                </Link>
-              </li>
-            </ul>
+  <li>
+    <a
+      href="https://paym.me/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+    >
+      Paym.me
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://realmrook.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+    >
+      Realm by Rook
+    </a>
+  </li>
+</ul>
+
           </div>
           <div className="space-y-4">
             <h3 className="font-semibold text-white">Happenings</h3>
