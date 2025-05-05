@@ -124,10 +124,11 @@ const Privacy = () => {
               To ask questions or comment about this Privacy Policy and our privacy practices, contact us at:
             </p>
             <ul className="list-none space-y-1 mt-4">
-              <li><span className="font-semibold">Email:</span> privacy@rookhq.com</li>
-              <li><span className="font-semibold">Phone:</span> (555) 123-4567</li>
+              <li><span className="font-semibold">Email:</span> empower@rookhq.com</li>
+              <li><span className="font-semibold">Phone:</span> +91 70927 00022
+              </li>
               <li>
-                <span className="font-semibold">Address:</span> 123 Innovation Way, San Francisco, CA 94103, USA
+                <span className="font-semibold">Address:</span> 248, 11th St, Kuberan Nagar Extension, Kuberan Nagar, Madipakkam, Chennai, Tamil Nadu 600091
               </li>
             </ul>
           </section>
@@ -144,9 +145,15 @@ const Privacy = () => {
             Our data protection team is available to answer any questions you may have about how we protect your personal information.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-black text-white hover:bg-black/90 transition-colors">
-              Contact Privacy Team
-            </Button>
+          <a
+  href="https://support.rookhq.com/portal/en/home"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button className="bg-black text-white hover:bg-black/90 transition-colors">
+    Contact Support
+  </Button>
+</a>
             <Link to="/terms">
               <Button variant="outline" className="border-black text-black hover:bg-black/5">
                 View Terms of Service

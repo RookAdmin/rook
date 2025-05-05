@@ -180,7 +180,7 @@ const PressReleaseContent = () => {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary tracking-tight animate-fade-up">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight animate-fade-up" style={{color:"#dc2e3e"}} >
             {pressRelease.title}
           </h1>
 
@@ -248,17 +248,17 @@ const PressReleaseContent = () => {
                 components={{
                   block: {
                     h1: ({ children }) => (
-                      <h1 className="text-3xl font-bold mb-6 mt-8 text-primary">
+                      <h1 className="text-3xl font-bold mb-6 mt-8 " style={{color:"#dc2e3e"}}>
                         {children}
                       </h1>
                     ),
                     h2: ({ children }) => (
-                      <h2 className="text-2xl font-semibold mb-5 mt-7 text-primary">
+                      <h2 className="text-2xl font-semibold mb-5 mt-7 " style={{color:"#dc2e3e"}}>
                         {children}
                       </h2>
                     ),
                     h3: ({ children }) => (
-                      <h3 className="text-xl font-medium mb-4 mt-6 text-primary">
+                      <h3 className="text-xl font-medium mb-4 mt-6 " style={{color:"#dc2e3e"}}>
                         {children}
                       </h3>
                     ),

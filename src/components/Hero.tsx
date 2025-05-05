@@ -62,21 +62,29 @@ export const Hero = () => {
             
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: "0.5s" }}>
-              <Button 
-                size="lg" 
-                className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90 transition-all hover:translate-y-[-2px] group"
-              >
-                Explore Now 
-                <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="text-black border-black/20 hover:bg-black/5 transition-all hover:translate-y-[-2px]"
-              >
-                Learn More
-              </Button>
-            </div>
+  {/* Support Button - External Link */}
+  <a href="https://support.rookhq.com/portal/en/home" target="_blank" rel="noopener noreferrer">
+    <Button 
+      size="lg" 
+      className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90 transition-all hover:translate-y-[-2px] group"
+    >
+      Support 
+      <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
+    </Button>
+  </a>
+
+  {/* Who We Are? Button - Internal Link */}
+  <a href="/about">
+    <Button 
+      size="lg" 
+      variant="outline" 
+      className="text-black border-black/20 hover:bg-black/5 transition-all hover:translate-y-[-2px]"
+    >
+      Who We Are ?
+    </Button>
+  </a>
+</div>
+
 
             {/* Scroll indicator */}
             <div className="pt-20 flex justify-center animate-fade-up" style={{ animationDelay: "0.7s" }}>

@@ -64,10 +64,12 @@ const About = () => {
               passionate builders dedicated to helping people do their best
               work.
             </p>
-            <Button variant="outline" className="group flex items-center gap-2">
-              Learn about our journey
-              <ArrowRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-200" />
-            </Button>
+            <a href="#join">
+  <Button variant="outline" className="group flex items-center gap-2">
+    Join Our Journey
+    <ArrowRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-200" />
+  </Button>
+</a>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-premium">
             <img
@@ -187,8 +189,8 @@ const About = () => {
         </div>
 
         {/* CTA Section - Updated with minimalist style using Rook colors */}
-        <div className="border border-[#e5e5e5] bg-white text-black p-10 rounded-xl shadow-soft mt-20 relative overflow-hidden">
-          <div className="h-1 w-20 bg-[#9b87f5] mb-6"></div>
+        <div id="join" className="border border-[#e5e5e5] bg-white text-black p-10 rounded-xl shadow-soft mt-20 relative overflow-hidden">
+          <div className="h-1 w-20 bg-[#0096d4] mb-6"></div>
           <div className="relative z-10">
             <h2 className="text-3xl font-bold mb-4 animate-fade-up">
               Join Our Journey
@@ -202,15 +204,21 @@ const About = () => {
               be part of something great.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="bg-[#9b87f5] text-white hover:bg-[#7E69AB] transition-colors">
-                View Open Positions
-              </Button>
-              <Button
+            <a
+  href="https://www.linkedin.com/company/rook/jobs/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button className="bg-[#0096d4] text-white hover:bg-[black] transition-colors">
+    View Open Positions
+  </Button>
+</a>
+              {/* <Button
                 variant="outline"
                 className="border-[#9b87f5] text-[#9b87f5] hover:bg-[#9b87f5]/5"
               >
                 Learn About Our Culture
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

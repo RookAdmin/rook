@@ -39,7 +39,7 @@ export const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-white hover:text-[#0096d4] transition-colors bg-transparent">
-                    What We Do
+                    What We Do ?
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[200px] bg-white shadow-lg">
@@ -123,15 +123,22 @@ export const Navbar = () => {
               to="/about"
               className="text-white hover:text-[#0096d4] transition-colors"
             >
-              About Us
+           Who We Are ?
             </Link>
 
-            <Button
-              size="sm"
-              className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90"
-            >
-              Get Started <RocketIcon className="ml-2 h-4 w-4" />
-            </Button>
+            <a
+  href="https://support.rookhq.com/portal/en/home"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button
+    size="sm"
+    className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90"
+  >
+    Support <RocketIcon className="ml-2 h-4 w-4" />
+  </Button>
+</a>
+
           </div>
 
           {/* Mobile menu button */}
@@ -181,7 +188,7 @@ export const Navbar = () => {
         <div className="md:hidden bg-black py-4">
           <div className="container mx-auto px-4 space-y-4">
             <div className="border-b border-[#333333] pb-2">
-              <p className="text-white mb-2 font-medium">What We Do</p>
+              <p className="text-white mb-2 font-medium">What We Do ?</p>
               <Link
                 to="#product"
                 className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
@@ -229,14 +236,23 @@ export const Navbar = () => {
                 to="/about"
                 className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
               >
-                About US
+               Who We Are ?
               </Link>
             </div>
 
             <div className="pt-2">
-              <Button className="w-full bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90">
-                Get Started <RocketIcon className="ml-2 h-4 w-4" />
-              </Button>
+                <a
+  href="https://support.rookhq.com/portal/en/home"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button
+    size="sm"
+    className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90"
+  >
+    Support <RocketIcon className="ml-2 h-4 w-4" />
+  </Button>
+</a>
             </div>
           </div>
         </div>

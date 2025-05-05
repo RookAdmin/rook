@@ -100,10 +100,11 @@ const Terms = () => {
               If you have any questions about these Terms, please contact us at:
             </p>
             <ul className="list-none space-y-1 mt-4">
-              <li><span className="font-semibold">Email:</span> legal@rookhq.com</li>
-              <li><span className="font-semibold">Phone:</span> (555) 123-4567</li>
+            <li><span className="font-semibold">Email:</span> empower@rookhq.com</li>
+              <li><span className="font-semibold">Phone:</span> +91 70927 00022
+              </li>
               <li>
-                <span className="font-semibold">Address:</span> 123 Innovation Way, San Francisco, CA 94103, USA
+                <span className="font-semibold">Address:</span> 248, 11th St, Kuberan Nagar Extension, Kuberan Nagar, Madipakkam, Chennai, Tamil Nadu 600091
               </li>
             </ul>
           </section>
@@ -117,9 +118,15 @@ const Terms = () => {
             Our team is ready to help clarify any aspects of our terms and conditions. Feel free to reach out with any questions.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-black text-white hover:bg-black/90 transition-colors">
-              Contact Support
-            </Button>
+          <a
+  href="https://support.rookhq.com/portal/en/home"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button className="bg-black text-white hover:bg-black/90 transition-colors">
+    Contact Support
+  </Button>
+</a>
             <Link to="/privacy">
               <Button variant="outline" className="border-black text-black hover:bg-black/5">
                 View Privacy Policy

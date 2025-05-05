@@ -132,7 +132,7 @@ const Perspectives = () => {
         {/* Main Content */}
         <div className="flex-grow lg:pr-8 w-full lg:w-[calc(100%-380px)]">
           <div className="mb-16">
-            <div className="h-1 w-20 bg-primary mb-6"></div>
+            <div className="h-1 w-20 bg-primary mb-6" style={{background:"black"}}></div>
             <div className="flex items-end gap-3">
               <h1
                 className="text-5xl font-bold mb-6 text-primary tracking-tight animate-fade-up"
@@ -140,7 +140,8 @@ const Perspectives = () => {
               >
                 Rook Perspectives
               </h1>
-              <Sparkles className="h-5 w-5 text-secondary mb-6 animate-pulse" />
+              <Sparkles className="h-5 w-5 mb-6 animate-pulse" style={{ color: "#0096d4" }} />
+
             </div>
             <p
               className="text-xl text-textSecondary max-w-3xl leading-relaxed animate-fade-up"

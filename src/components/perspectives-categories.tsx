@@ -31,33 +31,34 @@ const Categories = ({
         <h3 className="text-lg font-bold mb-4 text-gray-800">Categories</h3>
         <div className="space-y-2">
           {CATEGORIES.map((category) => (
-            <button
-              key={category}
-              onClick={() => {
-                const params = new URLSearchParams(location.search);
-                if (category === "All") {
-                  params.delete("category");
-                } else {
-                  params.set("category", category);
-                }
-                window.history.pushState(
-                  null,
-                  "",
-                  `${location.pathname}?${params.toString()}`
-                );
-                onCategoryChange(category);
-              }}
-              className={`
-                w-full text-left px-4 py-2 rounded-md transition-all duration-300
-                ${
-                  selectedCategory === category
-                    ? "bg-primary text-white"
-                    : "hover:bg-gray-200 text-gray-700"
-                }
-              `}
-            >
-              {category}
-            </button>
+      <button
+      key={category}
+      onClick={() => {
+        const params = new URLSearchParams(location.search);
+        if (category === "All") {
+          params.delete("category");
+        } else {
+          params.set("category", category);
+        }
+        window.history.pushState(
+          null,
+          "",
+          `${location.pathname}?${params.toString()}`
+        );
+        onCategoryChange(category);
+      }}
+      className={`
+        w-full text-left px-4 py-2 rounded-md transition-all duration-300
+        ${
+          selectedCategory === category
+            ? "bg-black text-white"
+            : "hover:bg-gray-200 text-gray-700"
+        }
+      `}
+    >
+      {category}
+    </button>
+    
           ))}
         </div>
       </div>

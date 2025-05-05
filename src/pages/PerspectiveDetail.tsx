@@ -244,7 +244,7 @@ const PerspectiveContent = () => {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 tracking-tight animate-fade-up">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-black tracking-tight animate-fade-up">
             {perspective.title}
           </h1>
 

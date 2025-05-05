@@ -19,15 +19,42 @@ export const Footer = () => {
               Simple tools. Monumental impact.
             </p>
             <div className="flex space-x-4 text-white">
-              <FacebookIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
-              <TwitterIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
-              <LinkedinIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
-              <InstagramIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
-              <YoutubeIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
-            </div>
+  {/* Facebook */}
+  <a href="https://www.facebook.com/RookCom" target="_blank" rel="noopener noreferrer">
+    <FacebookIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
+  </a>
+
+  {/* Twitter (X) */}
+  <a href="https://x.com/RookHQ" target="_blank" rel="noopener noreferrer">
+    <svg 
+      className="h-5 w-5 hover:text-[#0096d4] transition-colors" 
+      viewBox="0 0 24 24" 
+      aria-hidden="true"
+      fill="currentColor"
+    >
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+    </svg>
+  </a>
+
+  {/* LinkedIn */}
+  <a href="https://www.linkedin.com/company/rook/" target="_blank" rel="noopener noreferrer">
+    <LinkedinIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
+  </a>
+
+  {/* Instagram */}
+  <a href="https://www.instagram.com/rookhq/" target="_blank" rel="noopener noreferrer">
+    <InstagramIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
+  </a>
+
+  {/* YouTube */}
+  <a href="https://www.youtube.com/@rookl" target="_blank" rel="noopener noreferrer">
+    <YoutubeIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
+  </a>
+</div>
+
           </div>
           <div className="space-y-4">
-            <h3 className="font-semibold text-white">What We Do</h3>
+            <h3 className="font-semibold text-white">What We Do ?</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="#" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
@@ -71,7 +98,7 @@ export const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link to="/about" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  About Us
+                Who We Are ?
                 </Link>
               </li>
               <li>
