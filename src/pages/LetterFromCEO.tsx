@@ -237,9 +237,9 @@ const LetterFromCEO = () => {
                     />
                     <div>
                       <h2 className="font-bold text-xl">
-                        Aravind Ravichandran
+                      Aravindh Ravichandran
                       </h2>
-                      <p className="text-gray-600">Founder & CEO</p>
+                      <p className="text-gray-600">CEO</p>
                     </div>
                   </div>
 
