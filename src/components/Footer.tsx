@@ -10,7 +10,7 @@ export const Footer = () => {
           <div className="space-y-4">
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-2xl font-bold text-white"><img
-              src="https://www.rookhq.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frook-white.5eb1fa80.png&w=3840&q=75"
+              src="/logo.png"
               alt="Descriptive alt text"
               className="w-[100px] h-[40px] object-cover"
             /></span>

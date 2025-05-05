@@ -8,7 +8,7 @@ export const Products = () => {
     <section className="py-20 bg-white" id="product">
       <div className="container">
         <div className="mb-16 max-w-xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4 text-black">Who We Are ?</h2>
+          <h2 className="text-4xl font-bold mb-4 text-black">What We Do ?</h2>
           <div className="h-1 w-16 bg-[#dc2e3e] mx-auto"></div>
         </div>
         
