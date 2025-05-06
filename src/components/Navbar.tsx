@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { RocketIcon, ChevronDown } from "lucide-react";
+import { RocketIcon } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import {
@@ -15,8 +15,12 @@ export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // whenever the location (URL) changes, close the mobile menu
+  // Scroll to top and close mobile menu whenever location changes
   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // Smooth scroll animation
+    });
     setIsMobileMenuOpen(false);
   }, [location]);
 
@@ -28,7 +32,7 @@ export const Navbar = () => {
             <span className="text-2xl font-bold text-white">
               <img
                 src="/logo.png"
-                alt="Descriptive alt text"
+                alt="Company Logo"
                 className="w-[100px] h-[40px] object-cover"
               />
             </span>
@@ -43,32 +47,30 @@ export const Navbar = () => {
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[200px] bg-white shadow-lg">
-                   
-  <li className="row-span-1">
-    <NavigationMenuLink asChild>
-      <a
-        href="https://paym.me/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
-      >
-        Paym.me
-      </a>
-    </NavigationMenuLink>
-  </li>
-  <li className="row-span-1">
-    <NavigationMenuLink asChild>
-      <a
-        href="https://realmrook.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
-      >
-        Realm by Rook
-      </a>
-    </NavigationMenuLink>
-  </li>
-
+                      <li className="row-span-1">
+                        <NavigationMenuLink asChild>
+                          <a
+                            href="https://paym.me/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+                          >
+                            Paym.me
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <li className="row-span-1">
+                        <NavigationMenuLink asChild>
+                          <a
+                            href="https://realmrook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+                          >
+                            Realm by Rook
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -129,22 +131,21 @@ export const Navbar = () => {
               to="/about"
               className="text-white hover:text-[#0096d4] transition-colors"
             >
-           Who We Are ?
+              Who We Are ?
             </Link>
 
             <a
-  href="https://support.rookhq.com/portal/en/home"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <Button
-    size="sm"
-    className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90"
-  >
-    Support <RocketIcon className="ml-2 h-4 w-4" />
-  </Button>
-</a>
-
+              href="https://support.rookhq.com/portal/en/home"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="sm"
+                className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90"
+              >
+                Support <RocketIcon className="ml-2 h-4 w-4" />
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -152,6 +153,7 @@ export const Navbar = () => {
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-white p-2"
+              aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? (
                 <svg
@@ -193,26 +195,25 @@ export const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-black py-4">
           <div className="container mx-auto px-4 space-y-4">
-          <div className="border-b border-[#333333] pb-2">
-  <p className="text-white mb-2 font-medium">What We Do ?</p>
-  <a
-    href="https://paym.me/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
-  >
-    Paym.me
-  </a>
-  <a
-    href="https://realmrook.com/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
-  >
-    Realm by Rook
-  </a>
-</div>
-
+            <div className="border-b border-[#333333] pb-2">
+              <p className="text-white mb-2 font-medium">What We Do ?</p>
+              <a
+                href="https://paym.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
+              >
+                Paym.me
+              </a>
+              <a
+                href="https://realmrook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
+              >
+                Realm by Rook
+              </a>
+            </div>
 
             <div className="border-b border-[#333333] pb-2">
               <p className="text-white mb-2 font-medium">Happenings</p>
@@ -247,23 +248,23 @@ export const Navbar = () => {
                 to="/about"
                 className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
               >
-               Who We Are ?
+                Who We Are ?
               </Link>
             </div>
 
             <div className="pt-2">
-                <a
-  href="https://support.rookhq.com/portal/en/home"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <Button
-    size="sm"
-    className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90"
-  >
-    Support <RocketIcon className="ml-2 h-4 w-4" />
-  </Button>
-</a>
+              <a
+                href="https://support.rookhq.com/portal/en/home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  size="sm"
+                  className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90 w-full"
+                >
+                  Support <RocketIcon className="ml-2 h-4 w-4" />
+                </Button>
+              </a>
             </div>
           </div>
         </div>
