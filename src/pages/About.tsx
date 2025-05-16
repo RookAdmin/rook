@@ -190,38 +190,43 @@ const About = () => {
 
         {/* CTA Section - Updated with minimalist style using Rook colors */}
         <div id="join" className="border border-[#e5e5e5] bg-white text-black p-10 rounded-xl shadow-soft mt-20 relative overflow-hidden">
-          <div className="h-1 w-20 bg-[#0096d4] mb-6"></div>
-          <div className="relative z-10">
-            <h2 className="text-3xl font-bold mb-4 animate-fade-up">
-              Join Our Journey
-            </h2>
-            <p
-              className="text-lg mb-8 max-w-2xl text-textSecondary animate-fade-up"
-              style={{ animationDelay: "0.1s" }}
-            >
-              We're always looking for talented individuals to help us build the
-              future of productivity. Explore career opportunities at Rook and
-              be part of something great.
-            </p>
-            <div className="flex flex-wrap gap-4">
-            <a
-  href="https://www.linkedin.com/company/rook/jobs/"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <Button className="bg-[#0096d4] text-white hover:bg-[black] transition-colors">
-    View Open Positions
-  </Button>
-</a>
-              {/* <Button
-                variant="outline"
-                className="border-[#9b87f5] text-[#9b87f5] hover:bg-[#9b87f5]/5"
-              >
-                Learn About Our Culture
-              </Button> */}
-            </div>
-          </div>
-        </div>
+  <div className="h-1 w-20 bg-[#0096d4] mb-6"></div>
+  <div className="relative z-10">
+    <h2 className="text-3xl font-bold mb-4 animate-fade-up">
+      Join Our Journey
+    </h2>
+    <p
+      className="text-lg mb-8 max-w-2xl text-textSecondary animate-fade-up"
+      style={{ animationDelay: "0.1s" }}
+    >
+      We're always looking for talented individuals to help us build the
+      future of productivity. Explore career opportunities at Rook and
+      be part of something great.
+    </p>
+    <div className="flex flex-wrap gap-4">
+      <a
+        href="https://www.linkedin.com/company/rook/jobs/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button className="bg-[#0096d4] text-white hover:bg-[black] transition-colors">
+          View Open Positions
+        </Button>
+      </a>
+      <a
+        href="/Rook Code Of Conduct.pdf"
+        download="Rook Code Of Conduct.pdf"
+      >
+        <Button
+          variant="outline"
+          className="border-[#9b87f5] text-[#9b87f5] hover:bg-[#9b87f5]/5"
+        >
+          Download
+        </Button>
+      </a>
+    </div>
+  </div>
+</div>
       </div>
     </div>
   );
