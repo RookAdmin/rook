@@ -53,53 +53,67 @@ export const Footer = () => {
 </div>
 
           </div>
-          <div className="space-y-4">
-            <h3 className="font-semibold text-white">What Did We Build ?</h3>
-            <ul className="space-y-2">
-  <li>
-    <a
-      href="https://paym.me/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
-    >
-      Paym.me
-    </a>
-  </li>
-  <li>
-    <a
-      href="https://realmrook.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
-    >
-      Realm by Rook
-    </a>
-  </li>
-</ul>
 
+<div className="space-y-4">
+            <h3 className="font-semibold text-white">What We Do</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/services/branding" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Branding
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/ui-ux-design" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  UI/UX Design
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/web-app-development" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Web/App Development
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/seo" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  SEO
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/social-media-marketing" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Social Media Marketing
+                </Link>
+              </li>
+            </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="font-semibold text-white">Happenings</h3>
+            <h3 className="font-semibold text-white">What We Build</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/perspectives" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  Perspectives
+                <Link to="/products/paym-me" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Paym.me
                 </Link>
               </li>
               <li>
-                <Link to="/press-release" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  Press Release
+                <Link to="/products/realm" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Realm by Rook
+                </Link>
+              </li>
+            </ul>
+            
+            <h3 className="font-semibold text-white mt-6">More Services</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/services/ai-business-automation" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  AI Business Automation
                 </Link>
               </li>
               <li>
-                <Link to="/media-coverage" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  Media Coverage
+                <Link to="/services/domain-consultation" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Domain Consultation
                 </Link>
               </li>
               <li>
-                <Link to="/letter-from-ceo" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  Letter From the CEO
+                <Link to="/services/enterprise-domain" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Enterprise Domain
                 </Link>
               </li>
             </ul>
@@ -109,7 +123,22 @@ export const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link to="/about" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                Who We Are ?
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/rook-for-startups" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Rook For Startups
+                </Link>
+              </li>
+              <li>
+                <Link to="/perspectives" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Perspectives
+                </Link>
+              </li>
+              <li>
+                <Link to="/press-release" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Press Release
                 </Link>
               </li>
               <li>
@@ -124,6 +153,11 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
+      
+         
+          
+        
+         
         </div>
         <div className="mt-12 pt-8 border-t border-[#333333]">
           <p className="text-center text-[#f5f5f5] text-sm">

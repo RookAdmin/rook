@@ -41,37 +41,37 @@ export const Navbar = () => {
     {
       title: "UI/UX Design",
       description: "Creating intuitive digital experiences that users love",
-      link: "/services/ui-ux-design"
+      link: "https://realmrook.com/services/ui-ux-design"
     },
     {
       title: "Web/App Development",
       description: "Building responsive, scalable digital solutions",
-      link: "/services/web-app-development"
+      link: "https://realmrook.com/services/web-app-development"
     },
     {
       title: "SEO",
       description: "Optimizing your digital presence for visibility and growth",
-      link: "/services/seo"
+      link: "https://realmrook.com/services/seo"
     },
     {
       title: "Social Media Marketing",
       description: "Strategic engagement across platforms that matters",
-      link: "/services/social-media-marketing"
+      link: "https://realmrook.com/services/social-media-marketing"
     },
     {
       title: "AI Business Automation",
       description: "Intelligent solutions that streamline operations",
-      link: "/services/ai-business-automation"
+      link: "https://realmrook.com/services/ai-business-automation"
     },
     {
       title: "Domain Name Consultation",
       description: "Expert guidance for your digital identity",
-      link: "/services/domain-consultation"
+      link: "https://realmrook.com/services/domain-name-consultation"
     },
     {
       title: "Enterprise Domain Management",
       description: "Comprehensive domain portfolio management for enterprises",
-      link: "/services/enterprise-domain"
+      link: "https://realmrook.com/services/enterprise-domain-management"
     }
   ];
 
@@ -94,7 +94,7 @@ export const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <button className="text-white hover:text-[#0096d4] transition-colors bg-transparent outline-none">
+                <button className="text-white hover:text-[#0096d4] transition-colors bg-transparent">
                   What We Do
                 </button>
               </DropdownMenuTrigger>
