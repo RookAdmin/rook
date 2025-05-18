@@ -43,7 +43,7 @@ export const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-white hover:text-[#0096d4] transition-colors bg-transparent">
-                    What We Do ?
+                    What We Build ?
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[200px] bg-white shadow-lg">
@@ -134,6 +134,10 @@ export const Navbar = () => {
               Who We Are ?
             </Link>
 
+            <Link to="/rook-for-startups" className="text-white hover:text-[#0096d4] transition-colors">
+              Rook For Startups
+            </Link>
+
             <a
               href="https://support.rookhq.com/portal/en/home"
               target="_blank"
@@ -196,7 +200,7 @@ export const Navbar = () => {
         <div className="md:hidden bg-black py-4">
           <div className="container mx-auto px-4 space-y-4">
             <div className="border-b border-[#333333] pb-2">
-              <p className="text-white mb-2 font-medium">What We Do ?</p>
+              <p className="text-white mb-2 font-medium">What We Build ?</p>
               <a
                 href="https://paym.me/"
                 target="_blank"
@@ -250,6 +254,8 @@ export const Navbar = () => {
               >
                 Who We Are ?
               </Link>
+              <Link to="/rook-for-startups" className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]">Rook For Startups</Link>
+
             </div>
 
             <div className="pt-2">

@@ -19,6 +19,7 @@ import LetterFromCEO from "./pages/LetterFromCEO";
 import CEOLetter from "./pages/LetterFromCEODetails";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
+import RookForStartups from "./pages/RookForStartups";
 
 const App = () => {
   const queryClient = new QueryClient();
@@ -72,6 +73,7 @@ const App = () => {
                 <Route path="/letter-from-ceo/:slug" element={<CEOLetter />} />
                 <Route path="/terms" element={<Terms />} />
                 <Route path="/privacy" element={<Privacy />} />
+                <Route path="/rook-for-startups" element={<RookForStartups />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>

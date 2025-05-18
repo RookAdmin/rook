@@ -54,7 +54,7 @@ export const Footer = () => {
 
           </div>
           <div className="space-y-4">
-            <h3 className="font-semibold text-white">What We Do ?</h3>
+            <h3 className="font-semibold text-white">What Did We Build ?</h3>
             <ul className="space-y-2">
   <li>
     <a
