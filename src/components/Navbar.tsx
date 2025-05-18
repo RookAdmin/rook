@@ -10,6 +10,14 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -23,6 +31,49 @@ export const Navbar = () => {
     });
     setIsMobileMenuOpen(false);
   }, [location]);
+
+  const services = [
+    {
+      title: "Branding",
+      description: "Crafting premium digital-first brand identities for startups",
+      link: "https://realmrook.com/services/branding"
+    },
+    {
+      title: "UI/UX Design",
+      description: "Creating intuitive digital experiences that users love",
+      link: "/services/ui-ux-design"
+    },
+    {
+      title: "Web/App Development",
+      description: "Building responsive, scalable digital solutions",
+      link: "/services/web-app-development"
+    },
+    {
+      title: "SEO",
+      description: "Optimizing your digital presence for visibility and growth",
+      link: "/services/seo"
+    },
+    {
+      title: "Social Media Marketing",
+      description: "Strategic engagement across platforms that matters",
+      link: "/services/social-media-marketing"
+    },
+    {
+      title: "AI Business Automation",
+      description: "Intelligent solutions that streamline operations",
+      link: "/services/ai-business-automation"
+    },
+    {
+      title: "Domain Name Consultation",
+      description: "Expert guidance for your digital identity",
+      link: "/services/domain-consultation"
+    },
+    {
+      title: "Enterprise Domain Management",
+      description: "Comprehensive domain portfolio management for enterprises",
+      link: "/services/enterprise-domain"
+    }
+  ];
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-black border-b border-[#333333]">
@@ -38,7 +89,33 @@ export const Navbar = () => {
             </span>
           </Link>
 
+          
+
           <div className="hidden md:flex items-center space-x-8">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="text-white hover:text-[#0096d4] transition-colors bg-transparent outline-none">
+                  What We Do
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-[350px] bg-white/95 backdrop-blur-sm shadow-xl p-0 z-50 rounded-lg border-0">
+                <div className="p-3 max-h-[400px] overflow-y-auto">
+                  {services.map((service, index) => (
+                    <DropdownMenuItem key={index} className="p-0 focus:bg-transparent hover:bg-transparent">
+                      <Link
+                        to={service.link}
+                        className="w-full p-3 hover:bg-gray-100/80 rounded-md text-black group transition-all duration-200"
+                      >
+                        <div className="font-medium group-hover:text-[#0096d4] transition-colors">{service.title}</div>
+                        <p className="text-xs text-gray-500 mt-1">{service.description}</p>
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </div>
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
@@ -199,6 +276,19 @@ export const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-black py-4">
           <div className="container mx-auto px-4 space-y-4">
+             <div className="border-b border-white/10 pb-2">
+              <p className="text-white mb-2 font-medium">What We Do</p>
+              {services.map((service, index) => (
+                <Link 
+                  key={index} 
+                  to={service.link} 
+                  className="block py-1.5 text-[#f5f5f5] hover:text-[#0096d4] text-sm"
+                >
+                  {service.title}
+                </Link>
+              ))}
+            </div>
+
             <div className="border-b border-[#333333] pb-2">
               <p className="text-white mb-2 font-medium">What We Build ?</p>
               <a
