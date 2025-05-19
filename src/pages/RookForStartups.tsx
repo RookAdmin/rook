@@ -75,6 +75,7 @@ const RookForStartups = () => {
               
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: "0.5s" }}>
+                <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" >
                 <Button 
                   size="lg" 
                   className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90 transition-all hover:translate-y-[-2px] group"
@@ -82,6 +83,7 @@ const RookForStartups = () => {
                   Join the Program 
                   <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
+                </a>
                 <Button 
                   size="lg" 
                   variant="outline" 
@@ -194,9 +196,11 @@ const RookForStartups = () => {
           </div>
 
           <div className="text-center">
+            <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" >
             <Button size="lg" className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90 group">
               Apply for the Program <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
+            </a>
           </div>
 
           <div className="mt-16">
@@ -213,7 +217,7 @@ const RookForStartups = () => {
                 </div>
                 <div  className="bg-white p-4 rounded-lg border border-gray-100 hover:border-[#0096d4]/30 transition-all flex items-center justify-center h-20">
                   {/* <div className="text-lg font-bold text-gray-400">Partner {i + 1}</div> */}
-                  <img src="/partners/Hlolegal.jpg" alt="Hlo Enterprise Legal+" className="h-12 w-auto" />
+                  <img src="/partners/hlolegal.png" alt="Hlo Enterprise Legal+" className="h-12 w-auto" />
                 </div>
                 <div  className="bg-white p-4 rounded-lg border border-gray-100 hover:border-[#0096d4]/30 transition-all flex items-center justify-center h-20">
                   {/* <div className="text-lg font-bold text-gray-400">Partner {i + 1}</div> */}
@@ -367,9 +371,11 @@ const RookForStartups = () => {
           </div>
 
           <div className="text-center mt-16">
+            <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" >
             <Button size="lg" className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90">
               Apply Now <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -383,9 +389,11 @@ const RookForStartups = () => {
               <p className="text-lg text-gray-700 mb-8">
                 Thousands of founders across India trust Rook to be their quiet, powerful launch partner. We'd love to be yours too.
               </p>
+              <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" >
               <Button size="lg" className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90 group">
                 Get Started With Rook For Startups <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
+              </a>
             </div>
             <div className="flex justify-center">
               <div className="relative w-64 h-64">

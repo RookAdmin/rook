@@ -92,28 +92,37 @@ export const Navbar = () => {
           
 
           <div className="hidden md:flex items-center space-x-8">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button className="text-white hover:text-[#0096d4] transition-colors bg-transparent">
-                  What We Do
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-[350px] bg-white/95 backdrop-blur-sm shadow-xl p-0 z-50 rounded-lg border-0">
-                <div className="p-3 max-h-[400px] overflow-y-auto">
-                  {services.map((service, index) => (
-                    <DropdownMenuItem key={index} className="p-0 focus:bg-transparent hover:bg-transparent">
+          
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-white hover:text-[#0096d4] transition-colors bg-transparent">
+                    What We Do ?
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent className="w-[350px] bg-white/95 backdrop-blur-sm shadow-xl p-0 z-50 rounded-lg border-0">
+                    <ul className="grid gap-3 p-4 w-[350px] bg-white">
+                      <li className="row-span-1">
+                      
+                      <div className="p-3 max-h-[400px] overflow-y-auto">
+                      {services.map((service, index) => (
+                    <NavigationMenuLink  className="p-0 focus:bg-transparent hover:bg-transparent" key={index}>
                       <Link
                         to={service.link}
-                        className="w-full p-3 hover:bg-gray-100/80 rounded-md text-black group transition-all duration-200"
+                        className="w-full p-3 rounded-md text-black group transition-all duration-200"
                       >
                         <div className="font-medium group-hover:text-[#0096d4] transition-colors">{service.title}</div>
                         <p className="text-xs text-gray-500 mt-1">{service.description}</p>
                       </Link>
-                    </DropdownMenuItem>
+                    </NavigationMenuLink>
                   ))}
-                </div>
-              </DropdownMenuContent>
-            </DropdownMenu>
+                  </div>
+                  </li></ul>
+                     
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+                
+              </NavigationMenuList>
+            </NavigationMenu>
 
 
             <NavigationMenu>
@@ -277,7 +286,7 @@ export const Navbar = () => {
         <div className="md:hidden bg-black py-4">
           <div className="container mx-auto px-4 space-y-4">
              <div className="border-b border-white/10 pb-2">
-              <p className="text-white mb-2 font-medium">What We Do</p>
+              <p className="text-white mb-2 font-medium">What We Do ?</p>
               {services.map((service, index) => (
                 <Link 
                   key={index} 
