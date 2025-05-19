@@ -170,7 +170,7 @@ const RookForStartups = () => {
               </div>
               <h3 className="text-xl font-bold mb-4">Acceleration & Dedicated Programs</h3>
               <p className="text-gray-600">
-                In partnership with MyProBuddy, we offer mentoring sprints, GTM clinics, and weekly founder syncs to help you stay ahead of the curve.
+              In partnership with MyProBuddy, we offer investment and fundraising support, mentoring sprints, GTM clinics, and weekly founder syncs to help you stay ahead of the curve.            
               </p>
             </div>
 
@@ -316,7 +316,7 @@ const RookForStartups = () => {
                 <div className="text-5xl text-[#0096d4] mr-4">"</div>
                 <div>
                   <p className="text-lg italic mb-6">
-                    HLO Legal+ made our trademark process so seamless — we didn't even need to step out once!
+                    HLO Enterprise Legal+ made our trademark process so seamless — we didn't even need to step out once!
                   </p>
                   <p className="font-semibold">— D2C Founder, Mumbai</p>
                 </div>

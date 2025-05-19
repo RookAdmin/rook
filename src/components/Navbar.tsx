@@ -129,7 +129,7 @@ export const Navbar = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-white hover:text-[#0096d4] transition-colors bg-transparent">
-                    What We Build ?
+                    What Did We Build ?
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid gap-3 p-4 w-[200px] bg-white shadow-lg">
