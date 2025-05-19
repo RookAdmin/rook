@@ -116,11 +116,9 @@ export const Navbar = () => {
                     </NavigationMenuLink>
                   ))}
                   </div>
-                  </li></ul>
-                     
+                  </li></ul>                     
                   </NavigationMenuContent>
-                </NavigationMenuItem>
-                
+                </NavigationMenuItem>                
               </NavigationMenuList>
             </NavigationMenu>
 
@@ -215,12 +213,12 @@ export const Navbar = () => {
 
             <Link
               to="/about"
-              className="text-white hover:text-[#0096d4] transition-colors"
+              className="text-white hover:text-[#0096d4] text-sm font-[410] transition-colors"
             >
               Who We Are ?
             </Link>
 
-            <Link to="/rook-for-startups" className="text-white hover:text-[#0096d4] transition-colors">
+            <Link to="/rook-for-startups" className="text-white hover:text-[#0096d4] text-sm font-[410] transition-colors">
               Rook For Startups
             </Link>
 
