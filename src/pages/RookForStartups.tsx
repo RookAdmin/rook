@@ -198,11 +198,27 @@ const RookForStartups = () => {
           <div className="mt-16">
             <h3 className="text-xl font-bold text-center mb-8">Our Powerhouse Partners</h3>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-              {[...Array(5)].map((_, i) => (
-                <div key={i} className="bg-white p-4 rounded-lg border border-gray-100 hover:border-[#0096d4]/30 transition-all flex items-center justify-center h-20">
-                  <div className="text-lg font-bold text-gray-400">Partner {i + 1}</div>
+              
+                <div  className="bg-white p-4 rounded-lg border border-gray-100 hover:border-[#0096d4]/30 transition-all flex items-center justify-center h-20">
+                  {/* <div className="text-lg font-bold text-gray-400">Partner {i + 1}</div> */}
+                  <img src="/public/partners/mypro.avif" alt="Myprobuddy"  className="h-13 w-auto" />
                 </div>
-              ))}
+                <div  className="bg-white p-4 rounded-lg border border-gray-100 hover:border-[#0096d4]/30 transition-all flex items-center justify-center h-20">
+                  {/* <div className="text-lg font-bold text-gray-400">Partner {i + 1}</div> */}
+                  <img src="/public/partners/zohofor.png" alt="Zoho for Startups" className="h-12 w-auto" />
+                </div>
+                <div  className="bg-white p-4 rounded-lg border border-gray-100 hover:border-[#0096d4]/30 transition-all flex items-center justify-center h-20">
+                  {/* <div className="text-lg font-bold text-gray-400">Partner {i + 1}</div> */}
+                  <img src="/public/partners/Hlolegal.jpg" alt="Hlo Enterprise Legal+" className="h-12 w-auto" />
+                </div>
+                <div  className="bg-white p-4 rounded-lg border border-gray-100 hover:border-[#0096d4]/30 transition-all flex items-center justify-center h-20">
+                  {/* <div className="text-lg font-bold text-gray-400">Partner {i + 1}</div> */}
+                  <img src="/public/partners/microsoft.svg"  className="h-10 w-auto" />
+                </div>
+                <div  className="bg-white p-4 rounded-lg border border-gray-100 hover:border-[#0096d4]/30 transition-all flex items-center justify-center h-20">
+                  {/* <div className="text-lg font-bold text-gray-400">Partner {i + 1}</div> */}
+                  <img src="/public/partners/aws.png"  className="h-12 w-auto" />
+                </div>
             </div>
           </div>
         </div>
