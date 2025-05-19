@@ -96,7 +96,7 @@ const RookForStartups = () => {
       </section>
 
       {/* Why Founders Choose Rook */}
-      <section className="py-20 bg-white">
+    <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div className="order-2 md:order-1">
@@ -110,34 +110,36 @@ const RookForStartups = () => {
               </p>
             </div>
             <div className="order-1 md:order-2">
-              <div className="relative h-[400px] flex items-center justify-center">
+              <div className="relative h-[280px] md:h-[400px] flex items-center justify-center">
+                {/* Background circle */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-64 h-64 rounded-full bg-[#0096d4]/5 animate-pulse"></div>
+                  <div className="w-48 md:w-64 h-48 md:h-64 rounded-full bg-[#0096d4]/5 animate-pulse"></div>
                 </div>
                 
-                <div className="relative z-10 space-y-16">
-                  <div className="bg-white rounded-lg p-4 shadow-soft flex items-center justify-center w-40 animate-float">
+                {/* Content items - Adjusted for mobile */}
+                <div className="relative z-10 space-y-8 md:space-y-16">
+                  <div className="bg-white rounded-lg p-3 md:p-4 shadow-soft flex items-center justify-center w-32 md:w-40 mx-auto animate-float">
                     <div className="text-center">
-                      <div className="font-bold mb-1">Idea</div>
-                      <Rocket className="h-8 w-8 mx-auto text-[#0096d4]" />
+                      <div className="text-sm md:text-base font-bold mb-1">Idea</div>
+                      <Rocket className="h-6 w-6 md:h-8 md:w-8 mx-auto text-[#0096d4]" />
                     </div>
                   </div>
                   
-                  <div className="w-1 h-10 mx-auto bg-gradient-to-b from-[#0096d4] to-transparent"></div>
+                  <div className="w-1 h-6 md:h-10 mx-auto bg-gradient-to-b from-[#0096d4] to-transparent"></div>
                   
-                  <div className="bg-white rounded-lg p-4 shadow-soft flex items-center justify-center w-40 animate-float" style={{ animationDelay: "1s" }}>
+                  <div className="bg-white rounded-lg p-3 md:p-4 shadow-soft flex items-center justify-center w-32 md:w-40 mx-auto animate-float" style={{ animationDelay: "1s" }}>
                     <div className="text-center">
-                      <div className="font-bold mb-1">Launch</div>
-                      <Rocket className="h-8 w-8 mx-auto text-[#dc2e3e] rotate-45" />
+                      <div className="text-sm md:text-base font-bold mb-1">Launch</div>
+                      <Rocket className="h-6 w-6 md:h-8 md:w-8 mx-auto text-[#dc2e3e] rotate-45" />
                     </div>
                   </div>
                   
-                  <div className="w-1 h-10 mx-auto bg-gradient-to-b from-transparent to-[#00d437]"></div>
+                  <div className="w-1 h-6 md:h-10 mx-auto bg-gradient-to-b from-transparent to-[#00d437]"></div>
                   
-                  <div className="bg-white rounded-lg p-4 shadow-soft flex items-center justify-center w-40 animate-float" style={{ animationDelay: "2s" }}>
+                  <div className="bg-white rounded-lg p-3 md:p-4 shadow-soft flex items-center justify-center w-32 md:w-40 mx-auto animate-float" style={{ animationDelay: "2s" }}>
                     <div className="text-center">
-                      <div className="font-bold mb-1">Scale</div>
-                      <Rocket className="h-8 w-8 mx-auto text-[#00d437] rotate-90" />
+                      <div className="text-sm md:text-base font-bold mb-1">Scale</div>
+                      <Rocket className="h-6 w-6 md:h-8 md:w-8 mx-auto text-[#00d437] rotate-90" />
                     </div>
                   </div>
                 </div>
@@ -146,6 +148,7 @@ const RookForStartups = () => {
           </div>
         </div>
       </section>
+
 
       {/* The Program Includes */}
       <section className="py-20 bg-[#f8f9fa]">
