@@ -22,49 +22,49 @@ const Whatwedo = () => {
       title: "Branding",
       description: "Crafting premium digital-first brand identities for startups",
       icon: <BrushIcon className="h-6 w-6" />,
-      link: "/services/branding",
+      link: "https://realmrook.com/services/branding",
     },
     {
       title: "UI/UX Design",
       description: "Creating intuitive digital experiences that users love",
       icon: <PaletteIcon className="h-6 w-6" />,
-      link: "/services/ui-ux-design",
+      link: "https://realmrook.com/services/ui-ux-design",
     },
     {
       title: "Web/App Development",
       description: "Building responsive, scalable digital solutions",
       icon: <CodeIcon className="h-6 w-6" />,
-      link: "/services/web-app-development",
+      link: "https://realmrook.com/services/web-app-development",
     },
     {
       title: "SEO",
       description: "Optimizing your digital presence for visibility and growth",
       icon: <SearchIcon className="h-6 w-6" />,
-      link: "/services/seo",
+      link: "https://realmrook.com/services/seo",
     },
     {
       title: "Social Media Marketing",
       description: "Strategic engagement across platforms that matters",
       icon: <InstagramIcon className="h-6 w-6" />,
-      link: "/services/social-media-marketing",
+      link: "https://realmrook.com/services/social-media-marketing",
     },
     {
       title: "AI Business Automation",
       description: "Intelligent solutions that streamline operations",
       icon: <BrainIcon className="h-6 w-6" />,
-      link: "/services/ai-business-automation",
+      link: "https://realmrook.com/services/ai-business-automation",
     },
     {
       title: "Domain Name Consultation",
       description: "Expert guidance for your digital identity",
       icon: <GlobeIcon className="h-6 w-6" />,
-      link: "/services/domain-consultation",
+      link: "https://realmrook.com/services/domain-name-consultation",
     },
     {
       title: "Enterprise Domain Management",
       description: "Comprehensive domain portfolio management for enterprises",
       icon: <ServerIcon className="h-6 w-6" />,
-      link: "/services/enterprise-domain",
+      link: "https://realmrook.com/services/enterprise-domain-management",
     }
   ];
 
