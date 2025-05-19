@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Rocket, Star, Gift, Scale, Users, CheckCircle } from "lucide-react";
+import mypro from "/partners/mypro.avif"
 
 const RookForStartups = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -201,23 +202,23 @@ const RookForStartups = () => {
               
                 <div  className="bg-white p-4 rounded-lg border border-gray-100 hover:border-[#0096d4]/30 transition-all flex items-center justify-center h-20">
                   {/* <div className="text-lg font-bold text-gray-400">Partner {i + 1}</div> */}
-                  <img src="/public/partners/mypro.avif" alt="Myprobuddy"  className="h-13 w-auto" />
+                  <img src={mypro} alt="MyProBuddy" className="h-12 w-auto" />
                 </div>
                 <div  className="bg-white p-4 rounded-lg border border-gray-100 hover:border-[#0096d4]/30 transition-all flex items-center justify-center h-20">
                   {/* <div className="text-lg font-bold text-gray-400">Partner {i + 1}</div> */}
-                  <img src="/public/partners/zohofor.png" alt="Zoho for Startups" className="h-12 w-auto" />
+                  <img src="/partners/zohofor.png" alt="Zoho for Startups" className="h-12 w-auto" />
                 </div>
                 <div  className="bg-white p-4 rounded-lg border border-gray-100 hover:border-[#0096d4]/30 transition-all flex items-center justify-center h-20">
                   {/* <div className="text-lg font-bold text-gray-400">Partner {i + 1}</div> */}
-                  <img src="/public/partners/Hlolegal.jpg" alt="Hlo Enterprise Legal+" className="h-12 w-auto" />
+                  <img src="/partners/Hlolegal.jpg" alt="Hlo Enterprise Legal+" className="h-12 w-auto" />
                 </div>
                 <div  className="bg-white p-4 rounded-lg border border-gray-100 hover:border-[#0096d4]/30 transition-all flex items-center justify-center h-20">
                   {/* <div className="text-lg font-bold text-gray-400">Partner {i + 1}</div> */}
-                  <img src="/public/partners/microsoft.svg"  className="h-10 w-auto" />
+                  <img src="/partners/microsoft.svg"  className="h-10 w-auto" />
                 </div>
                 <div  className="bg-white p-4 rounded-lg border border-gray-100 hover:border-[#0096d4]/30 transition-all flex items-center justify-center h-20">
                   {/* <div className="text-lg font-bold text-gray-400">Partner {i + 1}</div> */}
-                  <img src="/public/partners/aws.png"  className="h-12 w-auto" />
+                  <img src="/partners/aws.png"  className="h-12 w-auto" />
                 </div>
             </div>
           </div>
