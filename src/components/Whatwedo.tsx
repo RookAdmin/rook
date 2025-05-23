@@ -76,7 +76,7 @@ const Whatwedo = () => {
             <div className="inline-block mb-4">
               <div className="h-1 w-16 bg-[#0096d4] mx-auto"></div>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">What We Do</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">What We Do ?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg mt-4">
               <span className="text-[#0096d4] font-medium">Powered by Realm by Rook!</span>
             </p>
