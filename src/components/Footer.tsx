@@ -58,27 +58,27 @@ export const Footer = () => {
             <h3 className="font-semibold text-white">What We Do ?</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/services/branding" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                <Link to="https://realmrook.com/services/branding" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   Branding
                 </Link>
               </li>
               <li>
-                <Link to="/services/ui-ux-design" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                <Link to="https://realmrook.com/services/ui-ux-design" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   UI/UX Design
                 </Link>
               </li>
               <li>
-                <Link to="/services/web-app-development" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                <Link to="https://realmrook.com/services/web-app-development" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   Web/App Development
                 </Link>
               </li>
               <li>
-                <Link to="/services/seo" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                <Link to="https://realmrook.com/services/seo" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   SEO
                 </Link>
               </li>
               <li>
-                <Link to="/services/social-media-marketing" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                <Link to="https://realmrook.com/services/social-media-marketing" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   Social Media Marketing
                 </Link>
               </li>
@@ -88,12 +88,12 @@ export const Footer = () => {
             <h3 className="font-semibold text-white">What Did We Build</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/products/paym-me" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                <Link to="https://paym.me/" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   Paym.me
                 </Link>
               </li>
               <li>
-                <Link to="/products/realm" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                <Link to="https://realmrook.com/" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   Realm by Rook
                 </Link>
               </li>
@@ -102,17 +102,17 @@ export const Footer = () => {
             <h3 className="font-semibold text-white mt-6">More Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/services/ai-business-automation" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                <Link to="https://realmrook.com/services/ai-business-automation" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   AI Business Automation
                 </Link>
               </li>
               <li>
-                <Link to="/services/domain-consultation" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                <Link to="http://realmrook.com/services/domain-name-consultation" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   Domain Consultation
                 </Link>
               </li>
               <li>
-                <Link to="/services/enterprise-domain" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                <Link to="https://realmrook.com/services/enterprise-domain-management" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   Enterprise Domain
                 </Link>
               </li>
