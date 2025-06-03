@@ -158,7 +158,7 @@ const About = () => {
               },
               {
                 name: "Amrish Krishnan",
-                title: "Managing Director",
+                title: "Advisor",
                 image: "/amrish.JPG",
               },
             ].map((member, index) => (
