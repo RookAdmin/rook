@@ -214,7 +214,7 @@ const About = () => {
         </Button>
       </a>
       <a
-        href="/Rook Code Of Conduct.pdf"
+        href="./rook_coc.pdf"
         download="Rook Code Of Conduct.pdf"
       >
         <Button

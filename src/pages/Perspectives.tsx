@@ -26,6 +26,8 @@ const Perspectives = () => {
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   const sectionRef = useRef(null);
   const location = useLocation();
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 4;
 
   // Update selected category from URL
   useEffect(() => {
@@ -84,6 +86,11 @@ const Perspectives = () => {
     return new Date(dateString).toLocaleDateString("en-US", options);
   };
 
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  const totalPages = Math.ceil(posts.length / postsPerPage);
+
   if (loading) {
     return (
       <div className="min-h-screen bg-white text-textPrimary pt-28 pb-20 relative overflow-hidden">
@@ -132,7 +139,10 @@ const Perspectives = () => {
         {/* Main Content */}
         <div className="flex-grow lg:pr-8 w-full lg:w-[calc(100%-380px)]">
           <div className="mb-16">
-            <div className="h-1 w-20 bg-primary mb-6" style={{background:"black"}}></div>
+            <div
+              className="h-1 w-20 bg-primary mb-6"
+              style={{ background: "black" }}
+            ></div>
             <div className="flex items-end gap-3">
               <h1
                 className="text-5xl font-bold mb-6 text-primary tracking-tight animate-fade-up"
@@ -140,8 +150,10 @@ const Perspectives = () => {
               >
                 Rook Perspectives
               </h1>
-              <Sparkles className="h-5 w-5 mb-6 animate-pulse" style={{ color: "#0096d4" }} />
-
+              <Sparkles
+                className="h-5 w-5 mb-6 animate-pulse"
+                style={{ color: "#0096d4" }}
+              />
             </div>
             <p
               className="text-xl text-textSecondary max-w-3xl leading-relaxed animate-fade-up"
@@ -190,67 +202,111 @@ const Perspectives = () => {
             )}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-            {posts.map((post, index) => (
-              <div
-                key={post._id}
-                className="bg-white backdrop-blur rounded-lg overflow-hidden border border-borderLight hover:border-accent/30 transition-all shadow-card hover:shadow-premium hover:translate-y-[-4px] animate-fade-up"
-                style={{ animationDelay: `${0.1 + index * 0.1}s` }}
-              >
-                <div className="relative h-56 overflow-hidden">
-                  {post.mainImage && (
-                    <img
-                      src={urlForClient1(post.mainImage).width(800).url()}
-                      alt={post.title}
-                      className="w-full h-full object-cover transition-transform hover:scale-105"
-                    />
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
-                    <span
-                      className="text-xs font-medium text-primary"
-                      style={{ color: "#0096d4" }}
-                    >
-                      {post.category}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-3">
-                    <span
-                      className="text-xs font-medium text-primary"
-                      style={{ color: "#0096d4" }}
-                    >
-                      {post.perspectiveCategory || "Technology"}
-                    </span>
-                    <span className="text-xs text-textSecondary">
-                      {formatDate(post.publishedAt)}
-                    </span>
-                  </div>
-
-                  <h3 className="text-xl font-bold mb-2 text-textPrimary">
-                    {post.title}
-                  </h3>
-                  <p className="text-textSecondary text-sm mb-4">
-                    {post.description}
-                  </p>
-                  <Button
-                    variant="ghost"
-                    className="text-primary hover:text-secondary hover:bg-accent/20 p-0 group transition-all"
-                    style={{ color: "#0096d4" }}
-                    asChild
-                  >
-                    <Link to={`/perspectives/${post.slug}`}>
-                      Read Article{" "}
-                      <span className="group-hover:translate-x-1 transition-transform inline-block">
-                        →
+          <>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+              {currentPosts.map((post, index) => (
+                <div
+                  key={post._id}
+                  className="bg-white backdrop-blur rounded-lg overflow-hidden border border-borderLight hover:border-accent/30 transition-all shadow-card hover:shadow-premium hover:translate-y-[-4px] animate-fade-up"
+                  style={{ animationDelay: `${0.1 + index * 0.1}s` }}
+                >
+                  <div className="relative h-56 overflow-hidden">
+                    {post.mainImage && (
+                      <img
+                        src={urlForClient1(post.mainImage).width(800).url()}
+                        alt={post.title}
+                        className="w-full h-full object-cover transition-transform hover:scale-105"
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
+                      <span
+                        className="text-xs font-medium text-primary"
+                        style={{ color: "#0096d4" }}
+                      >
+                        {post.category}
                       </span>
-                    </Link>
-                  </Button>
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-3">
+                      <span
+                        className="text-xs font-medium text-primary"
+                        style={{ color: "#0096d4" }}
+                      >
+                        {post.perspectiveCategory || "Technology"}
+                      </span>
+                      <span className="text-xs text-textSecondary">
+                        {formatDate(post.publishedAt)}
+                      </span>
+                    </div>
+
+                    <h3 className="text-xl font-bold mb-2 text-textPrimary">
+                      {post.title}
+                    </h3>
+                    <p className="text-textSecondary text-sm mb-4">
+                      {post.description}
+                    </p>
+                    <Button
+                      variant="ghost"
+                      className="text-primary hover:text-secondary hover:bg-accent/20 p-0 group transition-all"
+                      style={{ color: "#0096d4" }}
+                      asChild
+                    >
+                      <Link to={`/perspectives/${post.slug}`}>
+                        Read Article{" "}
+                        <span className="group-hover:translate-x-1 transition-transform inline-block">
+                          →
+                        </span>
+                      </Link>
+                    </Button>
+                  </div>
                 </div>
+              ))}
+            </div>
+
+            {/* Pagination Controls */}
+            {totalPages > 1 && (
+              <div className="flex justify-center items-center mt-12 gap-2">
+                <Button
+                  variant="outline"
+                  onClick={() =>
+                    setCurrentPage((prev) => Math.max(prev - 1, 1))
+                  }
+                  disabled={currentPage === 1}
+                  className="px-4 py-2"
+                >
+                  Previous
+                </Button>
+
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                  (pageNum) => (
+                    <Button
+                      key={pageNum}
+                      variant={currentPage === pageNum ? "default" : "outline"}
+                      onClick={() => setCurrentPage(pageNum)}
+                      className={`px-4 py-2 ${
+                        currentPage === pageNum ? "bg-[#0096d4] text-white" : ""
+                      }`}
+                    >
+                      {pageNum}
+                    </Button>
+                  )
+                )}
+
+                <Button
+                  variant="outline"
+                  onClick={() =>
+                    setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+                  }
+                  disabled={currentPage === totalPages}
+                  className="px-4 py-2"
+                >
+                  Next
+                </Button>
               </div>
-            ))}
-          </div>
+            )}
+          </>
         </div>
 
         {/* Desktop Categories Sidebar (only shows on desktop) */}

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { RocketIcon } from "lucide-react";
+import { RocketIcon, ChevronDownIcon, ChevronUpIcon } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import {
@@ -23,11 +23,21 @@ export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
+  const [mobileDropdowns, setMobileDropdowns] = useState({
+    whatWeDo: false,
+    whatWeBuild: false,
+    happenings: false,
+  });
+
+  const toggleDropdown = (key: string) => {
+    setMobileDropdowns((prev) => ({ ...prev, [key]: !prev[key] }));
+  };
+
   // Scroll to top and close mobile menu whenever location changes
   useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth" // Smooth scroll animation
+      behavior: "smooth", // Smooth scroll animation
     });
     setIsMobileMenuOpen(false);
   }, [location]);
@@ -35,44 +45,45 @@ export const Navbar = () => {
   const services = [
     {
       title: "Branding",
-      description: "Crafting premium digital-first brand identities for startups",
-      link: "https://realmrook.com/services/branding"
+      description:
+        "Crafting premium digital-first brand identities for startups",
+      link: "https://realmrook.com/services/branding",
     },
     {
       title: "UI/UX Design",
       description: "Creating intuitive digital experiences that users love",
-      link: "https://realmrook.com/services/ui-ux-design"
+      link: "https://realmrook.com/services/ui-ux-design",
     },
     {
       title: "Web/App Development",
       description: "Building responsive, scalable digital solutions",
-      link: "https://realmrook.com/services/web-app-development"
+      link: "https://realmrook.com/services/web-app-development",
     },
     {
       title: "SEO",
       description: "Optimizing your digital presence for visibility and growth",
-      link: "https://realmrook.com/services/seo"
+      link: "https://realmrook.com/services/seo",
     },
     {
       title: "Social Media Marketing",
       description: "Strategic engagement across platforms that matters",
-      link: "https://realmrook.com/services/social-media-marketing"
+      link: "https://realmrook.com/services/social-media-marketing",
     },
     {
       title: "AI Business Automation",
       description: "Intelligent solutions that streamline operations",
-      link: "https://realmrook.com/services/ai-business-automation"
+      link: "https://realmrook.com/services/ai-business-automation",
     },
     {
       title: "Domain Name Consultation",
       description: "Expert guidance for your digital identity",
-      link: "https://realmrook.com/services/domain-name-consultation"
+      link: "https://realmrook.com/services/domain-name-consultation",
     },
     {
       title: "Enterprise Domain Management",
       description: "Comprehensive domain portfolio management for enterprises",
-      link: "https://realmrook.com/services/enterprise-domain-management"
-    }
+      link: "https://realmrook.com/services/enterprise-domain-management",
+    },
   ];
 
   return (
@@ -89,10 +100,7 @@ export const Navbar = () => {
             </span>
           </Link>
 
-          
-
-          <div className="hidden md:flex items-center space-x-8">
-          
+          <div className="hidden md:flex items-center justify-end space-x-8">
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
@@ -102,26 +110,32 @@ export const Navbar = () => {
                   <NavigationMenuContent className="w-[350px] bg-white/95 backdrop-blur-sm shadow-xl p-0 z-50 rounded-lg border-0">
                     <ul className="grid gap-3 p-4 w-[350px] bg-white">
                       <li className="row-span-1">
-                      
-                      <div className="p-3 max-h-[400px] overflow-y-auto">
-                      {services.map((service, index) => (
-                    <NavigationMenuLink  className="p-0 focus:bg-transparent hover:bg-transparent" key={index}>
-                      <Link
-                        to={service.link}
-                        className="w-full p-3 rounded-md text-black group transition-all duration-200"
-                      >
-                        <div className="font-medium group-hover:text-[#0096d4] transition-colors">{service.title}</div>
-                        <p className="text-xs text-gray-500 mt-1">{service.description}</p>
-                      </Link>
-                    </NavigationMenuLink>
-                  ))}
-                  </div>
-                  </li></ul>                     
+                        <div className="p-3 max-h-[400px] overflow-y-auto">
+                          {services.map((service, index) => (
+                            <NavigationMenuLink
+                              className="p-0 focus:bg-transparent hover:bg-transparent"
+                              key={index}
+                            >
+                              <Link
+                                to={service.link}
+                                className="w-full p-3 rounded-md text-black group transition-all duration-200"
+                              >
+                                <div className="font-medium group-hover:text-[#0096d4] transition-colors">
+                                  {service.title}
+                                </div>
+                                <p className="text-xs text-gray-500 mt-1">
+                                  {service.description}
+                                </p>
+                              </Link>
+                            </NavigationMenuLink>
+                          ))}
+                        </div>
+                      </li>
+                    </ul>
                   </NavigationMenuContent>
-                </NavigationMenuItem>                
+                </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
-
 
             <NavigationMenu>
               <NavigationMenuList>
@@ -158,7 +172,18 @@ export const Navbar = () => {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
 
+            <Link
+              to="/rook-for-startups"
+              className="text-white hover:text-[#0096d4] text-sm font-[410] transition-colors"
+            >
+              Rook For Startups
+            </Link>
+
+            <NavigationMenu>
+              <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-white hover:text-[#0096d4] transition-colors bg-transparent">
                     Happenings
@@ -216,10 +241,6 @@ export const Navbar = () => {
               className="text-white hover:text-[#0096d4] text-sm font-[410] transition-colors"
             >
               Who We Are ?
-            </Link>
-
-            <Link to="/rook-for-startups" className="text-white hover:text-[#0096d4] text-sm font-[410] transition-colors">
-              Rook For Startups
             </Link>
 
             <a
@@ -282,79 +303,140 @@ export const Navbar = () => {
       {/* Mobile menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-black py-4">
-          <div className="container mx-auto px-4 space-y-4">
-             <div className="border-b border-white/10 pb-2">
-              <p className="text-white mb-2 font-medium">What We Do ?</p>
-              {services.map((service, index) => (
-                <Link 
-                  key={index} 
-                  to={service.link} 
-                  className="block py-1.5 text-[#f5f5f5] hover:text-[#0096d4] text-sm"
-                >
-                  {service.title}
-                </Link>
-              ))}
-            </div>
-
+          <div className="container mx-auto px-4 space-y-4 overflow-y-auto max-h-[80vh]">
+            {/* What We Do Section */}
             <div className="border-b border-[#333333] pb-2">
-              <p className="text-white mb-2 font-medium">What We Build ?</p>
-              <a
-                href="https://paym.me/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
+              <button
+                onClick={() => toggleDropdown("whatWeDo")}
+                className="text-white mb-2 font-medium w-full text-left flex items-center justify-between"
               >
-                Paym.me
-              </a>
-              <a
-                href="https://realmrook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
-              >
-                Realm by Rook
-              </a>
+                What We Do ?
+                <span>
+                  {mobileDropdowns.whatWeDo ? (
+                    <ChevronUpIcon className="h-5 w-5 text-white" />
+                  ) : (
+                    <ChevronDownIcon className="h-5 w-5 text-white" />
+                  )}
+                </span>
+              </button>
+              {mobileDropdowns.whatWeDo && (
+                <div className="space-y-2">
+                  {services.map((service, index) => (
+                    <Link
+                      key={index}
+                      to={service.link}
+                      className="block py-1.5 text-[#f5f5f5] hover:text-[#0096d4] text-sm"
+                    >
+                      {service.title}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
 
+            {/* What We Build Section */}
             <div className="border-b border-[#333333] pb-2">
-              <p className="text-white mb-2 font-medium">Happenings</p>
-              <Link
-                to="/perspectives"
-                className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
+              <button
+                onClick={() => toggleDropdown("whatWeBuild")}
+                className="text-white mb-2 font-medium w-full text-left flex items-center justify-between"
               >
-                Perspectives
-              </Link>
+                What We Build ?
+                <span>
+                  {mobileDropdowns.whatWeBuild ? (
+                    <ChevronUpIcon className="h-5 w-5 text-white" />
+                  ) : (
+                    <ChevronDownIcon className="h-5 w-5 text-white" />
+                  )}
+                </span>
+              </button>
+              {mobileDropdowns.whatWeBuild && (
+                <div className="space-y-2">
+                  <a
+                    href="https://paym.me/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
+                  >
+                    Paym.me
+                  </a>
+                  <a
+                    href="https://realmrook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
+                  >
+                    Realm by Rook
+                  </a>
+                </div>
+              )}
+            </div>
+
+            {/* Rook For Startups Section */}
+            <div className="border-b border-[#333333] pb-2">
               <Link
-                to="/press-release"
-                className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
+                to="/rook-for-startups"
+                className="block py-2 text-[#f5f5f5] hover:text-[#0096d4] font-medium"
               >
-                Press Release
-              </Link>
-              <Link
-                to="/media-coverage"
-                className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
-              >
-                Media Coverage
-              </Link>
-              <Link
-                to="/letter-from-ceo"
-                className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
-              >
-                Letter From the CEO
+                Rook For Startups
               </Link>
             </div>
 
+            {/* Happenings Section */}
+            <div className="border-b border-[#333333] pb-2">
+              <button
+                onClick={() => toggleDropdown("happenings")}
+                className="text-white mb-2 font-medium w-full text-left flex items-center justify-between"
+              >
+                Happenings
+                <span>
+                  {mobileDropdowns.happenings ? (
+                    <ChevronUpIcon className="h-5 w-5 text-white" />
+                  ) : (
+                    <ChevronDownIcon className="h-5 w-5 text-white" />
+                  )}
+                </span>
+              </button>
+              {mobileDropdowns.happenings && (
+                <div className="space-y-2">
+                  <Link
+                    to="/perspectives"
+                    className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
+                  >
+                    Perspectives
+                  </Link>
+                  <Link
+                    to="/press-release"
+                    className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
+                  >
+                    Press Release
+                  </Link>
+                  <Link
+                    to="/media-coverage"
+                    className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
+                  >
+                    Media Coverage
+                  </Link>
+                  <Link
+                    to="/letter-from-ceo"
+                    className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
+                  >
+                    Letter From the CEO
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            {/* Who We Are Section */}
             <div className="border-b border-[#333333] pb-2">
               <Link
                 to="/about"
-                className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
+                className="block py-2 text-[#f5f5f5] hover:text-[#0096d4] font-medium"
               >
                 Who We Are ?
               </Link>
-              <Link to="/rook-for-startups" className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]">Rook For Startups</Link>
-
             </div>
 
+            {/* Support Button Section */}
             <div className="pt-2">
               <a
                 href="https://support.rookhq.com/portal/en/home"
