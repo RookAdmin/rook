@@ -1,8 +1,17 @@
-
 import React, { useEffect, useState } from "react";
 import { ServiceCard } from "@/components/ServiceCard";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { LinkIcon, CodeIcon, BrushIcon, GlobeIcon, InstagramIcon, SearchIcon, BrainIcon, ServerIcon, PaletteIcon } from "lucide-react";
+import { motion } from "framer-motion";
+import {
+  LinkIcon,
+  CodeIcon,
+  BrushIcon,
+  GlobeIcon,
+  InstagramIcon,
+  SearchIcon,
+  BrainIcon,
+  ServerIcon,
+  PaletteIcon,
+} from "lucide-react";
 
 const Whatwedo = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -12,7 +21,7 @@ const Whatwedo = () => {
     const timer = setTimeout(() => {
       setIsLoaded(true);
     }, 100);
-    
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -20,7 +29,8 @@ const Whatwedo = () => {
   const services = [
     {
       title: "Branding",
-      description: "Crafting premium digital-first brand identities for startups",
+      description:
+        "Crafting premium digital-first brand identities for startups",
       icon: <BrushIcon className="h-6 w-6" />,
       link: "https://realmrook.com/services/branding",
     },
@@ -65,39 +75,66 @@ const Whatwedo = () => {
       description: "Comprehensive domain portfolio management for enterprises",
       icon: <ServerIcon className="h-6 w-6" />,
       link: "https://realmrook.com/services/enterprise-domain-management",
-    }
+    },
   ];
 
-   return (
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3,
+      },
+    },
+  };
 
-<section className="py-32 px-4 bg-white border-t border-gray-50">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-20">
-            <div className="inline-block mb-4">
-              <div className="h-1 w-16 bg-[#0096d4] mx-auto"></div>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">What We Do ?</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg mt-4">
-              <span className="text-[#0096d4] font-medium">Powered by Realm by Rook!</span>
-            </p>
+  return (
+    <section className="py-40 px-4 bg-gradient-to-b from-white to-gray-50">
+      <div className="container mx-auto max-w-7xl">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-24"
+        >
+          <div className="inline-block mb-6">
+            <div className="h-1 w-24 bg-[#0096d4] mx-auto rounded-full"></div>
           </div>
-          
-          
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pr-4">
-              {services.map((service, index) => (
-                <ServiceCard 
-                  key={index}
-                  title={service.title}
-                  description={service.description}
-                  icon={service.icon}
-                  link={service.link}
-                />
-              ))}
-            </div>
-         
-        </div>
-      </section>
-       );
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 tracking-tight mb-6">
+            What We <span className="text-[#0096d4]">Do</span> ?
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg font-light">
+            Transforming ideas into digital excellence with{" "}
+            <span className="text-[#0096d4] font-medium">Realm by Rook</span>
+          </p>
+        </motion.div>
+
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
+          {services.map((service, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <ServiceCard
+                title={service.title}
+                description={service.description}
+                icon={service.icon}
+                link={service.link}
+              />
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
 };
 
 export default Whatwedo;
