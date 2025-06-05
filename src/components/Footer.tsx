@@ -102,8 +102,8 @@ export const Footer = () => {
             <h3 className="font-semibold text-white mt-6">More Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="https://realmrook.com/services/ai-business-automation" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  AI Business Automation
+                <Link to="https://realmrook.com/services/ai-agents-automation" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  AI Agents Automation
                 </Link>
               </li>
               <li>
