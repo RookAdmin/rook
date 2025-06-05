@@ -58,6 +58,11 @@ export const Footer = () => {
             <h3 className="font-semibold text-white">What We Do ?</h3>
             <ul className="space-y-2">
               <li>
+                <Link to="https://realmrook.com/services/ai-agents-automation" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  AI Agents Automation
+                </Link>
+              </li>
+              <li>
                 <Link to="https://realmrook.com/services/branding" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   Branding
                 </Link>
@@ -72,11 +77,7 @@ export const Footer = () => {
                   Web/App Development
                 </Link>
               </li>
-              <li>
-                <Link to="https://realmrook.com/services/seo" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  SEO
-                </Link>
-              </li>
+              
               <li>
                 <Link to="https://realmrook.com/services/social-media-marketing" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   Social Media Marketing
@@ -102,8 +103,8 @@ export const Footer = () => {
             <h3 className="font-semibold text-white mt-6">More Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="https://realmrook.com/services/ai-agents-automation" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  AI Agents Automation
+                <Link to="https://realmrook.com/services/seo" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  SEO
                 </Link>
               </li>
               <li>

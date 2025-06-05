@@ -28,6 +28,12 @@ const Whatwedo = () => {
   // Services data
   const services = [
     {
+      title: "AI Agents Automation",
+      description: "Intelligent solutions that streamline operations",
+      icon: <BrainIcon className="h-6 w-6" />,
+      link: "https://realmrook.com/services/ai-agents-automation",
+    },
+    {
       title: "Branding",
       description:
         "Crafting premium digital-first brand identities for startups",
@@ -57,12 +63,6 @@ const Whatwedo = () => {
       description: "Strategic engagement across platforms that matters",
       icon: <InstagramIcon className="h-6 w-6" />,
       link: "https://realmrook.com/services/social-media-marketing",
-    },
-    {
-      title: "AI Agents Automation",
-      description: "Intelligent solutions that streamline operations",
-      icon: <BrainIcon className="h-6 w-6" />,
-      link: "https://realmrook.com/services/ai-agents-automation",
     },
     {
       title: "Domain Name Consultation",

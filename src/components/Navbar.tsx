@@ -44,6 +44,11 @@ export const Navbar = () => {
 
   const services = [
     {
+      title: "AI Agents Automation",
+      description: "Intelligent solutions that streamline operations",
+      link: "https://realmrook.com/services/ai-agents-automation",
+    },
+    {
       title: "Branding",
       description:
         "Crafting premium digital-first brand identities for startups",
@@ -68,11 +73,6 @@ export const Navbar = () => {
       title: "Social Media Marketing",
       description: "Strategic engagement across platforms that matters",
       link: "https://realmrook.com/services/social-media-marketing",
-    },
-    {
-      title: "AI Agents Automation",
-      description: "Intelligent solutions that streamline operations",
-      link: "https://realmrook.com/services/ai-agents-automation",
     },
     {
       title: "Domain Name Consultation",
