@@ -70,9 +70,9 @@ export const Navbar = () => {
       link: "https://realmrook.com/services/social-media-marketing",
     },
     {
-      title: "AI Business Automation",
+      title: "AI Agents Automation",
       description: "Intelligent solutions that streamline operations",
-      link: "https://realmrook.com/services/ai-business-automation",
+      link: "https://realmrook.com/services/ai-agents-automation",
     },
     {
       title: "Domain Name Consultation",

@@ -59,10 +59,10 @@ const Whatwedo = () => {
       link: "https://realmrook.com/services/social-media-marketing",
     },
     {
-      title: "AI Business Automation",
+      title: "AI Agents Automation",
       description: "Intelligent solutions that streamline operations",
       icon: <BrainIcon className="h-6 w-6" />,
-      link: "https://realmrook.com/services/ai-business-automation",
+      link: "https://realmrook.com/services/ai-agents-automation",
     },
     {
       title: "Domain Name Consultation",
