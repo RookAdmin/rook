@@ -304,9 +304,9 @@ const RookForStartups = () => {
                 <div className="text-5xl text-[#0096d4] mr-4">"</div>
                 <div>
                   <p className="text-lg italic mb-6">
-                    We went from idea to launch in 3 months — Rook's credits and MyProBuddy's mentorship were game-changers!
+                    We went from idea to launch in 3 months, Rook's credits and MyProBuddy's mentorship were game-changers!
                   </p>
-                  <p className="font-semibold">— Startup Founder, Chennai</p>
+                  <p className="font-semibold">— ICM, Chennai</p>
                 </div>
               </div>
             </div>
@@ -316,9 +316,9 @@ const RookForStartups = () => {
                 <div className="text-5xl text-[#0096d4] mr-4">"</div>
                 <div>
                   <p className="text-lg italic mb-6">
-                    HLO Enterprise Legal+ made our trademark process so seamless — we didn't even need to step out once!
+                    Hlo Enterprise Legal+ made our trademark process so seamless, we didn't even need to step out once!
                   </p>
-                  <p className="font-semibold">— D2C Founder, Mumbai</p>
+                  <p className="font-semibold">— Capital Groups, Abu Dhabi</p>
                 </div>
               </div>
             </div>

@@ -132,6 +132,11 @@ export const Footer = () => {
                   Rook For Startups
                 </Link>
               </li>
+              <li>
+                <Link to="/open-source" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Open Source
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="space-y-4">

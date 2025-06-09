@@ -22,6 +22,7 @@ import Privacy from "./pages/Privacy";
 import RookForStartups from "./pages/RookForStartups";
 import BrandKit from "./pages/BrandKit";
 import Trademark from "./pages/Trademark";
+import OpenSource from "./pages/OpenSource";
 
 const App = () => {
   const queryClient = new QueryClient();
@@ -78,6 +79,7 @@ const App = () => {
                 <Route path="/rook-for-startups" element={<RookForStartups />} />
                 <Route path="/brand-kit" element={<BrandKit />} />
                 <Route path="/trademark" element={<Trademark />} />
+                <Route path="/open-source" element={<OpenSource />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
