@@ -103,7 +103,7 @@ const OpenSource = () => {
   const faqs = [
     {
       question: "Will Paym.me stay open source forever?",
-      answer: "Paym.me is free if self-hosted. Hosting with us will have pricing."
+      answer: "Paym.me is free if self-hosted. Pricing applies when using our hosted platform."
     },
     {
       question: "Is there a roadmap?",
@@ -163,8 +163,8 @@ const OpenSource = () => {
                   <div className="bg-white/10 rounded p-4 font-mono text-sm">
                     <div className="text-[#00d437]">$ npm install @rook/paym-me</div>
                     <div className="text-gray-300 mt-2">// Accept Swift payments effortlessly</div>
-                    <div className="text-[#00d437]">{'<PaymMe amount={99} method="swift" swiftcode="user@bank" />'}</div>
-                    <div className="text-gray-300 mt-2">{'<PaymMe amount={199} smartLink="https://paym.me/rook/abc123" />'}</div>
+                    <div className="text-[#00d437]">{'<PaymMe amount={99} method="swift" id="user@bank" />'}</div>
+                    <div className="text-gray-300 mt-2">{'<smartLink="https://paym.me/rook/" />'}</div>
                     <div className="text-[#00d437] mt-1">{'<PaymMe amount={99$} />'}</div>
                   </div>
                 </div>
