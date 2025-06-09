@@ -61,7 +61,7 @@ const Trademark = () => {
       icon: <X className="h-5 w-5 text-[#dc2e3e]" />,
       title: "Business Names",
       description: "Don't use Rook's brand assets in the name of your business, product, service, app, or domain name.",
-      example: "Nuo Rook Services, www.rookanalytics.com"
+      example: "Nuo Rook Services, www.nuorook.com"
     },
     {
       icon: <X className="h-5 w-5 text-[#dc2e3e]" />,
@@ -79,7 +79,7 @@ const Trademark = () => {
       icon: <X className="h-5 w-5 text-[#dc2e3e]" />,
       title: "Alterations",
       description: "Don't alter, animate, distort, or misappropriate Rook's brand assets.",
-      example: "RookPowered, Rook-tastic, ContosRook"
+      example: "RookPowered, Rook-tastic, NuoRook"
     },
     {
       icon: <X className="h-5 w-5 text-[#dc2e3e]" />,
