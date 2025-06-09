@@ -44,7 +44,7 @@ const OpenSource = () => {
   const features = [
     {
       icon: <Rocket className="h-6 w-6" />,
-      title: "Built with Next.js + Tailwind + Stripe API",
+      title: "Built with Vite + Tailwind + Payment Gatewat APIs",
       description: "Modern stack for maximum performance"
     },
     {
@@ -103,7 +103,7 @@ const OpenSource = () => {
   const faqs = [
     {
       question: "Will Paym.me stay open source forever?",
-      answer: "Yes, MIT licensed, forever free for public use."
+      answer: "Paym.me is free if self-hosted. Hosting with us will have pricing."
     },
     {
       question: "Is there a roadmap?",
@@ -115,7 +115,7 @@ const OpenSource = () => {
     },
     {
       question: "Is it secure for production use?",
-      answer: "Yes. We follow Stripe's guidelines + OWASP best practices."
+      answer: "Yes. We follow payment guidelines + OWASP best practices."
     }
   ];
 
@@ -139,13 +139,17 @@ const OpenSource = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="https://paym.me/" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-[#0096d4] hover:bg-[#0096d4]/90">
                   Join Paym.me Developer Collab
                 </Button>
+                </Link>
+                <Link to="https://paym.me/" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="lg" disabled className="opacity-50">
                   <Github className="mr-2 h-4 w-4" />
                   View GitHub (Coming Soon)
                 </Button>
+                </Link>
               </div>
             </div>
             
@@ -209,7 +213,7 @@ const OpenSource = () => {
             <div className="inline-flex items-center space-x-3 mb-4">
               <img 
                   alt="Paym.me Logo"
-                  className="w-48 h-16"
+                  className="w-52 h-16"
                   src="./Paym.me Logo Black Text.png"/>
               {/* <h2 className="text-3xl font-bold text-textPrimary">Paym.me by Rook</h2> */}
             </div>
@@ -251,9 +255,11 @@ const OpenSource = () => {
           </Card>
           
           <div className="text-center space-y-4">
+            <Link to="https://paym.me/" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="bg-[#0096d4] hover:bg-[#0096d4]/90">
               Apply to Join Early Dev Collaborators
             </Button>
+            </Link>
             <div>
               <Badge variant="outline" className="text-[#131313] border-[#131313]">
                 Currently in Internal Build Phase
