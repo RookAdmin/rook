@@ -61,6 +61,7 @@ export default {
           DEFAULT: "#FFFFFF",
           foreground: "#1A1A1A",
         },
+        rookblue: "#0096d4", // Primary brand color
         textPrimary: "#1a1a1a", // Rich readability
         textSecondary: "#4a4a4a", // Muted paragraphs
         borderLight: "#e5e5e5", // Light borders

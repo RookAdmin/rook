@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Progress } from "@/components/ui/progress";
 import { Brain, Package, Users, Shield, Rocket, Zap, BookOpen, GitBranch, MessageSquare, Star, Check, Clock, Calendar, ExternalLink, Github, Mail, Code } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const OpenSource = () => {
   const roadmapItems = [
@@ -157,8 +158,8 @@ const OpenSource = () => {
                   </div>
                   <div className="bg-white/10 rounded p-4 font-mono text-sm">
                     <div className="text-[#00d437]">$ npm install @rook/paym-me</div>
-                    <div className="text-gray-300 mt-2">// Accept UPI payments effortlessly</div>
-                    <div className="text-[#00d437]">{'<PaymMe amount={99} method="upi" upiId="user@bank" />'}</div>
+                    <div className="text-gray-300 mt-2">// Accept Swift payments effortlessly</div>
+                    <div className="text-[#00d437]">{'<PaymMe amount={99} method="swift" swiftcode="user@bank" />'}</div>
                     <div className="text-gray-300 mt-2">{'<PaymMe amount={199} smartLink="https://paym.me/rook/abc123" />'}</div>
                     <div className="text-[#00d437] mt-1">{'<PaymMe amount={99$} />'}</div>
                   </div>
@@ -250,11 +251,11 @@ const OpenSource = () => {
           </Card>
           
           <div className="text-center space-y-4">
-            <Button size="lg" className="bg-[#dc2e3e] hover:bg-[#dc2e3e]/90">
+            <Button size="lg" className="bg-[#0096d4] hover:bg-[#0096d4]/90">
               Apply to Join Early Dev Collaborators
             </Button>
             <div>
-              <Badge variant="outline" className="text-[#ffd800] border-[#ffd800]">
+              <Badge variant="outline" className="text-[#131313] border-[#131313]">
                 Currently in Internal Build Phase
               </Badge>
             </div>
@@ -304,7 +305,9 @@ const OpenSource = () => {
         </div>
       </section>
 
-      {/* Project Roadmap */}
+ 
+
+{/* Project Roadmap */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
@@ -318,7 +321,7 @@ const OpenSource = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center space-x-4">
-                      <Badge variant={item.status === 'in-progress' ? 'default' : 'secondary'}>
+                      <Badge className="bg-[#0096d4] text-white hover:bg-[#0096d4]/90">
                         {item.quarter}
                       </Badge>
                       <h3 className="text-lg font-semibold text-textPrimary">{item.title}</h3>
@@ -332,7 +335,12 @@ const OpenSource = () => {
                     </Badge>
                   </div>
                   {item.status === 'in-progress' && (
-                    <Progress value={item.progress} className="h-2" />
+                    <div className="w-full bg-gray-200 rounded-full h-2">
+                      <div 
+                        className="bg-[#0096d4] h-2 rounded-full transition-all duration-300" 
+                        style={{ width: `${item.progress}%` }}
+                      ></div>
+                    </div>
                   )}
                 </CardContent>
               </Card>
@@ -341,20 +349,26 @@ const OpenSource = () => {
         </div>
       </section>
 
+
+
       {/* Join the Movement */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-textPrimary mb-4">Join the Movement</h2>
-          <p className="text-xl text-textSecondary mb-8">We don't just want stars — we want committers.</p>
+          <p className="text-xl text-textSecondary mb-8">We don't just want stars, we want committers.</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" className="bg-[#dc2e3e] hover:bg-[#dc2e3e]/90">
+            <Link to="https://paym.me/" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="bg-[#0096d4] hover:bg-[#0096d4]/90">
               Apply to Collaborate
             </Button>
+            </Link>
+             <Link to="https://paym.me/" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="lg">
               <Mail className="mr-2 h-4 w-4" />
               Get Notified on Launch
             </Button>
+            </Link>
           </div>
         </div>
       </section>
