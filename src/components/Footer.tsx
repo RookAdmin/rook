@@ -127,6 +127,11 @@ export const Footer = () => {
                   Trademark
                 </Link>
               </li>
+              <li>
+                <Link to="/rook-for-startups" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Rook For Startups
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="space-y-4">
@@ -137,11 +142,7 @@ export const Footer = () => {
                   About
                 </Link>
               </li>
-              <li>
-                <Link to="/rook-for-startups" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  Rook For Startups
-                </Link>
-              </li>
+              
               <li>
                 <Link to="/perspectives" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   Perspectives
