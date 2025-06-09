@@ -20,6 +20,8 @@ import CEOLetter from "./pages/LetterFromCEODetails";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import RookForStartups from "./pages/RookForStartups";
+import BrandKit from "./pages/BrandKit";
+import Trademark from "./pages/Trademark";
 
 const App = () => {
   const queryClient = new QueryClient();
@@ -74,6 +76,8 @@ const App = () => {
                 <Route path="/terms" element={<Terms />} />
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="/rook-for-startups" element={<RookForStartups />} />
+                <Route path="/brand-kit" element={<BrandKit />} />
+                <Route path="/trademark" element={<Trademark />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
