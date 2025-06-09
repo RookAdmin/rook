@@ -134,7 +134,7 @@ const OpenSource = () => {
                   Building in the Open. <span className="text-[#dc2e3e]">Backed by Rook.</span>
                 </h1>
                 <p className="text-xl text-textSecondary max-w-lg">
-                  Explore our open-source projects, collaborate with passionate developers, and shape a better internet — together.
+                  Explore our open-source projects, collaborate with passionate developers, and shape a better internet, together.
                 </p>
               </div>
               
@@ -209,7 +209,7 @@ const OpenSource = () => {
             <div className="inline-flex items-center space-x-3 mb-4">
               <img 
                   alt="Paym.me Logo"
-                  className="w-44 h-16"
+                  className="w-48 h-16"
                   src="./Paym.me Logo Black Text.png"/>
               {/* <h2 className="text-3xl font-bold text-textPrimary">Paym.me by Rook</h2> */}
             </div>
