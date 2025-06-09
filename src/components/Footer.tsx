@@ -83,25 +83,6 @@ export const Footer = () => {
                   Social Media Marketing
                 </Link>
               </li>
-            </ul>
-          </div>
-          <div className="space-y-4">
-            <h3 className="font-semibold text-white">What Did We Build</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="https://paym.me/" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  Paym.me
-                </Link>
-              </li>
-              <li>
-                <Link to="https://realmrook.com/" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  Realm by Rook
-                </Link>
-              </li>
-            </ul>
-            
-            <h3 className="font-semibold text-white mt-6">More Services</h3>
-            <ul className="space-y-2">
               <li>
                 <Link to="https://realmrook.com/services/seo" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   SEO
@@ -115,6 +96,35 @@ export const Footer = () => {
               <li>
                 <Link to="https://realmrook.com/services/enterprise-domain-management" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   Enterprise Domain
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-4">
+            <h3 className="font-semibold text-white">What Did We Build ?</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="https://paym.me/" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Paym.me
+                </Link>
+              </li>
+              <li>
+                <Link to="https://realmrook.com/" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Realm by Rook
+                </Link>
+              </li>
+            </ul>
+            
+            <h3 className="font-semibold text-white mt-6">Resources</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/brand-kit" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Brand Kit
+                </Link>
+              </li>
+              <li>
+                <Link to="/trademark" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Trademark
                 </Link>
               </li>
             </ul>
