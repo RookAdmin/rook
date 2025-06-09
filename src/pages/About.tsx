@@ -219,7 +219,7 @@ const About = () => {
       >
         <Button
           variant="outline"
-          className="border-[#9b87f5] text-[#9b87f5] hover:bg-[#9b87f5]/5"
+          className="border-[#0096d4] text-[#0096d4] hover:bg-[#9b87f5]/5"
         >
           Download
         </Button>
