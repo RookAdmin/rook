@@ -236,9 +236,7 @@ const Trademark = () => {
               <Card key={index} className="border-0 shadow-sm bg-white">
                 <CardHeader className="text-center">
                   <div className="flex justify-center mb-4">
-                    <div className="border-2 border-[#131313] bg-[#fffff] rounded-full p-2">
                     {guideline.icon}
-                    </div>
                   </div>
                   <CardTitle className="text-xl text-gray-900">{guideline.title}</CardTitle>
                 </CardHeader>
