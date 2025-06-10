@@ -97,17 +97,17 @@ const Trademark = () => {
 
   const appGuidelines = [
     {
-      icon: <Package className="h-6 w-6 text-[#0096d4]" />,
+      icon: <Package className="h-6 w-6 text-[#131313]" />,
       title: "App Identity",
       description: "Everything about your app must be unique to you and free of Rook's brand assets, except for truthful compatibility statements in descriptions."
     },
     {
-      icon: <FileText className="h-6 w-6 text-[#0096d4]" />,
+      icon: <FileText className="h-6 w-6 text-[#131313]" />,
       title: "Approved Example",
       description: "Developer: Nuo Inc. | App: Nuo App | Description: Nuo App integrates with Rook platform for enhanced productivity."
     },
     {
-      icon: <AlertTriangle className="h-6 w-6 text-[#ffd800]" />,
+      icon: <AlertTriangle className="h-6 w-6 text-[#131313]" />,
       title: "Prohibited Usage",
       description: "You may not use Rook's brand assets in a manner that implies Rook published, developed, or endorsed your app."
     }
@@ -227,9 +227,7 @@ const Trademark = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex items-center justify-center mb-12">
-            <div className="border-2 border-[#dc2e3e] bg-[#fffff] rounded-full p-2 mr-2">
-              <Package className="h-8 w-8 text-[#6366f1]" />
-            </div>
+              <Package className="h-8 w-8 text-[#dc2e3e]" />
             <h2 className="text-3xl font-bold text-gray-900">App Guidelines</h2>
           </div>
           
@@ -274,9 +272,7 @@ const Trademark = () => {
           <Card className="border-0 shadow-sm bg-white">
             <CardHeader>
               <div className="flex items-center justify-center mb-4">
-                <div className="border-2 border-[#dc2e3e] bg-[#fffff] rounded-full p-2 mr-2">
-                <BookOpen className="h-8 w-8 text-[#6366f1] " />
-                </div>
+                <BookOpen className="h-8 w-8 text-[#dc2e3e] " />
                 <CardTitle className="text-2xl text-gray-900">Legal Notice</CardTitle>
               </div>
             </CardHeader>
