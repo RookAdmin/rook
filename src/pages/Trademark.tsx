@@ -227,7 +227,7 @@ const Trademark = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex items-center justify-center mb-12">
-            <div className="border-2 border-[#dc2e3e] bg-[#fffff] rounded-full p-2">
+            <div className="border-2 border-[#dc2e3e] bg-[#fffff] rounded-full p-2 mr-2">
               <Package className="h-8 w-8 text-[#6366f1]" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900">App Guidelines</h2>
@@ -274,7 +274,7 @@ const Trademark = () => {
           <Card className="border-0 shadow-sm bg-white">
             <CardHeader>
               <div className="flex items-center justify-center mb-4">
-                <div className="border-2 border-[#dc2e3e] bg-[#fffff] rounded-full p-2">
+                <div className="border-2 border-[#dc2e3e] bg-[#fffff] rounded-full p-2 mr-2">
                 <BookOpen className="h-8 w-8 text-[#6366f1] " />
                 </div>
                 <CardTitle className="text-2xl text-gray-900">Legal Notice</CardTitle>
