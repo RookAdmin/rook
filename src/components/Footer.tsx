@@ -63,6 +63,16 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="https://realmrook.com/services/web-app-development" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Web/App Development
+                </Link>
+              </li>
+               <li>
+                <Link to="https://realmrook.com/services/social-media-marketing" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
+                  Social Media Marketing
+                </Link>
+              </li>
+              <li>
                 <Link to="https://realmrook.com/services/branding" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   Branding
                 </Link>
@@ -70,17 +80,6 @@ export const Footer = () => {
               <li>
                 <Link to="https://realmrook.com/services/ui-ux-design" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
                   UI/UX Design
-                </Link>
-              </li>
-              <li>
-                <Link to="https://realmrook.com/services/web-app-development" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  Web/App Development
-                </Link>
-              </li>
-              
-              <li>
-                <Link to="https://realmrook.com/services/social-media-marketing" className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm">
-                  Social Media Marketing
                 </Link>
               </li>
               <li>

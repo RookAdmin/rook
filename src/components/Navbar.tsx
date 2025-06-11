@@ -49,6 +49,16 @@ export const Navbar = () => {
       link: "https://realmrook.com/services/ai-agents-automation",
     },
     {
+      title: "Web/App Development",
+      description: "Building responsive, scalable digital solutions",
+      link: "https://realmrook.com/services/web-app-development",
+    },
+    {
+      title: "Social Media Marketing",
+      description: "Strategic engagement across platforms that matters",
+      link: "https://realmrook.com/services/social-media-marketing",
+    },
+    {
       title: "Branding",
       description:
         "Crafting premium digital-first brand identities for startups",
@@ -60,19 +70,9 @@ export const Navbar = () => {
       link: "https://realmrook.com/services/ui-ux-design",
     },
     {
-      title: "Web/App Development",
-      description: "Building responsive, scalable digital solutions",
-      link: "https://realmrook.com/services/web-app-development",
-    },
-    {
       title: "SEO",
       description: "Optimizing your digital presence for visibility and growth",
       link: "https://realmrook.com/services/seo",
-    },
-    {
-      title: "Social Media Marketing",
-      description: "Strategic engagement across platforms that matters",
-      link: "https://realmrook.com/services/social-media-marketing",
     },
     {
       title: "Domain Name Consultation",
