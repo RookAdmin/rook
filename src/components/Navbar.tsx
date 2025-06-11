@@ -223,7 +223,7 @@ export const Navbar = () => {
                       <li className="row-span-1">
                         <NavigationMenuLink asChild>
                           <Link
-                            to="/letter-from-ceo"
+                            to="/letter-from-the-ceo"
                             className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
                           >
                             Letter From the CEO
@@ -417,7 +417,7 @@ export const Navbar = () => {
                     Media Coverage
                   </Link>
                   <Link
-                    to="/letter-from-ceo"
+                    to="/letter-from-the-ceo"
                     className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
                   >
                     Letter From the CEO

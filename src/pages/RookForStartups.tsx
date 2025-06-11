@@ -342,7 +342,6 @@ const RookForStartups = () => {
 
           <div className="max-w-4xl mx-auto">
             <div className="relative">
-              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#0096d4]/20 z-0"></div>
               
               <div className="relative z-10 flex mb-12">
                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#0096d4] text-white flex items-center justify-center text-xl font-bold">1</div>

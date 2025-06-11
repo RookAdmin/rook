@@ -72,8 +72,8 @@ const App = () => {
                   element={<PressReleaseDetail />}
                 />
                 <Route path="/media-coverage" element={<MediaCoverage />} />
-                <Route path="/letter-from-ceo" element={<LetterFromCEO />} />
-                <Route path="/letter-from-ceo/:slug" element={<CEOLetter />} />
+                <Route path="/letter-from-the-ceo" element={<LetterFromCEO />} />
+                <Route path="/letter-from-the-ceo/:slug" element={<CEOLetter />} />
                 <Route path="/terms" element={<Terms />} />
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="/rook-for-startups" element={<RookForStartups />} />

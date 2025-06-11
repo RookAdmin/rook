@@ -183,14 +183,7 @@ const LetterFromCEO = () => {
   return (
     <div className="min-h-screen bg-white text-black pt-24 pb-16">
       <div className="container mx-auto px-4">
-        <Button
-          variant="ghost"
-          onClick={() => navigate(-1)}
-          className="mb-8 hover:bg-[#dc2e3e]/10 text-black group"
-        >
-          <span className="mr-2">←</span>
-          Back
-        </Button>
+        
 
         <div className="mb-16">
           <div className="h-1 w-20 bg-destructive mb-6"></div>
@@ -218,7 +211,7 @@ const LetterFromCEO = () => {
               >
                 <CardContent className="p-6">
                   <Link
-                    to={`/letter-from-ceo/${letter.slug}`}
+                    to={`/letter-from-the-ceo/${letter.slug}`}
                     className="block"
                   >
                     <h1 className="text-2xl font-bold mb-2">{letter.title}</h1>

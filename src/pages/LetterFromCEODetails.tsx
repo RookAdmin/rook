@@ -105,7 +105,7 @@ const CEOLetterContent = () => {
 
         if (!fetchedCEOLetter) {
           console.error("No CEO letter found for slug:", params.slug);
-          navigate("/letter-from-ceo");
+          navigate("/letter-from-the-ceo");
           return;
         }
 
@@ -162,7 +162,7 @@ const CEOLetterContent = () => {
         <h2 className="text-2xl font-bold text-red-600 mb-4">Error</h2>
         <p className="text-gray-700 mb-6">{error.message}</p>
         <Button
-          onClick={() => navigate("/letter-from-ceo")}
+          onClick={() => navigate("/letter-from-the-ceo")}
           className="px-6 py-2"
         >
           Back to CEO Letters
@@ -180,7 +180,7 @@ const CEOLetterContent = () => {
       <div className="container mx-auto px-4">
         <Button
           variant="ghost"
-          onClick={() => navigate("/letter-from-ceo")}
+          onClick={() => navigate("/letter-from-the-ceo")}
           className="mb-8 hover:bg-accent/10 group"
         >
           <ArrowLeft className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />
