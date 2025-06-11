@@ -17,17 +17,6 @@ export const Hero = () => {
 
   return (
     <div ref={heroRef} className="min-h-screen flex items-center justify-center bg-white relative overflow-hidden pt-16 md:pt-0">
-    
-        <div
-          className="absolute inset-0 bg-white"
-          style={{
-            backgroundImage: "url('/bg/home.png')",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-          }}
-        />
-        
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24 relative z-10">
         <div className="max-w-4xl mx-auto">
           
