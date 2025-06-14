@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import DocumentMeta from "react-document-meta";
 import { Download, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
@@ -25,6 +26,19 @@ type CEOLetter = {
 };
 
 const LetterFromCEO = () => {
+  const meta = {
+    title: "Letter from the CEO | Rook Leadership",
+    description:
+      "Read letters from Rook's CEO sharing insights about company vision, strategy, and future direction. Stay connected with our leadership thoughts.",
+    meta: {
+      charset: "utf-8",
+      name: {
+        keywords:
+          "Rook CEO letter, company vision, leadership insights, company strategy, CEO communication",
+      },
+    },
+  };
+
   const navigate = useNavigate();
   const { toast } = useToast();
   const [letters, setLetters] = useState<CEOLetter[]>([]);
@@ -181,92 +195,94 @@ const LetterFromCEO = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white text-black pt-24 pb-16">
-      <div className="container mx-auto px-4">
-        
+    <DocumentMeta {...meta}>
+      <div className="min-h-screen bg-white text-black pt-24 pb-16">
+        <div className="container mx-auto px-4">
+          <div className="mb-16">
+            <div className="h-1 w-20 bg-destructive mb-6"></div>
+            <h1
+              className="text-5xl font-bold mb-6 text-primary tracking-tight animate-fade-up"
+              style={{ color: "black" }}
+            >
+              Letter from the CEO
+            </h1>
+            <p
+              className="text-xl text-textSecondary max-w-3xl animate-fade-up"
+              style={{ animationDelay: "0.2s" }}
+            >
+              Official communications from our CEO about company vision,
+              strategy, and leadership thoughts.
+            </p>
+          </div>
 
-        <div className="mb-16">
-          <div className="h-1 w-20 bg-destructive mb-6"></div>
-          <h1
-            className="text-5xl font-bold mb-6 text-primary tracking-tight animate-fade-up"
-            style={{ color: "black" }}
-          >
-            Letter from the CEO
-          </h1>
-          <p
-            className="text-xl text-textSecondary max-w-3xl animate-fade-up"
-            style={{ animationDelay: "0.2s" }}
-          >
-            Official communications from our CEO about company vision, strategy,
-            and leadership thoughts.
-          </p>
-        </div>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {letters.map((letter) => (
+                <Card
+                  key={letter._id}
+                  className="bg-white text-black border-none shadow-md overflow-hidden"
+                >
+                  <CardContent className="p-6">
+                    <Link
+                      to={`/letter-from-the-ceo/${letter.slug}`}
+                      className="block"
+                    >
+                      <h1 className="text-2xl font-bold mb-2">
+                        {letter.title}
+                      </h1>
+                    </Link>
 
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {letters.map((letter) => (
-              <Card
-                key={letter._id}
-                className="bg-white text-black border-none shadow-md overflow-hidden"
-              >
-                <CardContent className="p-6">
-                  <Link
-                    to={`/letter-from-the-ceo/${letter.slug}`}
-                    className="block"
-                  >
-                    <h1 className="text-2xl font-bold mb-2">{letter.title}</h1>
-                  </Link>
+                    <p className="text-gray-600 mb-2">{letter.description}</p>
+                    <p className="text-sm text-gray-500 mb-4">
+                      {formatDate(letter.publishedAt)}
+                    </p>
 
-                  <p className="text-gray-600 mb-2">{letter.description}</p>
-                  <p className="text-sm text-gray-500 mb-4">
-                    {formatDate(letter.publishedAt)}
-                  </p>
-
-                  <div className="flex items-center gap-4 mb-6">
-                    <img
-                      src="/avr.jpeg"
-                      alt="CEO Portrait"
-                      className="w-16 h-16 border-2 border-[#dc2e3e] rounded-full object-cover"
-                    />
-                    <div>
-                      <h2 className="font-bold text-xl">
-                      Aravindh Ravichandran
-                      </h2>
-                      <p className="text-gray-600">Founder</p>
+                    <div className="flex items-center gap-4 mb-6">
+                      <img
+                        src="/avr.jpeg"
+                        alt="CEO Portrait"
+                        className="w-16 h-16 border-2 border-[#dc2e3e] rounded-full object-cover"
+                      />
+                      <div>
+                        <h2 className="font-bold text-xl">
+                          Aravindh Ravichandran
+                        </h2>
+                        <p className="text-gray-600">Founder</p>
+                      </div>
                     </div>
-                  </div>
 
-                  <div className="flex gap-3">
-                    <Button
-                      variant="outline"
-                      onClick={handleShare}
-                      className="flex items-center gap-2 border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4]/10"
-                    >
-                      <Share2 className="w-4 h-4" />
-                      Share
-                    </Button>
-                    <Button
-                      onClick={() =>
-                        letter.pdfFile &&
-                        handleDownload(
-                          letter.pdfFile,
-                          letter.pdfFile.title || `${letter.title}.pdf`
-                        )
-                      }
-                      className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90 flex items-center gap-2"
-                      disabled={!letter.pdfFile}
-                    >
-                      <Download className="w-4 h-4" />
-                      Download
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                    <div className="flex gap-3">
+                      <Button
+                        variant="outline"
+                        onClick={handleShare}
+                        className="flex items-center gap-2 border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4]/10"
+                      >
+                        <Share2 className="w-4 h-4" />
+                        Share
+                      </Button>
+                      <Button
+                        onClick={() =>
+                          letter.pdfFile &&
+                          handleDownload(
+                            letter.pdfFile,
+                            letter.pdfFile.title || `${letter.title}.pdf`
+                          )
+                        }
+                        className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90 flex items-center gap-2"
+                        disabled={!letter.pdfFile}
+                      >
+                        <Download className="w-4 h-4" />
+                        Download
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </DocumentMeta>
   );
 };
 

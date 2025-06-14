@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import DocumentMeta from "react-document-meta";
 import { Button } from "@/components/ui/button";
 import { Sparkles, ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
@@ -28,6 +29,19 @@ const Perspectives = () => {
   const location = useLocation();
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 4;
+
+  const meta = {
+    title: "Perspectives | Rook Insights and Thought Leadership",
+    description:
+      "Explore insights, analysis, and thought leadership from the Rook team on productivity tools and digital transformation.",
+    meta: {
+      charset: "utf-8",
+      name: {
+        keywords:
+          "Rook perspectives, thought leadership, insights, digital transformation, productivity tools",
+      },
+    },
+  };
 
   // Update selected category from URL
   useEffect(() => {
@@ -118,206 +132,212 @@ const Perspectives = () => {
   }
 
   return (
-    <div
-      ref={sectionRef}
-      className="min-h-screen bg-white text-textPrimary pt-28 pb-20 relative overflow-hidden"
-    >
-      {/* Background decor */}
+    <DocumentMeta {...meta}>
       <div
-        className="absolute top-20 right-20 w-64 h-64 rounded-full bg-primary/5 animate-pulse hidden md:block"
-        style={{ transform: `translateY(${scrollY * 0.15}px)` }}
-      />
-      <div
-        className="absolute bottom-20 left-20 w-80 h-80 rounded-full bg-primary/5 animate-pulse hidden md:block"
-        style={{
-          animationDelay: "1s",
-          transform: `translateY(${scrollY * -0.1}px)`,
-        }}
-      />
+        ref={sectionRef}
+        className="min-h-screen bg-white text-textPrimary pt-28 pb-20 relative overflow-hidden"
+      >
+        {/* Background decor */}
+        <div
+          className="absolute top-20 right-20 w-64 h-64 rounded-full bg-primary/5 animate-pulse hidden md:block"
+          style={{ transform: `translateY(${scrollY * 0.15}px)` }}
+        />
+        <div
+          className="absolute bottom-20 left-20 w-80 h-80 rounded-full bg-primary/5 animate-pulse hidden md:block"
+          style={{
+            animationDelay: "1s",
+            transform: `translateY(${scrollY * -0.1}px)`,
+          }}
+        />
 
-      <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row">
-        {/* Main Content */}
-        <div className="flex-grow lg:pr-8 w-full lg:w-[calc(100%-380px)]">
-          <div className="mb-16">
-            <div
-              className="h-1 w-20 bg-primary mb-6"
-              style={{ background: "black" }}
-            ></div>
-            <div className="flex items-end gap-3">
-              <h1
-                className="text-5xl font-bold mb-6 text-primary tracking-tight animate-fade-up"
-                style={{ color: "black" }}
+        <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row">
+          {/* Main Content */}
+          <div className="flex-grow lg:pr-8 w-full lg:w-[calc(100%-380px)]">
+            <div className="mb-16">
+              <div
+                className="h-1 w-20 bg-primary mb-6"
+                style={{ background: "black" }}
+              ></div>
+              <div className="flex items-end gap-3">
+                <h1
+                  className="text-5xl font-bold mb-6 text-primary tracking-tight animate-fade-up"
+                  style={{ color: "black" }}
+                >
+                  Rook Perspectives
+                </h1>
+                <Sparkles
+                  className="h-5 w-5 mb-6 animate-pulse"
+                  style={{ color: "#0096d4" }}
+                />
+              </div>
+              <p
+                className="text-xl text-textSecondary max-w-3xl leading-relaxed animate-fade-up"
+                style={{ animationDelay: "0.2s" }}
               >
-                Rook Perspectives
-              </h1>
-              <Sparkles
-                className="h-5 w-5 mb-6 animate-pulse"
-                style={{ color: "#0096d4" }}
-              />
+                Insights, analysis, and thought leadership from the Rook team on
+                the future of productivity tools and digital transformation.
+              </p>
             </div>
-            <p
-              className="text-xl text-textSecondary max-w-3xl leading-relaxed animate-fade-up"
-              style={{ animationDelay: "0.2s" }}
-            >
-              Insights, analysis, and thought leadership from the Rook team on
-              the future of productivity tools and digital transformation.
-            </p>
-          </div>
 
-          {/* Mobile Filter Dropdown (only shows on mobile) */}
-          <div className="lg:hidden mb-8 relative">
-            <button
-              onClick={() => setMobileFilterOpen(!mobileFilterOpen)}
-              className="w-full flex items-center justify-between px-4 py-3 bg-white border border-borderLight rounded-lg shadow-sm"
-            >
-              <span>Filter: {selectedCategory}</span>
-              <ChevronDown
-                className={`h-5 w-5 transition-transform ${
-                  mobileFilterOpen ? "rotate-180" : ""
-                }`}
-              />
-            </button>
+            {/* Mobile Filter Dropdown (only shows on mobile) */}
+            <div className="lg:hidden mb-8 relative">
+              <button
+                onClick={() => setMobileFilterOpen(!mobileFilterOpen)}
+                className="w-full flex items-center justify-between px-4 py-3 bg-white border border-borderLight rounded-lg shadow-sm"
+              >
+                <span>Filter: {selectedCategory}</span>
+                <ChevronDown
+                  className={`h-5 w-5 transition-transform ${
+                    mobileFilterOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
 
-            {mobileFilterOpen && (
-              <div className="absolute z-10 mt-1 w-full bg-white border border-borderLight rounded-lg shadow-lg">
-                {["All", ...CATEGORIES.filter((cat) => cat !== "All")].map(
-                  (category) => (
-                    <button
-                      key={category}
-                      onClick={() => {
-                        setSelectedCategory(category);
-                        setMobileFilterOpen(false);
-                      }}
-                      className={`block w-full text-left px-4 py-2 hover:bg-gray-50 ${
-                        selectedCategory === category
-                          ? "bg-primary/10 text-primary"
-                          : ""
-                      }`}
-                    >
-                      {category}
-                    </button>
-                  )
-                )}
-              </div>
-            )}
-          </div>
-
-          <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-              {currentPosts.map((post, index) => (
-                <div
-                  key={post._id}
-                  className="bg-white backdrop-blur rounded-lg overflow-hidden border border-borderLight hover:border-accent/30 transition-all shadow-card hover:shadow-premium hover:translate-y-[-4px] animate-fade-up"
-                  style={{ animationDelay: `${0.1 + index * 0.1}s` }}
-                >
-                  <div className="relative h-56 overflow-hidden">
-                    {post.mainImage && (
-                      <img
-                        src={urlForClient1(post.mainImage).width(800).url()}
-                        alt={post.title}
-                        className="w-full h-full object-cover transition-transform hover:scale-105"
-                      />
-                    )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
-                      <span
-                        className="text-xs font-medium text-primary"
-                        style={{ color: "#0096d4" }}
+              {mobileFilterOpen && (
+                <div className="absolute z-10 mt-1 w-full bg-white border border-borderLight rounded-lg shadow-lg">
+                  {["All", ...CATEGORIES.filter((cat) => cat !== "All")].map(
+                    (category) => (
+                      <button
+                        key={category}
+                        onClick={() => {
+                          setSelectedCategory(category);
+                          setMobileFilterOpen(false);
+                        }}
+                        className={`block w-full text-left px-4 py-2 hover:bg-gray-50 ${
+                          selectedCategory === category
+                            ? "bg-primary/10 text-primary"
+                            : ""
+                        }`}
                       >
-                        {post.category}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center justify-between mb-3">
-                      <span
-                        className="text-xs font-medium text-primary"
-                        style={{ color: "#0096d4" }}
-                      >
-                        {post.perspectiveCategory || "Technology"}
-                      </span>
-                      <span className="text-xs text-textSecondary">
-                        {formatDate(post.publishedAt)}
-                      </span>
-                    </div>
-
-                    <h3 className="text-xl font-bold mb-2 text-textPrimary">
-                      {post.title}
-                    </h3>
-                    <p className="text-textSecondary text-sm mb-4">
-                      {post.description}
-                    </p>
-                    <Button
-                      variant="ghost"
-                      className="text-primary hover:text-secondary hover:bg-accent/20 p-0 group transition-all"
-                      style={{ color: "#0096d4" }}
-                      asChild
-                    >
-                      <Link to={`/perspectives/${post.slug}`}>
-                        Read Article{" "}
-                        <span className="group-hover:translate-x-1 transition-transform inline-block">
-                          →
-                        </span>
-                      </Link>
-                    </Button>
-                  </div>
+                        {category}
+                      </button>
+                    )
+                  )}
                 </div>
-              ))}
+              )}
             </div>
 
-            {/* Pagination Controls */}
-            {totalPages > 1 && (
-              <div className="flex justify-center items-center mt-12 gap-2">
-                <Button
-                  variant="outline"
-                  onClick={() =>
-                    setCurrentPage((prev) => Math.max(prev - 1, 1))
-                  }
-                  disabled={currentPage === 1}
-                  className="px-4 py-2"
-                >
-                  Previous
-                </Button>
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                {currentPosts.map((post, index) => (
+                  <div
+                    key={post._id}
+                    className="bg-white backdrop-blur rounded-lg overflow-hidden border border-borderLight hover:border-accent/30 transition-all shadow-card hover:shadow-premium hover:translate-y-[-4px] animate-fade-up"
+                    style={{ animationDelay: `${0.1 + index * 0.1}s` }}
+                  >
+                    <div className="relative h-56 overflow-hidden">
+                      {post.mainImage && (
+                        <img
+                          src={urlForClient1(post.mainImage).width(800).url()}
+                          alt={post.title}
+                          className="w-full h-full object-cover transition-transform hover:scale-105"
+                        />
+                      )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm">
+                        <span
+                          className="text-xs font-medium text-primary"
+                          style={{ color: "#0096d4" }}
+                        >
+                          {post.category}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-3">
+                        <span
+                          className="text-xs font-medium text-primary"
+                          style={{ color: "#0096d4" }}
+                        >
+                          {post.perspectiveCategory || "Technology"}
+                        </span>
+                        <span className="text-xs text-textSecondary">
+                          {formatDate(post.publishedAt)}
+                        </span>
+                      </div>
 
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map(
-                  (pageNum) => (
-                    <Button
-                      key={pageNum}
-                      variant={currentPage === pageNum ? "default" : "outline"}
-                      onClick={() => setCurrentPage(pageNum)}
-                      className={`px-4 py-2 ${
-                        currentPage === pageNum ? "bg-[#0096d4] text-white" : ""
-                      }`}
-                    >
-                      {pageNum}
-                    </Button>
-                  )
-                )}
-
-                <Button
-                  variant="outline"
-                  onClick={() =>
-                    setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-                  }
-                  disabled={currentPage === totalPages}
-                  className="px-4 py-2"
-                >
-                  Next
-                </Button>
+                      <h3 className="text-xl font-bold mb-2 text-textPrimary">
+                        {post.title}
+                      </h3>
+                      <p className="text-textSecondary text-sm mb-4">
+                        {post.description}
+                      </p>
+                      <Button
+                        variant="ghost"
+                        className="text-primary hover:text-secondary hover:bg-accent/20 p-0 group transition-all"
+                        style={{ color: "#0096d4" }}
+                        asChild
+                      >
+                        <Link to={`/perspectives/${post.slug}`}>
+                          Read Article{" "}
+                          <span className="group-hover:translate-x-1 transition-transform inline-block">
+                            →
+                          </span>
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
+                ))}
               </div>
-            )}
-          </>
-        </div>
 
-        {/* Desktop Categories Sidebar (only shows on desktop) */}
-        <div className="hidden lg:block w-[380px] flex-shrink-0">
-          <Categories
-            selectedCategory={selectedCategory}
-            onCategoryChange={setSelectedCategory}
-          />
+              {/* Pagination Controls */}
+              {totalPages > 1 && (
+                <div className="flex justify-center items-center mt-12 gap-2">
+                  <Button
+                    variant="outline"
+                    onClick={() =>
+                      setCurrentPage((prev) => Math.max(prev - 1, 1))
+                    }
+                    disabled={currentPage === 1}
+                    className="px-4 py-2"
+                  >
+                    Previous
+                  </Button>
+
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                    (pageNum) => (
+                      <Button
+                        key={pageNum}
+                        variant={
+                          currentPage === pageNum ? "default" : "outline"
+                        }
+                        onClick={() => setCurrentPage(pageNum)}
+                        className={`px-4 py-2 ${
+                          currentPage === pageNum
+                            ? "bg-[#0096d4] text-white"
+                            : ""
+                        }`}
+                      >
+                        {pageNum}
+                      </Button>
+                    )
+                  )}
+
+                  <Button
+                    variant="outline"
+                    onClick={() =>
+                      setCurrentPage((prev) => Math.min(prev + 1, totalPages))
+                    }
+                    disabled={currentPage === totalPages}
+                    className="px-4 py-2"
+                  >
+                    Next
+                  </Button>
+                </div>
+              )}
+            </>
+          </div>
+
+          {/* Desktop Categories Sidebar (only shows on desktop) */}
+          <div className="hidden lg:block w-[380px] flex-shrink-0">
+            <Categories
+              selectedCategory={selectedCategory}
+              onCategoryChange={setSelectedCategory}
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </DocumentMeta>
   );
 };
 

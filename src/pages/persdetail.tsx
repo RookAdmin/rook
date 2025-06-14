@@ -15,6 +15,7 @@ import {
   ThumbsUp,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import DocumentMeta from "react-document-meta";
 
 interface Perspective {
   title: string;
@@ -164,6 +165,29 @@ const PerspectiveContent = () => {
   //   }
   // };
 
+  const meta = {
+    title: perspective
+      ? `${perspective.title} | Rook Perspectives`
+      : "Perspective | Rook",
+    description:
+      perspective?.description ||
+      "Read detailed perspectives and insights from Rook thought leaders on industry trends and innovation.",
+    meta: {
+      charset: "utf-8",
+      name: {
+        keywords:
+          "Rook perspective, thought leadership, industry insights, technology trends, innovation",
+      },
+      property: {
+        "og:title": perspective?.title || "Rook Perspective",
+        "og:description":
+          perspective?.description ||
+          "Read detailed perspectives from Rook thought leaders",
+        "og:type": "article",
+      },
+    },
+  };
+
   if (loading) {
     return (
       <div className="flex justify-center items-center h-screen">
@@ -192,226 +216,228 @@ const PerspectiveContent = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white pt-24 pb-16 relative overflow-hidden">
-      {/* Background decor */}
-      <div
-        className="absolute top-40 right-10 w-72 h-72 rounded-full bg-blue-100/50 animate-pulse hidden md:block"
-        style={{ transform: `translateY(${scrollY * 0.15}px)` }}
-      />
-      <div
-        className="absolute bottom-40 left-10 w-96 h-96 rounded-full bg-blue-100/50 animate-pulse hidden md:block"
-        style={{
-          animationDelay: "1s",
-          transform: `translateY(${scrollY * -0.1}px)`,
-        }}
-      />
+    <DocumentMeta {...meta}>
+      <div className="min-h-screen bg-white pt-24 pb-16 relative overflow-hidden">
+        {/* Background decor */}
+        <div
+          className="absolute top-40 right-10 w-72 h-72 rounded-full bg-blue-100/50 animate-pulse hidden md:block"
+          style={{ transform: `translateY(${scrollY * 0.15}px)` }}
+        />
+        <div
+          className="absolute bottom-40 left-10 w-96 h-96 rounded-full bg-blue-100/50 animate-pulse hidden md:block"
+          style={{
+            animationDelay: "1s",
+            transform: `translateY(${scrollY * -0.1}px)`,
+          }}
+        />
 
-      <div className="container mx-auto px-4">
-        <Button
-          variant="ghost"
-          onClick={() => navigate("/perspectives")}
-          className="mb-8 hover:bg-gray-100/10 group"
-        >
-          <ArrowLeft className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-          Back to Perspectives
-        </Button>
+        <div className="container mx-auto px-4">
+          <Button
+            variant="ghost"
+            onClick={() => navigate("/perspectives")}
+            className="mb-8 hover:bg-gray-100/10 group"
+          >
+            <ArrowLeft className="h-4 w-4 mr-2 group-hover:-translate-x-1 transition-transform" />
+            Back to Perspectives
+          </Button>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-2 mb-3 animate-fade-up">
-            {perspective.categories?.length ? (
-              <>
-                <span className="text-xs font-medium text-blue-600">
-                  {perspective.categories[0].title}
-                </span>
-                <span className="text-gray-300">•</span>
-              </>
-            ) : null}
-            <span className="text-xs text-gray-500 flex items-center">
-              <Calendar className="h-3 w-3 mr-1" />
-              {new Date(perspective.publishedAt).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </span>
-          </div>
-
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 tracking-tight animate-fade-up">
-            {perspective.title}
-          </h1>
-
-          {perspective.description && (
-            <p
-              className="text-xl text-gray-600 mb-8 animate-fade-up"
-              style={{ animationDelay: "0.2s" }}
-            >
-              {perspective.description}
-            </p>
-          )}
-
-          {perspective.mainImage?.asset?.url && (
-            <div
-              className="mb-10 rounded-xl overflow-hidden animate-fade-up"
-              style={{ animationDelay: "0.3s" }}
-            >
-              <img
-                src={perspective.mainImage.asset.url}
-                alt={
-                  perspective.mainImage.alt ||
-                  perspective.title ||
-                  "Perspective image"
-                }
-                width={1200}
-                height={630}
-                className="w-full h-auto object-cover"
-              />
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-2 mb-3 animate-fade-up">
+              {perspective.categories?.length ? (
+                <>
+                  <span className="text-xs font-medium text-blue-600">
+                    {perspective.categories[0].title}
+                  </span>
+                  <span className="text-gray-300">•</span>
+                </>
+              ) : null}
+              <span className="text-xs text-gray-500 flex items-center">
+                <Calendar className="h-3 w-3 mr-1" />
+                {new Date(perspective.publishedAt).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+              </span>
             </div>
-          )}
 
-          <div
-            className="flex flex-wrap gap-4 mb-8 animate-fade-up"
-            style={{ animationDelay: "0.4s" }}
-          >
-            {/* <Button 
-              variant="outline" 
-              size="sm" 
-              onClick={handleLike} 
-              className={`flex items-center gap-2 ${liked ? 'bg-blue-100 text-blue-600' : ''}`}
-            >
-              <ThumbsUp className={`h-4 w-4 ${liked ? 'fill-blue-600' : ''}`} />
-              {likeCount}
-            </Button> */}
-            <Button
-              variant="outline"
-              size="sm"
-              className="flex items-center gap-2"
-            >
-              <MessageSquare className="h-4 w-4" />
-              Comments
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={handleShare}
-              className="flex items-center gap-2"
-            >
-              <Share2 className="h-4 w-4" />
-              Share
-            </Button>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={handleSave}
-              className="flex items-center gap-2"
-            >
-              <Bookmark className="h-4 w-4" />
-              Save
-            </Button>
-          </div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 tracking-tight animate-fade-up">
+              {perspective.title}
+            </h1>
 
-          <div
-            className="prose max-w-none animate-fade-up"
-            style={{ animationDelay: "0.5s" }}
-          >
-            {perspective.body && (
-              <PortableText
-                value={perspective.body}
-                components={{
-                  block: {
-                    h1: ({ children }) => (
-                      <h1 className="text-3xl font-bold mb-6 mt-8 text-gray-900">
-                        {children}
-                      </h1>
-                    ),
-                    h2: ({ children }) => (
-                      <h2 className="text-2xl font-semibold mb-5 mt-7 text-gray-900">
-                        {children}
-                      </h2>
-                    ),
-                    h3: ({ children }) => (
-                      <h3 className="text-xl font-medium mb-4 mt-6 text-gray-900">
-                        {children}
-                      </h3>
-                    ),
-                    normal: ({ children }) => (
-                      <p className="text-base leading-relaxed mb-4 text-gray-600">
-                        {children}
-                      </p>
-                    ),
-                  },
-                  list: {
-                    bullet: ({ children }) => (
-                      <ul className="list-disc ml-5 mb-4 text-gray-600">
-                        {children}
-                      </ul>
-                    ),
-                    number: ({ children }) => (
-                      <ol className="list-decimal ml-5 mb-4 text-gray-600">
-                        {children}
-                      </ol>
-                    ),
-                  },
-                  listItem: {
-                    bullet: ({ children }) => (
-                      <li className="mb-2 text-gray-600">{children}</li>
-                    ),
-                    number: ({ children }) => (
-                      <li className="mb-2 text-gray-600">{children}</li>
-                    ),
-                  },
-                  types: {
-                    image: ({ value }) => (
-                      <div className="my-6">
-                        {value?.asset?.url && (
-                          <img
-                            src={value.asset.url}
-                            alt={value.alt || ""}
-                            width={800}
-                            height={600}
-                            className="rounded-lg"
-                          />
-                        )}
-                        {value.caption && (
-                          <p className="text-center text-sm text-gray-500 mt-2">
-                            {value.caption}
-                          </p>
-                        )}
-                      </div>
-                    ),
-                  },
-                }}
-              />
+            {perspective.description && (
+              <p
+                className="text-xl text-gray-600 mb-8 animate-fade-up"
+                style={{ animationDelay: "0.2s" }}
+              >
+                {perspective.description}
+              </p>
             )}
 
-            {perspective.author && (
-              <div className="border-t border-gray-200 pt-6 mt-10">
-                <div className="flex items-center gap-4">
-                  {perspective.author.image?.asset?.url && (
-                    <img
-                      src={perspective.author.image.asset.url}
-                      alt={perspective.author.name}
-                      width={48}
-                      height={48}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
-                  )}
-                  <div>
-                    <h3 className="font-bold text-gray-900">
-                      {perspective.author.name}
-                    </h3>
-                    {perspective.author.role && (
-                      <p className="text-sm text-gray-500">
-                        {perspective.author.role}
-                      </p>
-                    )}
-                  </div>
-                </div>
+            {perspective.mainImage?.asset?.url && (
+              <div
+                className="mb-10 rounded-xl overflow-hidden animate-fade-up"
+                style={{ animationDelay: "0.3s" }}
+              >
+                <img
+                  src={perspective.mainImage.asset.url}
+                  alt={
+                    perspective.mainImage.alt ||
+                    perspective.title ||
+                    "Perspective image"
+                  }
+                  width={1200}
+                  height={630}
+                  className="w-full h-auto object-cover"
+                />
               </div>
             )}
+
+            <div
+              className="flex flex-wrap gap-4 mb-8 animate-fade-up"
+              style={{ animationDelay: "0.4s" }}
+            >
+              {/* <Button 
+                variant="outline" 
+                size="sm" 
+                onClick={handleLike} 
+                className={`flex items-center gap-2 ${liked ? 'bg-blue-100 text-blue-600' : ''}`}
+              >
+                <ThumbsUp className={`h-4 w-4 ${liked ? 'fill-blue-600' : ''}`} />
+                {likeCount}
+              </Button> */}
+              <Button
+                variant="outline"
+                size="sm"
+                className="flex items-center gap-2"
+              >
+                <MessageSquare className="h-4 w-4" />
+                Comments
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handleShare}
+                className="flex items-center gap-2"
+              >
+                <Share2 className="h-4 w-4" />
+                Share
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handleSave}
+                className="flex items-center gap-2"
+              >
+                <Bookmark className="h-4 w-4" />
+                Save
+              </Button>
+            </div>
+
+            <div
+              className="prose max-w-none animate-fade-up"
+              style={{ animationDelay: "0.5s" }}
+            >
+              {perspective.body && (
+                <PortableText
+                  value={perspective.body}
+                  components={{
+                    block: {
+                      h1: ({ children }) => (
+                        <h1 className="text-3xl font-bold mb-6 mt-8 text-gray-900">
+                          {children}
+                        </h1>
+                      ),
+                      h2: ({ children }) => (
+                        <h2 className="text-2xl font-semibold mb-5 mt-7 text-gray-900">
+                          {children}
+                        </h2>
+                      ),
+                      h3: ({ children }) => (
+                        <h3 className="text-xl font-medium mb-4 mt-6 text-gray-900">
+                          {children}
+                        </h3>
+                      ),
+                      normal: ({ children }) => (
+                        <p className="text-base leading-relaxed mb-4 text-gray-600">
+                          {children}
+                        </p>
+                      ),
+                    },
+                    list: {
+                      bullet: ({ children }) => (
+                        <ul className="list-disc ml-5 mb-4 text-gray-600">
+                          {children}
+                        </ul>
+                      ),
+                      number: ({ children }) => (
+                        <ol className="list-decimal ml-5 mb-4 text-gray-600">
+                          {children}
+                        </ol>
+                      ),
+                    },
+                    listItem: {
+                      bullet: ({ children }) => (
+                        <li className="mb-2 text-gray-600">{children}</li>
+                      ),
+                      number: ({ children }) => (
+                        <li className="mb-2 text-gray-600">{children}</li>
+                      ),
+                    },
+                    types: {
+                      image: ({ value }) => (
+                        <div className="my-6">
+                          {value?.asset?.url && (
+                            <img
+                              src={value.asset.url}
+                              alt={value.alt || ""}
+                              width={800}
+                              height={600}
+                              className="rounded-lg"
+                            />
+                          )}
+                          {value.caption && (
+                            <p className="text-center text-sm text-gray-500 mt-2">
+                              {value.caption}
+                            </p>
+                          )}
+                        </div>
+                      ),
+                    },
+                  }}
+                />
+              )}
+
+              {perspective.author && (
+                <div className="border-t border-gray-200 pt-6 mt-10">
+                  <div className="flex items-center gap-4">
+                    {perspective.author.image?.asset?.url && (
+                      <img
+                        src={perspective.author.image.asset.url}
+                        alt={perspective.author.name}
+                        width={48}
+                        height={48}
+                        className="w-12 h-12 rounded-full object-cover"
+                      />
+                    )}
+                    <div>
+                      <h3 className="font-bold text-gray-900">
+                        {perspective.author.name}
+                      </h3>
+                      {perspective.author.role && (
+                        <p className="text-sm text-gray-500">
+                          {perspective.author.role}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </DocumentMeta>
   );
 };
 

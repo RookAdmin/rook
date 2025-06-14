@@ -136,6 +136,19 @@ const CEOLetterContent = () => {
     });
   };
 
+   const meta = {
+    title: "Letter from the CEO details | Rook Leadership",
+    description:
+      "Read letters from Rook's CEO sharing insights about company vision, strategy, and future direction. Stay connected with our leadership thoughts.",
+    meta: {
+      charset: "utf-8",
+      name: {
+        keywords:
+          "Rook CEO letter, company vision, leadership insights, company strategy, CEO communication",
+      },
+    },
+  };
+
   const handleDownloadPDF = () => {
     if (ceoLetter?.pdfFile?.asset?.url) {
       window.open(ceoLetter.pdfFile.asset.url, "_blank");
