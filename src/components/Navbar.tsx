@@ -116,8 +116,10 @@ export const Navbar = () => {
                               className="p-0 focus:bg-transparent hover:bg-transparent"
                               key={index}
                             >
-                              <Link
-                                to={service.link}
+                              <a
+                                href={service.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="w-full p-3 rounded-md text-black group transition-all duration-200"
                               >
                                 <div className="font-medium group-hover:text-[#0096d4] transition-colors">
@@ -126,7 +128,7 @@ export const Navbar = () => {
                                 <p className="text-xs text-gray-500 mt-1">
                                   {service.description}
                                 </p>
-                              </Link>
+                              </a>
                             </NavigationMenuLink>
                           ))}
                         </div>
@@ -322,13 +324,15 @@ export const Navbar = () => {
               {mobileDropdowns.whatWeDo && (
                 <div className="space-y-2">
                   {services.map((service, index) => (
-                    <Link
+                    <a
                       key={index}
-                      to={service.link}
+                      href={service.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="block py-1.5 text-[#f5f5f5] hover:text-[#0096d4] text-sm"
                     >
                       {service.title}
-                    </Link>
+                    </a>
                   ))}
                 </div>
               )}

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { ArrowRightIcon } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -8,6 +7,8 @@ interface ServiceCardProps {
   description: string;
   icon: React.ReactNode;
   link: string;
+  target?: string;
+  rel?: string;
 }
 
 export const ServiceCard = ({
@@ -15,9 +16,11 @@ export const ServiceCard = ({
   description,
   icon,
   link,
+  target,
+  rel,
 }: ServiceCardProps) => {
   return (
-    <Link to={link} className="block h-full">
+    <a href={link} target={target} rel={rel} className="block h-full">
       <motion.div
         whileHover={{ y: -5 }}
         className="relative h-full bg-white rounded-xl p-6 transition-all duration-300 hover:shadow-xl border border-gray-100 group"
@@ -49,6 +52,6 @@ export const ServiceCard = ({
           <ArrowRightIcon className="h-4 w-4 ml-1.5 transition-transform duration-300 transform group-hover:translate-x-1" />
         </div>
       </motion.div>
-    </Link>
+    </a>
   );
 };

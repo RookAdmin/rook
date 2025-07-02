@@ -128,6 +128,8 @@ const Whatwedo = () => {
                 description={service.description}
                 icon={service.icon}
                 link={service.link}
+                target="_blank"
+                rel="noopener noreferrer"
               />
             </motion.div>
           ))}
