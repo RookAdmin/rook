@@ -60,10 +60,11 @@ const RookForStartups = () => {
         } overflow-x-hidden`}
       >
         {/* Redesigned Hero Section - Minimalistic */}
-        <section className="relative py-24 md:py-32 bg-white overflow-hidden">
+        <section className="relative py-32 md:py-36 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="space-y-8">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
+              {/* Left: Hero Content */}
+              <div className="flex-1 space-y-8 w-full md:w-1/2">
                 {/* Badge */}
                 <div className="flex items-center animate-fade-up">
                   <div className="h-1 w-16 bg-[#0096d4] mr-3"></div>
@@ -74,7 +75,7 @@ const RookForStartups = () => {
 
                 {/* Main Headline */}
                 <h1
-                  className="text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight tracking-tight animate-fade-up"
+                  className="text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight tracking-tight animate-fade-up text-left"
                   style={{ animationDelay: "0.2s" }}
                 >
                   Fuel Your Startup{" "}
@@ -83,7 +84,7 @@ const RookForStartups = () => {
 
                 {/* Subheading */}
                 <p
-                  className="text-lg md:text-xl text-gray-700 max-w-2xl animate-fade-up"
+                  className="text-lg md:text-xl text-gray-700 max-w-2xl animate-fade-up text-left"
                   style={{ animationDelay: "0.3s" }}
                 >
                   A bold startup program crafted for dreamers, doers, and
@@ -91,12 +92,6 @@ const RookForStartups = () => {
                   credits, IP & incorporation support, and tailored acceleration
                   programs.
                 </p>
-
-                {/* Geometric abstract design element */}
-                {/* <div className="absolute top-32 right-0 w-64 h-64 opacity-10 -z-10 max-w-full">
-                <div className="absolute w-full h-full rounded-full bg-gradient-to-r from-[#0096d4] to-[#dc2e3e] animate-pulse"></div>
-                <div className="absolute w-3/4 h-3/4 top-8 left-8 rounded-full border-2 border-[#0096d4] animate-spin-slow"></div>
-              </div> */}
 
                 {/* Rook Stats */}
                 <div
@@ -148,6 +143,18 @@ const RookForStartups = () => {
                     Explore Benefits
                   </Button>
                 </div>
+              </div>
+              {/* Right: Spline 3D */}
+              <div className="flex-1 flex justify-center items-center w-full h-[350px] md:h-[450px]">
+                <iframe
+                  src="https://my.spline.design/toyrocket-CqYHMhPTQyB6tjCBpevlCoZv/"
+                  frameBorder="0"
+                  width="100%"
+                  height="100%"
+                  className="min-h-[300px] min-w-[250px] max-w-full"
+                  title="3D Orbit Triangle"
+                  allow="autoplay; fullscreen"
+                ></iframe>
               </div>
             </div>
           </div>
