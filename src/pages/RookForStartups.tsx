@@ -147,7 +147,7 @@ const RookForStartups = () => {
               {/* Right: Spline 3D */}
               <div className="flex-1 flex justify-center items-center w-full h-[350px] md:h-[450px]">
                 <iframe
-                  src="https://my.spline.design/toyrocket-CqYHMhPTQyB6tjCBpevlCoZv/"
+                  src="https://my.spline.design/starship-5DERh9CvsuxgEfRgqR61SFLx/"
                   frameBorder="0"
                   width="100%"
                   height="100%"
