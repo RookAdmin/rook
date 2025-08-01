@@ -22,6 +22,7 @@ import {
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   const [mobileDropdowns, setMobileDropdowns] = useState({
     whatWeDo: false,
@@ -32,6 +33,20 @@ export const Navbar = () => {
   const toggleDropdown = (key: string) => {
     setMobileDropdowns((prev) => ({ ...prev, [key]: !prev[key] }));
   };
+
+  // Scroll progress tracking
+  useEffect(() => {
+    const calculateScrollProgress = () => {
+      const scrollTop = window.scrollY;
+      const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      setScrollProgress(scrollPercent);
+    };
+
+    window.addEventListener("scroll", calculateScrollProgress);
+    return () => window.removeEventListener("scroll", calculateScrollProgress);
+  }, []);
 
   // Scroll to top and close mobile menu whenever location changes
   useEffect(() => {
@@ -88,6 +103,14 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-black border-b border-[#333333]">
+      {/* Scroll Progress Bar */}
+      <div
+        className="absolute bottom-0 left-0 h-[3px] bg-gradient-to-r from-[#ffd800] via-[#00d437] to-[#0096d4]"
+        style={{
+          width: `${scrollProgress}%`,
+          transition: "width 0.2s ease-out",
+        }}
+      />
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
@@ -304,7 +327,15 @@ export const Navbar = () => {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-black py-4">
+        <div className="md:hidden bg-black py-4 relative">
+          {/* Scroll Progress Bar for Mobile */}
+          <div
+            className="absolute bottom-0 left-0 h-[3px] bg-gradient-to-r from-[#ffd800] via-[#00d437] to-[#0096d4]"
+            style={{
+              width: `${scrollProgress}%`,
+              transition: "width 0.2s ease-out",
+            }}
+          />
           <div className="container mx-auto px-4 space-y-4 overflow-y-auto max-h-[80vh]">
             {/* What We Do Section */}
             <div className="border-b border-[#333333] pb-2">
