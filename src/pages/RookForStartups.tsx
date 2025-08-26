@@ -62,61 +62,52 @@ const RookForStartups = () => {
         } overflow-x-hidden`}
       >
         {/* Redesigned Hero Section - Minimalistic */}
-        <section className="relative py-32 md:py-36 bg-white overflow-hidden">
-  <div className="container mx-auto px-4">
-    <div className="max-w-4xl mx-auto flex flex-col items-center justify-center gap-12">
-      {/* Centered Content */}
-      <div className="flex-1 w-full space-y-8 flex flex-col items-center text-center">
+        <section className="py-24 md:py-32 bg-white w-full overflow-x-hidden">
+  <div className="container mx-auto px-4 max-w-screen-xl relative overflow-x-hidden">
+    <div className="max-w-4xl mx-auto">
+      <div className="space-y-8">
         {/* Badge */}
-        <div className="flex items-center animate-fade-up justify-center">
-          {/* <div className="h-1 w-16 bg-[#0096d4] mr-3"></div> */}
+        <div className="flex items-center animate-fade-up">
+          <div className="h-1 w-16 bg-[#0096d4] mr-3"></div>
           <span className="bg-[#0096d4]/10 text-[#0096d4] text-xs font-medium px-3 py-1 rounded-full">
             For Startups
           </span>
         </div>
+
         {/* Main Headline */}
-        <h1
-          className="text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight tracking-tight animate-fade-up"
-          style={{ animationDelay: "0.2s" }}
-        >
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight tracking-tight animate-fade-up" style={{ animationDelay: "0.2s" }}>
           Fuel Your Startup <span className="text-[#dc2e3e]">Journey</span> With Rook
         </h1>
+
         {/* Subheading */}
-        <p
-          className="text-lg md:text-xl text-gray-700 max-w-2xl animate-fade-up"
-          style={{ animationDelay: "0.3s" }}
-        >
-          A bold startup program crafted for dreamers, doers, and disruptors — with vibrant founder communities, exclusive SaaS credits, IP &amp; incorporation support, and tailored acceleration programs.
+        <p className="text-lg md:text-xl text-gray-700 max-w-2xl animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          A bold startup program crafted for dreamers, doers, and disruptors — with vibrant founder communities, exclusive SaaS credits, IP & incorporation support, and tailored acceleration programs.
         </p>
+
+        {/* Geometric abstract design element */}
+        <div className="absolute top-32 right-0 w-64 h-64 opacity-10 -z-10 pointer-events-none max-w-full overflow-x-hidden">
+          <div className="absolute w-full h-full rounded-full bg-gradient-to-r from-[#0096d4] to-[#dc2e3e] animate-pulse"></div>
+          <div className="absolute w-3/4 h-3/4 top-8 left-8 rounded-full border-2 border-[#0096d4] animate-spin-slow"></div>
+        </div>
+
         {/* Rook Stats */}
-        <div
-  className="grid grid-cols-2 md:grid-cols-3 gap-6 py-6 animate-fade-up justify-center"
-  style={{ animationDelay: "0.4s" }}
->
-  <div className="bg-white border-l-2 border-[#0096d4] pl-4">
-    <p className="text-3xl md:text-4xl font-bold text-black">
-      <CountUp end={500} duration={2} />+
-    </p>
-    <p className="text-sm text-gray-600">Startups Supported</p>
-  </div>
-  <div className="bg-white border-l-2 border-[#dc2e3e] pl-4">
-    <p className="text-3xl md:text-4xl font-bold text-black">
-      <CountUp end={25} duration={2} suffix="M+" />
-    </p>
-    <p className="text-sm text-gray-600">SaaS Credits</p>
-  </div>
-  <div className="bg-white border-l-2 border-[#00d437] pl-4">
-    <p className="text-3xl md:text-4xl font-bold text-black">
-      <CountUp end={100} duration={2} suffix="%" />
-    </p>
-    <p className="text-sm text-gray-600">Success Rate</p>
-  </div>
-</div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 py-6 animate-fade-up" style={{ animationDelay: "0.4s" }}>
+          <div className="bg-white border-l-2 border-[#0096d4] pl-4">
+            <p className="text-3xl md:text-4xl font-bold text-black">500+</p>
+            <p className="text-sm text-gray-600">Startups Supported</p>
+          </div>
+          <div className="bg-white border-l-2 border-[#dc2e3e] pl-4">
+            <p className="text-3xl md:text-4xl font-bold text-black">25M+</p>
+            <p className="text-sm text-gray-600">SaaS Credits</p>
+          </div>
+          <div className="bg-white border-l-2 border-[#00d437] pl-4">
+            <p className="text-3xl md:text-4xl font-bold text-black">100%</p>
+            <p className="text-sm text-gray-600">Success Rate</p>
+          </div>
+        </div>
+
         {/* CTA Buttons */}
-        <div
-          className="flex flex-wrap gap-4 animate-fade-up justify-center"
-          style={{ animationDelay: "0.5s" }}
-        >
+        <div className="flex flex-wrap gap-4 animate-fade-up" style={{ animationDelay: "0.5s" }}>
           <a
             href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22"
             target="_blank"
@@ -129,9 +120,9 @@ const RookForStartups = () => {
               <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </a>
-          <Button
-            size="lg"
-            variant="outline"
+          <Button 
+            size="lg" 
+            variant="outline" 
             className="border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4]/10 transition-all hover:translate-y-[-2px]"
           >
             Explore Benefits
@@ -141,6 +132,7 @@ const RookForStartups = () => {
     </div>
   </div>
 </section>
+
 
 
         {/* Why Founders Choose Rook */}

@@ -105,7 +105,7 @@ export const Navbar = () => {
     <nav className="fixed top-0 w-full z-50 bg-black border-b border-[#333333]">
       {/* Scroll Progress Bar */}
       <div
-        className="absolute bottom-0 left-0 h-[3px] bg-gradient-to-r from-[#ffd800] via-[#00d437] to-[#0096d4]"
+        className="absolute bottom-0 left-0 h-[3px] bg-[#db2e3f]"
         style={{
           width: `${scrollProgress}%`,
           transition: "width 0.2s ease-out",
