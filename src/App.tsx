@@ -24,6 +24,8 @@ import BrandKit from "./pages/BrandKit";
 import Trademark from "./pages/Trademark";
 import OpenSource from "./pages/OpenSource";
 
+import Careers from "./pages/Careers";
+
 const App = () => {
   const queryClient = new QueryClient();
 
@@ -80,6 +82,8 @@ const App = () => {
                 <Route path="/brand-kit" element={<BrandKit />} />
                 <Route path="/trademark" element={<Trademark />} />
                 <Route path="/open-source" element={<OpenSource />} />
+                <Route path="/careers" element={<Careers />} />
+
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
