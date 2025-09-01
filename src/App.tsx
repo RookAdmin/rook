@@ -25,6 +25,18 @@ import Trademark from "./pages/Trademark";
 import OpenSource from "./pages/OpenSource";
 
 import Careers from "./pages/Careers";
+import Support from "./pages/Support";
+import RookLink from "./pages/RookLink";
+import RookScoop from "./pages/RookScoop";
+import Developers from "./pages/Developers";
+import DevConference from "./pages/DevConference";
+import Invest from "./pages/Invest";
+import Life from "./pages/Life";
+import RookFriends from "./pages/RookFriends";
+import MyProBuddy from "./pages/MyProBuddy";
+import HloLegal from "./pages/HloLegal";
+import ZohoPartnership from "./pages/ZohoPartnership";
+import Compliance from "./pages/Compliance";
 
 const App = () => {
   const queryClient = new QueryClient();
@@ -83,7 +95,18 @@ const App = () => {
                 <Route path="/trademark" element={<Trademark />} />
                 <Route path="/open-source" element={<OpenSource />} />
                 <Route path="/careers" element={<Careers />} />
-
+                <Route path="/support" element={<Support />} />
+                <Route path="/links" element={<RookLink />} />
+                <Route path="/scoop" element={<RookScoop />} />
+                <Route path="/developers" element={<Developers />} />
+                <Route path="/devconference" element={<DevConference />} />
+                <Route path="/invest" element={<Invest />} />
+                <Route path="/life" element={<Life />} />
+                <Route path="/friends" element={<RookFriends />} />
+                <Route path="/startups/myprobuddy" element={<MyProBuddy />} />
+                <Route path="/startups/hlo-legal" element={<HloLegal />} />
+                <Route path="/startups/zoho" element={<ZohoPartnership />} />
+                <Route path="/compliance" element={<Compliance />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
