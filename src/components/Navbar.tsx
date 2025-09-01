@@ -185,6 +185,39 @@ export const Navbar = () => {
                       <li className="row-span-1">
                         <NavigationMenuLink asChild>
                           <a
+                            href="/links"
+                            rel="noopener noreferrer"
+                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+                          >
+                            Rook Links
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <li className="row-span-1">
+                        <NavigationMenuLink asChild>
+                          <a
+                            href="/scoop"
+                            rel="noopener noreferrer"
+                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+                          >
+                            Rook Scoop
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <li className="row-span-1">
+                        <NavigationMenuLink asChild>
+                          <a
+                            href="/friends"
+                            rel="noopener noreferrer"
+                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+                          >
+                            Rook Friends
+                          </a>
+                        </NavigationMenuLink>
+                      </li>
+                      <li className="row-span-1">
+                        <NavigationMenuLink asChild>
+                          <a
                             href="https://realmrook.com/"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -269,8 +302,7 @@ export const Navbar = () => {
             </Link>
 
             <a
-              href="https://support.rookhq.com/portal/en/home"
-              target="_blank"
+              href="/support"
               rel="noopener noreferrer"
             >
               <Button

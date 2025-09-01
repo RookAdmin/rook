@@ -11,7 +11,7 @@ export const Footer = () => {
   return (
     <footer className="bg-black py-12 mt-20">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
               <span className="text-2xl font-bold text-white">
@@ -180,6 +180,33 @@ export const Footer = () => {
               </li>
               <li>
                 <a
+                  href="/links"
+                  rel="noopener noreferrer"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Rook Links
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/scoop"
+                  rel="noopener noreferrer"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Rook Scoop
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/friends"
+                  rel="noopener noreferrer"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Rook Friends
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://realmrook.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -189,46 +216,40 @@ export const Footer = () => {
                 </a>
               </li>
             </ul>
-
-            <h3 className="font-semibold text-white mt-6">Resources</h3>
+            <h3 className="font-semibold text-white mt-2">For Developers</h3>
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="/brand-kit"
+                  to="/developers"
                   className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
                 >
-                  Brand Kit
+                  Rook Developers
                 </Link>
               </li>
+
               <li>
                 <Link
-                  to="/trademark"
+                  to="/devconference"
                   className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
                 >
-                  Trademark
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/rook-for-startups"
-                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
-                >
-                  Rook For Startups
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/open-source"
-                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
-                >
-                  Open Source
+                  Dev Conference
                 </Link>
               </li>
             </ul>
+
+            
           </div>
           <div className="space-y-4">
             <h3 className="font-semibold text-white">Company</h3>
             <ul className="space-y-2">
+              <li>
+                <Link
+                  to="/life"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Life
+                </Link>
+              </li>
               <li>
                 <Link
                   to="/about"
@@ -238,6 +259,22 @@ export const Footer = () => {
                 </Link>
               </li>
 
+              <li>
+                <Link
+                  to="/invest"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Invest
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/careers"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Careers
+                </Link>
+              </li>
               <li>
                 <Link
                   to="/perspectives"
@@ -270,29 +307,101 @@ export const Footer = () => {
                   Letter From The CEO
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/terms"
-                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
-                >
-                  Terms
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/privacy"
-                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
-                >
-                  Privacy
-                </Link>
-              </li>
+              
             </ul>
+          </div>
+          <div className="space-y-4">
+            <h3 className="font-semibold text-white">Resources</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  to="/brand-kit"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Brand Kit
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/trademark"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Trademark
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/open-source"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Open Source
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/rook-for-startups"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Rook For Startups
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="startups/hlo-legal"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Hlo Legal
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/startups/myprobuddy"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  MyProBuddy
+                </Link>
+              </li>              
+              <li>
+                <Link
+                  to="/startups/zoho"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Zoho For Startups
+                </Link>
+              </li>
+              
+            </ul>
+            
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-[#333333]">
-          <p className="text-center text-[#f5f5f5] text-sm">
-            © {new Date().getFullYear()} Rook. All rights reserved.
-          </p>
+          <div className="flex flex-col md:flex-row justify-between items-center mt-4">
+            <p className="text-left text-[#f5f5f5] text-sm">
+              © {new Date().getFullYear()} Rook. All rights reserved.
+            </p>
+            <div className="flex space-x-4 mt-2 md:mt-0">
+              <Link
+                to="/terms"
+                className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+              >
+                Terms
+              </Link>
+              <span className="text-[#f5f5f5] text-sm">|</span>
+              <Link
+                to="/privacy"
+                className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+              >
+                Privacy
+              </Link>
+              <span className="text-[#f5f5f5] text-sm">|</span>
+              <Link
+                to="/compliance"
+                className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+              >
+                Compliance
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

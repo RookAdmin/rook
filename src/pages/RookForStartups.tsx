@@ -235,6 +235,16 @@ const RookForStartups = () => {
                   fundraising support, mentoring sprints, GTM clinics, and
                   weekly founder syncs to help you stay ahead of the curve.
                 </p>
+                <a href="/startups/myprobuddy">
+                  <Button
+                    variant="outline"
+                    className="border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4]/10 mt-3"
+                  >
+                    Learn More{" "}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
+
               </div>
 
               <div className="bg-white p-8 rounded-xl shadow-soft hover:shadow-premium transition-all duration-300 transform hover:-translate-y-1">
@@ -249,6 +259,15 @@ const RookForStartups = () => {
                   startup-friendly tools. Includes exclusive Rook Startup
                   Credits to help you launch on a budget.
                 </p>
+                <a href="/startups/zoho">
+                  <Button
+                    variant="outline"
+                    className="border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4]/10 mt-3"
+                  >
+                    Learn More{" "}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
               </div>
 
               <div className="bg-white p-8 rounded-xl shadow-soft hover:shadow-premium transition-all duration-300 transform hover:-translate-y-1">
@@ -263,6 +282,15 @@ const RookForStartups = () => {
                   startup and protect your brand with trademark, patent, and
                   copyright services — simplified.
                 </p>
+                <a href="/startups/hlo-legal">
+                  <Button
+                    variant="outline"
+                    className="border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4]/10 mt-3"
+                  >
+                    Learn More{" "}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
               </div>
             </div>
 
@@ -444,15 +472,7 @@ const RookForStartups = () => {
               </div>
             </div>
 
-            <div className="text-center">
-              <Button
-                variant="outline"
-                className="border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4]/10"
-              >
-                Read More Success Stories{" "}
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
+            
           </div>
         </section>
 

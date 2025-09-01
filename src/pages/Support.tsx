@@ -10,28 +10,32 @@ const Support = () => {
       description: "Get instant help from our support team",
       icon: MessageCircle,
       availability: "24/7 Available",
-      action: "Start Chat"
+      action: "Start Chat",
+      link: "https://api.whatsapp.com/send/?phone=917094300022"
     },
     {
-      title: "Help Center",
-      description: "Browse our comprehensive knowledge base",
+      title: "Raise a Ticket",
+      description: "Submit your issues and track their progress",
       icon: Book,
-      availability: "Self-Service",
-      action: "Browse Articles"
+      availability: "Response in 24h",
+      action: "Browse Articles",
+      link: "https://support.rookhq.com/portal/en/home"
     },
     {
       title: "Video Tutorials",
       description: "Learn with step-by-step video guides",
       icon: Video,
       availability: "On-Demand",
-      action: "Watch Videos"
+      action: "Watch Videos",
+      link: "https://www.youtube.com/@rookl"
     },
     {
       title: "Email Support",
       description: "Send us detailed questions via email",
       icon: Mail,
       availability: "24h Response",
-      action: "Send Email"
+      action: "Send Email",
+      link: "mailto:support@rookhq.com"
     }
   ];
 
@@ -99,9 +103,11 @@ const Support = () => {
                     {option.availability}
                   </span>
                 </div>
+                <a href={option.link} target="_blank">
                 <Button className="w-full bg-[#0096d4] hover:bg-[#0096d4]/90">
                   {option.action}
                 </Button>
+                </a>
               </div>
             ))}
           </div>
@@ -152,11 +158,11 @@ const Support = () => {
               <p className="text-lg mb-8 opacity-90">
                 Our support team is here to help you succeed
               </p>
-              <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-                <div className="flex items-center justify-center space-x-3">
+              <div className="grid md:grid-cols-1 gap-6 max-w-2xl mx-auto">
+                {/* <div className="flex items-center justify-center space-x-3">
                   <Phone className="h-5 w-5" />
                   <span>+1 (555) 123-4567</span>
-                </div>
+                </div> */}
                 <div className="flex items-center justify-center space-x-3">
                   <Mail className="h-5 w-5" />
                   <span>support@rookhq.com</span>

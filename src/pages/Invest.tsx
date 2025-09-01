@@ -24,12 +24,13 @@ const Invest = () => {
         <div className="container mx-auto px-4 py-24 relative z-10 text-center">
           <div className="max-w-4xl mx-auto space-y-8">
             <h1 className="text-6xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
-              Invest With Rook
+              Invest In Rook
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               We don't just raise capital — we handpick investors who believe in reshaping SaaS and creating new industry standards.
             </p>
             <div className="pt-8">
+              <a href="mailto:investors@rookhq.com">
               <Button 
                 size="lg" 
                 className="bg-[#00d437] hover:bg-[#00c132] text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm"
@@ -37,6 +38,7 @@ const Invest = () => {
                 investors@rookhq.com
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
+              </a>
             </div>
           </div>
         </div>
