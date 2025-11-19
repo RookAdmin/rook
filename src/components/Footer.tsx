@@ -347,10 +347,10 @@ export const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="startups/hlo-legal"
+                  to="/startups/hlo-legal"
                   className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
                 >
-                  Hlo Legal
+                  Hlo Enterprise Legal+
                 </Link>
               </li>
               <li>

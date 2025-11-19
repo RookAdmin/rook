@@ -358,8 +358,8 @@ const Developers = () => {
               <Users className="h-5 w-5 mr-2" />
               Join Now (Free)
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#0096d4]">
-              <Lightbulb className="h-5 w-5 mr-2" />
+            <Button size="lg" variant="outline" className="bg-[#000000] text-white border-0 focus:outline-none hover:bg-white hover:text-[#000000]">
+              <Lightbulb className="h-5 w-5 mr-2 " />
               Contribute Ideas
             </Button>
           </div>

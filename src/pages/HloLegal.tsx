@@ -75,7 +75,8 @@ const HloLegal = () => {
             <div className="flex items-center justify-center mb-8 animate-fade-up">
               <div className="flex items-center space-x-6">
                 <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-soft border border-gray-100">
-                  <span className="text-xl font-bold text-black">Rook</span>
+                 <img src="/placeholder.svg" alt="Logo" className="h-10 w-auto" />
+
                 </div>
                 <span className="text-2xl text-gray-400">×</span>
                 <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-soft border border-gray-100">
@@ -441,7 +442,7 @@ const HloLegal = () => {
                 variant="outline" 
                 className="border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4]/10 transition-all hover:translate-y-[-2px] text-lg px-8 py-4"
               >
-                <Link to="/contact" className="flex items-center">
+                <Link to="/support" className="flex items-center">
                   Contact Legal Team
                 </Link>
               </Button>
