@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { RocketIcon, ChevronDownIcon, ChevronUpIcon } from "lucide-react";
+import { RocketIcon, ChevronDownIcon, ChevronUpIcon, ExternalLink } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import {
@@ -302,15 +302,16 @@ export const Navbar = () => {
             </Link>
 
             <a
-              href="/support"
+              href="https://links.rookhq.com"
+              target="_blank"
               rel="noopener noreferrer"
+              className="group flex items-center gap-2 bg-[#00d437] px-4 py-2 rounded-full hover:bg-[#00d437]/90 transition-all shadow-md hover:shadow-lg"
             >
-              <Button
-                size="sm"
-                className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90"
-              >
-                Support <RocketIcon className="ml-2 h-4 w-4" />
-              </Button>
+              <span className="text-white font-medium text-sm">clickl.in/</span>
+              <div className="bg-white rounded-full px-3 py-1">
+                <span className="text-[#121212] font-medium text-sm">reserve your username</span>
+              </div>
+              <ExternalLink className="h-3 w-3 text-white" />
             </a>
           </div>
 
@@ -506,16 +507,16 @@ export const Navbar = () => {
             {/* Support Button Section */}
             <div className="pt-2">
               <a
-                href="https://support.rookhq.com/portal/en/home"
+                href="https://links.rookhq.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="group flex items-center gap-2 bg-[#00d437] px-4 py-2 rounded-full hover:bg-[#00d437]/90 transition-all shadow-md hover:shadow-lg w-full justify-center"
               >
-                <Button
-                  size="sm"
-                  className="bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90 w-full"
-                >
-                  Support <RocketIcon className="ml-2 h-4 w-4" />
-                </Button>
+                <span className="text-white font-medium text-sm">clickl.in/</span>
+                <div className="bg-white rounded-full px-3 py-1">
+                  <span className="text-[#121212] font-medium text-sm">reserve your username</span>
+                </div>
+                <ExternalLink className="h-3 w-3 text-white" />
               </a>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowDown } from "lucide-react";
+import { ArrowRight, ArrowDown, ExternalLink } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export const Hero = () => {
@@ -15,9 +15,9 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white relative overflow-hidden pt-16 md:pt-20 lg:pt-16 pb-8 md:pb-0">
+    <div className="min-h-screen flex items-center justify-center bg-white relative overflow-hidden pt-16 md:pt-20 lg:pt-16">
       {/* Minimal grid pattern background */}
-      <div className="absolute inset-0 opacity-[0.02] pb-8 md:pb-0">
+      <div className="absolute inset-0 opacity-[0.02]">
         <div className="absolute inset-0" style={{
           backgroundImage: `linear-gradient(to right, #121212 1px, transparent 1px),
                            linear-gradient(to bottom, #121212 1px, transparent 1px)`,
@@ -25,7 +25,7 @@ export const Hero = () => {
         }} />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-16 pb-20 md:pb-24 lg:pb-16 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-16 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Asymmetric Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -54,19 +54,18 @@ export const Hero = () => {
             </div>
 
             {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-6">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
-                href="https://support.rookhq.com/portal/en/home"
+                href="https://links.rookhq.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="group flex items-center gap-2 bg-[#00d437] px-6 py-3 rounded-full hover:bg-[#00d437]/90 transition-all shadow-md hover:shadow-lg w-full sm:w-auto justify-center sm:justify-start"
               >
-                <Button
-                  size="lg"
-                    className="w-full sm:w-auto bg-[#dc2e3e] text-white hover:bg-[#dc2e3e]/90 transition-all shadow-lg hover:shadow-xl group px-8 py-6 text-base sm:text-lg"
-                >
-                    Get Support
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </Button>
+                <span className="text-white font-medium">clickl.in/</span>
+                <div className="bg-white rounded-full px-4 py-1.5">
+                  <span className="text-[#121212] font-medium">reserve your username</span>
+                </div>
+                <ExternalLink className="h-4 w-4 text-white" />
               </a>
               </div>
             </div>
@@ -80,10 +79,10 @@ export const Hero = () => {
                   <div className="absolute top-4 left-2 sm:left-4 w-[calc(100%-0.5rem)] sm:w-full h-56 sm:h-64 bg-gray-100 rounded-2xl border border-gray-200 transform rotate-[-1deg] sm:rotate-[-2deg] opacity-60"></div>
                   
                   {/* Card 2 - Middle */}
-                  <div className="absolute top-2 left-1 sm:left-2 w-[calc(100%-0.25rem)] sm:w-full h-56 sm:h-64 bg-white rounded-2xl border border-gray-200 shadow-lg transform rotate-[0.5deg] sm:rotate-[1deg] opacity-80"></div>
+                  <div className="absolute top-2 left-1 sm:left-2 w-[calc(100%-0.25rem)] sm:w-full h-56 sm:h-64 bg-white rounded-2xl border border-gray-200 transform rotate-[0.5deg] sm:rotate-[1deg] opacity-80"></div>
                   
                   {/* Card 3 - Front */}
-                  <div className="relative w-full h-56 sm:h-64 bg-gradient-to-br from-[#00d437]/10 via-white to-[#0096d4]/10 rounded-2xl border border-gray-200 shadow-xl p-6 sm:p-8 flex flex-col justify-between">
+                  <div className="relative w-full h-56 sm:h-64 bg-gradient-to-br from-[#00d437]/10 via-white to-[#0096d4]/10 rounded-2xl border border-gray-200 p-6 sm:p-8 flex flex-col justify-between">
                     <div>
                       <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                         <img 
