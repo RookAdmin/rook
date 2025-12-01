@@ -323,6 +323,14 @@ export const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
+                  to="/support"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Support
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/brand-kit"
                   className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
                 >

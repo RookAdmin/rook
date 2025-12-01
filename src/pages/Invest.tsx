@@ -39,7 +39,7 @@ const Invest = () => {
       />
     <div className="min-h-screen bg-white pt-16">
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative overflow-x-hidden">
+      <section className="min-h-screen flex items-center justify-center relative overflow-x-hidden overflow-y-hidden">
         <div 
           className="absolute inset-0 bg-gradient-to-br from-white/40 to-gray-100/20 backdrop-blur-3xl"
           style={{ transform: `translateY(${scrollY * 0.1}px)` }}
@@ -279,17 +279,19 @@ const Invest = () => {
       <section className="py-12 sm:py-16 md:py-20 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="backdrop-blur-3xl bg-gradient-to-br from-white/40 to-gray-100/20 p-16 rounded-3xl shadow-2xl">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
+            <div className="backdrop-blur-3xl bg-gradient-to-br from-white/40 to-gray-100/20 p-8 sm:p-12 md:p-16 rounded-3xl shadow-2xl">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight px-2 sm:px-0">
                 If you see the world like we do, let's build the future together.
               </h2>
-              <Button 
-                size="lg" 
-                className="bg-[#00d437] hover:bg-[#00c132] text-white px-10 py-5 text-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm"
-              >
-                investors@rookhq.com
-                <ArrowRight className="ml-3 h-6 w-6" />
-              </Button>
+              <a href="mailto:investors@rookhq.com" className="inline-block">
+                <Button 
+                  size="lg" 
+                  className="bg-[#00d437] hover:bg-[#00c132] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 text-base sm:text-lg md:text-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm w-full sm:w-auto"
+                >
+                  <span className="break-all sm:break-normal">investors@rookhq.com</span>
+                  <ArrowRight className="ml-2 sm:ml-3 h-5 w-5 sm:h-6 sm:w-6 flex-shrink-0" />
+                </Button>
+              </a>
             </div>
           </div>
         </div>

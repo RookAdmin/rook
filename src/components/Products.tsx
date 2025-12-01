@@ -158,7 +158,7 @@ export const Products = () => {
             <CardContent className="pt-4 flex flex-col flex-grow">
               <div className="space-y-6 flex-grow">
                 <p className="text-[#121212] text-sm sm:text-base">
-                  Realm by Rook is our creative powerhouse venture. Become A Top 1% Brand and scale with clarity, consistency, and soul.
+                  Realm by Rook is our creative powerhouse venture. <strong>Become A Top 1% Brand</strong> and scale with clarity, consistency, and soul.
                 </p>
                 
                 <ul className="space-y-2 sm:space-y-3">

@@ -4,7 +4,6 @@ import { Hero } from "@/components/Hero";
 import { Products } from "@/components/Products";
 import { Press } from "@/components/Press";
 import Whatwedo from "@/components/Whatwedo";
-import { AnnouncementDialog } from "@/components/AnnouncementDialog";
 
 const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -117,7 +116,6 @@ const Index = () => {
         breadcrumbs={breadcrumbs}
       />
       <div className="min-h-screen bg-white text-[#121212] overflow-x-hidden">
-        <AnnouncementDialog />
         <Hero />
         <div className="relative overflow-hidden">
           <Products />
