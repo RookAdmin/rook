@@ -385,6 +385,16 @@ export const Footer = () => {
                   Zoho For Startups
                 </Link>
               </li>
+              <li>
+                <a
+                  href="https://design.rookhq.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Rook Design
+                </a>
+              </li>
               
             </ul>
             

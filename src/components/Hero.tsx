@@ -73,34 +73,27 @@ export const Hero = () => {
             {/* Right Visual - Takes 5 columns */}
             <div className="lg:col-span-5 order-2 lg:order-none">
               <div className="relative overflow-hidden px-2 sm:px-0">
-                {/* Card Stack Effect */}
-                <div className="relative space-y-4">
-                  {/* Card 1 - Back */}
-                  <div className="absolute top-4 left-2 sm:left-4 w-[calc(100%-0.5rem)] sm:w-full h-56 sm:h-64 bg-gray-100 rounded-2xl border border-gray-200 transform rotate-[-1deg] sm:rotate-[-2deg] opacity-60"></div>
-                  
-                  {/* Card 2 - Middle */}
-                  <div className="absolute top-2 left-1 sm:left-2 w-[calc(100%-0.25rem)] sm:w-full h-56 sm:h-64 bg-white rounded-2xl border border-gray-200 transform rotate-[0.5deg] sm:rotate-[1deg] opacity-80"></div>
-                  
-                  {/* Card 3 - Front */}
-                  <div className="relative w-full h-56 sm:h-64 bg-gradient-to-br from-[#00d437]/10 via-white to-[#0096d4]/10 rounded-2xl border border-gray-200 p-6 sm:p-8 flex flex-col justify-between">
-                    <div>
-                      <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                {/* Modern Minimal Card with Subtle Background */}
+                <div className="relative w-full h-56 sm:h-64 bg-gray-50 rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-gray-100">
+                  <div className="space-y-4">
+                    <div className="space-y-3">
+                      <div className="w-12 h-12 flex items-center justify-center">
                         <img 
                           src="/favicon.ico" 
                           alt="Rook" 
                           className="w-12 h-12 object-contain"
                         />
                       </div>
-                      <h3 className="text-xl font-bold text-[#121212] mb-2">Rook Platforms</h3>
-                      <p className="text-2xl sm:text-3xl font-bold text-[#121212] transition-all duration-500">
-                        {texts[currentText]}
-                      </p>
+                      <h3 className="text-lg font-semibold text-[#121212]">Rook Platforms</h3>
                     </div>
-                    <div className="flex gap-2">
-                      <div className="flex-1 h-2 bg-[#dc2e3e] rounded-full"></div>
-                      <div className="flex-1 h-2 bg-[#0096d4] rounded-full"></div>
-                      <div className="flex-1 h-2 bg-[#00d437] rounded-full"></div>
-                    </div>
+                    <p className="text-2xl sm:text-3xl font-bold text-[#121212] transition-all duration-500 leading-tight">
+                      {texts[currentText]}
+                    </p>
+                  </div>
+                  <div className="flex gap-1.5">
+                    <div className="flex-1 h-1.5 bg-[#dc2e3e] rounded-full"></div>
+                    <div className="flex-1 h-1.5 bg-[#0096d4] rounded-full"></div>
+                    <div className="flex-1 h-1.5 bg-[#00d437] rounded-full"></div>
                   </div>
                 </div>
               </div>
