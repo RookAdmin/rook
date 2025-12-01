@@ -1,5 +1,5 @@
 import React from "react";
-import DocumentMeta from "react-document-meta";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -33,17 +33,17 @@ import {
 import { Link } from "react-router-dom";
 
 const OpenSource = () => {
-  const meta = {
-    title: "Open Source Projects | Rook",
-    description:
-      "Explore Rook's open source initiatives and developer tools. Join our community of developers and contribute to innovative projects.",
-    meta: {
-      charset: "utf-8",
-      name: {
-        keywords:
-          "Rook open source, developer tools, GitHub projects, Paym.me, developer community",
-      },
-    },
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Rook Open Source Projects",
+    "description": "Explore Rook's open source initiatives and developer tools. Join our community of developers and contribute to innovative projects like Paym.me.",
+    "url": "https://rookhq.com/open-source",
+    "about": {
+      "@type": "SoftwareApplication",
+      "name": "Rook Open Source",
+      "applicationCategory": "DeveloperApplication"
+    }
   };
 
   const roadmapItems = [
@@ -159,8 +159,17 @@ const OpenSource = () => {
   ];
 
   return (
-    <DocumentMeta {...meta}>
-      <div className="min-h-screen bg-white">
+    <>
+      <SEO
+        title="Open Source Projects | Rook - Developer Tools, GitHub Projects & Community"
+        description="Explore Rook's open source initiatives and developer tools. Join our community of developers and contribute to innovative projects like Paym.me. Open source SaaS tools, GitHub projects, developer community."
+        keywords="Rook open source, open source projects, developer tools, GitHub projects, Paym.me open source, developer community, open source SaaS, open source software, contribute to open source, open source code"
+        canonical="/open-source"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
+      />
+    <div className="min-h-screen bg-white pt-16">
         {/* Hero Section */}
         <section className="pt-40 py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
           <div className="container mx-auto max-w-6xl">
@@ -171,7 +180,7 @@ const OpenSource = () => {
                     variant="outline"
                     className="text-[#0096d4] border-[#0096d4]"
                   >
-                    Paym.me by Rook — Coming Soon
+                    Paym.me by Rook. Coming Soon
                   </Badge>
                   <h1 className="text-5xl lg:text-6xl font-bold text-textPrimary leading-tight">
                     Building in the Open.{" "}
@@ -288,7 +297,7 @@ const OpenSource = () => {
                   reflects our obsession for clarity, performance, and impact."
                 </blockquote>
                 <p className="text-center text-textSecondary mt-4 font-medium">
-                  — Rook Dev Team
+                  Rook Dev Team
                 </p>
               </CardContent>
             </Card>
@@ -310,7 +319,7 @@ const OpenSource = () => {
               <p className="text-xl text-textSecondary max-w-4xl mx-auto">
                 Paym.me by Rook is a developer-first open-source payment widget
                 framework. Designed to embed payments into any site, SaaS,
-                portfolio or product page — customizable, lightweight, and
+                portfolio or product page. Customizable, lightweight, and
                 enterprise-ready.
               </p>
             </div>
@@ -546,7 +555,7 @@ const OpenSource = () => {
           </div>
         </section>
       </div>
-    </DocumentMeta>
+    </>
   );
 };
 

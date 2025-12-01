@@ -1,11 +1,36 @@
-
 import React from "react";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Star, TrendingUp, Zap, CreditCard, Gift } from "lucide-react";
 
 const RookFriends = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Rook Friends",
+    "description": "Earn with Rook. Affiliate and referral program for creators, influencers, and businesses. Turn your network into income with Rook Friends.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "url": "https://rookhq.com/friends"
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+    <>
+      <SEO
+        title="Rook Friends | Affiliate & Referral Program - Earn with Rook, Turn Your Network into Income"
+        description="Earn with Rook. It's more than business. It's lifestyle. Join Rook Friends affiliate and referral program. Turn your network into income. Earn commissions by sharing Rook's products. Perfect for creators, influencers, and businesses."
+        keywords="Rook Friends, affiliate program, referral program, earn money online, affiliate marketing, referral marketing, commission program, influencer program, creator earnings, affiliate network"
+        canonical="/friends"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
+      />
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-16">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto text-center">
@@ -14,7 +39,7 @@ const RookFriends = () => {
               Rook Friends
             </h1>
             <h2 className="text-2xl md:text-3xl text-gray-700 mb-8 font-light">
-              Earn with Rook. It's more than business — it's lifestyle.
+              Earn with Rook. It's more than business. It's lifestyle.
             </h2>
             <Button 
               size="lg" 
@@ -113,7 +138,7 @@ const RookFriends = () => {
               </p>
               <div className="bg-white/60 backdrop-blur-sm border border-white/30 rounded-2xl p-6">
                 <p className="text-lg font-medium text-gray-900 italic">
-                  "Rook Friends isn't just affiliate marketing — it's a lifestyle."
+                  "Rook Friends isn't just affiliate marketing. It's a lifestyle."
                 </p>
               </div>
             </div>
@@ -182,6 +207,7 @@ const RookFriends = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

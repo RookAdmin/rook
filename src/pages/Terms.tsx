@@ -1,24 +1,28 @@
 import React from "react";
-import DocumentMeta from "react-document-meta";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const Terms = () => {
-  const meta = {
-    title: "Terms and Conditions | Rook",
-    description:
-      "Read Rook's terms and conditions for using our services, products, and platforms. Learn about our policies, user responsibilities, and legal agreements.",
-    meta: {
-      charset: "utf-8",
-      name: {
-        keywords:
-          "Rook terms, conditions, legal agreement, user policy, service terms",
-      },
-    },
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Rook Terms and Conditions",
+    "description": "Read Rook's terms and conditions for using our services, products, and platforms.",
+    "url": "https://rookhq.com/terms"
   };
 
   return (
-    <DocumentMeta {...meta}>
+    <>
+      <SEO
+        title="Terms and Conditions | Rook - Legal Agreement & Service Terms"
+        description="Read Rook's terms and conditions for using our services, products, and platforms. Learn about our policies, user responsibilities, and legal agreements. Service terms, user agreement, legal policy."
+        keywords="Rook terms, terms and conditions, legal agreement, user policy, service terms, terms of service, user agreement, legal terms, service agreement"
+        canonical="/terms"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
+      />
       <div className="min-h-screen bg-white text-textPrimary pt-24 pb-16">
         <div className="container mx-auto px-4">
           {/* Header */}
@@ -240,7 +244,7 @@ const Terms = () => {
           </div>
         </div>
       </div>
-    </DocumentMeta>
+    </>
   );
 };
 

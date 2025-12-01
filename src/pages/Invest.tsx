@@ -1,4 +1,4 @@
-
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Users, Target, TrendingUp, Link, Users2, BarChart3, Code } from "lucide-react";
@@ -13,21 +13,44 @@ const Invest = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "InvestmentOrTrust",
+    "name": "Invest in Rook",
+    "description": "Invest in Rook's innovative SaaS ecosystem. Join forward-thinking investors backing simple tools with monumental impact. Rook Scoop, Rook Link, and more.",
+    "url": "https://rookhq.com/invest",
+    "provider": {
+      "@type": "Organization",
+      "name": "Rook",
+      "url": "https://rookhq.com"
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <SEO
+        title="Invest in Rook | SaaS Investment Opportunities - Rook Scoop, Rook Link & More"
+        description="Invest in Rook's innovative SaaS ecosystem. Join forward-thinking investors backing simple tools with monumental impact. Explore investment opportunities in Rook Scoop, Rook Link, and our growing product portfolio. High-growth SaaS investment."
+        keywords="invest in Rook, SaaS investment, tech investment, startup investment, SaaS funding, Rook investment opportunities, software investment, tech startup funding, SaaS portfolio, investment in SaaS tools"
+        canonical="/invest"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
+      />
+    <div className="min-h-screen bg-white pt-16">
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
         <div 
           className="absolute inset-0 bg-gradient-to-br from-white/40 to-gray-100/20 backdrop-blur-3xl"
           style={{ transform: `translateY(${scrollY * 0.1}px)` }}
         />
-        <div className="container mx-auto px-4 py-24 relative z-10 text-center">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <h1 className="text-6xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
+        <div className="container mx-auto px-4 py-12 sm:py-16 md:py-20 lg:py-24 relative z-10 text-center max-w-7xl">
+          <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-4 sm:mb-6 tracking-tight px-2 sm:px-0">
               Invest In Rook
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We don't just raise capital — we handpick investors who believe in reshaping SaaS and creating new industry standards.
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
+              We don't just raise capital. We handpick investors who believe in reshaping SaaS and creating new industry standards.
             </p>
             <div className="pt-8">
               <a href="mailto:investors@rookhq.com">
@@ -45,14 +68,14 @@ const Invest = () => {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-24 bg-gray-50/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50/50">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-2 sm:px-0">
               A New Standard for Investor Partnerships
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Rook doesn't accept every investor — instead, we carefully select strategic partners aligned with our mission.
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
+              Rook doesn't accept every investor. Instead, we carefully select strategic partners aligned with our mission.
             </p>
           </div>
 
@@ -88,7 +111,7 @@ const Invest = () => {
                 </div>
                 <h3 className="text-2xl font-semibold mb-4 text-gray-900">Mutual Growth</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Investment as collaboration, not just capital — building meaningful relationships that drive innovation.
+                  Investment as collaboration, not just capital. Building meaningful relationships that drive innovation.
                 </p>
               </CardContent>
             </Card>
@@ -97,34 +120,34 @@ const Invest = () => {
       </section>
 
       {/* Why Rook is Different */}
-      <section className="py-24">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
             <div className="space-y-8">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 px-2 sm:px-0">
                 Why Rook is Different
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-2 h-2 bg-[#0096d4] rounded-full mt-3 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#00d437] rounded-full mt-3 flex-shrink-0"></div>
                   <p className="text-lg text-gray-600">
-                    We're not just building products — we're creating an ecosystem that empowers creators and founders.
+                    We're not just building products. We're creating an ecosystem that empowers creators and founders.
                   </p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-2 h-2 bg-[#00d437] rounded-full mt-3 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#0096d4] rounded-full mt-3 flex-shrink-0"></div>
                   <p className="text-lg text-gray-600">
                     Our focus on simplicity and impact creates tools that genuinely solve problems, not create new ones.
                   </p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-2 h-2 bg-[#ffd800] rounded-full mt-3 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#dc2e3e] rounded-full mt-3 flex-shrink-0"></div>
                   <p className="text-lg text-gray-600">
                     Community-driven development ensures we build what users actually need and want.
                   </p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-2 h-2 bg-[#dc2e3e] rounded-full mt-3 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#ffd800] rounded-full mt-3 flex-shrink-0"></div>
                   <p className="text-lg text-gray-600">
                     Strategic positioning in the creator economy and SaaS automation markets with massive growth potential.
                   </p>
@@ -135,22 +158,22 @@ const Invest = () => {
               <div className="backdrop-blur-sm bg-gradient-to-br from-white/60 to-gray-100/40 p-8 rounded-2xl shadow-xl">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white/80 p-4 rounded-lg text-center">
-                    <Link className="h-8 w-8 text-[#0096d4] mx-auto mb-2" />
+                    <img src="/rook-saas-assets/rook-links.png" alt="Rook Link" className="h-8 w-auto mx-auto mb-2 object-contain" />
                     <p className="font-semibold text-gray-900">Rook Link</p>
                     <p className="text-sm text-gray-600">Link Management</p>
                   </div>
                   <div className="bg-white/80 p-4 rounded-lg text-center">
-                    <Users2 className="h-8 w-8 text-[#00d437] mx-auto mb-2" />
+                    <Users2 className="h-8 w-8 text-[#0096d4] mx-auto mb-2" />
                     <p className="font-semibold text-gray-900">Rook Friends</p>
                     <p className="text-sm text-gray-600">Affiliate Hub</p>
                   </div>
                   <div className="bg-white/80 p-4 rounded-lg text-center">
-                    <BarChart3 className="h-8 w-8 text-[#ffd800] mx-auto mb-2" />
+                    <img src="/rook-saas-assets/rook-scoop.png" alt="Rook Scoop" className="h-8 w-auto mx-auto mb-2 object-contain" />
                     <p className="font-semibold text-gray-900">Rook Scoop</p>
                     <p className="text-sm text-gray-600">Data Insights</p>
                   </div>
                   <div className="bg-white/80 p-4 rounded-lg text-center">
-                    <Code className="h-8 w-8 text-[#dc2e3e] mx-auto mb-2" />
+                    <Code className="h-8 w-8 text-[#ffd800] mx-auto mb-2" />
                     <p className="font-semibold text-gray-900">Developers</p>
                     <p className="text-sm text-gray-600">Community</p>
                   </div>
@@ -162,45 +185,20 @@ const Invest = () => {
       </section>
 
       {/* What We're Building */}
-      <section className="py-24 bg-gray-50/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50/50">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-2 sm:px-0">
               The Future of SaaS, Handcrafted at Rook
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             <Card className="backdrop-blur-sm bg-white/70 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
-                <div className="mb-4 inline-block p-3 bg-[#0096d4]/10 rounded-full">
-                  <Link className="h-6 w-6 text-[#0096d4]" />
+                <div className="mb-4 flex items-center justify-center">
+                  <img src="/rook-saas-assets/rook-scoop-blacktext.png" alt="Rook Scoop" className="h-12 w-auto object-contain" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900">Rook Link</h3>
-                <p className="text-gray-600 text-sm">
-                  Next-generation link management that goes beyond simple shortening to provide deep analytics and user insights.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="backdrop-blur-sm bg-white/70 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <CardContent className="p-6">
-                <div className="mb-4 inline-block p-3 bg-[#00d437]/10 rounded-full">
-                  <Users2 className="h-6 w-6 text-[#00d437]" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900">Rook Friends</h3>
-                <p className="text-gray-600 text-sm">
-                  Comprehensive affiliate hub enabling seamless SaaS payouts and partnership management for creators.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="backdrop-blur-sm bg-white/70 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <CardContent className="p-6">
-                <div className="mb-4 inline-block p-3 bg-[#ffd800]/10 rounded-full">
-                  <BarChart3 className="h-6 w-6 text-[#ffd800]" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900">Rook Scoop</h3>
                 <p className="text-gray-600 text-sm">
                   Advanced insights and data analytics platform that transforms raw data into actionable business intelligence.
                 </p>
@@ -209,12 +207,11 @@ const Invest = () => {
 
             <Card className="backdrop-blur-sm bg-white/70 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
-                <div className="mb-4 inline-block p-3 bg-[#dc2e3e]/10 rounded-full">
-                  <Code className="h-6 w-6 text-[#dc2e3e]" />
+                <div className="mb-4 flex items-center justify-center">
+                  <img src="/rook-saas-assets/rook-links-blacktext.png" alt="Rook Link" className="h-12 w-auto object-contain" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900">Rook Developers</h3>
                 <p className="text-gray-600 text-sm">
-                  Global SaaS developer community fostering collaboration, learning, and innovation across the ecosystem.
+                  Next-generation link management that goes beyond simple shortening to provide deep analytics and user insights.
                 </p>
               </CardContent>
             </Card>
@@ -223,7 +220,7 @@ const Invest = () => {
       </section>
 
       {/* Exclusivity Callout */}
-      <section className="py-24">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <div className="backdrop-blur-sm bg-gradient-to-br from-white/60 to-gray-100/40 p-16 rounded-3xl shadow-2xl">
@@ -236,10 +233,10 @@ const Invest = () => {
       </section>
 
       {/* How to Engage */}
-      <section className="py-24 bg-gray-50/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-50/50">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-2 sm:px-0">
               Ready to Join the Journey?
             </h2>
           </div>
@@ -279,12 +276,12 @@ const Invest = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <div className="backdrop-blur-3xl bg-gradient-to-br from-white/40 to-gray-100/20 p-16 rounded-3xl shadow-2xl">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
-                If you see the world like we do — let's build the future together.
+                If you see the world like we do, let's build the future together.
               </h2>
               <Button 
                 size="lg" 
@@ -298,6 +295,7 @@ const Invest = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

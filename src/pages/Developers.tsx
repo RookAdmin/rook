@@ -1,5 +1,5 @@
-
 import React from "react";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -90,18 +90,29 @@ const Developers = () => {
     }
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Rook Developers Community",
+    "description": "Join Rook's developer community for builders and innovators. Access APIs, documentation, contribute to open source, and connect with fellow developers.",
+    "url": "https://rookhq.com/developers"
+  };
+
   return (
-    <div className="min-h-screen bg-white">
-      {/* SEO Meta Tags */}
-      <title>Rook Developers – Community Hub for Builders & Innovators</title>
-      <meta 
-        name="description" 
-        content="Rook Developers is a community hub for builders to collaborate, share, and grow. Contribute guides, join events, and help shape the Rook ecosystem."
+    <>
+      <SEO
+        title="Rook Developers – Community Hub for Builders & Innovators"
+        description="Join Rook's developer community. Access APIs, documentation, contribute to open source projects, share ideas, and connect with fellow builders and innovators. Free to join."
+        keywords="developer community, API documentation, open source, developer tools, software development, coding community, tech community, developer resources"
+        canonical="/developers"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
       />
-      <meta name="keywords" content="developer community, SaaS dev hub, Rook developers, open source SaaS builders, contribute to SaaS tools" />
+    <div className="min-h-screen bg-white pt-16">
 
       {/* Hero Section */}
-      <section className="py-20 px-4 relative overflow-hidden bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 px-4 relative overflow-hidden bg-gray-50">
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -110,7 +121,7 @@ const Developers = () => {
                   <Users className="h-4 w-4 mr-2" />
                   Join the Community
                 </Badge>
-                <h1 className="text-5xl lg:text-6xl font-bold text-black leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight px-2 sm:px-0">
                   Rook Developers
                 </h1>
                 <h2 className="text-2xl lg:text-3xl text-gray-600 leading-relaxed">
@@ -122,13 +133,17 @@ const Developers = () => {
               </div>
               
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-[#00d437] hover:bg-[#00d437]/90 text-white">
-                  <Users className="h-5 w-5 mr-2" />
-                  Join Rook Developers
+                <Button size="lg" asChild className="bg-[#00d437] hover:bg-[#00d437]/90 text-white">
+                  <a href="mailto:hustle@rookhq.com?subject=I am ready to join Rook Developers Community&body=Hi,%0D%0A%0D%0AName:%20%0D%0A%0D%0AI am excited to join the Rook Developers Community and contribute to the ecosystem. I am ready to learn, collaborate, and help shape the future of SaaS development with the community.%0D%0A%0D%0ALooking forward to being part of this amazing community!">
+                    <Users className="h-5 w-5 mr-2" />
+                    Join Dev Community
+                  </a>
                 </Button>
-                <Button size="lg" variant="outline" className="border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4] hover:text-white">
-                  <MessageCircle className="h-5 w-5 mr-2" />
-                  Contribute Ideas
+                <Button size="lg" variant="outline" asChild className="border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4] hover:text-white">
+                  <a href="mailto:say@rookhq.com?subject=I have new ideas that would help millions of people via Rook&body=Hi,%0D%0A%0D%0AName:%20%0D%0A%0D%0AI have some ideas that could help millions of people through Rook:%0D%0A%0D%0AIdea 1:%0D%0A%0D%0AIdea 2:%0D%0A%0D%0AIdea 3:%0D%0A%0D%0AAdditional details:%0D%0A%0D%0AThank you!">
+                    <MessageCircle className="h-5 w-5 mr-2" />
+                    Contribute Ideas
+                  </a>
                 </Button>
               </div>
             </div>
@@ -174,7 +189,7 @@ const Developers = () => {
             <h2 className="text-4xl font-bold text-black">What is Rook Developers?</h2>
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                Rook Developers is more than just an API hub—it's a thriving community where builders, creators, and innovators come together to shape the future of SaaS tools. We believe in the power of collaboration and shared knowledge.
+                Rook Developers is more than just an API hub. It's a thriving community where builders, creators, and innovators come together to shape the future of SaaS tools. We believe in the power of collaboration and shared knowledge.
               </p>
               <p>
                 Our community provides a platform for developers to collaborate on projects, learn from each other through tutorials and discussions, and contribute to open-source initiatives that benefit everyone in the ecosystem.
@@ -188,10 +203,10 @@ const Developers = () => {
       </section>
 
       {/* Community Highlights */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-black mb-4">Community Highlights</h2>
+      <section className="py-12 sm:py-16 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-3 sm:mb-4">Community Highlights</h2>
             <p className="text-xl text-gray-600">Discover what makes our developer community special</p>
           </div>
           
@@ -217,10 +232,10 @@ const Developers = () => {
       </section>
 
       {/* Contribution Opportunities */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-black mb-4">Ways to Get Involved</h2>
+      <section className="py-12 sm:py-16 px-4">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-3 sm:mb-4">Ways to Get Involved</h2>
             <p className="text-xl text-gray-600">Choose how you want to contribute to the community</p>
           </div>
           
@@ -241,19 +256,21 @@ const Developers = () => {
           </div>
           
           <div className="text-center">
-            <Button size="lg" className="bg-[#00d437] hover:bg-[#00d437]/90 text-white">
-              <Star className="h-5 w-5 mr-2" />
-              Become a Contributor
+            <Button size="lg" asChild className="bg-[#00d437] hover:bg-[#00d437]/90 text-white">
+              <a href="mailto:hustle@rookhq.com?subject=I am ready to join Rook Developers Community&body=Hi,%0D%0A%0D%0AName:%20%0D%0A%0D%0AI am excited to join the Rook Developers Community and contribute to the ecosystem. I am ready to learn, collaborate, and help shape the future of SaaS development with the community.%0D%0A%0D%0ALooking forward to being part of this amazing community!">
+                <Star className="h-5 w-5 mr-2" />
+                Join Dev Community
+              </a>
             </Button>
           </div>
         </div>
       </section>
 
       {/* Community Voices */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-black mb-4">Community Voices</h2>
+      <section className="py-12 sm:py-16 px-4 bg-gray-50">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-3 sm:mb-4">Community Voices</h2>
             <p className="text-xl text-gray-600">What our developers are saying</p>
           </div>
           
@@ -281,10 +298,10 @@ const Developers = () => {
       </section>
 
       {/* Events & Resources */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-black mb-4">Events & Learning Resources</h2>
+      <section className="py-12 sm:py-16 px-4">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-3 sm:mb-4">Events & Learning Resources</h2>
             <p className="text-xl text-gray-600">Stay updated with community activities and learning opportunities</p>
           </div>
           
@@ -347,25 +364,30 @@ const Developers = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 px-4 bg-[#0096d4]">
+      <section className="py-12 sm:py-16 md:py-20 px-4 bg-[#0096d4]">
         <div className="container mx-auto max-w-4xl text-center text-white">
           <h2 className="text-4xl font-bold mb-4">Be Part of the Rook Developer Ecosystem</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             Join a growing community of builders, innovators, and creators who are shaping the future of SaaS development.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" className="bg-[#00d437] hover:bg-[#00d437]/90 text-white">
-              <Users className="h-5 w-5 mr-2" />
-              Join Now (Free)
+            <Button size="lg" asChild className="bg-[#00d437] hover:bg-[#00d437]/90 text-white">
+              <a href="mailto:hustle@rookhq.com?subject=I am ready to join Rook Developers Community&body=Hi,%0D%0A%0D%0AName:%20%0D%0A%0D%0AI am excited to join the Rook Developers Community and contribute to the ecosystem. I am ready to learn, collaborate, and help shape the future of SaaS development with the community.%0D%0A%0D%0ALooking forward to being part of this amazing community!">
+                <Users className="h-5 w-5 mr-2" />
+                Join Dev Community
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="bg-[#000000] text-white border-0 focus:outline-none hover:bg-white hover:text-[#000000]">
-              <Lightbulb className="h-5 w-5 mr-2 " />
-              Contribute Ideas
+            <Button size="lg" variant="outline" asChild className="bg-[#000000] text-white border-0 focus:outline-none hover:bg-white hover:text-[#000000]">
+              <a href="mailto:say@rookhq.com?subject=I have new ideas that would help millions of people via Rook&body=Hi,%0D%0A%0D%0AName:%20%0D%0A%0D%0AI have some ideas that could help millions of people through Rook:%0D%0A%0D%0AIdea 1:%0D%0A%0D%0AIdea 2:%0D%0A%0D%0AIdea 3:%0D%0A%0D%0AAdditional details:%0D%0A%0D%0AThank you!">
+                <Lightbulb className="h-5 w-5 mr-2 " />
+                Contribute Ideas
+              </a>
             </Button>
           </div>
         </div>
       </section>
     </div>
+    </>
   );
 };
 

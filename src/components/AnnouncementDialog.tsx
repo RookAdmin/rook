@@ -78,7 +78,7 @@ export const AnnouncementDialog = () => {
             <ExternalLinkIcon className="h-5 w-5" />
           </Button>
         </div>
-        <DialogFooter className="sm:justify-start pt-2 border-t border-gray-100">
+        <DialogFooter className="sm:justify-center pt-2 border-t border-gray-100">
           <Button
             variant="outline"
             onClick={handleClose}

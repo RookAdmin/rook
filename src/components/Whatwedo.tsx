@@ -90,23 +90,35 @@ const Whatwedo = () => {
   };
 
   return (
-    <section className="py-40 px-4 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-12 sm:py-20 md:py-32 lg:py-40 px-4 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-24"
+          className="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24"
         >
-          <div className="inline-block mb-6">
-            <div className="h-1 w-24 bg-[#0096d4] mx-auto rounded-full"></div>
+          <div className="inline-block mb-4 sm:mb-6">
+            <div className="h-1 w-16 sm:w-20 md:w-24 bg-[#0096d4] mx-auto rounded-full"></div>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 tracking-tight mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mb-4 sm:mb-6">
             What We <span className="text-[#0096d4]">Do</span> ?
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg font-light">
+          <p className="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg font-light px-4">
             Transforming ideas into digital excellence with{" "}
-            <span className="text-[#0096d4] font-medium">Realm by Rook</span>
+            <a 
+              href="https://realmrook.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <img 
+                src="/rook-saas-assets/realm-black.png" 
+                alt="Realm by Rook" 
+                className="inline-block align-middle"
+                style={{ height: '42px' }}
+              />
+            </a>
           </p>
         </motion.div>
 
@@ -114,7 +126,7 @@ const Whatwedo = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
         >
           {services.map((service, index) => (
             <motion.div

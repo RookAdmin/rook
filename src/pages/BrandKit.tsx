@@ -1,5 +1,5 @@
 import React from "react";
-import DocumentMeta from "react-document-meta";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Download, Copy, CheckCircle } from "lucide-react";
@@ -94,28 +94,18 @@ const BrandKit = () => {
     });
   };
 
-  const meta = {
-    title: "Brand Kit | Rook - Official Brand Assets and Guidelines",
-    description:
-      "Access Rook's official brand assets, including logos, color palettes, and brand guidelines. Download our complete brand kit for consistent brand representation.",
-    meta: {
-      charset: "utf-8",
-      name: {
-        keywords:
-          "Rook brand kit, brand guidelines, logo assets, brand colors, corporate identity",
-      },
-      property: {
-        "og:title": "Brand Kit | Rook - Official Brand Assets and Guidelines",
-        "og:description":
-          "Access Rook's official brand assets, including logos, color palettes, and brand guidelines.",
-        "og:type": "website",
-      },
-    },
-  };
-
   return (
-    <DocumentMeta {...meta}>
-      <div className="min-h-screen bg-white pt-16">
+    <>
+      <SEO
+        title="Rook Brand Kit | Download Logos, Colors & Brand Guidelines - Official Assets"
+        description="Download Rook's official brand assets, logos, colors, and brand guidelines. Get high-resolution logos, brand colors (Rook Red, Rook Blue, Rook Green, Rook Yellow), and usage guidelines for partners, media, and developers."
+        keywords="Rook brand kit, Rook logo, brand assets, brand guidelines, logo download, brand colors, Rook branding, official assets, brand resources, media kit"
+        canonical="/brand-kit"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
+      />
+    <div className="min-h-screen bg-white pt-16">
         {/* Hero Section */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 max-w-6xl">
@@ -548,7 +538,7 @@ const BrandKit = () => {
           </div>
         </section>
       </div>
-    </DocumentMeta>
+    </>
   );
 };
 

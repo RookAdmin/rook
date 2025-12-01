@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -37,6 +38,7 @@ import MyProBuddy from "./pages/MyProBuddy";
 import HloLegal from "./pages/HloLegal";
 import ZohoPartnership from "./pages/ZohoPartnership";
 import Compliance from "./pages/Compliance";
+import ProfitPledge from "./pages/ProfitPledge";
 
 const App = () => {
   const queryClient = new QueryClient();
@@ -64,15 +66,16 @@ const App = () => {
   }, []);
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <div className="min-h-screen flex flex-col">
-            <Navbar />
-            <main className="flex-grow">
-              <Routes>
+    <HelmetProvider>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <div className="min-h-screen flex flex-col">
+              <Navbar />
+              <main className="flex-grow">
+                <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/perspectives" element={<Perspectives />} />
@@ -104,9 +107,10 @@ const App = () => {
                 <Route path="/life" element={<Life />} />
                 <Route path="/friends" element={<RookFriends />} />
                 <Route path="/startups/myprobuddy" element={<MyProBuddy />} />
-                <Route path="/startups/hlo-legal" element={<HloLegal />} />
+                <Route path="/startups/hlo-enterprise-legal" element={<HloLegal />} />
                 <Route path="/startups/zoho" element={<ZohoPartnership />} />
                 <Route path="/compliance" element={<Compliance />} />
+                <Route path="/profit-pledge" element={<ProfitPledge />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </main>
@@ -115,6 +119,7 @@ const App = () => {
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
+    </HelmetProvider>
   );
 };
 

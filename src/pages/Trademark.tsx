@@ -1,5 +1,5 @@
 import React from "react";
-import DocumentMeta from "react-document-meta";
+import { SEO } from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Shield,
@@ -15,18 +15,14 @@ import {
 } from "lucide-react";
 
 const Trademark = () => {
-  const meta = {
-    title: "Trademark Guidelines | Rook Legal",
-    description:
-      "Official trademark guidelines and usage policies for Rook brand assets. Learn how to properly use our trademarks and brand elements.",
-    meta: {
-      charset: "utf-8",
-      name: {
-        keywords:
-          "Rook trademark, brand guidelines, legal usage, brand policies, trademark guidelines",
-      },
-    },
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Rook Trademark Guidelines",
+    "description": "Rook trademark guidelines and usage policies. Learn how to properly use Rook trademarks, logos, and brand assets.",
+    "url": "https://rookhq.com/trademark"
   };
+
 
   const trademarks = [
     {
@@ -153,8 +149,17 @@ const Trademark = () => {
   ];
 
   return (
-    <DocumentMeta {...meta}>
-      <div className="min-h-screen bg-white pt-16">
+    <>
+      <SEO
+        title="Rook Trademark Guidelines | Legal Usage Policies for Trademarks & Brand Assets"
+        description="Rook trademark guidelines and usage policies. Learn how to properly use Rook trademarks, logos, and brand assets. Legal guidelines for partners, developers, and media."
+        keywords="Rook trademark, trademark guidelines, brand usage, logo usage, trademark policy, legal guidelines, brand protection, trademark rights"
+        canonical="/trademark"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
+      />
+    <div className="min-h-screen bg-white pt-16">
         {/* Hero Section */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 max-w-6xl">
@@ -410,7 +415,7 @@ const Trademark = () => {
           </div>
         </section>
       </div>
-    </DocumentMeta>
+    </>
   );
 };
 

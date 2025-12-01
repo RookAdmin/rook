@@ -307,6 +307,14 @@ export const Footer = () => {
                   Letter From The CEO
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/profit-pledge"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Profit Pledge
+                </Link>
+              </li>
               
             </ul>
           </div>
@@ -347,7 +355,7 @@ export const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/startups/hlo-legal"
+                  to="/startups/hlo-enterprise-legal"
                   className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
                 >
                   Hlo Enterprise Legal+
@@ -377,7 +385,7 @@ export const Footer = () => {
         <div className="mt-12 pt-8 border-t border-[#333333]">
           <div className="flex flex-col md:flex-row justify-between items-center mt-4">
             <p className="text-left text-[#f5f5f5] text-sm">
-              © {new Date().getFullYear()} Rook. All rights reserved.
+              © 2020 - {new Date().getFullYear()} Rook Platforms. All rights reserved.
             </p>
             <div className="flex space-x-4 mt-2 md:mt-0">
               <Link

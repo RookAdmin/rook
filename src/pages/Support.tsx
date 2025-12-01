@@ -1,9 +1,54 @@
-
+import { SEO } from "@/components/SEO";
 import { MessageCircle, Book, Video, Mail, Phone, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const Support = () => {
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Rook Support",
+      "description": "Get help with Rook products. 24/7 live chat, raise tickets, watch tutorials, or contact our support team. We're here to help.",
+      "url": "https://rookhq.com/support",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Rook Support",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Service",
+          "availableLanguage": "English",
+          "areaServed": "Worldwide",
+          "email": "support@rookhq.com"
+        }
+      }
+    }
+  ];
+
+  const faqData = [
+    {
+      question: "How can I get support for Rook products?",
+      answer: "You can get support through multiple channels: 24/7 live chat via WhatsApp, raise a ticket through our support portal, watch video tutorials on YouTube, or email us at support@rookhq.com. We typically respond within 24 hours."
+    },
+    {
+      question: "Is Rook support available 24/7?",
+      answer: "Yes, our live chat support is available 24/7 via WhatsApp. For ticket-based support, we aim to respond within 24 hours. Video tutorials are available on-demand anytime."
+    },
+    {
+      question: "Where can I find documentation for Rook products?",
+      answer: "You can find comprehensive documentation, guides, and tutorials in our support portal at support.rookhq.com. We also have video tutorials available on our YouTube channel."
+    },
+    {
+      question: "How do I raise a support ticket?",
+      answer: "You can raise a support ticket by visiting our support portal at support.rookhq.com. Simply browse articles or submit a new ticket with your question or issue, and our team will get back to you within 24 hours."
+    }
+  ];
+
+  const breadcrumbs = [
+    { name: "Home", url: "/" },
+    { name: "Support", url: "/support" }
+  ];
+
   const supportOptions = [
     {
       title: "Live Chat",
@@ -49,26 +94,38 @@ const Support = () => {
   ];
 
   return (
-    <div className="pt-16">
+    <>
+      <SEO
+        title="Rook Support | 24/7 Help Center - Live Chat, Tickets, Tutorials & Contact"
+        description="Get help with Rook products. 24/7 live chat support, raise tickets, watch video tutorials, or contact our support team. We're here to help you succeed with Rook's tools."
+        keywords="Rook support, customer support, help center, live chat, support tickets, Rook help, customer service, technical support, product support, Rook assistance"
+        canonical="/support"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
+        faqData={faqData}
+        breadcrumbs={breadcrumbs}
+      />
+    <div className="pt-16 min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
-        <div className="container mx-auto px-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-blue-50 to-white">
+        <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-2 sm:px-0">
               How can we help you?
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 px-4 sm:px-0">
               Get the support you need to succeed with Rook
             </p>
             
             {/* Search Bar */}
-            <div className="max-w-2xl mx-auto relative">
-              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
+            <div className="max-w-2xl mx-auto relative px-4 sm:px-0">
+              <Search className="absolute left-4 sm:left-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4 sm:h-5 sm:w-5" />
               <Input 
                 placeholder="Search for help articles, guides, and more..."
-                className="pl-12 pr-4 py-6 text-lg rounded-full border-2 border-gray-200 focus:border-[#0096d4]"
+                className="pl-10 sm:pl-12 pr-20 sm:pr-24 py-4 sm:py-6 text-sm sm:text-base md:text-lg rounded-full border-2 border-gray-200 focus:border-[#0096d4]"
               />
-              <Button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#0096d4] hover:bg-[#0096d4]/90 rounded-full">
+              <Button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#0096d4] hover:bg-[#0096d4]/90 rounded-full text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2">
                 Search
               </Button>
             </div>
@@ -77,18 +134,18 @@ const Support = () => {
       </section>
 
       {/* Support Options */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+      <section className="py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
               Choose Your Support Channel
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-base sm:text-lg text-gray-600 px-4">
               Multiple ways to get the help you need, when you need it
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {supportOptions.map((option, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-lg border hover:shadow-xl transition-shadow">
                 <div className="flex justify-center mb-4">
@@ -173,6 +230,7 @@ const Support = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

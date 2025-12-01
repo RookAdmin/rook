@@ -1,5 +1,5 @@
-
 import React, { useEffect, useState } from "react";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Users, TrendingUp, Target, Zap, Shield, Rocket, CheckCircle, Star, BarChart3, Network, DollarSign } from "lucide-react";
@@ -61,30 +61,49 @@ const MyProBuddy = () => {
     };
   }, []);
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Rook × MyProBuddy",
+    "description": "Startup acceleration program combining Rook's automation tools with MyProBuddy's investor network and mentorship.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Rook"
+    },
+    "areaServed": "Worldwide",
+    "url": "https://rookhq.com/startups/myprobuddy"
+  };
+
   return (
-    <div className={`w-full min-h-screen bg-white transition-opacity duration-500 overflow-hidden ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <>
+      <SEO
+        title="Rook × MyProBuddy | Startup Acceleration with Growth Automation & Investor Network"
+        description="Accelerate your startup with Rook's automation tools and MyProBuddy's investor network. Get mentorship, funding connections, and growth tools in one powerful partnership program."
+        keywords="startup acceleration, MyProBuddy, investor network, startup mentorship, funding, startup growth, Rook automation, startup program"
+        canonical="/startups/myprobuddy"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
+      />
+    <div className={`w-full min-h-screen bg-white pt-16 transition-opacity duration-500 overflow-hidden ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       {/* Hero Section */}
-      <section className="py-24 md:py-32 bg-white relative overflow-hidden">
-        <div className="container mx-auto px-4 max-w-screen-xl relative z-10">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="max-w-5xl mx-auto text-center">
             {/* Co-branding badges */}
-            <div className="flex items-center justify-center gap-6 mb-8 animate-fade-up">
-              <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-6 py-2 shadow-soft">
-                <span className="text-[#0096d4] font-bold text-lg">Rook</span>
-              </div>
-              <div className="text-2xl text-gray-300">×</div>
-              <div className="bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-6 py-2 shadow-soft">
-                <span className="text-[#dc2e3e] font-bold text-lg">MyProBuddy</span>
-              </div>
+            <div className="flex items-center justify-center gap-4 sm:gap-6 mb-6 sm:mb-8 animate-fade-up">
+              <img src="/thumbnail.png" alt="Rook" className="h-14 sm:h-16 md:h-20 w-auto" />
+              <span className="text-xl sm:text-2xl text-gray-400">×</span>
+              <img src="/partners/mypro.avif" alt="MyProBuddy" className="h-14 sm:h-16 md:h-20 w-auto" />
             </div>
             
             {/* Main Headline */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight tracking-tight mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-tight tracking-tight mb-6 sm:mb-8 animate-fade-up px-2 sm:px-0" style={{ animationDelay: "0.1s" }}>
               Rook for Startups <span className="text-[#dc2e3e]">×</span> <span className="text-[#0096d4]">MyProBuddy</span>
             </h1>
             
             {/* Subheadline */}
-            <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto mb-12 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 max-w-4xl mx-auto mb-8 sm:mb-10 md:mb-12 animate-fade-up px-4 sm:px-0" style={{ animationDelay: "0.2s" }}>
               The venture-acceleration partnership that empowers founders with <span className="text-[#00d437] font-semibold">smart tools</span>, <span className="text-[#0096d4] font-semibold">strategic mentorship</span>, and <span className="text-[#dc2e3e] font-semibold">investor connections</span>.
             </p>
             
@@ -92,10 +111,13 @@ const MyProBuddy = () => {
             <div className="animate-fade-up" style={{ animationDelay: "0.3s" }}>
               <Button 
                 size="lg" 
+                asChild
                 className="bg-[#00d437] text-white hover:bg-[#00d437]/90 transition-all hover:translate-y-[-2px] text-lg px-12 py-4 rounded-full shadow-premium group"
               >
-                Get Started Today
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" rel="noopener noreferrer">
+                  Get Started Today
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </a>
               </Button>
             </div>
           </div>
@@ -107,17 +129,17 @@ const MyProBuddy = () => {
       </section>
 
       {/* Why This Partnership */}
-      <section className="py-20 bg-gray-50/50">
-        <div className="container mx-auto px-4 max-w-screen-xl">
-          <div className="text-center mb-16">
-            <div className="h-1 w-20 bg-[#0096d4] mx-auto mb-6"></div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Why This Partnership?</h2>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50/50">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <div className="h-1 w-12 sm:w-16 md:w-20 bg-[#0096d4] mx-auto mb-4 sm:mb-6"></div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-black">Why This Partnership?</h2>
+            <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto px-4">
               Combining Rook's cutting-edge automation tools with MyProBuddy's proven fundraising expertise to create the ultimate startup acceleration ecosystem.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-soft hover:shadow-premium transition-all duration-300 transform hover:-translate-y-1">
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-[#00d437]/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -162,11 +184,11 @@ const MyProBuddy = () => {
       </section>
 
       {/* Featured Offerings */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-screen-xl">
-          <div className="text-center mb-16">
-            <div className="h-1 w-20 bg-[#00d437] mx-auto mb-6"></div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Complete Startup Acceleration Suite</h2>
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <div className="h-1 w-12 sm:w-16 md:w-20 bg-[#00d437] mx-auto mb-4 sm:mb-6"></div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-black">Complete Startup Acceleration Suite</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -252,11 +274,11 @@ const MyProBuddy = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 bg-gradient-to-b from-gray-50/30 to-white">
-        <div className="container mx-auto px-4 max-w-screen-xl">
-          <div className="text-center mb-16">
-            <div className="h-1 w-20 bg-[#0096d4] mx-auto mb-6"></div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Your Journey to Success</h2>
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-gray-50/30 to-white">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <div className="h-1 w-12 sm:w-16 md:w-20 bg-[#0096d4] mx-auto mb-4 sm:mb-6"></div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-black">Your Journey to Success</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               A streamlined 4-step process that takes you from startup idea to funded scale-up.
             </p>
@@ -289,7 +311,7 @@ const MyProBuddy = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 bg-[#ffd800] rounded-full flex items-center justify-center mx-auto mb-6 text-black text-2xl font-bold shadow-premium">
+                <div className="w-20 h-20 bg-[#ffd800] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-premium">
                   4
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-black">Access Capital</h3>
@@ -301,16 +323,16 @@ const MyProBuddy = () => {
       </section>
 
       {/* Impact Numbers */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-screen-xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Partnership Impact</h2>
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-black">Partnership Impact</h2>
             <p className="text-lg text-gray-700">Real numbers from our combined ecosystem</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[#0096d4] mb-4">
+              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#0096d4] mb-3 sm:mb-4">
                 {counters.investors}K+
               </div>
               <p className="text-xl text-gray-700 font-medium">Investors Connected</p>
@@ -337,8 +359,8 @@ const MyProBuddy = () => {
       </section>
 
       {/* Testimonial */}
-      <section className="py-20 bg-gray-50/50">
-        <div className="container mx-auto px-4 max-w-screen-xl">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50/50">
+        <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mx-auto">
             <Card className="bg-white/90 backdrop-blur-sm border-0 shadow-premium p-12 text-center">
               <div className="flex justify-center mb-6">
@@ -348,7 +370,7 @@ const MyProBuddy = () => {
                   ))}
                 </div>
               </div>
-              <blockquote className="text-2xl md:text-3xl font-light text-gray-800 mb-8 italic leading-relaxed">
+              <blockquote className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-gray-800 mb-6 sm:mb-8 italic leading-relaxed px-4 sm:px-0">
                 "With Rook's smart automation tools and MyProBuddy's strategic funding support, we went from prototype to Series A in just 8 months. The partnership gave us everything we needed to scale fast and raise smart."
               </blockquote>
               <div className="text-lg font-semibold text-black">
@@ -363,10 +385,10 @@ const MyProBuddy = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-r from-[#00d437]/5 via-[#0096d4]/5 to-[#dc2e3e]/5">
-        <div className="container mx-auto px-4 max-w-screen-xl text-center">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-[#00d437]/5 via-[#0096d4]/5 to-[#dc2e3e]/5">
+        <div className="container mx-auto px-4 max-w-7xl text-center">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-black">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-black">
               Start Accelerating Your Startup Today
             </h2>
             <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
@@ -376,18 +398,24 @@ const MyProBuddy = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
                 size="lg" 
+                asChild
                 className="bg-[#00d437] text-white hover:bg-[#00d437]/90 transition-all hover:translate-y-[-2px] text-lg px-12 py-4 rounded-full shadow-premium group"
               >
-                Start Accelerating
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" rel="noopener noreferrer">
+                  Start Accelerating
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </a>
               </Button>
               
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4]/10 transition-all hover:translate-y-[-2px] text-lg px-12 py-4 rounded-full"
+                variant="outline"
+                asChild
+                className="border-black text-black hover:bg-black hover:text-white transition-all"
               >
-                Learn More
+                <a href="/rook-for-startups" target="_blank" rel="noopener noreferrer">
+                  Learn More
+                </a>
               </Button>
             </div>
 
@@ -408,7 +436,9 @@ const MyProBuddy = () => {
           </div>
         </div>
       </section>
+
     </div>
+    </>
   );
 };
 

@@ -1,4 +1,4 @@
-
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -21,74 +21,45 @@ import {
   Target,
   TrendingUp
 } from "lucide-react";
-import { useEffect } from "react";
 
 const RookScoop = () => {
-  useEffect(() => {
-    // SEO Schema markup
-    const productSchema = {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Rook Scoop",
-      "description": "AI-powered SaaS publishing and product insights platform for founders, teams, and enterprises",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web Browser",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "priceValidUntil": "2024-12-31"
-      }
-    };
-
-    const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What makes Rook Scoop different from other SaaS tools?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Rook Scoop is specifically designed for the complete SaaS lifecycle - from idea validation to market-ready product. It combines AI-powered insights, seamless integrations, and enterprise-grade security in one platform."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I integrate with my existing tools?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, Rook Scoop integrates seamlessly with popular tools like Slack, Jira, GitHub, Figma, and more. Our API-first approach ensures smooth workflow integration."
-          }
-        }
-      ]
-    };
-
-    const productScript = document.createElement('script');
-    productScript.type = 'application/ld+json';
-    productScript.textContent = JSON.stringify(productSchema);
-    document.head.appendChild(productScript);
-
-    const faqScript = document.createElement('script');
-    faqScript.type = 'application/ld+json';
-    faqScript.textContent = JSON.stringify(faqSchema);
-    document.head.appendChild(faqScript);
-
-    // SEO metadata
-    document.title = "Rook Scoop | AI-Powered SaaS Publishing & Product Insights";
-    
-    const metaDescription = document.querySelector('meta[name="description"]') || document.createElement('meta');
-    metaDescription.setAttribute('name', 'description');
-    metaDescription.setAttribute('content', 'Rook Scoop is the ultimate SaaS publishing tool, helping founders, teams, and enterprises launch, analyze, and scale products faster with AI.');
-    if (!document.querySelector('meta[name="description"]')) {
-      document.head.appendChild(metaDescription);
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Rook Scoop",
+    "description": "AI-powered SaaS publishing and product insights platform for founders, teams, and enterprises",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2024-12-31"
     }
+  };
 
-    return () => {
-      document.head.removeChild(productScript);
-      document.head.removeChild(faqScript);
-    };
-  }, []);
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes Rook Scoop different from other SaaS tools?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rook Scoop is specifically designed for the complete SaaS lifecycle - from idea validation to market-ready product. It combines AI-powered insights, seamless integrations, and enterprise-grade security in one platform."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I integrate with my existing tools?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Rook Scoop integrates seamlessly with popular tools like Slack, Jira, GitHub, Figma, and more. Our API-first approach ensures smooth workflow integration."
+        }
+      }
+    ]
+  };
 
   const keyFeatures = [
     {
@@ -245,7 +216,17 @@ const RookScoop = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <SEO
+        title="Rook Scoop | AI-Powered SaaS Publishing & Product Insights Platform"
+        description="Rook Scoop is the ultimate SaaS publishing tool, helping founders, teams, and enterprises launch, analyze, and scale products faster with AI-powered insights and seamless integrations."
+        keywords="SaaS publishing, product insights, AI SaaS tools, product management, SaaS analytics, product development, SaaS platform, startup tools, enterprise SaaS"
+        canonical="/scoop"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={{ ...productSchema, ...faqSchema }}
+      />
+    <div className="min-h-screen bg-white pt-16">
       {/* Hero Section */}
       <section className="py-20 px-4 relative overflow-hidden bg-gray-50">
         <div className="container mx-auto max-w-7xl relative z-10">
@@ -574,6 +555,7 @@ const RookScoop = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

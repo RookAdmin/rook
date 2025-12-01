@@ -1,7 +1,6 @@
-
 import React, { useEffect, useState } from "react";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { ArrowRight, Shield, Scale, Rocket, CheckCircle, Building, Users, TrendingUp, FileText, Lock, Zap } from "lucide-react";
 
 const HloLegal = () => {
@@ -65,33 +64,50 @@ const HloLegal = () => {
     }
   }, [isVisible]);
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Rook × Hlo Enterprise Legal+",
+    "description": "Comprehensive legal support and growth automation for startups. Entity formation, compliance, and Rook's automation tools in one package.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Rook"
+    },
+    "url": "https://rookhq.com/startups/hlo-enterprise-legal"
+  };
+
   return (
-    <div className={`w-full min-h-screen bg-white transition-opacity duration-700 overflow-hidden ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <>
+      <SEO
+        title="Rook × Hlo Enterprise Legal+ | Legal Support & Growth Automation for Startups"
+        description="Get comprehensive legal support and growth automation for your startup. Entity formation, compliance frameworks, and Rook's automation tools combined in one powerful partnership."
+        keywords="startup legal services, Hlo Legal, entity formation, legal compliance, startup legal support, incorporation services, legal automation, startup legal framework"
+        canonical="/startups/hlo-enterprise-legal"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
+      />
+    <div className={`w-full min-h-screen bg-white pt-16 transition-opacity duration-700 overflow-hidden ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       {/* Hero Section */}
-      <section className="py-24 md:py-32 bg-white w-full relative">
-        <div className="container mx-auto px-4 max-w-screen-xl">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white w-full relative">
+        <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-5xl mx-auto text-center">
             {/* Co-branded logos */}
-            <div className="flex items-center justify-center mb-8 animate-fade-up">
-              <div className="flex items-center space-x-6">
-                <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-soft border border-gray-100">
-                 <img src="/placeholder.svg" alt="Logo" className="h-10 w-auto" />
-
-                </div>
-                <span className="text-2xl text-gray-400">×</span>
-                <div className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-soft border border-gray-100">
-                  <span className="text-xl font-bold text-[#0096d4]">Hlo Enterprise Legal+</span>
-                </div>
+            <div className="flex items-center justify-center mb-6 sm:mb-8 animate-fade-up">
+              <div className="flex items-center gap-4 sm:gap-6">
+                <img src="/thumbnail.png" alt="Rook" className="h-14 sm:h-16 md:h-20 w-auto" />
+                <span className="text-xl sm:text-2xl text-gray-400">×</span>
+                <img src="/partners/Hlo.png" alt="Hlo Enterprise Legal+" className="h-14 sm:h-16 md:h-20 w-auto" />
               </div>
             </div>
             
             {/* Main Headline */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight tracking-tight mb-6 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              Rook for Startups × <span className="text-[#0096d4]">Hlo Enterprise Legal+</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-tight tracking-tight mb-4 sm:mb-6 animate-fade-up px-2 sm:px-0" style={{ animationDelay: "0.2s" }}>
+              Rook for Startups × <span className="text-[#dc2e3e]">Hlo Enterprise Legal+</span>
             </h1>
             
             {/* Subheadline */}
-            <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto mb-8 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 max-w-4xl mx-auto mb-6 sm:mb-8 animate-fade-up px-4 sm:px-0" style={{ animationDelay: "0.3s" }}>
               Build. Scale. Protect. Legal infrastructure meets startup acceleration.
             </p>
             
@@ -99,10 +115,13 @@ const HloLegal = () => {
             <div className="flex justify-center animate-fade-up" style={{ animationDelay: "0.4s" }}>
               <Button 
                 size="lg" 
+                asChild
                 className="bg-[#00d437] text-white hover:bg-[#00d437]/90 transition-all hover:translate-y-[-2px] group text-lg px-8 py-4"
               >
-                Get Legal+ Growth Support
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" rel="noopener noreferrer">
+                  Get Legal+ Growth Support
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </a>
               </Button>
             </div>
             
@@ -118,12 +137,12 @@ const HloLegal = () => {
       </section>
 
       {/* Why This Partnership */}
-      <section className="py-20 bg-gray-50/50 w-full">
-        <div className="container mx-auto px-4 max-w-screen-xl">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50/50 w-full">
+        <div className="container mx-auto px-4 max-w-7xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="h-1 w-20 bg-[#0096d4] mb-6"></div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Why This Partnership?</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-black">Why This Partnership?</h2>
               <p className="text-lg text-gray-700 mb-8">
                 The perfect synergy of startup acceleration and legal infrastructure. Build confidently with Rook's automation while staying protected with Hlo's enterprise-grade legal solutions.
               </p>
@@ -201,8 +220,8 @@ const HloLegal = () => {
       </section>
 
       {/* Core Offerings */}
-      <section className="py-20 bg-white w-full">
-        <div className="container mx-auto px-4 max-w-screen-xl">
+      <section className="py-12 sm:py-16 md:py-20 bg-white w-full">
+        <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <div className="h-1 w-20 bg-[#0096d4] mx-auto mb-6"></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Core Offerings</h2>
@@ -288,8 +307,8 @@ const HloLegal = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-20 bg-gray-50/50 w-full">
-        <div className="container mx-auto px-4 max-w-screen-xl">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50/50 w-full">
+        <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <div className="h-1 w-20 bg-[#0096d4] mx-auto mb-6"></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">How It Works</h2>
@@ -317,7 +336,7 @@ const HloLegal = () => {
                 </div>
                 
                 <div className="flex items-center">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#ffd800] text-black flex items-center justify-center text-xl font-bold">3</div>
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#ffd800] text-white flex items-center justify-center text-xl font-bold">3</div>
                   <div className="ml-8 bg-white/60 backdrop-blur-sm rounded-xl p-6 shadow-soft flex-grow">
                     <h3 className="text-xl font-bold mb-2">Build Smarter with Rook</h3>
                     <p className="text-gray-600">Integrate Rook's automation tools for marketing, payments, and growth while maintaining legal compliance.</p>
@@ -338,8 +357,8 @@ const HloLegal = () => {
       </section>
 
       {/* Numbers & Impact */}
-      <section className="py-20 bg-white w-full">
-        <div className="container mx-auto px-4 max-w-screen-xl">
+      <section className="py-12 sm:py-16 md:py-20 bg-white w-full">
+        <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <div className="h-1 w-20 bg-[#0096d4] mx-auto mb-6"></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Numbers & Impact</h2>
@@ -350,7 +369,7 @@ const HloLegal = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-soft border border-gray-100">
-              <div className="text-4xl md:text-5xl font-bold mb-2 text-[#0096d4]">{counters.startups.toLocaleString()}+</div>
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 text-[#0096d4]">{counters.startups.toLocaleString()}+</div>
               <p className="text-gray-600">Startups legally structured with Hlo Enterprise Legal+</p>
             </div>
             
@@ -368,8 +387,8 @@ const HloLegal = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-gray-50/50 w-full">
-        <div className="container mx-auto px-4 max-w-screen-xl">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50/50 w-full">
+        <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <div className="h-1 w-20 bg-[#0096d4] mx-auto mb-6"></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Founder Stories</h2>
@@ -378,7 +397,7 @@ const HloLegal = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white/60 backdrop-blur-sm p-8 rounded-2xl shadow-soft border border-gray-100">
               <div className="flex items-start">
-                <div className="text-5xl text-[#0096d4] mr-4">"</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl text-[#0096d4] mr-2 sm:mr-4">"</div>
                 <div>
                   <p className="text-lg italic mb-6">
                     With Rook's tools and Hlo's legal frameworks, we were fundraising-ready in weeks instead of months. The integration is seamless.
@@ -420,41 +439,43 @@ const HloLegal = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-24 bg-gradient-to-br from-[#0096d4]/5 to-[#00d437]/5 w-full">
-        <div className="container mx-auto px-4 max-w-screen-xl">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-[#0096d4]/5 to-[#00d437]/5 w-full">
+        <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Start Smart. Scale Secure.</h2>
             <p className="text-xl text-gray-700 mb-8">
               Join hundreds of startups building on solid legal foundations while accelerating growth with Rook's powerful automation tools.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
                 size="lg" 
+                asChild
                 className="bg-[#00d437] text-white hover:bg-[#00d437]/90 transition-all hover:translate-y-[-2px] group text-lg px-8 py-4"
               >
-                Apply Now
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" rel="noopener noreferrer">
+                  Apply Now
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </a>
               </Button>
               
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4]/10 transition-all hover:translate-y-[-2px] text-lg px-8 py-4"
+                variant="outline"
+                asChild
+                className="border-black text-black hover:bg-black hover:text-white transition-all"
               >
-                <Link to="/support" className="flex items-center">
-                  Contact Legal Team
-                </Link>
+                <a href="/rook-for-startups" target="_blank" rel="noopener noreferrer">
+                  Learn More
+                </a>
               </Button>
             </div>
-            
-            <p className="text-sm text-gray-600 mt-6">
-              Questions? Reach out to <a href="mailto:legal@rookhq.com" className="text-[#0096d4] hover:underline">legal@rookhq.com</a>
-            </p>
           </div>
         </div>
       </section>
+
     </div>
+    </>
   );
 };
 

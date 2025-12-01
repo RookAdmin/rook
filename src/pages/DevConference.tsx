@@ -1,4 +1,4 @@
-
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -29,7 +29,7 @@ const DevConference = () => {
   const [animatedStats, setAnimatedStats] = useState({
     attendees: 0,
     sessions: 0,
-    countries: 0
+    startups: 0
   });
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const DevConference = () => {
   useEffect(() => {
     const animateStats = () => {
       const duration = 2000;
-      const targets = { attendees: 10000, sessions: 50, countries: 20 };
+      const targets = { attendees: 1000, sessions: 50, startups: 20 };
       const start = Date.now();
       
       const updateStats = () => {
@@ -51,7 +51,7 @@ const DevConference = () => {
         setAnimatedStats({
           attendees: Math.floor(targets.attendees * progress),
           sessions: Math.floor(targets.sessions * progress),
-          countries: Math.floor(targets.countries * progress)
+          startups: Math.floor(targets.startups * progress)
         });
         
         if (progress < 1) {
@@ -189,8 +189,47 @@ const DevConference = () => {
     }
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Rook Dev Conference December 2027",
+    "description": "Join 1,000+ developers, founders, and startups at Rook Dev Conference. Registration opens May 2027. Connect, learn, and build the future of SaaS.",
+    "startDate": "2027-12-01",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "TBA",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Rook",
+      "url": "https://rookhq.com"
+    },
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/PreOrder",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <SEO
+        title="Rook Dev Conference December 2027 | 1,000+ Developers, Founders & Startups - Registration Opens May 2027"
+        description="Join 1,000+ developers, founders, and startups at Rook Dev Conference December 2027. Registration opens May 2027. Connect, learn, and build the future of SaaS. Developer conference, tech conference, SaaS conference."
+        keywords="Rook Dev Conference, developer conference, tech conference, SaaS conference, developer event, startup conference, programming conference, tech meetup, developer summit, software conference, December 2027"
+        canonical="/devconference"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
+      />
+    <div className="min-h-screen bg-white pt-16">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div 
@@ -204,13 +243,13 @@ const DevConference = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             <Badge className="mb-6 bg-[#00d437]/10 text-[#00d437] border-[#00d437]/20 hover:bg-[#00d437]/20">
               <Calendar className="h-4 w-4 mr-2" />
-              Coming 2025
+              December 2027
             </Badge>
             
             <h1 className="text-6xl md:text-8xl font-bold text-black leading-tight tracking-tight">
               Rook Dev Conference
               <span className="block text-4xl md:text-5xl text-gray-600 font-normal mt-4">
-                2025
+                2027
               </span>
             </h1>
             
@@ -218,22 +257,10 @@ const DevConference = () => {
               The global developer event to learn, connect, and shape the future of SaaS tools.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
-              <Button 
-                size="lg" 
-                className="bg-[#00d437] hover:bg-[#00d437]/90 text-white text-lg px-8 py-4 h-auto group"
-              >
-                Register Now
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4]/10 text-lg px-8 py-4 h-auto group"
-              >
-                <Play className="mr-2 h-5 w-5" />
-                Watch Teaser
-              </Button>
+            <div className="flex justify-center mt-12">
+              <div className="bg-[#dc2e3e] text-white px-8 py-4 rounded-full text-lg font-medium">
+                Registration opens May 2027
+              </div>
             </div>
             
             <p className="text-sm text-gray-500 mt-8">
@@ -254,7 +281,7 @@ const DevConference = () => {
               </h2>
               <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
                 <p>
-                  Rook Dev Conference isn't just an event—it's a movement. We're bringing together 
+                  Rook Dev Conference isn't just an event. It's a movement. We're bringing together 
                   the brightest minds in SaaS development to share knowledge, forge connections, 
                   and push the boundaries of what's possible.
                 </p>
@@ -282,9 +309,9 @@ const DevConference = () => {
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-[#ffd800] mb-2">
-                    {animatedStats.countries}+
+                    {animatedStats.startups}+
                   </div>
-                  <div className="text-sm text-gray-600">Countries</div>
+                  <div className="text-sm text-gray-600">Startups</div>
                 </div>
               </div>
             </div>
@@ -564,35 +591,25 @@ const DevConference = () => {
               the next generation of SaaS applications.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
-              <Button 
-                size="lg" 
-                className="bg-[#00d437] hover:bg-[#00d437]/90 text-black text-lg px-8 py-4 h-auto group"
-              >
-                Register Now
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white/10 text-lg px-8 py-4 h-auto"
-              >
-                Join Community
-              </Button>
+            <div className="flex justify-center mt-12">
+              <div className="bg-[#00d437] text-white px-8 py-4 rounded-full text-lg font-medium">
+                Registration opens May 2027
+              </div>
             </div>
             
             <div className="pt-8">
               <p className="text-sm text-gray-400 mb-4">#RookDevConf</p>
               <div className="flex justify-center space-x-6 text-gray-400">
-                <span className="flex items-center"><Calendar className="h-4 w-4 mr-2" />March 2025</span>
+                <span className="flex items-center"><Calendar className="h-4 w-4 mr-2" />December 2027</span>
                 <span className="flex items-center"><Globe className="h-4 w-4 mr-2" />Hybrid Event</span>
-                <span className="flex items-center"><Users className="h-4 w-4 mr-2" />10,000+ Developers</span>
+                <span className="flex items-center"><Users className="h-4 w-4 mr-2" />1,000+ Developers</span>
               </div>
             </div>
           </div>
         </div>
       </section>
     </div>
+    </>
   );
 };
 

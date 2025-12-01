@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import DocumentMeta from "react-document-meta";
+import { SEO } from "@/components/SEO";
 import { ArrowRight, Users, Award, Building } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -16,40 +16,72 @@ const About = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const meta = {
-    title: "About Rook | Our Mission, Values, and Team",
-    description:
-      "Learn about Rook's mission to simplify technology, our core values, and meet the team behind our innovative solutions.",
-    meta: {
-      charset: "utf-8",
-      name: {
-        keywords:
-          "Rook company, about Rook, Rook mission, Rook values, Rook team",
-      },
-      property: {
-        "og:title": "About Rook | Our Mission, Values, and Team",
-        "og:description":
-          "Learn about Rook's mission to simplify technology, our core values, and meet the team behind our innovative solutions.",
-        "og:type": "website",
-      },
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Rook",
+      "description": "Learn about Rook's mission to simplify technology, our core values, and meet the team behind our innovative solutions.",
+      "url": "https://rookhq.com/about",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Rook",
+        "foundingDate": "2020",
+        "description": "Simple SaaS tools that empower creators, freelancers, and founders to get more done with less."
+      }
+    }
+  ];
+
+  const faqData = [
+    {
+      question: "When was Rook founded?",
+      answer: "Rook was founded in 2020 with a mission to create intuitive tools that help creators, entrepreneurs, and teams bring their visions to life with less friction and more joy."
     },
-  };
+    {
+      question: "What is Rook's mission?",
+      answer: "Rook's mission is to create intuitive tools that help creators, entrepreneurs, and teams bring their visions to life. We believe technology should simplify, not complicate, and we're dedicated to helping people do their best work."
+    },
+    {
+      question: "What products does Rook build?",
+      answer: "Rook builds multiple SaaS products including Paym.me (payment link manager), Realm by Rook (branding services), Rook Links (bio link tool), and Rook Scoop (SaaS analytics platform). We also run Rook For Startups, an acceleration program for early-stage founders."
+    },
+    {
+      question: "Where is Rook located?",
+      answer: "Rook is headquartered in New Delhi, India, and serves customers worldwide. We're a global company with a focus on empowering creators and entrepreneurs everywhere."
+    }
+  ];
+
+  const breadcrumbs = [
+    { name: "Home", url: "/" },
+    { name: "About", url: "/about" }
+  ];
 
   return (
-    <DocumentMeta {...meta}>
-      <div className="min-h-screen bg-white text-textPrimary pt-24 pb-16">
+    <>
+      <SEO
+        title="About Rook | Our Mission, Values, and Team"
+        description="Learn about Rook's mission to simplify technology, our core values, and meet the team behind our innovative solutions. Discover how we're building simple tools with monumental impact."
+        keywords="Rook company, about Rook, Rook mission, Rook values, Rook team, SaaS company, technology company, startup culture"
+        canonical="/about"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
+        faqData={faqData}
+        breadcrumbs={breadcrumbs}
+      />
+      <div className="min-h-screen bg-white text-textPrimary pt-16 pb-8 sm:pb-12 md:pb-16">
         {/* Header Section */}
-        <div className="container mx-auto px-4">
-          <div className="mb-16">
-            <div className="h-1 w-20 bg-[#dc2e3e] mb-6"></div>
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="mb-8 sm:mb-12 md:mb-16">
+            <div className="h-1 w-12 sm:w-16 md:w-20 bg-[#dc2e3e] mb-4 sm:mb-6"></div>
             <h1
-              className="text-5xl font-bold mb-6 text-primary tracking-tight animate-fade-up"
+              className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-primary tracking-tight animate-fade-up"
               style={{ color: "black" }}
             >
               About Rook
             </h1>
             <p
-              className="text-xl text-textSecondary max-w-3xl animate-fade-up"
+              className="text-base sm:text-lg md:text-xl text-textSecondary max-w-3xl animate-fade-up"
               style={{ animationDelay: "0.2s" }}
             >
               We build tools that help people and businesses harness their full
@@ -58,7 +90,7 @@ const About = () => {
           </div>
 
           {/* Mission Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-16 mb-12 sm:mb-16 md:mb-20">
             <div className="relative">
               <div
                 className="absolute -z-10 w-64 h-64 rounded-full bg-[#dc2e3e]/5 top-0 left-0"
@@ -125,7 +157,7 @@ const About = () => {
                   People First
                 </h3>
                 <p className="text-textSecondary">
-                  We believe in putting people—both users and team members—at
+                  We believe in putting people, both users and team members, at
                   the center of everything we do. Our products are built with
                   empathy and care.
                 </p>
@@ -253,7 +285,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </DocumentMeta>
+    </>
   );
 };
 

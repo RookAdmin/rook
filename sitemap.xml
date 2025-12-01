@@ -1,64 +1,246 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-	<loc>https://rookhq.com/</loc>
-	<lastmod>2025-06-09T12:52:09+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://rookhq.com/rook-for-startups</loc>
-	<lastmod>2025-06-09T12:52:09+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://rookhq.com/perspectives</loc>
-	<lastmod>2025-06-09T12:52:09+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://rookhq.com/press-release</loc>
-	<lastmod>2025-06-09T12:52:09+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://rookhq.com/media-coverage</loc>
-	<lastmod>2025-06-09T12:52:09+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://rookhq.com/letter-from-the-ceo</loc>
-	<lastmod>2025-06-09T12:52:09+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://rookhq.com/about</loc>
-	<lastmod>2025-06-09T12:52:09+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://rookhq.com/brand-kit</loc>
-	<lastmod>2025-06-09T12:52:09+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://rookhq.com/trademark</loc>
-	<lastmod>2025-06-09T12:52:09+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://rookhq.com/terms</loc>
-	<lastmod>2025-06-09T12:52:09+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://rookhq.com/privacy</loc>
-	<lastmod>2025-06-09T12:52:09+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://rookhq.com/rook_coc.pdf</loc>
-	<lastmod>2025-06-09T12:52:09+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://rookhq.com/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Company Pages -->
+  <url>
+    <loc>https://rookhq.com/about</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/life</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/invest</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/careers</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/profit-pledge</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Content Pages -->
+  <url>
+    <loc>https://rookhq.com/perspectives</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/press-release</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/media-coverage</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/letter-from-the-ceo</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Letter from the CEO Articles -->
+  <url>
+    <loc>https://rookhq.com/letter-from-the-ceo/rport-product-sunsetting-a-strategic-decision-for-the-future</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Press Release Articles -->
+  <url>
+    <loc>https://rookhq.com/press-release/introducing-realm-by-rook-a-new-chapter-in-our-journey-of-service</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Perspectives Articles -->
+  <url>
+    <loc>https://rookhq.com/perspectives/why-every-saas-needs-sso-saml-and-scim-the-blueprint-for-secure-scalable-user-management-in-2025</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/perspectives/why-tech-giants-like-microsoft-and-google-spend-billions-acquiring-startups-instead-of-building</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/perspectives/10-essential-ai-agents-every-saas-company-must-use-in-2025-complete-business-automation-guide</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/perspectives/top-10-ui-ux-wireframing-principles-for-international-saas-tools</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/perspectives/top-10-ways-to-protect-your-digital-wellness-in-2025</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/perspectives/power-automate-vs-n8n-vs-zapier-vs-make-the-ultimate-automation-platform-comparison-for-2025</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/perspectives/why-minimalist-design-is-premium-the-power-of-less-in-saas-and-beyond</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/perspectives/common-security-and-trust-mistakes-saas-companies-make-and-how-to-avoid-them</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/perspectives/the-future-of-ai-saas-what-to-expect-from-2025-to-2030</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Products -->
+  <url>
+    <loc>https://rookhq.com/links</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/scoop</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/friends</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Developers -->
+  <url>
+    <loc>https://rookhq.com/developers</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/devconference</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Rook for Startups -->
+  <url>
+    <loc>https://rookhq.com/rook-for-startups</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/startups/hlo-enterprise-legal</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/startups/myprobuddy</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/startups/zoho</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Resources -->
+  <url>
+    <loc>https://rookhq.com/support</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/compliance</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/brand-kit</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/trademark</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/open-source</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Legal -->
+  <url>
+    <loc>https://rookhq.com/terms</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/privacy</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>

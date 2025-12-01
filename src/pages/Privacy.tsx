@@ -1,25 +1,29 @@
 import React from "react";
-import DocumentMeta from "react-document-meta";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { FileLock } from "lucide-react";
 
 const Privacy = () => {
-  const meta = {
-    title: "Privacy Policy | Rook",
-    description:
-      "Learn how Rook protects and handles your personal information. Read our comprehensive privacy policy regarding data collection, usage, and protection.",
-    meta: {
-      charset: "utf-8",
-      name: {
-        keywords:
-          "Rook privacy policy, data protection, personal information, data security",
-      },
-    },
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Rook Privacy Policy",
+    "description": "Learn how Rook protects and handles your personal information. Read our comprehensive privacy policy regarding data collection, usage, and protection.",
+    "url": "https://rookhq.com/privacy"
   };
 
   return (
-    <DocumentMeta {...meta}>
+    <>
+      <SEO
+        title="Privacy Policy | Rook - Data Protection & Privacy Policy - DPDP Act Compliant"
+        description="Learn how Rook protects and handles your personal information. Read our comprehensive privacy policy regarding data collection, usage, and protection. DPDP Act compliant, GDPR aligned, data security."
+        keywords="Rook privacy policy, privacy policy, data protection, personal information, data security, DPDP Act, GDPR, data privacy, privacy rights, data collection"
+        canonical="/privacy"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
+      />
       <div className="min-h-screen bg-white text-textPrimary pt-24 pb-16">
         <div className="container mx-auto px-4">
           {/* Header */}
@@ -298,7 +302,7 @@ const Privacy = () => {
           </div>
         </div>
       </div>
-    </DocumentMeta>
+    </>
   );
 };
 

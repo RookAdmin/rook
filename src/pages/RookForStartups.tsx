@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import DocumentMeta from "react-document-meta";
+import { SEO } from "@/components/SEO";
 import CountUp from 'react-countup';
 
 import {
@@ -19,23 +19,56 @@ const RookForStartups = () => {
   const [scrollY, setScrollY] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
 
-  const meta = {
-    title: "Rook For Startups | Launch and Scale Your Startup",
-    description:
-      "Join Rook's startup program for exclusive benefits, SaaS credits, legal support, and acceleration programs. Built for early-stage founders and student entrepreneurs.",
-    meta: {
-      charset: "utf-8",
-      name: {
-        keywords:
-          "startup program, SaaS credits, startup acceleration, legal support, incorporation services",
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Rook For Startups",
+      "description": "Comprehensive startup program with SaaS credits, legal support, and acceleration programs for early-stage founders.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Rook",
+        "url": "https://rookhq.com"
       },
-      property: {
-        "og:title": "Rook For Startups Program",
-        "og:description":
-          "Launch and scale your startup with Rook's comprehensive support program",
-      },
+      "areaServed": "Worldwide",
+      "url": "https://rookhq.com/rook-for-startups",
+      "serviceType": "Startup Acceleration Program",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free startup program with SaaS credits and legal support"
+      }
+    }
+  ];
+
+  const faqData = [
+    {
+      question: "What is Rook For Startups?",
+      answer: "Rook For Startups is a comprehensive startup acceleration program that provides SaaS credits, legal support, incorporation services, and mentorship to early-stage founders. The program includes partnerships with MyProBuddy for investor connections, Zoho for business tools, and Hlo Enterprise Legal+ for legal services."
     },
-  };
+    {
+      question: "Who is eligible for Rook For Startups?",
+      answer: "The program is open to early-stage SaaS startups, D2C brand founders, tech-enabled service businesses, and student entrepreneurs with validated ideas. Whether you're a solo founder with a prototype or a 5-member team gearing up for launch, you can apply."
+    },
+    {
+      question: "What benefits does Rook For Startups offer?",
+      answer: "Benefits include exclusive SaaS credits (25M+ in total), access to Zoho for Startups, legal support and incorporation services through Hlo Enterprise Legal+, investment and fundraising support via MyProBuddy, mentorship sprints, GTM clinics, and weekly founder syncs."
+    },
+    {
+      question: "How do I apply for Rook For Startups?",
+      answer: "You can apply by filling out our simple application form. Our team will review your application and get you set up within 7 days. The application process is straightforward and designed to help us understand your startup's needs."
+    },
+    {
+      question: "Is Rook For Startups free?",
+      answer: "Yes, Rook For Startups is a free program designed to support early-stage founders. We provide SaaS credits, legal support, and acceleration resources at no cost to eligible startups."
+    }
+  ];
+
+  const breadcrumbs = [
+    { name: "Home", url: "/" },
+    { name: "Rook For Startups", url: "/rook-for-startups" }
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,33 +88,44 @@ const RookForStartups = () => {
   }, []);
 
   return (
-    <DocumentMeta {...meta}>
+    <>
+      <SEO
+        title="Rook For Startups | Launch and Scale Your Startup with SaaS Credits & Legal Support"
+        description="Join Rook's startup program for exclusive benefits, SaaS credits, legal support, and acceleration programs. Built for early-stage founders and student entrepreneurs. Get access to Zoho, MyProBuddy, and Hlo Enterprise Legal+ partnerships."
+        keywords="startup program, SaaS credits, startup acceleration, legal support, incorporation services, startup funding, early-stage startups, student entrepreneurs, startup resources"
+        canonical="/rook-for-startups"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
+        faqData={faqData}
+        breadcrumbs={breadcrumbs}
+      />
       <div
-        className={`min-h-screen bg-white transition-opacity duration-500 ${
+        className={`min-h-screen bg-white pt-16 transition-opacity duration-500 ${
           isVisible ? "opacity-100" : "opacity-0"
-        } overflow-x-hidden`}
+        } overflow-hidden`}
       >
         {/* Redesigned Hero Section - Minimalistic */}
-        <section className="py-24 md:py-32 bg-white w-full overflow-x-hidden">
-  <div className="container mx-auto px-4 max-w-screen-xl relative overflow-x-hidden">
+        <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white w-full overflow-hidden">
+  <div className="container mx-auto px-4 max-w-7xl relative overflow-hidden">
     <div className="max-w-4xl mx-auto">
-      <div className="space-y-8">
+      <div className="space-y-6 sm:space-y-8">
         {/* Badge */}
         <div className="flex items-center animate-fade-up">
-          <div className="h-1 w-16 bg-[#0096d4] mr-3"></div>
-          <span className="bg-[#0096d4]/10 text-[#0096d4] text-xs font-medium px-3 py-1 rounded-full">
+          <div className="h-1 w-12 sm:w-16 bg-[#0096d4] mr-2 sm:mr-3"></div>
+          <span className="bg-[#0096d4]/10 text-[#0096d4] text-xs font-medium px-2 sm:px-3 py-1 rounded-full">
             For Startups
           </span>
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight tracking-tight animate-fade-up" style={{ animationDelay: "0.2s" }}>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-tight tracking-tight animate-fade-up px-2 sm:px-0" style={{ animationDelay: "0.2s" }}>
           Fuel Your Startup <span className="text-[#dc2e3e]">Journey</span> With Rook
         </h1>
 
         {/* Subheading */}
-        <p className="text-lg md:text-xl text-gray-700 max-w-2xl animate-fade-up" style={{ animationDelay: "0.3s" }}>
-          A bold startup program crafted for dreamers, doers, and disruptors — with vibrant founder communities, exclusive SaaS credits, IP & incorporation support, and tailored acceleration programs.
+        <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-2xl animate-fade-up px-2 sm:px-0" style={{ animationDelay: "0.3s" }}>
+          A bold startup program crafted for dreamers, doers, and disruptors. Includes vibrant founder communities, exclusive SaaS credits, IP and incorporation support, and tailored acceleration programs.
         </p>
 
         {/* Geometric abstract design element */}
@@ -91,18 +135,18 @@ const RookForStartups = () => {
         </div>
 
         {/* Rook Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 py-6 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-          <div className="bg-white border-l-2 border-[#0096d4] pl-4">
-            <p className="text-3xl md:text-4xl font-bold text-black">500+</p>
-            <p className="text-sm text-gray-600">Startups Supported</p>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 py-4 sm:py-6 animate-fade-up px-2 sm:px-0" style={{ animationDelay: "0.4s" }}>
+          <div className="bg-white border-l-2 border-[#0096d4] pl-3 sm:pl-4">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">500+</p>
+            <p className="text-xs sm:text-sm text-gray-600">Startups Supported</p>
           </div>
-          <div className="bg-white border-l-2 border-[#dc2e3e] pl-4">
-            <p className="text-3xl md:text-4xl font-bold text-black">25M+</p>
-            <p className="text-sm text-gray-600">SaaS Credits</p>
+          <div className="bg-white border-l-2 border-[#dc2e3e] pl-3 sm:pl-4">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">25M+</p>
+            <p className="text-xs sm:text-sm text-gray-600">SaaS Credits</p>
           </div>
-          <div className="bg-white border-l-2 border-[#00d437] pl-4">
-            <p className="text-3xl md:text-4xl font-bold text-black">100%</p>
-            <p className="text-sm text-gray-600">Success Rate</p>
+          <div className="bg-white border-l-2 border-[#00d437] pl-3 sm:pl-4 col-span-2 md:col-span-1">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">100%</p>
+            <p className="text-xs sm:text-sm text-gray-600">Success Rate</p>
           </div>
         </div>
 
@@ -124,6 +168,12 @@ const RookForStartups = () => {
             size="lg" 
             variant="outline" 
             className="border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4]/10 transition-all hover:translate-y-[-2px]"
+            onClick={() => {
+              const element = document.getElementById('program-includes');
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
           >
             Explore Benefits
           </Button>
@@ -136,16 +186,16 @@ const RookForStartups = () => {
 
 
         {/* Why Founders Choose Rook */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-10 items-center">
+        <section className="py-12 sm:py-16 md:py-20 bg-white">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid md:grid-cols-2 gap-8 sm:gap-10 items-center">
               <div className="order-2 md:order-1">
                 <div className="h-1 w-20 bg-[#0096d4] mb-6"></div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">
                   Why Founders Choose Rook
                 </h2>
                 <p className="text-lg text-gray-700 mb-6">
-                  At Rook, we don't just support startups — we champion their
+                  At Rook, we don't just support startups. We champion their
                   rise. With exclusive benefits that combine tech, legal, and
                   growth ecosystems, Rook For Startups is your launchpad to
                   visibility, legitimacy, and scale.
@@ -209,20 +259,20 @@ const RookForStartups = () => {
         </section>
 
         {/* The Program Includes */}
-        <section className="py-20 bg-[#f8f9fa]">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <div className="h-1 w-20 bg-[#0096d4] mx-auto mb-6"></div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+        <section id="program-includes" className="py-12 sm:py-16 md:py-20 bg-[#f8f9fa]">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="text-center mb-8 sm:mb-12 md:mb-16">
+              <div className="h-1 w-12 sm:w-16 md:w-20 bg-[#0096d4] mx-auto mb-4 sm:mb-6"></div>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
                 The Program Includes
               </h2>
-              <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-                Three Key Pillars — all built for your zero-to-one startup
+              <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto px-4">
+                Three Key Pillars, all built for your zero-to-one startup
                 journey:
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
               <div className="bg-white p-8 rounded-xl shadow-soft hover:shadow-premium transition-all duration-300 transform hover:-translate-y-1">
                 <div className="rounded-full bg-[#0096d4]/10 p-3 w-14 h-14 flex items-center justify-center mb-6">
                   <Star className="h-7 w-7 text-[#0096d4]" />
@@ -280,9 +330,9 @@ const RookForStartups = () => {
                 <p className="text-gray-600">
                   Powered by HLO Enterprise Legal+, we help you register your
                   startup and protect your brand with trademark, patent, and
-                  copyright services — simplified.
+                  copyright services, simplified.
                 </p>
-                <a href="/startups/hlo-legal">
+                <a href="/startups/hlo-enterprise-legal">
                   <Button
                     variant="outline"
                     className="border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4]/10 mt-3"
@@ -358,9 +408,9 @@ const RookForStartups = () => {
         </section>
 
         {/* Who is This For */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-10 items-center">
+        <section className="py-12 sm:py-16 md:py-20 bg-white">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid md:grid-cols-2 gap-8 sm:gap-10 items-center">
               <div>
                 <div className="h-1 w-20 bg-[#0096d4] mb-6"></div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -430,14 +480,14 @@ const RookForStartups = () => {
         </section>
 
         {/* Real Impact. Real Stories. */}
-        <section className="py-20 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <div className="h-1 w-20 bg-[#0096d4] mx-auto mb-6"></div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+        <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="text-center mb-8 sm:mb-12 md:mb-16">
+              <div className="h-1 w-12 sm:w-16 md:w-20 bg-[#0096d4] mx-auto mb-4 sm:mb-6"></div>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
                 Startups That Grew With Rook
               </h2>
-              <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto px-4">
                 From first pitch decks to full-fledged launches, Rook-backed
                 startups have gone on to raise capital, win hackathons, and earn
                 global visibility.
@@ -453,7 +503,7 @@ const RookForStartups = () => {
                       We went from idea to launch in 3 months, Rook's credits
                       and MyProBuddy's mentorship were game-changers!
                     </p>
-                    <p className="font-semibold">— ICM, Chennai</p>
+                    <p className="font-semibold">ICM, Chennai</p>
                   </div>
                 </div>
               </div>
@@ -466,7 +516,7 @@ const RookForStartups = () => {
                       Hlo Enterprise Legal+ made our trademark process so
                       seamless, we didn't even need to step out once!
                     </p>
-                    <p className="font-semibold">— Capital Groups, Abu Dhabi</p>
+                    <p className="font-semibold">Capital Groups, Abu Dhabi</p>
                   </div>
                 </div>
               </div>
@@ -477,11 +527,11 @@ const RookForStartups = () => {
         </section>
 
         {/* How To Join */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <div className="h-1 w-20 bg-[#0096d4] mx-auto mb-6"></div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+        <section className="py-12 sm:py-16 md:py-20 bg-white">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="text-center mb-8 sm:mb-12 md:mb-16">
+              <div className="h-1 w-12 sm:w-16 md:w-20 bg-[#0096d4] mx-auto mb-4 sm:mb-6"></div>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
                 3 Simple Steps to Get Started
               </h2>
             </div>
@@ -551,14 +601,14 @@ const RookForStartups = () => {
         </section>
 
         {/* Join the Movement */}
-        <section className="py-20 bg-gradient-to-r from-[#0096d4]/5 to-[#dc2e3e]/5">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-10 items-center">
+        <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-[#0096d4]/5 to-[#dc2e3e]/5">
+          <div className="container mx-auto px-4 max-w-7xl">
+            <div className="grid md:grid-cols-2 gap-8 sm:gap-10 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
                   Let's Build Bold Together
                 </h2>
-                <p className="text-lg text-gray-700 mb-8">
+                <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8">
                   Thousands of founders across India trust Rook to be their
                   quiet, powerful launch partner. We'd love to be yours too.
                 </p>
@@ -575,19 +625,16 @@ const RookForStartups = () => {
                   </Button>
                 </a>
               </div>
-              <div className="flex justify-center">
-                <div className="relative w-64 h-64">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-[#0096d4] to-[#dc2e3e] rounded-full opacity-10 animate-pulse"></div>
-                  <div className="absolute inset-4 flex items-center justify-center">
-                    <Rocket className="h-32 w-32 text-[#0096d4]" />
-                  </div>
+              <div className="flex justify-center mt-8 md:mt-0">
+                <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 flex items-center justify-center">
+                  <Rocket className="h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 text-[#dc2e3e]" />
                 </div>
               </div>
             </div>
           </div>
         </section>
       </div>
-    </DocumentMeta>
+    </>
   );
 };
 

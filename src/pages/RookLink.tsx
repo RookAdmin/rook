@@ -1,3 +1,4 @@
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -6,82 +7,61 @@ import { Link2, BarChart3, Palette, ShoppingBag, Smartphone, Monitor, Star, Chec
 import { useEffect } from "react";
 
 const RookLink = () => {
-  useEffect(() => {
-    // SEO Schema markup for FAQ
-    const faqSchema = {
+  const structuredData = [
+    {
       "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is Rook Links?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Rook Links is a modern bio link tool that helps creators, brands, and businesses share everything they do in one smart link. Add social media, videos, products, and even create a shop directly from your bio."
-          }
-        },
-        {
-          "@type": "Question", 
-          "name": "How do I add products to my Rook Links?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "With Shop Mode (Pro feature), you can upload multiple product images with names, links, and captions. Create a scrollable product bar that integrates seamlessly with your other content tiles."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Rook Links free?",
-          "acceptedAnswer": {
-            "@type": "Answer", 
-            "text": "Yes, Rook Links offers a free plan to get started. You can upgrade to Pro anytime to unlock advanced features like Shop Mode, custom branding, and detailed analytics."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is Shop Mode in Rook Links?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Shop Mode is a Pro feature that transforms your bio link into a storefront. Add product thumbnails, descriptions, and direct purchase links to sell directly from your link-in-bio."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How is Rook Links different from Linktree or Beacons?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Rook Links focuses on smart tiles with rich content integration, Shop Mode for direct selling, and real-time analytics. It's built for creators and businesses who want more than just basic links."
-          }
-        }
+      "@type": "SoftwareApplication",
+      "name": "Rook Links",
+      "description": "Modern link-in-bio tool for creators and businesses",
+      "applicationCategory": "SocialNetworkingApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "500"
+      },
+      "featureList": [
+        "Smart Tiles with Rich Content",
+        "Shop Mode for Direct Selling",
+        "Real-time Analytics Dashboard",
+        "Custom Branding",
+        "Social Media Integration"
       ]
-    };
-
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.textContent = JSON.stringify(faqSchema);
-    document.head.appendChild(script);
-
-    // SEO metadata
-    document.title = "Rook Links – The Modern Link in Bio Tool for Creators & Businesses";
-    
-    const metaDescription = document.querySelector('meta[name="description"]') || document.createElement('meta');
-    metaDescription.setAttribute('name', 'description');
-    metaDescription.setAttribute('content', 'Rook Links helps creators and businesses share everything in one smart link. Add social, videos, products, and even a shop. Free to start.');
-    if (!document.querySelector('meta[name="description"]')) {
-      document.head.appendChild(metaDescription);
     }
+  ];
 
-    // Open Graph metadata
-    const ogTitle = document.querySelector('meta[property="og:title"]') || document.createElement('meta');
-    ogTitle.setAttribute('property', 'og:title');
-    ogTitle.setAttribute('content', 'Rook Links – One Link. Infinite Possibilities.');
-    if (!document.querySelector('meta[property="og:title"]')) {
-      document.head.appendChild(ogTitle);
+  const faqData = [
+    {
+      question: "What is Rook Links?",
+      answer: "Rook Links is a modern bio link tool that helps creators, brands, and businesses share everything they do in one smart link. Add social media, videos, products, and even create a shop directly from your bio."
+    },
+    {
+      question: "How do I add products to my Rook Links?",
+      answer: "With Shop Mode (Pro feature), you can upload multiple product images with names, links, and captions. Create a scrollable product bar that integrates seamlessly with your other content tiles."
+    },
+    {
+      question: "Is Rook Links free?",
+      answer: "Yes, Rook Links offers a free plan to get started. You can upgrade to Pro anytime to unlock advanced features like Shop Mode, custom branding, and detailed analytics."
+    },
+    {
+      question: "What is Shop Mode in Rook Links?",
+      answer: "Shop Mode is a Pro feature that transforms your bio link into a storefront. Add product thumbnails, descriptions, and direct purchase links to sell directly from your link-in-bio."
+    },
+    {
+      question: "How is Rook Links different from Linktree or Beacons?",
+      answer: "Rook Links focuses on smart tiles with rich content integration, Shop Mode for direct selling, and real-time analytics. It's built for creators and businesses who want more than just basic links."
     }
+  ];
 
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
+  const breadcrumbs = [
+    { name: "Home", url: "/" },
+    { name: "Rook Links", url: "/links" }
+  ];
 
   const features = [
     {
@@ -151,13 +131,25 @@ const RookLink = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <SEO
+        title="Rook Links – The Modern Link in Bio Tool for Creators & Businesses"
+        description="Rook Links helps creators and businesses share everything in one smart link. Add social media, videos, products, and even create a shop directly from your bio. Free to start, upgrade to Pro for advanced features."
+        keywords="link in bio, bio link tool, linktree alternative, beacons alternative, social media links, creator tools, business links, shop mode, product links, bio link analytics"
+        canonical="/links"
+        geoRegion="IN"
+        geoPlacename="India"
+        structuredData={structuredData}
+        faqData={faqData}
+        breadcrumbs={breadcrumbs}
+      />
+    <div className="min-h-screen bg-white pt-16">
       {/* Hero Section */}
       <section className="py-20 px-4 relative overflow-hidden">
         {/* Background with subtle pattern */}
         <div className="absolute inset-0 bg-gray-50 opacity-60" />
         
-        <div className="container mx-auto max-w-6xl relative z-10">
+        <div className="container mx-auto max-w-7xl relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
@@ -168,7 +160,7 @@ const RookLink = () => {
                   The Smart Bio Link for <span className="text-[#00d437]">Creators</span>, Brands & Businesses
                 </h1>
                 <h2 className="text-xl text-textSecondary max-w-lg">
-                  Turn one link into a hub for everything you do — products, social, videos, and more.
+                  Turn one link into a hub for everything you do: products, social, videos, and more.
                 </h2>
               </div>
               
@@ -214,7 +206,7 @@ const RookLink = () => {
 
       {/* Value Proposition Section */}
       <section className="py-16 px-4 bg-gray-50">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-textPrimary mb-4">Why Rook Links?</h2>
             <p className="text-xl text-textSecondary">The modern bio link tool built for growth and conversion</p>
@@ -240,7 +232,7 @@ const RookLink = () => {
 
       {/* Visual Showcase Section */}
       <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl text-center">
+        <div className="container mx-auto max-w-7xl text-center">
           <h2 className="text-3xl font-bold text-textPrimary mb-8">
             The modern link-in-bio built for growth, creators, and businesses
           </h2>
@@ -340,7 +332,7 @@ const RookLink = () => {
 
       {/* Testimonials Section */}
       <section className="py-16 px-4">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center space-x-2 mb-4">
               <Users className="h-6 w-6 text-[#0096d4]" />
@@ -501,6 +493,7 @@ const RookLink = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 
