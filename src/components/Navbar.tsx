@@ -102,7 +102,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-black border-b border-[#333333]">
+    <nav className="fixed top-0 w-full z-50 bg-[#121212] border-b border-[#333333]">
       {/* Scroll Progress Bar */}
       <div
         className="absolute bottom-0 left-0 h-[3px] bg-[#db2e3f]"
@@ -143,7 +143,7 @@ export const Navbar = () => {
                                 href={service.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="w-full p-3 rounded-md text-black group transition-all duration-200"
+                                className="w-full p-3 rounded-md text-[#121212] group transition-all duration-200"
                               >
                                 <div className="font-medium group-hover:text-[#0096d4] transition-colors">
                                   {service.title}
@@ -176,7 +176,7 @@ export const Navbar = () => {
                             href="https://paym.me/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-[#121212]"
                           >
                             Paym.me
                           </a>
@@ -187,7 +187,7 @@ export const Navbar = () => {
                           <a
                             href="/links"
                             rel="noopener noreferrer"
-                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-[#121212]"
                           >
                             Rook Links
                           </a>
@@ -198,7 +198,7 @@ export const Navbar = () => {
                           <a
                             href="/scoop"
                             rel="noopener noreferrer"
-                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-[#121212]"
                           >
                             Rook Scoop
                           </a>
@@ -209,7 +209,7 @@ export const Navbar = () => {
                           <a
                             href="/friends"
                             rel="noopener noreferrer"
-                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-[#121212]"
                           >
                             Rook Friends
                           </a>
@@ -221,7 +221,7 @@ export const Navbar = () => {
                             href="https://realmrook.com/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-[#121212]"
                           >
                             Realm by Rook
                           </a>
@@ -252,7 +252,7 @@ export const Navbar = () => {
                         <NavigationMenuLink asChild>
                           <Link
                             to="/perspectives"
-                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-[#121212]"
                           >
                             Perspectives
                           </Link>
@@ -262,7 +262,7 @@ export const Navbar = () => {
                         <NavigationMenuLink asChild>
                           <Link
                             to="/press-release"
-                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-[#121212]"
                           >
                             Press Release
                           </Link>
@@ -272,7 +272,7 @@ export const Navbar = () => {
                         <NavigationMenuLink asChild>
                           <Link
                             to="/media-coverage"
-                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-[#121212]"
                           >
                             Media Coverage
                           </Link>
@@ -282,7 +282,7 @@ export const Navbar = () => {
                         <NavigationMenuLink asChild>
                           <Link
                             to="/letter-from-the-ceo"
-                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-black"
+                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-[#121212]"
                           >
                             Letter From the CEO
                           </Link>
@@ -359,7 +359,7 @@ export const Navbar = () => {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-black py-4 relative">
+        <div className="md:hidden bg-[#121212] py-4 relative">
           {/* Scroll Progress Bar for Mobile */}
           <div
             className="absolute bottom-0 left-0 h-[3px] bg-gradient-to-r from-[#ffd800] via-[#00d437] to-[#0096d4]"

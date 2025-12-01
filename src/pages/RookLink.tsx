@@ -278,7 +278,7 @@ const RookLink = () => {
                 >
                   <span className="text-white font-medium">clickl.in/</span>
                   <div className="bg-white rounded-full px-4 py-1.5">
-                    <span className="text-[#131313] font-medium">reserve your username</span>
+                    <span className="text-[#121212] font-medium">reserve your username</span>
                   </div>
                   <ExternalLink className="h-4 w-4 text-white" />
                 </a>
@@ -288,7 +288,7 @@ const RookLink = () => {
             <div className="relative flex justify-center lg:justify-end">
               <div className="w-full max-w-[320px] sm:max-w-[360px]">
                 {/* Modern Black Mobile Device */}
-                <div className="bg-black rounded-[2rem] p-2 shadow-2xl relative lg:group">
+                <div className="bg-[#121212] rounded-[2rem] p-2 shadow-2xl relative lg:group">
                   {/* Mobile Frame */}
                   <div className="bg-white rounded-[1.75rem] overflow-hidden relative w-full h-full">
                     {/* Mobile Screen - full height and width */}
@@ -332,7 +332,7 @@ const RookLink = () => {
       </section>
 
       {/* Why Rook Links Section - Split Screen Carousel */}
-      <section id="impact-metrics" className="py-16 px-4 bg-[#131313]">
+      <section id="impact-metrics" className="py-16 px-4 bg-[#121212]">
         <div className="container mx-auto max-w-7xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Why Rook Links?</h2>
@@ -428,7 +428,7 @@ const RookLink = () => {
                 <div className="relative">
                   <div className="w-20 h-20 bg-[#00d437] rounded-full flex items-center justify-center mx-auto text-white shadow-lg">
                     <Layout className="h-10 w-10" />
-                  </div>
+                </div>
                   <div className="absolute -top-2 -left-2 w-8 h-8 bg-[#00d437] rounded-full flex items-center justify-center text-white text-sm font-bold border-2 border-white">
                     1
                   </div>
@@ -437,28 +437,28 @@ const RookLink = () => {
                 <p className="text-textSecondary leading-relaxed text-sm">
                   Secure a unique <span className="font-semibold text-textPrimary">clickl.in/username</span> and start customizing your visual brand.
                 </p>
-                </div>
+              </div>
               
               {/* Arrow 1 - Desktop only */}
               <div className="hidden md:block absolute left-[33.33%] top-10 transform -translate-x-1/2 z-0">
                 <ArrowRight className="h-6 w-6 text-gray-300" />
-                  </div>
-              
+            </div>
+            
               {/* Step 2 */}
               <div className="relative text-center space-y-4 z-10">
                 <div className="relative">
                   <div className="w-20 h-20 bg-[#0096d4] rounded-full flex items-center justify-center mx-auto text-white shadow-lg">
                     <Image className="h-10 w-10" />
-                  </div>
+                </div>
                   <div className="absolute -top-2 -left-2 w-8 h-8 bg-[#0096d4] rounded-full flex items-center justify-center text-white text-sm font-bold border-2 border-white">
                     2
-                  </div>
                 </div>
+              </div>
                 <h3 className="text-xl font-bold text-textPrimary">Add Your Instagram Grid</h3>
                 <p className="text-textSecondary leading-relaxed text-sm">
                   Upload or import posts, link each image to your destination.
-                </p>
-              </div>
+          </p>
+        </div>
               
               {/* Arrow 2 - Desktop only */}
               <div className="hidden md:block absolute left-[66.66%] top-10 transform -translate-x-1/2 z-0">
@@ -473,15 +473,15 @@ const RookLink = () => {
                   </div>
                   <div className="absolute -top-2 -left-2 w-8 h-8 bg-[#dc2e3e] rounded-full flex items-center justify-center text-white text-sm font-bold border-2 border-white">
                     3
-                </div>
-                  </div>
+              </div>
+            </div>
                 <h3 className="text-xl font-bold text-textPrimary">Share It Anywhere</h3>
                 <p className="text-textSecondary leading-relaxed text-sm">
                   Drop your <span className="font-semibold text-textPrimary">clickl.in/username</span> link in bio. Watch conversions roll in.
                 </p>
-                </div>
               </div>
             </div>
+          </div>
         </div>
       </section>
 
@@ -494,7 +494,7 @@ const RookLink = () => {
               Trusted by creators worldwide
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textPrimary max-w-3xl mx-auto leading-tight">
-              Over 10,000 creators, startups, and brands trust Rook Links to power their online presence
+                Over 10,000 creators, startups, and brands trust Rook Links to power their online presence
             </h2>
           </div>
           
@@ -510,13 +510,13 @@ const RookLink = () => {
                   <p className="text-textPrimary text-base sm:text-lg leading-relaxed font-light">
                     "{testimonial.quote}"
                   </p>
-                </div>
+                  </div>
                 
                 {/* Author Info */}
                 <div className="flex items-center space-x-4 pt-6 border-t border-gray-100">
                   <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[#00d437] to-[#0096d4] rounded-full flex items-center justify-center text-white font-semibold text-sm sm:text-base flex-shrink-0">
-                    {testimonial.avatar}
-                  </div>
+                      {testimonial.avatar}
+                    </div>
                   <div className="min-w-0 flex-1">
                     <p className="font-semibold text-textPrimary text-sm sm:text-base truncate">
                       {testimonial.author}
@@ -525,8 +525,8 @@ const RookLink = () => {
                       {testimonial.role}
                     </p>
                   </div>
-                </div>
-              </div>
+                    </div>
+                  </div>
             ))}
           </div>
         </div>
@@ -589,7 +589,7 @@ const RookLink = () => {
                 >
                   <span className="text-white font-medium">clickl.in/</span>
                   <div className="bg-white rounded-full px-4 py-1.5">
-                    <span className="text-[#131313] font-medium">username</span>
+                    <span className="text-[#121212] font-medium">username</span>
                   </div>
                   <ExternalLink className="h-4 w-4 text-white" />
                 </a>
@@ -768,7 +768,7 @@ const RookLink = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 px-4 bg-[#131313]">
+      <section className="py-16 px-4 bg-[#121212]">
         <div className="container mx-auto max-w-4xl text-center text-white">
           <h2 className="text-3xl font-bold mb-4">Ready to transform your bio link?</h2>
           <p className="text-xl mb-8 opacity-90">
@@ -784,7 +784,7 @@ const RookLink = () => {
             >
               <span className="text-white font-medium">clickl.in/</span>
               <div className="bg-white rounded-full px-4 py-1.5">
-                <span className="text-[#131313] font-medium">reserve your username</span>
+                <span className="text-[#121212] font-medium">reserve your username</span>
               </div>
               <ExternalLink className="h-4 w-4 text-white" />
             </a>

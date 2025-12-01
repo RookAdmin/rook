@@ -51,7 +51,7 @@ const Categories = ({
         w-full text-left px-4 py-2 rounded-md transition-all duration-300
         ${
           selectedCategory === category
-            ? "bg-black text-white"
+            ? "bg-[#121212] text-white"
             : "hover:bg-gray-200 text-gray-700"
         }
       `}

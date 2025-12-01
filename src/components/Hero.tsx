@@ -37,7 +37,7 @@ export const Hero = () => {
                 </div>
               </div>
               <div className="relative inline-block mb-4 md:mb-6">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-4 md:mb-6 leading-tight tracking-tight">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#121212] mb-4 md:mb-6 leading-tight tracking-tight">
                   Simple Tools.
                   <br />
                   <span className="text-[#dc2e3e] relative">
@@ -46,7 +46,7 @@ export const Hero = () => {
                 </h1>
               </div>
               <p
-                className="text-base sm:text-lg md:text-xl text-black max-w-2xl leading-relaxed animate-fade-up"
+                className="text-base sm:text-lg md:text-xl text-[#121212] max-w-2xl leading-relaxed animate-fade-up"
                 style={{ animationDelay: "0.3s" }}
               >
                 We craft focused SaaS products that empower creators,
@@ -58,13 +58,13 @@ export const Hero = () => {
                 className="flex flex-col sm:flex-row gap-3 sm:gap-6 mt-6 md:mt-8 animate-fade-up"
                 style={{ animationDelay: "0.4s" }}
               >
-                <div className="flex items-center gap-2 text-black">
+                <div className="flex items-center gap-2 text-[#121212]">
                   <ShieldCheck className="h-4 w-4 sm:h-5 sm:w-5 text-[#00d437]" />
                   <span className="text-sm sm:text-base">
                     Enterprise Security
                   </span>
                 </div>
-                <div className="flex items-center gap-2 text-black">
+                <div className="flex items-center gap-2 text-[#121212]">
                   <Zap className="h-4 w-4 sm:h-5 sm:w-5 text-[#ffd800]" />
                   <span className="text-sm sm:text-base">Lightning Fast</span>
                 </div>
@@ -96,7 +96,7 @@ export const Hero = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full text-black border-black/20 hover:bg-black/5 transition-all hover:translate-y-[-2px]"
+                  className="w-full text-[#121212] border-[#121212]/20 hover:bg-black/5 transition-all hover:translate-y-[-2px]"
                 >
                   Who We Are?
                 </Button>
@@ -111,7 +111,7 @@ export const Hero = () => {
               <Button
                 variant="ghost"
                 size="icon"
-                className="text-black hover:text-[#0096d4] animate-bounce relative"
+                className="text-[#121212] hover:text-[#0096d4] animate-bounce relative"
               >
                 <ArrowDown className="h-5 w-5 sm:h-6 sm:w-6" />
               </Button>

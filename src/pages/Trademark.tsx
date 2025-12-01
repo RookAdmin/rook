@@ -129,19 +129,19 @@ const Trademark = () => {
 
   const appGuidelines = [
     {
-      icon: <Package className="h-6 w-6 text-[#131313]" />,
+      icon: <Package className="h-6 w-6 text-[#121212]" />,
       title: "App Identity",
       description:
         "Everything about your app must be unique to you and free of Rook's brand assets, except for truthful compatibility statements in descriptions.",
     },
     {
-      icon: <FileText className="h-6 w-6 text-[#131313]" />,
+      icon: <FileText className="h-6 w-6 text-[#121212]" />,
       title: "Approved Example",
       description:
         "Developer: Nuo Inc. | App: Nuo App | Description: Nuo App integrates with Rook platform for enhanced productivity.",
     },
     {
-      icon: <AlertTriangle className="h-6 w-6 text-[#131313]" />,
+      icon: <AlertTriangle className="h-6 w-6 text-[#121212]" />,
       title: "Prohibited Usage",
       description:
         "You may not use Rook's brand assets in a manner that implies Rook published, developed, or endorsed your app.",

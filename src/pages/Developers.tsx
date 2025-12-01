@@ -121,7 +121,7 @@ const Developers = () => {
                   <Users className="h-4 w-4 mr-2" />
                   Join the Community
                 </Badge>
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight px-2 sm:px-0">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#121212] leading-tight px-2 sm:px-0">
                   Rook Developers
                 </h1>
                 <h2 className="text-2xl lg:text-3xl text-gray-600 leading-relaxed">
@@ -186,7 +186,7 @@ const Developers = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center space-y-8">
-            <h2 className="text-4xl font-bold text-black">What is Rook Developers?</h2>
+            <h2 className="text-4xl font-bold text-[#121212]">What is Rook Developers?</h2>
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
                 Rook Developers is more than just an API hub. It's a thriving community where builders, creators, and innovators come together to shape the future of SaaS tools. We believe in the power of collaboration and shared knowledge.
@@ -206,7 +206,7 @@ const Developers = () => {
       <section className="py-12 sm:py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-3 sm:mb-4">Community Highlights</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#121212] mb-3 sm:mb-4">Community Highlights</h2>
             <p className="text-xl text-gray-600">Discover what makes our developer community special</p>
           </div>
           
@@ -220,7 +220,7 @@ const Developers = () => {
                   <Badge className="mx-auto mb-2 bg-gray-100 text-gray-700 border-gray-200">
                     {highlight.badge}
                   </Badge>
-                  <CardTitle className="text-xl text-black">{highlight.title}</CardTitle>
+                  <CardTitle className="text-xl text-[#121212]">{highlight.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 leading-relaxed">{highlight.description}</p>
@@ -235,7 +235,7 @@ const Developers = () => {
       <section className="py-12 sm:py-16 px-4">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-3 sm:mb-4">Ways to Get Involved</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#121212] mb-3 sm:mb-4">Ways to Get Involved</h2>
             <p className="text-xl text-gray-600">Choose how you want to contribute to the community</p>
           </div>
           
@@ -248,7 +248,7 @@ const Developers = () => {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-semibold text-black">{opportunity.title}</h3>
+                  <h3 className="text-xl font-semibold text-[#121212]">{opportunity.title}</h3>
                   <p className="text-gray-600 leading-relaxed">{opportunity.description}</p>
                 </div>
               </div>
@@ -270,7 +270,7 @@ const Developers = () => {
       <section className="py-12 sm:py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-3 sm:mb-4">Community Voices</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#121212] mb-3 sm:mb-4">Community Voices</h2>
             <p className="text-xl text-gray-600">What our developers are saying</p>
           </div>
           
@@ -285,7 +285,7 @@ const Developers = () => {
                         {testimonial.avatar}
                       </div>
                       <div>
-                        <div className="font-semibold text-black">{testimonial.author}</div>
+                        <div className="font-semibold text-[#121212]">{testimonial.author}</div>
                         <div className="text-sm text-gray-600">{testimonial.role}</div>
                       </div>
                     </div>
@@ -301,7 +301,7 @@ const Developers = () => {
       <section className="py-12 sm:py-16 px-4">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-3 sm:mb-4">Events & Learning Resources</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#121212] mb-3 sm:mb-4">Events & Learning Resources</h2>
             <p className="text-xl text-gray-600">Stay updated with community activities and learning opportunities</p>
           </div>
           
@@ -310,13 +310,13 @@ const Developers = () => {
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <Calendar className="h-8 w-8 text-[#ffd800]" />
-                  <CardTitle className="text-xl text-black">Upcoming Events</CardTitle>
+                  <CardTitle className="text-xl text-[#121212]">Upcoming Events</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                   <div>
-                    <div className="font-semibold text-black">Monthly Community Call</div>
+                    <div className="font-semibold text-[#121212]">Monthly Community Call</div>
                     <div className="text-sm text-gray-600">First Friday of every month</div>
                   </div>
                   <Badge className="bg-[#00d437]/10 text-[#00d437] border-[#00d437]/20">
@@ -325,7 +325,7 @@ const Developers = () => {
                 </div>
                 <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                   <div>
-                    <div className="font-semibold text-black">Rook Dev Challenge</div>
+                    <div className="font-semibold text-[#121212]">Rook Dev Challenge</div>
                     <div className="text-sm text-gray-600">Quarterly hackathon</div>
                   </div>
                   <Badge className="bg-[#dc2e3e]/10 text-[#dc2e3e] border-[#dc2e3e]/20">
@@ -339,22 +339,22 @@ const Developers = () => {
               <CardHeader>
                 <div className="flex items-center space-x-3">
                   <BookOpen className="h-8 w-8 text-[#0096d4]" />
-                  <CardTitle className="text-xl text-black">Learning Hub</CardTitle>
+                  <CardTitle className="text-xl text-[#121212]">Learning Hub</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3 p-3 hover:bg-gray-50 rounded-lg transition-colors">
                     <Globe className="h-5 w-5 text-[#0096d4]" />
-                    <span className="text-black">Developer Documentation</span>
+                    <span className="text-[#121212]">Developer Documentation</span>
                   </div>
                   <div className="flex items-center space-x-3 p-3 hover:bg-gray-50 rounded-lg transition-colors">
                     <Code2 className="h-5 w-5 text-[#00d437]" />
-                    <span className="text-black">Community Tutorials</span>
+                    <span className="text-[#121212]">Community Tutorials</span>
                   </div>
                   <div className="flex items-center space-x-3 p-3 hover:bg-gray-50 rounded-lg transition-colors">
                     <Github className="h-5 w-5 text-[#ffd800]" />
-                    <span className="text-black">Open Source Projects</span>
+                    <span className="text-[#121212]">Open Source Projects</span>
                   </div>
                 </div>
               </CardContent>

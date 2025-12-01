@@ -145,12 +145,12 @@ const LetterFromCEO = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-white text-black pt-16 sm:pt-20 md:pt-24 pb-12 sm:pb-16 overflow-x-hidden">
+      <div className="min-h-screen bg-white text-[#121212] pt-16 sm:pt-20 md:pt-24 pb-12 sm:pb-16 overflow-x-hidden">
         <div className="container mx-auto px-4">
           <Button
             variant="ghost"
             onClick={() => navigate(-1)}
-            className="mb-8 hover:bg-[#dc2e3e]/10 text-black group"
+            className="mb-8 hover:bg-[#dc2e3e]/10 text-[#121212] group"
           >
             <span className="mr-2">←</span>
             Back
@@ -167,7 +167,7 @@ const LetterFromCEO = () => {
               {[...Array(6)].map((_, index) => (
                 <Card
                   key={index}
-                  className="bg-white text-black border-none shadow-md overflow-hidden animate-pulse"
+                  className="bg-white text-[#121212] border-none shadow-md overflow-hidden animate-pulse"
                 >
                   <CardContent className="p-6">
                     <div className="h-8 w-3/4 bg-gray-200 rounded mb-4"></div>
@@ -196,7 +196,7 @@ const LetterFromCEO = () => {
 
   return (
     <DocumentMeta {...meta}>
-      <div className="min-h-screen bg-white text-black pt-16 sm:pt-20 md:pt-24 pb-12 sm:pb-16 overflow-x-hidden">
+      <div className="min-h-screen bg-white text-[#121212] pt-16 sm:pt-20 md:pt-24 pb-12 sm:pb-16 overflow-x-hidden">
         <div className="container mx-auto px-4">
           <div className="mb-16">
             <div className="h-1 w-20 bg-destructive mb-6"></div>
@@ -220,7 +220,7 @@ const LetterFromCEO = () => {
               {letters.map((letter) => (
                 <Card
                   key={letter._id}
-                  className="bg-white text-black border-none shadow-md overflow-hidden"
+                  className="bg-white text-[#121212] border-none shadow-md overflow-hidden"
                 >
                   <CardContent className="p-6">
                     <Link

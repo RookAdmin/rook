@@ -108,7 +108,7 @@ const ZohoPartnership = () => {
             </div>
             
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-tight tracking-tight mb-6 sm:mb-8 animate-fade-up px-2 sm:px-0" style={{ animationDelay: "0.1s" }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#121212] leading-tight tracking-tight mb-6 sm:mb-8 animate-fade-up px-2 sm:px-0" style={{ animationDelay: "0.1s" }}>
               Rook for Startups <span className="text-[#dc2e3e]">×</span> <span className="text-[#0096d4]">Zoho for Startups</span>
             </h1>
             
@@ -161,7 +161,7 @@ const ZohoPartnership = () => {
             <div className="space-y-8">
               <div className="space-y-6">
                 <div className="h-1 w-20 bg-[#0096d4]"></div>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">Why This Partnership?</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#121212]">Why This Partnership?</h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   The perfect synergy of startup growth automation and comprehensive business management.
                 </p>
@@ -173,7 +173,7 @@ const ZohoPartnership = () => {
                     <TrendingUp className="h-6 w-6 text-[#00d437]" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-black mb-2">Startup growth powered by Rook automation</h3>
+                    <h3 className="text-xl font-semibold text-[#121212] mb-2">Startup growth powered by Rook automation</h3>
                     <p className="text-gray-600">Smart link management, affiliate systems, and payment solutions</p>
                   </div>
                 </div>
@@ -183,7 +183,7 @@ const ZohoPartnership = () => {
                     <Building className="h-6 w-6 text-[#0096d4]" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-black mb-2">Business management simplified with Zoho's 50+ SaaS apps</h3>
+                    <h3 className="text-xl font-semibold text-[#121212] mb-2">Business management simplified with Zoho's 50+ SaaS apps</h3>
                     <p className="text-gray-600">CRM, Finance, HR, Support, Marketing. Everything in one ecosystem.</p>
                   </div>
                 </div>
@@ -193,7 +193,7 @@ const ZohoPartnership = () => {
                     <Award className="h-6 w-6 text-[#ffd800]" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-black mb-2">Credits for early-stage founders</h3>
+                    <h3 className="text-xl font-semibold text-[#121212] mb-2">Credits for early-stage founders</h3>
                     <p className="text-gray-600">Exclusive startup credits to maximize your runway</p>
                   </div>
                 </div>
@@ -203,7 +203,7 @@ const ZohoPartnership = () => {
                     <Shield className="h-6 w-6 text-[#dc2e3e]" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-black mb-2">Scale confidently with tools trusted by millions</h3>
+                    <h3 className="text-xl font-semibold text-[#121212] mb-2">Scale confidently with tools trusted by millions</h3>
                     <p className="text-gray-600">Enterprise-grade security and reliability from day one</p>
                   </div>
                 </div>
@@ -218,7 +218,7 @@ const ZohoPartnership = () => {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <div className="h-1 w-20 bg-[#00d437] mx-auto mb-6"></div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Complete Startup Stack</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#121212]">Complete Startup Stack</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Everything you need to launch, manage, and scale your startup in one integrated ecosystem.
             </p>
@@ -230,7 +230,7 @@ const ZohoPartnership = () => {
                 <div className="w-16 h-16 bg-[#dc2e3e]/10 rounded-2xl flex items-center justify-center mb-6">
                   <Shield className="h-8 w-8 text-[#dc2e3e]" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-black">Legal & Compliance Ready</h3>
+                <h3 className="text-xl font-bold mb-3 text-[#121212]">Legal & Compliance Ready</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Via Rook integrations and Zoho's compliance management tools for global operations.
                 </p>
@@ -242,7 +242,7 @@ const ZohoPartnership = () => {
                 <div className="w-16 h-16 bg-[#0096d4]/10 rounded-2xl flex items-center justify-center mb-6">
                   <Building className="h-8 w-8 text-[#0096d4]" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-black">Business Apps Suite</h3>
+                <h3 className="text-xl font-bold mb-3 text-[#121212]">Business Apps Suite</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   CRM, Finance, HR, Support, Marketing. 50+ integrated Zoho applications for complete business management.
                 </p>
@@ -254,7 +254,7 @@ const ZohoPartnership = () => {
                 <div className="w-16 h-16 bg-[#00d437]/10 rounded-2xl flex items-center justify-center mb-6">
                   <Zap className="h-8 w-8 text-[#00d437]" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-black">Growth Stack</h3>
+                <h3 className="text-xl font-bold mb-3 text-[#121212]">Growth Stack</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Rook's growth automation tools integrated with Zoho's business suite for seamless operations and rapid scaling.
                 </p>
@@ -266,7 +266,7 @@ const ZohoPartnership = () => {
                 <div className="w-16 h-16 bg-[#ffd800]/10 rounded-2xl flex items-center justify-center mb-6">
                   <Award className="h-8 w-8 text-[#ffd800]" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-black">Founder-Friendly Credits</h3>
+                <h3 className="text-xl font-bold mb-3 text-[#121212]">Founder-Friendly Credits</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Startup credits designed to maximize your runway and growth potential.
                 </p>
@@ -281,7 +281,7 @@ const ZohoPartnership = () => {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <div className="h-1 w-20 bg-[#0096d4] mx-auto mb-6"></div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">How It Works</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#121212]">How It Works</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               A streamlined process to get your startup powered by the best tools in the industry.
             </p>
@@ -293,7 +293,7 @@ const ZohoPartnership = () => {
                 <div className="w-20 h-20 bg-[#00d437] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-premium">
                   1
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-black">Apply for Rook × Zoho Startups</h3>
+                <h3 className="text-xl font-bold mb-3 text-[#121212]">Apply for Rook × Zoho Startups</h3>
                 <p className="text-gray-600">Submit your application for review by Zoho team</p>
               </div>
 
@@ -301,7 +301,7 @@ const ZohoPartnership = () => {
                 <div className="w-20 h-20 bg-[#0096d4] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-premium">
                   2
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-black">Activate Your Zoho Suite Credits</h3>
+                <h3 className="text-xl font-bold mb-3 text-[#121212]">Activate Your Zoho Suite Credits</h3>
                 <p className="text-gray-600">Access Zoho apps tailored for startup operations</p>
               </div>
 
@@ -309,7 +309,7 @@ const ZohoPartnership = () => {
                 <div className="w-20 h-20 bg-[#dc2e3e] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-premium">
                   3
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-black">Integrate with Rook Tools</h3>
+                <h3 className="text-xl font-bold mb-3 text-[#121212]">Integrate with Rook Tools</h3>
                 <p className="text-gray-600">Connect Rook's growth automation with your Zoho workspace</p>
               </div>
 
@@ -317,7 +317,7 @@ const ZohoPartnership = () => {
                 <div className="w-20 h-20 bg-[#ffd800] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-premium">
                   4
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-black">Scale Faster with Growth + Operations Unified</h3>
+                <h3 className="text-xl font-bold mb-3 text-[#121212]">Scale Faster with Growth + Operations Unified</h3>
                 <p className="text-gray-600">Manage everything from one integrated ecosystem</p>
               </div>
             </div>
@@ -345,7 +345,7 @@ const ZohoPartnership = () => {
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-black">Global Impact</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#121212]">Global Impact</h2>
             <p className="text-lg text-gray-700">Trusted by millions of businesses worldwide</p>
           </div>
 
@@ -382,7 +382,7 @@ const ZohoPartnership = () => {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <div className="h-1 w-20 bg-[#0096d4] mx-auto mb-6"></div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">Startup Success Stories</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#121212]">Startup Success Stories</h2>
           </div>
 
           <div className="max-w-4xl mx-auto">
@@ -397,7 +397,7 @@ const ZohoPartnership = () => {
               <blockquote className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-gray-800 mb-6 sm:mb-8 italic leading-relaxed px-4 sm:px-0">
                 "Zoho gave us the backbone to run operations seamlessly, while Rook helped us accelerate growth with smart automation. It's the perfect combo for early-stage founders who want to scale fast without losing control."
               </blockquote>
-              <div className="text-lg font-semibold text-black">
+              <div className="text-lg font-semibold text-[#121212]">
                 Alex Rodriguez, Co-Founder & CEO
               </div>
               <div className="text-gray-600">
@@ -412,7 +412,7 @@ const ZohoPartnership = () => {
       <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-[#00d437]/5 via-[#0096d4]/5 to-[#dc2e3e]/5">
         <div className="container mx-auto px-4 max-w-7xl text-center">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-black">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-[#121212]">
               Start Smart. Scale Confidently.
             </h2>
             <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
@@ -435,7 +435,7 @@ const ZohoPartnership = () => {
                 size="lg" 
                 variant="outline" 
                 asChild
-                className="border-black text-black hover:bg-black hover:text-white transition-all"
+                className="border-[#121212] text-[#121212] hover:bg-[#121212] hover:text-white transition-all"
               >
                 <a href="/rook-for-startups" target="_blank" rel="noopener noreferrer">
                   Learn More

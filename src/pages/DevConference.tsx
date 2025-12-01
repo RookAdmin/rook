@@ -246,7 +246,7 @@ const DevConference = () => {
               December 2027
             </Badge>
             
-            <h1 className="text-6xl md:text-8xl font-bold text-black leading-tight tracking-tight">
+            <h1 className="text-6xl md:text-8xl font-bold text-[#121212] leading-tight tracking-tight">
               Rook Dev Conference
               <span className="block text-4xl md:text-5xl text-gray-600 font-normal mt-4">
                 2027
@@ -275,7 +275,7 @@ const DevConference = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
-              <h2 className="text-4xl md:text-5xl font-bold text-black">
+              <h2 className="text-4xl md:text-5xl font-bold text-[#121212]">
                 A Developer Conference,
                 <span className="block text-[#0096d4]">Reimagined</span>
               </h2>
@@ -323,7 +323,7 @@ const DevConference = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#121212] mb-4">
               Conference Themes
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -358,7 +358,7 @@ const DevConference = () => {
       <section className="py-24 bg-gray-50/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#121212] mb-4">
               Featured Speakers
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -389,7 +389,7 @@ const DevConference = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#121212] mb-4">
               Experience Tracks
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -426,7 +426,7 @@ const DevConference = () => {
       <section className="py-24 bg-gray-50/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#121212] mb-4">
               Developer Labs
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -476,7 +476,7 @@ const DevConference = () => {
       <section className="py-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#121212] mb-4">
               Conference Tickets
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -499,7 +499,7 @@ const DevConference = () => {
                 )}
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl mb-2">{tier.name}</CardTitle>
-                  <div className="text-4xl font-bold text-black mb-2">{tier.price}</div>
+                  <div className="text-4xl font-bold text-[#121212] mb-2">{tier.price}</div>
                   <CardDescription>{tier.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -515,7 +515,7 @@ const DevConference = () => {
                     className={`w-full ${
                       tier.popular 
                         ? 'bg-[#00d437] hover:bg-[#00d437]/90 text-white' 
-                        : 'bg-white border border-gray-200 text-black hover:bg-gray-50'
+                        : 'bg-white border border-gray-200 text-[#121212] hover:bg-gray-50'
                     }`}
                   >
                     {tier.cta}
@@ -531,7 +531,7 @@ const DevConference = () => {
       <section className="py-24 bg-gray-50/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#121212] mb-4">
               Frequently Asked Questions
             </h2>
           </div>
@@ -578,7 +578,7 @@ const DevConference = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-black text-white">
+      <section className="py-24 bg-[#121212] text-white">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto space-y-8">
             <h2 className="text-4xl md:text-6xl font-bold leading-tight">

@@ -115,7 +115,7 @@ const RookForStartups = () => {
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-tight tracking-tight animate-fade-up px-2 sm:px-0" style={{ animationDelay: "0.2s" }}>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#121212] leading-tight tracking-tight animate-fade-up px-2 sm:px-0" style={{ animationDelay: "0.2s" }}>
           Fuel Your Startup <span className="text-[#dc2e3e]">Journey</span> With Rook
         </h1>
 
@@ -133,15 +133,15 @@ const RookForStartups = () => {
         {/* Rook Stats */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 py-4 sm:py-6 animate-fade-up px-2 sm:px-0" style={{ animationDelay: "0.4s" }}>
           <div className="bg-white border-l-2 border-[#0096d4] pl-3 sm:pl-4">
-            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">500+</p>
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#121212]">500+</p>
             <p className="text-xs sm:text-sm text-gray-600">Startups Supported</p>
           </div>
           <div className="bg-white border-l-2 border-[#dc2e3e] pl-3 sm:pl-4">
-            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">25M+</p>
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#121212]">25M+</p>
             <p className="text-xs sm:text-sm text-gray-600">SaaS Credits</p>
           </div>
           <div className="bg-white border-l-2 border-[#00d437] pl-3 sm:pl-4 col-span-2 md:col-span-1">
-            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">100%</p>
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#121212]">100%</p>
             <p className="text-xs sm:text-sm text-gray-600">Success Rate</p>
           </div>
         </div>
@@ -187,7 +187,7 @@ const RookForStartups = () => {
             <div className="grid md:grid-cols-2 gap-8 sm:gap-10 items-center">
               <div className="order-2 md:order-1">
                 <div className="h-1 w-20 bg-[#0096d4] mb-6"></div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#121212]">
                   Why Founders Choose Rook
                 </h2>
                 <p className="text-lg text-gray-700 mb-6">

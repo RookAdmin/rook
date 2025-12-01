@@ -83,7 +83,7 @@ const Careers = () => {
       {/* Hero Section */}
       <section className="py-12 sm:py-16 md:py-24 lg:py-32 px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black mb-4 sm:mb-6 tracking-tight px-2 sm:px-0">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#121212] mb-4 sm:mb-6 tracking-tight px-2 sm:px-0">
             Build the Future with Rook
           </h1>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed px-4 sm:px-0">
@@ -96,7 +96,7 @@ const Careers = () => {
       <section className="py-12 sm:py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-3 sm:mb-4">Why Join Rook</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#121212] mb-3 sm:mb-4">Why Join Rook</h2>
             <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
               We're not just building products. We're creating an ecosystem that matters.
             </p>
@@ -107,7 +107,7 @@ const Careers = () => {
                 <div className="w-12 h-12 rounded-full bg-[#dc2e3e]/10 flex items-center justify-center mb-4">
                   <Zap className="h-6 w-6 text-[#dc2e3e]" />
                 </div>
-                <CardTitle className="text-lg text-black">Impact-Driven Work</CardTitle>
+                <CardTitle className="text-lg text-[#121212]">Impact-Driven Work</CardTitle>
                 </CardHeader>
                 <CardContent>
                 <p className="text-gray-600 text-sm">
@@ -121,7 +121,7 @@ const Careers = () => {
                 <div className="w-12 h-12 rounded-full bg-[#00d437]/10 flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-[#00d437]" />
           </div>
-                <CardTitle className="text-lg text-black">Remote-First Culture</CardTitle>
+                <CardTitle className="text-lg text-[#121212]">Remote-First Culture</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
@@ -135,7 +135,7 @@ const Careers = () => {
                 <div className="w-12 h-12 rounded-full bg-[#0096d4]/10 flex items-center justify-center mb-4">
                   <TrendingUp className="h-6 w-6 text-[#0096d4]" />
           </div>
-                <CardTitle className="text-lg text-black">Continuous Growth</CardTitle>
+                <CardTitle className="text-lg text-[#121212]">Continuous Growth</CardTitle>
                 </CardHeader>
                 <CardContent>
                 <p className="text-gray-600 text-sm">
@@ -151,7 +151,7 @@ const Careers = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Open Positions</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#121212] mb-4">Open Positions</h2>
             <p className="text-gray-600">
               We're looking for talented individuals who share our vision. Explore our current openings.
             </p>
@@ -163,7 +163,7 @@ const Careers = () => {
                 <CardHeader>
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
                   <div className="flex-1">
-                    <CardTitle className="text-xl text-black mb-2">Senior Full Stack Developer</CardTitle>
+                    <CardTitle className="text-xl text-[#121212] mb-2">Senior Full Stack Developer</CardTitle>
                     <p className="text-gray-600 mb-4">
                       Build scalable web applications and innovative solutions that power our SaaS ecosystem. You'll work with modern technologies to create products that millions of users rely on.
                     </p>
@@ -192,7 +192,7 @@ const Careers = () => {
               </CardHeader>
               <CardContent>
                 <div>
-                  <h4 className="font-medium text-sm text-black mb-2">What We're Looking For:</h4>
+                  <h4 className="font-medium text-sm text-[#121212] mb-2">What We're Looking For:</h4>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li className="flex items-center gap-2">
                       <div className="h-1 w-1 bg-gray-400 rounded-full" />
@@ -221,7 +221,7 @@ const Careers = () => {
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-2">
-                      <CardTitle className="text-xl text-black">AI Engineer</CardTitle>
+                      <CardTitle className="text-xl text-[#121212]">AI Engineer</CardTitle>
                       <Badge className="bg-[#0096d4] text-white border-0">
                         <Sparkles className="h-3 w-3 mr-1" />
                         AI
@@ -255,7 +255,7 @@ const Careers = () => {
               </CardHeader>
               <CardContent>
                 <div>
-                  <h4 className="font-medium text-sm text-black mb-2">What We're Looking For:</h4>
+                  <h4 className="font-medium text-sm text-[#121212] mb-2">What We're Looking For:</h4>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li className="flex items-center gap-2">
                       <div className="h-1 w-1 bg-gray-400 rounded-full" />
@@ -283,7 +283,7 @@ const Careers = () => {
               <CardHeader>
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
                   <div className="flex-1">
-                    <CardTitle className="text-xl text-black mb-2">Product Designer</CardTitle>
+                    <CardTitle className="text-xl text-[#121212] mb-2">Product Designer</CardTitle>
                     <p className="text-gray-600 mb-4">
                       Create beautiful and intuitive user experiences for our products. You'll work closely with engineering and product teams to design solutions that users love.
                     </p>
@@ -312,7 +312,7 @@ const Careers = () => {
                 </CardHeader>
                 <CardContent>
                   <div>
-                  <h4 className="font-medium text-sm text-black mb-2">What We're Looking For:</h4>
+                  <h4 className="font-medium text-sm text-[#121212] mb-2">What We're Looking For:</h4>
                     <ul className="text-sm text-gray-600 space-y-1">
                     <li className="flex items-center gap-2">
                       <div className="h-1 w-1 bg-gray-400 rounded-full" />
@@ -341,7 +341,7 @@ const Careers = () => {
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-2">
-                      <CardTitle className="text-xl text-black">AI Product Manager</CardTitle>
+                      <CardTitle className="text-xl text-[#121212]">AI Product Manager</CardTitle>
                       <Badge className="bg-[#0096d4] text-white border-0">
                         <Sparkles className="h-3 w-3 mr-1" />
                         AI
@@ -375,7 +375,7 @@ const Careers = () => {
               </CardHeader>
               <CardContent>
                 <div>
-                  <h4 className="font-medium text-sm text-black mb-2">What We're Looking For:</h4>
+                  <h4 className="font-medium text-sm text-[#121212] mb-2">What We're Looking For:</h4>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li className="flex items-center gap-2">
                       <div className="h-1 w-1 bg-gray-400 rounded-full" />
@@ -405,7 +405,7 @@ const Careers = () => {
       <section className="py-12 sm:py-16 px-4 bg-gray-50">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-3 sm:mb-4">What We Offer</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#121212] mb-3 sm:mb-4">What We Offer</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               We believe in taking care of our team. Here's what makes working at Rook special.
             </p>
@@ -416,7 +416,7 @@ const Careers = () => {
                 <div className="w-12 h-12 rounded-full bg-[#dc2e3e]/10 flex items-center justify-center mx-auto mb-4">
                   <Zap className="h-6 w-6 text-[#dc2e3e]" />
                 </div>
-                <CardTitle className="text-lg text-black">Competitive Compensation</CardTitle>
+                <CardTitle className="text-lg text-[#121212]">Competitive Compensation</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
@@ -430,7 +430,7 @@ const Careers = () => {
                 <div className="w-12 h-12 rounded-full bg-[#00d437]/10 flex items-center justify-center mx-auto mb-4">
                   <Users className="h-6 w-6 text-[#00d437]" />
                 </div>
-                <CardTitle className="text-lg text-black">Health & Wellness</CardTitle>
+                <CardTitle className="text-lg text-[#121212]">Health & Wellness</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
@@ -444,7 +444,7 @@ const Careers = () => {
                 <div className="w-12 h-12 rounded-full bg-[#0096d4]/10 flex items-center justify-center mx-auto mb-4">
                   <Code className="h-6 w-6 text-[#0096d4]" />
                 </div>
-                <CardTitle className="text-lg text-black">Learning Budget</CardTitle>
+                <CardTitle className="text-lg text-[#121212]">Learning Budget</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
@@ -458,7 +458,7 @@ const Careers = () => {
                 <div className="w-12 h-12 rounded-full bg-[#ffd800]/10 flex items-center justify-center mx-auto mb-4">
                   <Palette className="h-6 w-6 text-[#ffd800]" />
                 </div>
-                <CardTitle className="text-lg text-black">Flexible Time Off</CardTitle>
+                <CardTitle className="text-lg text-[#121212]">Flexible Time Off</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">

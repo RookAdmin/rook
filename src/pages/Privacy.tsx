@@ -28,8 +28,8 @@ const Privacy = () => {
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="mb-12">
-            <div className="h-1 w-20 bg-black mb-6"></div>
-            <h1 className="text-5xl font-bold mb-6 text-black tracking-tight animate-fade-up">
+            <div className="h-1 w-20 bg-[#121212] mb-6"></div>
+            <h1 className="text-5xl font-bold mb-6 text-[#121212] tracking-tight animate-fade-up">
               Privacy Policy
             </h1>
             <p
@@ -43,7 +43,7 @@ const Privacy = () => {
           {/* Privacy Content */}
           <div className="prose prose-lg max-w-4xl mb-16 text-textSecondary">
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
                 1. Introduction
               </h2>
               <p>
@@ -63,7 +63,7 @@ const Privacy = () => {
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
                 2. Information We Collect
               </h2>
               <p>
@@ -93,7 +93,7 @@ const Privacy = () => {
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
                 3. How We Collect Information
               </h2>
               <p>
@@ -118,7 +118,7 @@ const Privacy = () => {
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
                 4. How We Use Your Information
               </h2>
               <p>
@@ -158,7 +158,7 @@ const Privacy = () => {
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
                 5. Disclosure of Your Information
               </h2>
               <p>
@@ -188,7 +188,7 @@ const Privacy = () => {
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
                 6. Data Security
               </h2>
               <p>
@@ -213,7 +213,7 @@ const Privacy = () => {
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
                 7. Your Choices About Our Collection, Use, and Disclosure
               </h2>
               <p>
@@ -243,7 +243,7 @@ const Privacy = () => {
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
                 8. Contact Information
               </h2>
               <p>
@@ -268,12 +268,12 @@ const Privacy = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="border border-black/10 bg-white p-10 rounded-lg shadow-sm mt-10">
+          <div className="border border-[#121212]/10 bg-white p-10 rounded-lg shadow-sm mt-10">
             <div className="flex items-center gap-4 mb-6">
-              <div className="h-1 w-20 bg-black"></div>
-              <FileLock className="w-6 h-6 text-black" />
+              <div className="h-1 w-20 bg-[#121212]"></div>
+              <FileLock className="w-6 h-6 text-[#121212]" />
             </div>
-            <h3 className="text-2xl font-bold mb-3 text-black">
+            <h3 className="text-2xl font-bold mb-3 text-[#121212]">
               Have Questions About Our Privacy Practices?
             </h3>
             <p className="text-textSecondary mb-6 max-w-2xl">
@@ -286,14 +286,14 @@ const Privacy = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button className="bg-black text-white hover:bg-black/90 transition-colors">
+                <Button className="bg-[#121212] text-white hover:bg-[#121212]/90 transition-colors">
                   Contact Support
                 </Button>
               </a>
               <Link to="/terms">
                 <Button
                   variant="outline"
-                  className="border-black text-black hover:bg-black/5"
+                  className="border-[#121212] text-[#121212] hover:bg-[#121212]/5"
                 >
                   View Terms of Service
                 </Button>

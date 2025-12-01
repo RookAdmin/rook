@@ -225,7 +225,7 @@ const OpenSource = () => {
               </div>
 
               <div className="relative">
-                <div className="bg-gradient-to-br from-[#131313] to-[#1f1f1f] rounded-2xl p-8 text-white shadow-xl">
+                <div className="bg-gradient-to-br from-[#121212] to-[#1f1f1f] rounded-2xl p-8 text-white shadow-xl">
                   <div className="space-y-4">
                     <div className="flex items-center space-x-2">
                       <Code className="h-6 w-6" />
@@ -376,7 +376,7 @@ const OpenSource = () => {
               <div>
                 <Badge
                   variant="outline"
-                  className="text-[#131313] border-[#131313]"
+                  className="text-[#121212] border-[#121212]"
                 >
                   Currently in Internal Build Phase
                 </Badge>

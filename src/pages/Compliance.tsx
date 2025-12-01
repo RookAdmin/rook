@@ -192,7 +192,7 @@ const Compliance = () => {
                   <div className="flex justify-center mb-3 sm:mb-4">
                     <Shield className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 text-[#00d437]" />
                   </div>
-                  <Globe className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 mx-auto" style={{ color: '#131313' }} />
+                  <Globe className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 mx-auto" style={{ color: '#121212' }} />
                 </div>
               </div>
             </div>

@@ -23,7 +23,7 @@ const ProfitPledge = () => {
         geoPlacename="India"
         structuredData={structuredData}
       />
-      <div className="min-h-screen bg-white text-black pt-16">
+      <div className="min-h-screen bg-white text-[#121212] pt-16">
         {/* Hero Section */}
         <section className="py-12 sm:py-16 md:py-20 bg-white relative overflow-x-hidden">
           {/* Minimalistic Background VFX */}
@@ -35,11 +35,11 @@ const ProfitPledge = () => {
           <div className="container mx-auto px-4 max-w-7xl relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-block mb-4 sm:mb-6">
-                <span className="bg-black text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
+                <span className="bg-[#121212] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
                   10% Profit Pledge
                 </span>
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-black px-2 sm:px-0">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-[#121212] px-2 sm:px-0">
                 Empowering Origins, One Partnership at a Time
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
@@ -88,7 +88,7 @@ const ProfitPledge = () => {
                   <div className="mb-6">
                     <Droplet className="w-12 h-12 text-[#dc2e3e]" strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-black">
+                  <h3 className="text-2xl font-bold mb-4 text-[#121212]">
                     Blood Donation Drives
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
@@ -103,7 +103,7 @@ const ProfitPledge = () => {
                   <div className="mb-6">
                     <Heart className="w-12 h-12 text-[#ffd800]" strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-black">
+                  <h3 className="text-2xl font-bold mb-4 text-[#121212]">
                     Street Animal Welfare
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
@@ -118,7 +118,7 @@ const ProfitPledge = () => {
                   <div className="mb-6">
                     <Globe className="w-12 h-12 text-[#0096d4]" strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-black">
+                  <h3 className="text-2xl font-bold mb-4 text-[#121212]">
                     Education & Sustainability
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
@@ -136,7 +136,7 @@ const ProfitPledge = () => {
             <div className="max-w-3xl mx-auto">
               <Card className="bg-white shadow-md border border-gray-200">
                 <CardContent className="p-6 sm:p-8 md:p-12">
-                  <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-[#131313] text-center">
+                  <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-[#121212] text-center">
                     10% of Profits: Transparent and Purposeful
                   </h2>
                   <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8 text-center">
@@ -193,7 +193,7 @@ const ProfitPledge = () => {
         <section className="py-12 sm:py-16 md:py-20 bg-white border-t-4 border-[#00d437]">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-black">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#121212]">
                 Join the Cycle of Good
               </h2>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-6 sm:mb-8 px-4 sm:px-0">
@@ -203,7 +203,7 @@ const ProfitPledge = () => {
                 href="https://aravindh.org" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block bg-black text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-gray-800 transition-colors"
+                className="inline-block bg-[#121212] text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-gray-800 transition-colors"
               >
                 Visit Aravindh Initiative
               </a>

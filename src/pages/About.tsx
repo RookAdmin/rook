@@ -247,7 +247,7 @@ const About = () => {
           {/* CTA Section - Updated with minimalist style using Rook colors */}
           <div
             id="join"
-            className="border border-[#e5e5e5] bg-white text-black p-10 rounded-xl shadow-soft mt-20 relative overflow-hidden"
+            className="border border-[#e5e5e5] bg-white text-[#121212] p-10 rounded-xl shadow-soft mt-20 relative overflow-hidden"
           >
             <div className="h-1 w-20 bg-[#0096d4] mb-6"></div>
             <div className="relative z-10">

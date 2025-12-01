@@ -116,7 +116,7 @@ const Index = () => {
         faqData={faqData}
         breadcrumbs={breadcrumbs}
       />
-      <div className="min-h-screen bg-white text-black overflow-x-hidden">
+      <div className="min-h-screen bg-white text-[#121212] overflow-x-hidden">
         <AnnouncementDialog />
         <Hero />
         <div className="relative overflow-hidden">

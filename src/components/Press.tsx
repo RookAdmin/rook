@@ -8,7 +8,7 @@ export const Press = () => {
     <section className="py-20 bg-[#f5f5f5]">
       <div className="container">
         <div className="mb-16 max-w-xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4 text-black">In the Press</h2>
+          <h2 className="text-4xl font-bold mb-4 text-[#121212]">In the Press</h2>
           <div className="h-1 w-16 bg-[#00d437] mx-auto"></div>
         </div>
         
@@ -25,12 +25,12 @@ export const Press = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-black mb-2">FiNext Award Dubai</h3>
-                  <p className="text-black">Innovation in Technology and SaaS</p>
+                  <h3 className="text-2xl font-bold text-[#121212] mb-2">FiNext Award Dubai</h3>
+                  <p className="text-[#121212]">Innovation in Technology and SaaS</p>
                 </div>
               </div>
               
-              <blockquote className="border-l-4 border-[#00d437] pl-6 italic text-black mb-8">
+              <blockquote className="border-l-4 border-[#00d437] pl-6 italic text-[#121212] mb-8">
                 "Our founder was honored with the FiNext Award in Dubai for innovation
                 in technology and SaaS. A proud moment that reflects our dedication
                 to building tools that matter."

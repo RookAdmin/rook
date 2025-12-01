@@ -102,7 +102,7 @@ const HloLegal = () => {
             </div>
             
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-tight tracking-tight mb-4 sm:mb-6 animate-fade-up px-2 sm:px-0" style={{ animationDelay: "0.2s" }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#121212] leading-tight tracking-tight mb-4 sm:mb-6 animate-fade-up px-2 sm:px-0" style={{ animationDelay: "0.2s" }}>
               Rook for Startups × <span className="text-[#dc2e3e]">Hlo Enterprise Legal+</span>
             </h1>
             
@@ -142,7 +142,7 @@ const HloLegal = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="h-1 w-20 bg-[#0096d4] mb-6"></div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-black">Why This Partnership?</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#121212]">Why This Partnership?</h2>
               <p className="text-lg text-gray-700 mb-8">
                 The perfect synergy of startup acceleration and legal infrastructure. Build confidently with Rook's automation while staying protected with Hlo's enterprise-grade legal solutions.
               </p>
@@ -463,7 +463,7 @@ const HloLegal = () => {
                 size="lg" 
                 variant="outline"
                 asChild
-                className="border-black text-black hover:bg-black hover:text-white transition-all"
+                className="border-[#121212] text-[#121212] hover:bg-[#121212] hover:text-white transition-all"
               >
                 <a href="/rook-for-startups" target="_blank" rel="noopener noreferrer">
                   Learn More

@@ -27,8 +27,8 @@ const Terms = () => {
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="mb-12">
-            <div className="h-1 w-20 bg-black mb-6"></div>
-            <h1 className="text-5xl font-bold mb-6 text-black tracking-tight animate-fade-up">
+            <div className="h-1 w-20 bg-[#121212] mb-6"></div>
+            <h1 className="text-5xl font-bold mb-6 text-[#121212] tracking-tight animate-fade-up">
               Terms and Conditions
             </h1>
             <p
@@ -42,7 +42,7 @@ const Terms = () => {
           {/* Terms Content */}
           <div className="prose prose-lg max-w-4xl mb-16 text-textSecondary">
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
                 1. Introduction
               </h2>
               <p>
@@ -73,7 +73,7 @@ const Terms = () => {
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
                 2. Communications
               </h2>
               <p>
@@ -87,7 +87,7 @@ const Terms = () => {
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
                 3. Purchases
               </h2>
               <p>
@@ -117,7 +117,7 @@ const Terms = () => {
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
                 4. Contests, Sweepstakes and Promotions
               </h2>
               <p>
@@ -132,7 +132,7 @@ const Terms = () => {
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">5. Refunds</h2>
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">5. Refunds</h2>
               <p>
                 We issue refunds for Contracts within 30 days of the original
                 purchase of the Contract.
@@ -140,7 +140,7 @@ const Terms = () => {
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">6. Content</h2>
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">6. Content</h2>
               <p>
                 Content found on or through this Service are the property of
                 Rook or used with permission. You may not distribute, modify,
@@ -152,7 +152,7 @@ const Terms = () => {
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
                 7. Prohibited Uses
               </h2>
               <p>
@@ -188,7 +188,7 @@ const Terms = () => {
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-bold mb-4 text-black">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
                 8. Contact Us
               </h2>
               <p>
@@ -213,9 +213,9 @@ const Terms = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="border border-black/10 bg-white p-10 rounded-lg shadow-sm mt-10">
-            <div className="h-1 w-20 bg-black mb-6"></div>
-            <h3 className="text-2xl font-bold mb-3 text-black">
+          <div className="border border-[#121212]/10 bg-white p-10 rounded-lg shadow-sm mt-10">
+            <div className="h-1 w-20 bg-[#121212] mb-6"></div>
+            <h3 className="text-2xl font-bold mb-3 text-[#121212]">
               Have Questions About Our Terms?
             </h3>
             <p className="text-textSecondary mb-6 max-w-2xl">
@@ -228,14 +228,14 @@ const Terms = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button className="bg-black text-white hover:bg-black/90 transition-colors">
+                <Button className="bg-[#121212] text-white hover:bg-[#121212]/90 transition-colors">
                   Contact Support
                 </Button>
               </a>
               <Link to="/privacy">
                 <Button
                   variant="outline"
-                  className="border-black text-black hover:bg-black/5"
+                  className="border-[#121212] text-[#121212] hover:bg-[#121212]/5"
                 >
                   View Privacy Policy
                 </Button>

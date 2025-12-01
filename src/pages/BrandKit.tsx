@@ -241,7 +241,7 @@ const BrandKit = () => {
                   <CardContent className="p-6">
                     <div
                       className={`h-32 flex items-center justify-center mb-4 rounded-lg ${
-                        logo.bg === "black" ? "bg-black" : "bg-white border"
+                        logo.bg === "black" ? "bg-[#121212]" : "bg-white border"
                       }`}
                     >
                       <img
@@ -321,7 +321,7 @@ const BrandKit = () => {
                   <CardContent className="p-6">
                     <div
                       className={`h-32 flex items-center justify-center mb-4 rounded-lg ${
-                        logo.bg === "black" ? "bg-black" : "bg-white border"
+                        logo.bg === "black" ? "bg-[#121212]" : "bg-white border"
                       }`}
                     >
                       <img
@@ -418,7 +418,7 @@ const BrandKit = () => {
                   <CardContent className="p-6">
                     <div
                       className={`h-32 flex items-center justify-center mb-4 rounded-lg ${
-                        logo.bg === "black" ? "bg-black" : "bg-white border"
+                        logo.bg === "black" ? "bg-[#121212]" : "bg-white border"
                       }`}
                     >
                       <img
