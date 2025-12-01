@@ -79,7 +79,7 @@ const ZohoPartnership = () => {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD",
-        "description": "Startup credits and discounts available"
+        "description": "Startup credits available"
       }
     }
   ];
@@ -88,7 +88,7 @@ const ZohoPartnership = () => {
     <>
       <SEO
         title="Rook × Zoho for Startups | Complete Business Stack with Growth Automation"
-        description="Get everything you need to build, run, and grow your startup. Rook's growth automation combined with Zoho's 50+ business apps. Exclusive startup credits and discounts available."
+        description="Get everything you need to build, run, and grow your startup. Rook's growth automation combined with Zoho's 50+ business apps. Exclusive startup credits available."
         keywords="Zoho for startups, startup business apps, CRM for startups, startup tools, Zoho credits, startup software, business automation, startup stack"
         canonical="/startups/zoho"
         geoRegion="IN"
@@ -104,7 +104,7 @@ const ZohoPartnership = () => {
             <div className="flex items-center justify-center gap-4 sm:gap-6 mb-6 sm:mb-8 animate-fade-up">
               <img src="/thumbnail.png" alt="Rook" className="h-14 sm:h-16 md:h-20 w-auto" />
               <span className="text-xl sm:text-2xl text-gray-400">×</span>
-              <img src="/partners/zohofor.png" alt="Zoho" className="h-14 sm:h-16 md:h-20 w-auto" />
+              <img src="/partners/zoho-logo-web.svg" alt="Zoho" className="h-14 sm:h-16 md:h-20 w-auto" />
             </div>
             
             {/* Main Headline */}
@@ -141,19 +141,19 @@ const ZohoPartnership = () => {
       {/* Why This Partnership */}
       <section className="py-12 sm:py-16 md:py-20 bg-gray-50/50">
         <div className="container mx-auto px-4 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
             {/* Left: Logos */}
-            <div className="relative flex items-center justify-center gap-6">
+            <div className="relative flex items-center justify-center gap-3 sm:gap-4 md:gap-6">
               <img 
                 src="/partners/rfs-labelblack.png" 
                 alt="Rook for Startups" 
-                className="h-20 object-contain"
+                className="h-12 sm:h-16 md:h-20 w-auto object-contain"
               />
-              <span className="text-2xl text-gray-400">×</span>
+              <span className="text-lg sm:text-xl md:text-2xl text-gray-400">×</span>
               <img 
                 src="/partners/zohofor.png" 
                 alt="Zoho for Startups" 
-                className="h-20 object-contain"
+                className="h-12 sm:h-16 md:h-20 w-auto object-contain"
               />
             </div>
 
@@ -193,8 +193,8 @@ const ZohoPartnership = () => {
                     <Award className="h-6 w-6 text-[#ffd800]" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-black mb-2">Discounts & credits for early-stage founders</h3>
-                    <p className="text-gray-600">Exclusive startup pricing to maximize your runway</p>
+                    <h3 className="text-xl font-semibold text-black mb-2">Credits for early-stage founders</h3>
+                    <p className="text-gray-600">Exclusive startup credits to maximize your runway</p>
                   </div>
                 </div>
 
@@ -256,7 +256,7 @@ const ZohoPartnership = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-black">Growth Stack</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Rook Link, Paym.me, Friends, and Scoop. Smart automation tools for rapid scaling.
+                  Rook's growth automation tools integrated with Zoho's business suite for seamless operations and rapid scaling.
                 </p>
               </CardContent>
             </Card>
@@ -266,9 +266,9 @@ const ZohoPartnership = () => {
                 <div className="w-16 h-16 bg-[#ffd800]/10 rounded-2xl flex items-center justify-center mb-6">
                   <Award className="h-8 w-8 text-[#ffd800]" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-black">Founder-Friendly Pricing</h3>
+                <h3 className="text-xl font-bold mb-3 text-black">Founder-Friendly Credits</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Startup credits and exclusive Zoho deals designed to maximize your runway and growth potential.
+                  Startup credits designed to maximize your runway and growth potential.
                 </p>
               </CardContent>
             </Card>
@@ -294,7 +294,7 @@ const ZohoPartnership = () => {
                   1
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-black">Apply for Rook × Zoho Startups</h3>
-                <p className="text-gray-600">Submit your application and get approved for the program</p>
+                <p className="text-gray-600">Submit your application for review by Zoho team</p>
               </div>
 
               <div className="text-center">
@@ -302,7 +302,7 @@ const ZohoPartnership = () => {
                   2
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-black">Activate Your Zoho Suite Credits</h3>
-                <p className="text-gray-600">Access discounted Zoho apps tailored for startup operations</p>
+                <p className="text-gray-600">Access Zoho apps tailored for startup operations</p>
               </div>
 
               <div className="text-center">
@@ -320,6 +320,22 @@ const ZohoPartnership = () => {
                 <h3 className="text-xl font-bold mb-3 text-black">Scale Faster with Growth + Operations Unified</h3>
                 <p className="text-gray-600">Manage everything from one integrated ecosystem</p>
               </div>
+            </div>
+            
+            {/* Disclaimer */}
+            <div className="mt-12 max-w-4xl mx-auto">
+              <div className="bg-gray-50 border-l-4 border-[#0096d4] p-6 rounded-r-lg">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <strong>Important:</strong> Approval to Zoho for Startups program is subject to Zoho team's pure decision. Rook does not guarantee approval or acceptance into the Zoho for Startups program. All applications are reviewed and approved solely by Zoho Corporation Private Limited.
+                </p>
+              </div>
+            </div>
+            
+            {/* Trademark Notice */}
+            <div className="mt-8 text-center">
+              <p className="text-xs italic text-gray-500">
+                Zoho trademarks belong to Zoho Corporation Private Limited.
+              </p>
             </div>
           </div>
         </div>
@@ -407,11 +423,11 @@ const ZohoPartnership = () => {
               <Button 
                 size="lg" 
                 asChild
-                className="bg-[#00d437] text-white hover:bg-[#00d437]/90 transition-all hover:translate-y-[-2px] text-lg px-12 py-4 rounded-full shadow-premium group"
+                className="bg-[#00d437] text-white hover:bg-[#00d437]/90 transition-all hover:translate-y-[-2px] text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-12 py-3 sm:py-3.5 md:py-4 rounded-full shadow-premium group w-full sm:w-auto"
               >
-                <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" rel="noopener noreferrer">
-                Apply Now for Rook × Zoho Startup Credits
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" rel="noopener noreferrer" className="text-center">
+                <span className="block sm:inline">Apply Now for Rook × Zoho Startup Credits</span>
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1 inline-block" />
                 </a>
               </Button>
               
@@ -430,7 +446,7 @@ const ZohoPartnership = () => {
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-gray-600">
               <div className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
-                Exclusive startup pricing
+                Exclusive startup credits
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />

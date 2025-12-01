@@ -135,14 +135,14 @@ const Developers = () => {
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" asChild className="bg-[#00d437] hover:bg-[#00d437]/90 text-white">
                   <a href="mailto:hustle@rookhq.com?subject=I am ready to join Rook Developers Community&body=Hi,%0D%0A%0D%0AName:%20%0D%0A%0D%0AI am excited to join the Rook Developers Community and contribute to the ecosystem. I am ready to learn, collaborate, and help shape the future of SaaS development with the community.%0D%0A%0D%0ALooking forward to being part of this amazing community!">
-                    <Users className="h-5 w-5 mr-2" />
+                  <Users className="h-5 w-5 mr-2" />
                     Join Dev Community
                   </a>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="border-[#0096d4] text-[#0096d4] hover:bg-[#0096d4] hover:text-white">
                   <a href="mailto:say@rookhq.com?subject=I have new ideas that would help millions of people via Rook&body=Hi,%0D%0A%0D%0AName:%20%0D%0A%0D%0AI have some ideas that could help millions of people through Rook:%0D%0A%0D%0AIdea 1:%0D%0A%0D%0AIdea 2:%0D%0A%0D%0AIdea 3:%0D%0A%0D%0AAdditional details:%0D%0A%0D%0AThank you!">
-                    <MessageCircle className="h-5 w-5 mr-2" />
-                    Contribute Ideas
+                  <MessageCircle className="h-5 w-5 mr-2" />
+                  Contribute Ideas
                   </a>
                 </Button>
               </div>
@@ -258,7 +258,7 @@ const Developers = () => {
           <div className="text-center">
             <Button size="lg" asChild className="bg-[#00d437] hover:bg-[#00d437]/90 text-white">
               <a href="mailto:hustle@rookhq.com?subject=I am ready to join Rook Developers Community&body=Hi,%0D%0A%0D%0AName:%20%0D%0A%0D%0AI am excited to join the Rook Developers Community and contribute to the ecosystem. I am ready to learn, collaborate, and help shape the future of SaaS development with the community.%0D%0A%0D%0ALooking forward to being part of this amazing community!">
-                <Star className="h-5 w-5 mr-2" />
+              <Star className="h-5 w-5 mr-2" />
                 Join Dev Community
               </a>
             </Button>
@@ -373,14 +373,14 @@ const Developers = () => {
           <div className="flex flex-wrap gap-4 justify-center">
             <Button size="lg" asChild className="bg-[#00d437] hover:bg-[#00d437]/90 text-white">
               <a href="mailto:hustle@rookhq.com?subject=I am ready to join Rook Developers Community&body=Hi,%0D%0A%0D%0AName:%20%0D%0A%0D%0AI am excited to join the Rook Developers Community and contribute to the ecosystem. I am ready to learn, collaborate, and help shape the future of SaaS development with the community.%0D%0A%0D%0ALooking forward to being part of this amazing community!">
-                <Users className="h-5 w-5 mr-2" />
+              <Users className="h-5 w-5 mr-2" />
                 Join Dev Community
               </a>
             </Button>
             <Button size="lg" variant="outline" asChild className="bg-[#000000] text-white border-0 focus:outline-none hover:bg-white hover:text-[#000000]">
               <a href="mailto:say@rookhq.com?subject=I have new ideas that would help millions of people via Rook&body=Hi,%0D%0A%0D%0AName:%20%0D%0A%0D%0AI have some ideas that could help millions of people through Rook:%0D%0A%0D%0AIdea 1:%0D%0A%0D%0AIdea 2:%0D%0A%0D%0AIdea 3:%0D%0A%0D%0AAdditional details:%0D%0A%0D%0AThank you!">
-                <Lightbulb className="h-5 w-5 mr-2 " />
-                Contribute Ideas
+              <Lightbulb className="h-5 w-5 mr-2 " />
+              Contribute Ideas
               </a>
             </Button>
           </div>

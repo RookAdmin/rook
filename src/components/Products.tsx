@@ -19,12 +19,11 @@ export const Products = () => {
               <div className="h-2 w-12 bg-[#dc2e3e] mb-4"></div>
               <div className="flex flex-col items-start">
                 <img 
-                  src="/rook-saas-assets/rook-scoop.png" 
+                  src="/rook-saas-assets/rook-scoop-blacktext.png" 
                   alt="Rook Scoop" 
-                  className="mb-2 sm:mb-3 object-contain"
+                  className="mb-3 sm:mb-4 object-contain"
                   style={{ height: 'clamp(40px, 8vw, 57.6px)' }}
                 />
-                <h3 className="text-lg sm:text-xl font-bold text-[#dc2e3e] mb-3 sm:mb-4">Rook Scoop</h3>
               </div>
             </CardHeader>
             <CardContent className="pt-3 sm:pt-4 flex flex-col flex-grow">
@@ -63,12 +62,11 @@ export const Products = () => {
               <div className="h-2 w-12 bg-[#00d437] mb-4"></div>
               <div className="flex flex-col items-start">
                 <img 
-                  src="/rook-saas-assets/rook-links.png" 
+                  src="/rook-saas-assets/rook-links-blacktext.png" 
                   alt="Rook Links" 
-                  className="mb-2 sm:mb-3 object-contain"
+                  className="mb-3 sm:mb-4 object-contain"
                   style={{ height: 'clamp(40px, 8vw, 57.6px)' }}
                 />
-                <h3 className="text-lg sm:text-xl font-bold text-[#00d437] mb-3 sm:mb-4">Rook Links</h3>
               </div>
             </CardHeader>
             <CardContent className="pt-4 flex flex-col flex-grow">
@@ -107,12 +105,11 @@ export const Products = () => {
               <div className="h-2 w-12 bg-[#0096d4] mb-4"></div>
               <div className="flex flex-col items-start">
                 <img 
-                  src="/rook-saas-assets/paym-logo.png" 
+                  src="/rook-saas-assets/paym-logoname.png" 
                   alt="Paym.me" 
-                  className="mb-2 sm:mb-3 object-contain"
+                  className="mb-3 sm:mb-4 object-contain"
                   style={{ height: 'clamp(40px, 8vw, 57.6px)' }}
                 />
-                <h3 className="text-lg sm:text-xl font-bold text-[#0096d4] mb-3 sm:mb-4">Paym.me</h3>
               </div>
             </CardHeader>
             <CardContent className="pt-4 flex flex-col flex-grow">
@@ -153,10 +150,9 @@ export const Products = () => {
                 <img 
                   src="/rook-saas-assets/realm-black.png" 
                   alt="Realm by Rook" 
-                  className="mb-2 sm:mb-3 object-contain"
+                  className="mb-3 sm:mb-4 object-contain"
                   style={{ height: 'clamp(40px, 8vw, 57.6px)' }}
                 />
-                <h3 className="text-lg sm:text-xl font-bold text-[#131313] mb-3 sm:mb-4">Realm by Rook</h3>
               </div>
             </CardHeader>
             <CardContent className="pt-4 flex flex-col flex-grow">

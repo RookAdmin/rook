@@ -250,16 +250,8 @@ const RookScoop = () => {
                   className="bg-[#dc2e3e] hover:bg-[#dc2e3e]/90 text-white text-lg px-8 py-4 h-auto"
                   onClick={() => window.open('https://scoop.rookhq.com', '_blank')}
                 >
-                  Start Free Trial
+                  Join As Early Bird
                   <ExternalLink className="ml-2 h-5 w-5" />
-                </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="text-[#0096d4] border-[#0096d4] hover:bg-[#0096d4]/5 text-lg px-8 py-4 h-auto"
-                >
-                  Book Demo
-                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
             </div>
@@ -536,20 +528,11 @@ const RookScoop = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              variant="secondary"
-              className="text-[#dc2e3e] text-lg px-8 py-4 h-auto"
+              className="bg-[#121212] hover:bg-white hover:text-[#121212] text-white text-lg px-8 py-4 h-auto transition-all"
               onClick={() => window.open('https://scoop.rookhq.com', '_blank')}
             >
-              Start Free Trial
+              Join As Early Bird
               <ExternalLink className="ml-2 h-5 w-5" />
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="text-white border-white hover:bg-white/10 text-lg px-8 py-4 h-auto"
-            >
-              Book a Demo
-              <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
         </div>
