@@ -17,13 +17,14 @@ export const Products = () => {
           <Card className="border border-[#dc2e3e] shadow-md hover:shadow-lg transition-shadow duration-300 bg-white rounded-md flex flex-col h-full">
             <CardHeader className="pb-0">
               <div className="h-2 w-12 bg-[#dc2e3e] mb-4"></div>
-              <div className="flex justify-start">
+              <div className="flex flex-col items-start">
                 <img 
                   src="/rook-saas-assets/rook-scoop.png" 
                   alt="Rook Scoop" 
-                  className="mb-3 sm:mb-4 object-contain"
+                  className="mb-2 sm:mb-3 object-contain"
                   style={{ height: 'clamp(40px, 8vw, 57.6px)' }}
                 />
+                <h3 className="text-lg sm:text-xl font-bold text-[#dc2e3e] mb-3 sm:mb-4">Rook Scoop</h3>
               </div>
             </CardHeader>
             <CardContent className="pt-3 sm:pt-4 flex flex-col flex-grow">
@@ -60,19 +61,20 @@ export const Products = () => {
           <Card className="border border-[#00d437] shadow-md hover:shadow-lg transition-shadow duration-300 bg-white rounded-md flex flex-col h-full">
             <CardHeader className="pb-0">
               <div className="h-2 w-12 bg-[#00d437] mb-4"></div>
-              <div className="flex justify-start">
+              <div className="flex flex-col items-start">
                 <img 
                   src="/rook-saas-assets/rook-links.png" 
                   alt="Rook Links" 
-                  className="mb-3 sm:mb-4 object-contain"
+                  className="mb-2 sm:mb-3 object-contain"
                   style={{ height: 'clamp(40px, 8vw, 57.6px)' }}
                 />
+                <h3 className="text-lg sm:text-xl font-bold text-[#00d437] mb-3 sm:mb-4">Rook Links</h3>
               </div>
             </CardHeader>
             <CardContent className="pt-4 flex flex-col flex-grow">
               <div className="space-y-6 flex-grow">
                 <p className="text-black text-sm sm:text-base">
-                  The smart bio link tool for creators, brands, and businesses. Turn one link into a hub for everything you do: products, social, videos, and more.
+                  The smart bio link tool for creators, brands, and businesses. Turn one link into a hub for everything you do: products, social, videos, and more. Create your <span className="font-bold">clickl.in/username</span> domain name.
                 </p>
                 
                 <ul className="space-y-2 sm:space-y-3">
@@ -103,20 +105,20 @@ export const Products = () => {
           <Card className="border border-[#0096d4] shadow-md hover:shadow-lg transition-shadow duration-300 bg-white rounded-md flex flex-col h-full">
             <CardHeader className="pb-0">
               <div className="h-2 w-12 bg-[#0096d4] mb-4"></div>
-              <div className="flex justify-start">
+              <div className="flex flex-col items-start">
                 <img 
                   src="/rook-saas-assets/paym-logo.png" 
                   alt="Paym.me" 
-                  className="mb-3 sm:mb-4 object-contain"
+                  className="mb-2 sm:mb-3 object-contain"
                   style={{ height: 'clamp(40px, 8vw, 57.6px)' }}
                 />
+                <h3 className="text-lg sm:text-xl font-bold text-[#0096d4] mb-3 sm:mb-4">Paym.me</h3>
               </div>
             </CardHeader>
             <CardContent className="pt-4 flex flex-col flex-grow">
               <div className="space-y-6 flex-grow">
                 <p className="text-black text-sm sm:text-base">
-                  A Linktree-style payment link manager for freelancers, creators, and
-                  service providers. Share one link. Collect payments from everywhere.
+                  A payment link manager for freelancers, creators, and service providers. Get your <span className="font-bold">paym.me/username</span> link and share one link to collect payments from everywhere.
                 </p>
                 
                 <ul className="space-y-2 sm:space-y-3">
@@ -147,13 +149,14 @@ export const Products = () => {
           <Card className="border border-[#131313] shadow-md hover:shadow-lg transition-shadow duration-300 bg-white rounded-md flex flex-col h-full">
             <CardHeader className="pb-0">
               <div className="h-2 w-12 bg-[#131313] mb-4"></div>
-              <div className="flex justify-start">
+              <div className="flex flex-col items-start">
                 <img 
                   src="/rook-saas-assets/realm-black.png" 
                   alt="Realm by Rook" 
-                  className="mb-3 sm:mb-4 object-contain"
+                  className="mb-2 sm:mb-3 object-contain"
                   style={{ height: 'clamp(40px, 8vw, 57.6px)' }}
                 />
+                <h3 className="text-lg sm:text-xl font-bold text-[#131313] mb-3 sm:mb-4">Realm by Rook</h3>
               </div>
             </CardHeader>
             <CardContent className="pt-4 flex flex-col flex-grow">

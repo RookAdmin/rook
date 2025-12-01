@@ -25,7 +25,7 @@ const ProfitPledge = () => {
       />
       <div className="min-h-screen bg-white text-black pt-16">
         {/* Hero Section */}
-        <section className="py-12 sm:py-16 md:py-20 bg-white relative overflow-hidden">
+        <section className="py-12 sm:py-16 md:py-20 bg-white relative overflow-x-hidden">
           {/* Minimalistic Background VFX */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/4 left-1/4 w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 bg-[#dc2e3e] opacity-5 rounded-full blur-3xl"></div>

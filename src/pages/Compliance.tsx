@@ -81,7 +81,7 @@ const Compliance = () => {
         geoPlacename="India"
         structuredData={structuredData}
       />
-    <div className="pt-16 min-h-screen bg-white">
+    <div className="pt-16 min-h-screen bg-white overflow-x-hidden">
       {/* Hero Section */}
       <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4 max-w-7xl">

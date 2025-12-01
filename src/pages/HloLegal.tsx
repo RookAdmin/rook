@@ -87,7 +87,7 @@ const HloLegal = () => {
         geoPlacename="India"
         structuredData={structuredData}
       />
-    <div className={`w-full min-h-screen bg-white pt-16 transition-opacity duration-700 overflow-hidden ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <div className="w-full min-h-screen bg-white pt-16 overflow-x-hidden">
       {/* Hero Section */}
       <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white w-full relative">
         <div className="container mx-auto px-4 max-w-7xl">

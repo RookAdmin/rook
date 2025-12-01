@@ -159,9 +159,9 @@ const Trademark = () => {
         geoPlacename="India"
         structuredData={structuredData}
       />
-    <div className="min-h-screen bg-white pt-16">
+    <div className="min-h-screen bg-white pt-16 overflow-x-hidden">
         {/* Hero Section */}
-        <section className="py-20 bg-white">
+        <section className="py-12 sm:py-16 md:py-20 bg-white">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-16">
               <div className="flex justify-center mb-6">

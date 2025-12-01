@@ -100,14 +100,10 @@ const RookForStartups = () => {
         faqData={faqData}
         breadcrumbs={breadcrumbs}
       />
-      <div
-        className={`min-h-screen bg-white pt-16 transition-opacity duration-500 ${
-          isVisible ? "opacity-100" : "opacity-0"
-        } overflow-hidden`}
-      >
+      <div className="min-h-screen bg-white pt-16 overflow-x-hidden">
         {/* Redesigned Hero Section - Minimalistic */}
-        <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white w-full overflow-hidden">
-  <div className="container mx-auto px-4 max-w-7xl relative overflow-hidden">
+        <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white w-full overflow-x-hidden">
+  <div className="container mx-auto px-4 max-w-7xl relative overflow-x-hidden">
     <div className="max-w-4xl mx-auto">
       <div className="space-y-6 sm:space-y-8">
         {/* Badge */}

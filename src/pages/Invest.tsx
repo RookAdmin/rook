@@ -39,7 +39,7 @@ const Invest = () => {
       />
     <div className="min-h-screen bg-white pt-16">
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <section className="min-h-screen flex items-center justify-center relative overflow-x-hidden">
         <div 
           className="absolute inset-0 bg-gradient-to-br from-white/40 to-gray-100/20 backdrop-blur-3xl"
           style={{ transform: `translateY(${scrollY * 0.1}px)` }}

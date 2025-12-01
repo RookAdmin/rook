@@ -123,7 +123,7 @@ const PressReleasePage = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-white text-textPrimary pt-24 pb-16 px-4">
+      <div className="min-h-screen bg-white text-textPrimary pt-16 sm:pt-20 md:pt-24 pb-12 sm:pb-16 px-4 overflow-x-hidden">
         <div className="container mx-auto">
           <div className="h-1 w-20 bg-destructive mb-6"></div>
           <div className="h-12 w-64 bg-gray-200 rounded mb-6 animate-pulse"></div>
@@ -152,7 +152,7 @@ const PressReleasePage = () => {
 
   return (
     <DocumentMeta {...meta}>
-      <div className="min-h-screen bg-white text-textPrimary pt-24 pb-16 px-4">
+      <div className="min-h-screen bg-white text-textPrimary pt-16 sm:pt-20 md:pt-24 pb-12 sm:pb-16 px-4 overflow-x-hidden">
         <div className="container mx-auto">
           <div className="mb-12 md:mb-16">
             <div className="h-1 w-20 bg-destructive mb-4 md:mb-6"></div>

@@ -85,9 +85,9 @@ const MyProBuddy = () => {
         geoPlacename="India"
         structuredData={structuredData}
       />
-    <div className={`w-full min-h-screen bg-white pt-16 transition-opacity duration-500 overflow-hidden ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <div className="w-full min-h-screen bg-white pt-16 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white relative overflow-x-hidden">
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="max-w-5xl mx-auto text-center">
             {/* Co-branding badges */}

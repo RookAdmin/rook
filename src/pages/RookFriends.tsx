@@ -30,9 +30,9 @@ const RookFriends = () => {
         geoPlacename="India"
         structuredData={structuredData}
       />
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-16">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-16 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4">
+      <section className="pt-12 sm:pt-16 md:pt-24 lg:pt-32 pb-12 sm:pb-16 md:pb-20 px-4">
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto bg-white/40 backdrop-blur-sm border border-white/20 rounded-3xl p-12 shadow-2xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-900">

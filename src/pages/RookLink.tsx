@@ -143,9 +143,9 @@ const RookLink = () => {
         faqData={faqData}
         breadcrumbs={breadcrumbs}
       />
-    <div className="min-h-screen bg-white pt-16">
+    <div className="min-h-screen bg-white pt-16 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="py-20 px-4 relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 px-4 relative overflow-x-hidden">
         {/* Background with subtle pattern */}
         <div className="absolute inset-0 bg-gray-50 opacity-60" />
         

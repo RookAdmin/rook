@@ -105,10 +105,10 @@ const BrandKit = () => {
         geoPlacename="India"
         structuredData={structuredData}
       />
-    <div className="min-h-screen bg-white pt-16">
+    <div className="min-h-screen bg-white pt-16 overflow-x-hidden">
         {/* Hero Section */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4 max-w-6xl">
+        <section className="py-12 sm:py-16 md:py-20 bg-white">
+          <div className="container mx-auto px-4 max-w-7xl">
             <div className="text-center mb-16">
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                 Rook Brand Kit

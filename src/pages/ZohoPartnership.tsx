@@ -61,6 +61,29 @@ const ZohoPartnership = () => {
     };
   }, []);
 
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Rook × Zoho for Startups",
+      "description": "Complete business stack combining Rook's growth automation with Zoho's 50+ business apps for startups.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Rook",
+        "url": "https://rookhq.com"
+      },
+      "areaServed": "Worldwide",
+      "url": "https://rookhq.com/startups/zoho",
+      "serviceType": "Startup Business Stack",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Startup credits and discounts available"
+      }
+    }
+  ];
+
   return (
     <>
       <SEO
@@ -72,9 +95,9 @@ const ZohoPartnership = () => {
         geoPlacename="India"
         structuredData={structuredData}
       />
-    <div className={`w-full min-h-screen bg-white pt-16 transition-opacity duration-500 overflow-hidden ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <div className="w-full min-h-screen bg-white pt-16 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-white relative overflow-x-hidden">
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="max-w-5xl mx-auto text-center">
             {/* Co-branding badges */}

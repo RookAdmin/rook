@@ -76,7 +76,7 @@ const Life = () => {
       />
     <div className="min-h-screen bg-white pt-16">
       {/* Hero Section */}
-      <section className="relative py-12 sm:py-16 md:py-24 lg:py-32 bg-gradient-to-b from-gray-50 via-white to-transparent overflow-hidden">
+      <section className="relative py-12 sm:py-16 md:py-24 lg:py-32 bg-gradient-to-b from-gray-50 via-white to-transparent overflow-x-hidden">
         <div className="absolute inset-0 bg-[url('/api/placeholder/1920/1080')] bg-cover bg-center opacity-10"></div>
         <div className="container mx-auto max-w-6xl text-center relative z-10 px-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 sm:mb-8 md:mb-12 tracking-tight px-2 sm:px-0">

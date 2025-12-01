@@ -98,7 +98,7 @@ const MediaCoverage = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-white text-textPrimary pt-24 pb-16">
+      <div className="min-h-screen bg-white text-textPrimary pt-16 sm:pt-20 md:pt-24 pb-12 sm:pb-16 overflow-x-hidden">
         <div className="container mx-auto px-4">
           <div className="mb-16">
             <div className="h-1 w-20 bg-success mb-6 animate-pulse"></div>
@@ -132,7 +132,7 @@ const MediaCoverage = () => {
 
   return (
     <DocumentMeta {...meta}>
-      <div className="min-h-screen bg-white text-textPrimary pt-24 pb-16">
+      <div className="min-h-screen bg-white text-textPrimary pt-16 sm:pt-20 md:pt-24 pb-12 sm:pb-16 overflow-x-hidden">
         <div className="container mx-auto px-4">
           <div className="mb-16">
             <div className="h-1 w-20 bg-success mb-6"></div>

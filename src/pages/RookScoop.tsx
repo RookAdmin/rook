@@ -226,9 +226,9 @@ const RookScoop = () => {
         geoPlacename="India"
         structuredData={{ ...productSchema, ...faqSchema }}
       />
-    <div className="min-h-screen bg-white pt-16">
+    <div className="min-h-screen bg-white pt-16 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="py-20 px-4 relative overflow-hidden bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 px-4 relative overflow-x-hidden bg-gray-50">
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">

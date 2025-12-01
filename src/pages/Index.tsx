@@ -116,11 +116,7 @@ const Index = () => {
         faqData={faqData}
         breadcrumbs={breadcrumbs}
       />
-      <div
-        className={`min-h-screen bg-white text-black transition-opacity duration-500 ${
-          isLoaded ? "opacity-100" : "opacity-0"
-        }`}
-      >
+      <div className="min-h-screen bg-white text-black overflow-x-hidden">
         <AnnouncementDialog />
         <Hero />
         <div className="relative overflow-hidden">

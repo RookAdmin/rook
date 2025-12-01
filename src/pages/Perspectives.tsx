@@ -107,7 +107,7 @@ const Perspectives = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-white text-textPrimary pt-28 pb-20 relative overflow-hidden">
+      <div className="min-h-screen bg-white text-textPrimary pt-16 sm:pt-20 md:pt-28 pb-12 sm:pb-16 md:pb-20 relative overflow-x-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="h-8 w-64 bg-gray-200 rounded mb-6 animate-pulse"></div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
