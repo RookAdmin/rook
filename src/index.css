@@ -107,6 +107,12 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Apply Poppins to all headings and all elements */
+  *, h1, h2, h3, h4, h5, h6, nav, footer, p, span, a, button, input, textarea, select, label, li, td, th, div {
+    font-family: 'Poppins', sans-serif;
   }
   
   /* Prevent horizontal scroll on all devices */

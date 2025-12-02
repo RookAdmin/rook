@@ -69,7 +69,8 @@ export default {
         shadowSoft: "rgba(0,0,0,0.05)", // Soft shadows
       },
       fontFamily: {
-        sans: ["Montserrat", "sans-serif"], // Keeping Montserrat for premium feel
+        sans: ["Poppins", "sans-serif"], // Poppins as unified font for everything
+        poppins: ["Poppins", "sans-serif"], // Poppins font family
       },
       animation: {
         "fade-up": "fadeUp 0.7s ease-out forwards",

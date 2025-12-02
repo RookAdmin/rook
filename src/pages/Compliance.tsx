@@ -83,7 +83,7 @@ const Compliance = () => {
       />
     <div className="pt-16 min-h-screen bg-white overflow-x-hidden">
       {/* Hero Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
+      <section className="hero-section py-12 sm:py-16 md:py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-4 sm:mb-6">

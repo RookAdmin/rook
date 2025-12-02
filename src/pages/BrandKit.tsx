@@ -118,7 +118,7 @@ const BrandKit = () => {
       />
     <div className="min-h-screen bg-white pt-16 overflow-x-hidden w-full mb-20">
         {/* Hero Section */}
-        <section className="py-12 sm:py-16 md:py-20 bg-white w-full">
+        <section className="hero-section py-12 sm:py-16 md:py-20 bg-white w-full">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="text-center mb-16">
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">

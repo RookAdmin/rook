@@ -250,7 +250,7 @@ const RookLink = () => {
       />
     <div className="min-h-screen bg-white pt-16 overflow-x-hidden w-full">
       {/* Hero Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:pt-8 lg:pb-20 px-4 sm:px-6 lg:px-8 relative overflow-x-hidden w-full">
+      <section className="hero-section py-12 sm:py-16 md:py-20 lg:pt-8 lg:pb-20 px-4 sm:px-6 lg:px-8 relative overflow-x-hidden w-full">
         {/* Background with subtle pattern */}
         <div className="absolute inset-0 bg-gray-50 opacity-60" />
         

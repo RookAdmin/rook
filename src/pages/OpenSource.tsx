@@ -171,7 +171,7 @@ const OpenSource = () => {
       />
     <div className="min-h-screen bg-white pt-16 overflow-x-hidden">
         {/* Hero Section */}
-        <section className="pt-12 sm:pt-16 md:pt-20 lg:pt-40 py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
+        <section className="hero-section pt-12 sm:pt-16 md:pt-20 lg:pt-40 py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
           <div className="container mx-auto max-w-6xl">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">

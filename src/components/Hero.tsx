@@ -15,7 +15,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white relative overflow-hidden pt-16 md:pt-20 lg:pt-16 w-full">
+    <div className="min-h-screen flex items-center justify-center bg-white relative overflow-hidden pt-16 md:pt-20 lg:pt-16 w-full hero">
       {/* Minimal grid pattern background */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="absolute inset-0" style={{
@@ -48,9 +48,9 @@ export const Hero = () => {
                   of software
                 </h1>
                 
-                <p className="text-lg sm:text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl font-light">
-                  Tools that empower. Impact that matters.
-                </p>
+                    <p className="text-lg sm:text-xl md:text-2xl text-gray-600 leading-relaxed max-w-2xl font-light">
+                      Tools that empower. Impact that matters.
+                    </p>
             </div>
 
             {/* CTAs */}
