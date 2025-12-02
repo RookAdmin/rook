@@ -248,9 +248,9 @@ const RookLink = () => {
         faqData={faqData}
         breadcrumbs={breadcrumbs}
       />
-    <div className="min-h-screen bg-white pt-16 overflow-x-hidden">
+    <div className="min-h-screen bg-white pt-16 overflow-x-hidden w-full">
       {/* Hero Section */}
-      <section className="py-12 sm:py-16 md:py-20 lg:pt-8 lg:pb-20 px-4 relative overflow-x-hidden">
+      <section className="py-12 sm:py-16 md:py-20 lg:pt-8 lg:pb-20 px-4 sm:px-6 lg:px-8 relative overflow-x-hidden w-full">
         {/* Background with subtle pattern */}
         <div className="absolute inset-0 bg-gray-50 opacity-60" />
         
@@ -332,7 +332,7 @@ const RookLink = () => {
       </section>
 
       {/* Why Rook Links Section - Split Screen Carousel */}
-      <section id="impact-metrics" className="py-16 px-4 bg-[#121212]">
+      <section id="impact-metrics" className="py-16 px-4 sm:px-6 lg:px-8 bg-[#121212] w-full">
         <div className="container mx-auto max-w-7xl">
           <div className="mb-12 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Why Rook Links?</h2>
@@ -410,7 +410,7 @@ const RookLink = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 w-full">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-textPrimary mb-4">
@@ -486,7 +486,7 @@ const RookLink = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 sm:py-20 px-4 bg-white">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white w-full">
         <div className="container mx-auto max-w-7xl">
           {/* Header */}
           <div className="text-center mb-12 sm:mb-16">
@@ -533,7 +533,7 @@ const RookLink = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 w-full">
         <div className="container mx-auto max-w-7xl text-center">
           <h2 className="text-3xl font-bold text-textPrimary mb-4">Start free. Upgrade anytime.</h2>
           <p className="text-xl text-textSecondary mb-12">Choose the plan that works for your goals</p>
@@ -747,7 +747,7 @@ const RookLink = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 w-full">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-textPrimary mb-4">Frequently Asked Questions</h2>
@@ -768,8 +768,8 @@ const RookLink = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 px-4 bg-[#121212]">
-        <div className="container mx-auto max-w-4xl text-center text-white">
+      <section className="pt-16 pb-0 px-4 sm:px-6 lg:px-8 bg-[#121212] w-full">
+        <div className="container mx-auto max-w-4xl text-center text-white pb-16">
           <h2 className="text-3xl font-bold mb-4">Ready to transform your bio link?</h2>
           <p className="text-xl mb-8 opacity-90">
             Join thousands of creators and businesses using Rook Links to grow their online presence

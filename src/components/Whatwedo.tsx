@@ -90,7 +90,7 @@ const Whatwedo = () => {
   };
 
   return (
-    <section className="py-12 sm:py-20 md:py-32 lg:py-40 px-4 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-12 sm:py-20 md:py-32 lg:py-40 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50 w-full overflow-x-hidden mb-20">
       <div className="container mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

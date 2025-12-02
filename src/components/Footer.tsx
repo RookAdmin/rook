@@ -9,8 +9,8 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#121212] py-12 mt-20">
-      <div className="container mx-auto px-4">
+    <footer className="bg-[#121212] py-12 w-full overflow-x-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">

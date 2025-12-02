@@ -15,7 +15,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white relative overflow-hidden pt-16 md:pt-20 lg:pt-16">
+    <div className="min-h-screen flex items-center justify-center bg-white relative overflow-hidden pt-16 md:pt-20 lg:pt-16 w-full">
       {/* Minimal grid pattern background */}
       <div className="absolute inset-0 opacity-[0.02]">
         <div className="absolute inset-0" style={{

@@ -495,11 +495,11 @@ const RookScoop = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 w-full">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-            <p className="text-xl text-gray-600">Everything you need to know about Rook Scoop</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <p className="text-lg sm:text-xl text-gray-600">Everything you need to know about Rook Scoop</p>
           </div>
           
           <Accordion type="single" collapsible className="space-y-4">
@@ -518,10 +518,10 @@ const RookScoop = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 px-4 bg-[#dc2e3e]">
-        <div className="container mx-auto max-w-4xl text-center text-white">
-          <h2 className="text-4xl font-bold mb-4">Ready to take your product from idea to launch?</h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+      <section className="pt-20 pb-0 px-4 sm:px-6 lg:px-8 bg-[#dc2e3e] w-full">
+        <div className="container mx-auto max-w-4xl text-center text-white pb-20">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready to take your product from idea to launch?</h2>
+          <p className="text-lg sm:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             Join hundreds of successful teams using Rook Scoop to build, launch, and scale their SaaS products faster than ever.
           </p>
           

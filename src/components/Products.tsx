@@ -5,8 +5,8 @@ import { ArrowRight } from "lucide-react";
 
 export const Products = () => {
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-white" id="product">
-      <div className="container mx-auto px-4 max-w-7xl">
+    <section className="py-12 sm:py-16 md:py-20 bg-white w-full overflow-x-hidden mb-20" id="product">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="mb-8 sm:mb-12 md:mb-16 max-w-xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-[#121212]">What Did We Build?</h2>
           <div className="h-1 w-12 sm:w-16 bg-[#dc2e3e] mx-auto"></div>

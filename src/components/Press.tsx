@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 
 export const Press = () => {
   return (
-    <section className="py-20 bg-[#f5f5f5]">
-      <div className="container">
+    <section className="py-12 sm:py-16 md:py-20 bg-[#f5f5f5] w-full overflow-x-hidden mb-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 max-w-xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-4 text-[#121212]">In the Press</h2>
           <div className="h-1 w-16 bg-[#00d437] mx-auto"></div>

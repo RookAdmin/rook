@@ -69,9 +69,9 @@ const About = () => {
         faqData={faqData}
         breadcrumbs={breadcrumbs}
       />
-      <div className="min-h-screen bg-white text-textPrimary pt-16 pb-8 sm:pb-12 md:pb-16">
+      <div className="min-h-screen bg-white text-textPrimary pt-16 pb-8 sm:pb-12 md:pb-16 w-full overflow-x-hidden mb-20">
         {/* Header Section */}
-        <div className="container mx-auto px-4 max-w-7xl">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="mb-8 sm:mb-12 md:mb-16">
             <div className="h-1 w-12 sm:w-16 md:w-20 bg-[#dc2e3e] mb-4 sm:mb-6"></div>
             <h1

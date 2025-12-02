@@ -111,8 +111,8 @@ export const Navbar = () => {
           transition: "width 0.2s ease-out",
         }}
       />
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto px-3 sm:px-4">
+        <div className="flex items-center justify-between h-16 gap-2">
           <Link to="/" className="flex items-center space-x-2">
             <span className="text-2xl font-bold text-white">
               <img
@@ -123,7 +123,7 @@ export const Navbar = () => {
             </span>
           </Link>
 
-          <div className="hidden md:flex items-center justify-end space-x-8">
+          <div className="hidden md:flex items-center justify-end space-x-4 lg:space-x-6 xl:space-x-8 flex-1 min-w-0">
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
@@ -235,7 +235,7 @@ export const Navbar = () => {
 
             <Link
               to="/rook-for-startups"
-              className="text-white hover:text-[#0096d4] text-sm font-[410] transition-colors"
+              className="text-white hover:text-[#0096d4] text-xs lg:text-sm font-[410] transition-colors whitespace-nowrap"
             >
               Rook For Startups
             </Link>
@@ -296,7 +296,7 @@ export const Navbar = () => {
 
             <Link
               to="/about"
-              className="text-white hover:text-[#0096d4] text-sm font-[410] transition-colors"
+              className="text-white hover:text-[#0096d4] text-xs lg:text-sm font-[410] transition-colors whitespace-nowrap"
             >
               Who We Are ?
             </Link>
@@ -305,13 +305,15 @@ export const Navbar = () => {
               href="https://links.rookhq.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-2 bg-[#00d437] px-4 py-2 rounded-full hover:bg-[#00d437]/90 transition-all shadow-md hover:shadow-lg"
+              className="group flex items-center gap-1 bg-[#00d437] px-2.5 py-1.5 rounded-full hover:bg-[#00d437]/90 transition-all shadow-md hover:shadow-lg flex-shrink-0"
             >
-              <span className="text-white font-medium text-sm">clickl.in/</span>
-              <div className="bg-white rounded-full px-3 py-1">
-                <span className="text-[#121212] font-medium text-sm">reserve your username</span>
+              <span className="text-white font-medium text-[10px] sm:text-xs whitespace-nowrap hidden lg:inline">clickl.in/</span>
+              <span className="text-white font-medium text-[10px] sm:text-xs whitespace-nowrap lg:hidden">c.in/</span>
+              <div className="bg-white rounded-full px-2 py-0.5 flex-shrink-0">
+                <span className="text-[#121212] font-medium text-[10px] sm:text-xs whitespace-nowrap hidden xl:inline">reserve your username</span>
+                <span className="text-[#121212] font-medium text-[10px] sm:text-xs whitespace-nowrap xl:hidden">reserve</span>
               </div>
-              <ExternalLink className="h-3 w-3 text-white" />
+              <ExternalLink className="h-3 w-3 text-white flex-shrink-0 ml-0.5" />
             </a>
           </div>
 
