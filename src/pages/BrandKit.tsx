@@ -11,6 +11,17 @@ const BrandKit = () => {
   const [copiedColor, setCopiedColor] = useState<string | null>(null);
   const { toast } = useToast();
 
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Rook",
+      "url": "https://rookhq.com",
+      "logo": "https://rookhq.com/thumbnail.png",
+      "description": "Official Rook brand kit with logos, colors, and brand guidelines",
+    },
+  ];
+
   const brandColors = [
     {
       name: "Rook Red",
@@ -105,10 +116,10 @@ const BrandKit = () => {
         geoPlacename="India"
         structuredData={structuredData}
       />
-    <div className="min-h-screen bg-white pt-16 overflow-x-hidden">
+    <div className="min-h-screen bg-white pt-16 overflow-x-hidden w-full mb-20">
         {/* Hero Section */}
-        <section className="py-12 sm:py-16 md:py-20 bg-white">
-          <div className="container mx-auto px-4 max-w-7xl">
+        <section className="py-12 sm:py-16 md:py-20 bg-white w-full">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="text-center mb-16">
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                 Rook Brand Kit
@@ -189,8 +200,8 @@ const BrandKit = () => {
         </section>
 
         {/* Logo Variants */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 max-w-6xl">
+        <section className="py-16 bg-white w-full">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
               Logo Variants
             </h2>
@@ -278,8 +289,8 @@ const BrandKit = () => {
           </div>
         </section>
         {/* Country Wise Logos */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 max-w-6xl">
+        <section className="py-16 bg-white w-full">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
               Country Wise Logos
             </h2>
@@ -362,8 +373,8 @@ const BrandKit = () => {
         </section>
 
         {/* Rook for Startups Logos */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 max-w-6xl">
+        <section className="py-16 bg-white w-full">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
               Rook for Startups Logos
             </h2>
@@ -455,8 +466,8 @@ const BrandKit = () => {
           </div>
         </section>
         {/* Color Palette */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4 max-w-6xl">
+        <section className="py-16 bg-gray-50 w-full">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
               Brand Colors
             </h2>
@@ -517,8 +528,8 @@ const BrandKit = () => {
         </section>
 
         {/* Download All */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 max-w-6xl text-center">
+        <section className="py-16 bg-white w-full">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               Complete Brand Package
             </h2>
