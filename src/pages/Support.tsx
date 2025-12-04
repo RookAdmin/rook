@@ -10,6 +10,311 @@ const Support = () => {
 
   const faqData = [
     {
+      question: "How can I get support for Rook products?",
+      answer: "You can get support through multiple channels: 24/7 live chat via WhatsApp, raise a ticket through our support portal, watch video tutorials on YouTube, or email us at support@rookhq.com. We typically respond within 24 hours."
+    },
+    {
+      question: "Is Rook support available 24/7?",
+      answer: "Yes, our live chat support is available 24/7 via WhatsApp. For ticket-based support, we aim to respond within 24 hours. Video tutorials are available on-demand anytime."
+    },
+    {
+      question: "Where can I find documentation for Rook products?",
+      answer: "You can find comprehensive documentation, guides, and tutorials in our support portal at support.rookhq.com. We also have video tutorials available on our YouTube channel."
+    },
+    {
+      question: "How do I raise a support ticket?",
+      answer: "You can raise a support ticket by visiting our support portal at support.rookhq.com. Simply browse articles or submit a new ticket with your question or issue, and our team will get back to you within 24 hours."
+    }
+  ];
+
+  // Knowledge Base Tools
+  const knowledgeBaseTools = [
+    {
+      name: "Rook Links",
+      slug: "rook-links",
+      logo: "/rook-saas-assets/rook-links-blacktext.png",
+      iconLogo: "/rook-saas-assets/rook-links.png",
+      description: "Link-in-bio tool for creators",
+      color: "#00d437"
+    },
+    {
+      name: "Rook Scoop",
+      slug: "rook-scoop",
+      logo: "/rook-saas-assets/rook-scoop-blacktext.png",
+      iconLogo: "/rook-saas-assets/rook-scoop.png",
+      description: "AI-powered SaaS publishing platform",
+      color: "#0096d4"
+    },
+    {
+      name: "Paym.me by Rook",
+      slug: "paym-me",
+      logo: "/rook-saas-assets/paym-logoname.png",
+      iconLogo: "/rook-saas-assets/paym-logo.png",
+      description: "Payment solutions platform",
+      color: "#dc2e3e"
+    }
+  ];
+
+  // All articles across all tools with SEO-friendly slugs
+  const allArticles = [
+    // Rook Links Articles
+    {
+      id: "getting-started-with-rook-links",
+      slug: "getting-started-with-rook-links",
+      title: "Getting Started with Rook Links",
+      description: "Learn how to create your clickl.in/username and set up your first bio link",
+      tool: "Rook Links",
+      toolSlug: "rook-links",
+      category: "Getting Started",
+      tags: ["setup", "beginner", "profile", "clickl.in"]
+    },
+    {
+      id: "how-to-add-and-manage-smart-tiles",
+      slug: "how-to-add-and-manage-smart-tiles",
+      title: "How to Add and Manage Smart Tiles",
+      description: "Step-by-step guide to adding links, images, videos, and content to your bio",
+      tool: "Rook Links",
+      toolSlug: "rook-links",
+      category: "Features",
+      tags: ["tiles", "links", "content", "smart tiles"]
+    },
+    {
+      id: "setting-up-shop-mode",
+      slug: "setting-up-shop-mode",
+      title: "Setting Up Shop Mode",
+      description: "Turn your bio link into a storefront with product tiles and direct selling",
+      tool: "Rook Links",
+      toolSlug: "rook-links",
+      category: "Pro Features",
+      tags: ["shop", "products", "ecommerce", "selling"]
+    },
+    {
+      id: "understanding-analytics-dashboard",
+      slug: "understanding-analytics-dashboard",
+      title: "Understanding Analytics Dashboard",
+      description: "Track clicks, traffic sources, and performance metrics in real-time",
+      tool: "Rook Links",
+      toolSlug: "rook-links",
+      category: "Analytics",
+      tags: ["analytics", "tracking", "metrics", "performance"]
+    },
+    {
+      id: "custom-branding-and-themes",
+      slug: "custom-branding-and-themes",
+      title: "Custom Branding and Themes",
+      description: "Personalize your Rook Links with custom colors, logos, and layouts",
+      tool: "Rook Links",
+      toolSlug: "rook-links",
+      category: "Customization",
+      tags: ["branding", "themes", "customization", "design"]
+    },
+    {
+      id: "creator-profile-and-verified-badges",
+      slug: "creator-profile-and-verified-badges",
+      title: "Creator Profile and Verified Badges",
+      description: "Build a professional profile and get verified to build trust with your audience",
+      tool: "Rook Links",
+      toolSlug: "rook-links",
+      category: "Features",
+      tags: ["profile", "verification", "badges", "creator"]
+    },
+    // Rook Scoop Articles
+    {
+      id: "getting-started-with-rook-scoop",
+      slug: "getting-started-with-rook-scoop",
+      title: "Getting Started with Rook Scoop",
+      description: "Launch your SaaS product faster with AI-powered publishing and insights",
+      tool: "Rook Scoop",
+      toolSlug: "rook-scoop",
+      category: "Getting Started",
+      tags: ["setup", "beginner", "launch", "saas"]
+    },
+    {
+      id: "ai-powered-insights-and-analytics",
+      slug: "ai-powered-insights-and-analytics",
+      title: "AI-Powered Insights and Analytics",
+      description: "Get actionable insights powered by AI to optimize your product strategy",
+      tool: "Rook Scoop",
+      toolSlug: "rook-scoop",
+      category: "Analytics",
+      tags: ["ai", "analytics", "insights", "strategy"]
+    },
+    {
+      id: "saas-lifecycle-management",
+      slug: "saas-lifecycle-management",
+      title: "SaaS Lifecycle Management",
+      description: "Manage your complete SaaS journey from idea validation to market launch",
+      tool: "Rook Scoop",
+      toolSlug: "rook-scoop",
+      category: "Management",
+      tags: ["lifecycle", "management", "validation", "launch"]
+    },
+    {
+      id: "tool-integrations-and-workflow",
+      slug: "tool-integrations-and-workflow",
+      title: "Tool Integrations and Workflow",
+      description: "Connect with Slack, Jira, GitHub, Figma, and more for seamless workflows",
+      tool: "Rook Scoop",
+      toolSlug: "rook-scoop",
+      category: "Integrations",
+      tags: ["integrations", "workflow", "slack", "jira", "github"]
+    },
+    {
+      id: "product-launch-scheduling",
+      slug: "product-launch-scheduling",
+      title: "Product Launch Scheduling",
+      description: "Plan and schedule your product launches effectively with Rook Scoop's scheduling features",
+      tool: "Rook Scoop",
+      toolSlug: "rook-scoop",
+      category: "Planning",
+      tags: ["planning", "scheduling", "launch", "product"]
+    },
+    {
+      id: "team-collaboration-features",
+      slug: "team-collaboration-features",
+      title: "Team Collaboration Features",
+      description: "Built for product teams, startups, and enterprises with advanced collaboration",
+      tool: "Rook Scoop",
+      toolSlug: "rook-scoop",
+      category: "Collaboration",
+      tags: ["collaboration", "teams", "startups", "enterprise"]
+    },
+    // Paym.me Articles
+    {
+      id: "getting-started-with-paym-me",
+      slug: "getting-started-with-paym-me",
+      title: "Getting Started with Paym.me",
+      description: "Create your paym.me/username and start collecting payments with one link",
+      tool: "Paym.me by Rook",
+      toolSlug: "paym-me",
+      category: "Getting Started",
+      tags: ["setup", "beginner", "paym.me", "account"]
+    },
+    {
+      id: "creating-and-sharing-payment-links",
+      slug: "creating-and-sharing-payment-links",
+      title: "Creating and Sharing Payment Links",
+      description: "Share a single link for all your payment gateways and get paid fast",
+      tool: "Paym.me by Rook",
+      toolSlug: "paym-me",
+      category: "Payments",
+      tags: ["payment links", "gateways", "sharing", "payments"]
+    },
+    {
+      id: "managing-payment-gateways",
+      slug: "managing-payment-gateways",
+      title: "Managing Payment Gateways",
+      description: "Connect and manage multiple payment gateways through one platform",
+      tool: "Paym.me by Rook",
+      toolSlug: "paym-me",
+      category: "Features",
+      tags: ["gateways", "payments", "management", "integration"]
+    },
+    {
+      id: "professional-payment-presentation",
+      slug: "professional-payment-presentation",
+      title: "Professional Payment Presentation",
+      description: "Look professional while staying simple with branded payment links",
+      tool: "Paym.me by Rook",
+      toolSlug: "paym-me",
+      category: "Branding",
+      tags: ["branding", "professional", "presentation", "design"]
+    },
+    {
+      id: "tracking-payments-and-transactions",
+      slug: "tracking-payments-and-transactions",
+      title: "Tracking Payments and Transactions",
+      description: "Monitor all your payments and transactions in one place",
+      tool: "Paym.me by Rook",
+      toolSlug: "paym-me",
+      category: "Management",
+      tags: ["tracking", "transactions", "payments", "monitoring"]
+    },
+    {
+      id: "security-and-privacy",
+      slug: "security-and-privacy",
+      title: "Security and Privacy",
+      description: "Understanding security measures and privacy protection for your payments",
+      tool: "Paym.me by Rook",
+      toolSlug: "paym-me",
+      category: "Security",
+      tags: ["security", "privacy", "protection", "safety"]
+    }
+  ];
+
+  const breadcrumbs = [
+    { name: "Home", url: "/" },
+    { name: "Support", url: "/support" }
+  ];
+
+  // Popular articles (most accessed)
+  const popularArticles = [
+    allArticles.find(a => a.slug === "getting-started-with-rook-links"),
+    allArticles.find(a => a.slug === "how-to-add-and-manage-smart-tiles"),
+    allArticles.find(a => a.slug === "getting-started-with-rook-scoop"),
+    allArticles.find(a => a.slug === "getting-started-with-paym-me"),
+    allArticles.find(a => a.slug === "setting-up-shop-mode"),
+    allArticles.find(a => a.slug === "ai-powered-insights-and-analytics")
+  ].filter(Boolean);
+
+  // Filter articles based on search query
+  const filteredArticles = useMemo(() => {
+    if (!searchQuery.trim()) return [];
+    
+    const query = searchQuery.toLowerCase();
+    return allArticles.filter(article => 
+      article.title.toLowerCase().includes(query) ||
+      article.description.toLowerCase().includes(query) ||
+      article.category.toLowerCase().includes(query) ||
+      article.tags.some(tag => tag.toLowerCase().includes(query)) ||
+      article.tool.toLowerCase().includes(query)
+    );
+  }, [searchQuery]);
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Search is handled by filteredArticles
+  };
+
+  const supportOptions = [
+    {
+      title: "Live Chat",
+      description: "Get instant help from our support team",
+      icon: MessageCircle,
+      availability: "24/7 Available",
+      action: "Start Chat",
+      link: "https://api.whatsapp.com/send/?phone=917094300022&text=Hi%20Rook%20Support%2C%20I%20need%20help%20with"
+    },
+    {
+      title: "Raise a Ticket",
+      description: "Submit your issues and track their progress",
+      icon: Book,
+      availability: "Response in 24h",
+      action: "Coming Soon",
+      link: "#",
+      disabled: true
+    },
+    {
+      title: "Video Tutorials",
+      description: "Learn with step-by-step video guides",
+      icon: Video,
+      availability: "On-Demand",
+      action: "Watch Videos",
+      link: "https://www.youtube.com/@rookl"
+    },
+    {
+      title: "Email Support",
+      description: "Send us detailed questions via email",
+      icon: Mail,
+      availability: "24h Response",
+      action: "Send Email",
+      link: "mailto:support@rookhq.com?subject=Support%20Request%20-%20Rook%20Platform&body=Hi%20Rook%20Support%20Team%2C%0A%0AI%20need%20assistance%20with%3A%0A%0A%5BPlease%20describe%20your%20issue%20or%20question%20here%5D%0A%0AThank%20you%21"
+    }
+  ];
+
+  // Define structuredData after all data is available
+  const structuredData = [
+    {
       "@context": "https://schema.org",
       "@type": "ContactPage",
       "name": "Rook Support - Help Center & Knowledge Base",
@@ -196,76 +501,6 @@ const Support = () => {
         "opens": "00:00",
         "closes": "23:59"
       }
-    }
-  ];
-
-  const breadcrumbs = [
-    { name: "Home", url: "/" },
-    { name: "Support", url: "/support" }
-  ];
-
-  // Popular articles (most accessed)
-  const popularArticles = [
-    allArticles.find(a => a.slug === "getting-started-with-rook-links"),
-    allArticles.find(a => a.slug === "how-to-add-and-manage-smart-tiles"),
-    allArticles.find(a => a.slug === "getting-started-with-rook-scoop"),
-    allArticles.find(a => a.slug === "getting-started-with-paym-me"),
-    allArticles.find(a => a.slug === "setting-up-shop-mode"),
-    allArticles.find(a => a.slug === "ai-powered-insights-and-analytics")
-  ].filter(Boolean);
-
-  // Filter articles based on search query
-  const filteredArticles = useMemo(() => {
-    if (!searchQuery.trim()) return [];
-    
-    const query = searchQuery.toLowerCase();
-    return allArticles.filter(article => 
-      article.title.toLowerCase().includes(query) ||
-      article.description.toLowerCase().includes(query) ||
-      article.category.toLowerCase().includes(query) ||
-      article.tags.some(tag => tag.toLowerCase().includes(query)) ||
-      article.tool.toLowerCase().includes(query)
-    );
-  }, [searchQuery]);
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Search is handled by filteredArticles
-  };
-
-  const supportOptions = [
-    {
-      title: "Live Chat",
-      description: "Get instant help from our support team",
-      icon: MessageCircle,
-      availability: "24/7 Available",
-      action: "Start Chat",
-      link: "https://api.whatsapp.com/send/?phone=917094300022&text=Hi%20Rook%20Support%2C%20I%20need%20help%20with"
-    },
-    {
-      title: "Raise a Ticket",
-      description: "Submit your issues and track their progress",
-      icon: Book,
-      availability: "Response in 24h",
-      action: "Coming Soon",
-      link: "#",
-      disabled: true
-    },
-    {
-      title: "Video Tutorials",
-      description: "Learn with step-by-step video guides",
-      icon: Video,
-      availability: "On-Demand",
-      action: "Watch Videos",
-      link: "https://www.youtube.com/@rookl"
-    },
-    {
-      title: "Email Support",
-      description: "Send us detailed questions via email",
-      icon: Mail,
-      availability: "24h Response",
-      action: "Send Email",
-      link: "mailto:support@rookhq.com?subject=Support%20Request%20-%20Rook%20Platform&body=Hi%20Rook%20Support%20Team%2C%0A%0AI%20need%20assistance%20with%3A%0A%0A%5BPlease%20describe%20your%20issue%20or%20question%20here%5D%0A%0AThank%20you%21"
     }
   ];
 

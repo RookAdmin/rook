@@ -35,7 +35,7 @@ const Terms = () => {
               className="text-xl text-textSecondary max-w-3xl animate-fade-up"
               style={{ animationDelay: "0.2s" }}
             >
-              Last updated: April 30, 2025
+              Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
           </div>
 
@@ -198,15 +198,7 @@ const Terms = () => {
               <ul className="list-none space-y-1 mt-4">
                 <li>
                   <span className="font-semibold">Email:</span>{" "}
-                  empower@rookhq.com
-                </li>
-                <li>
-                  <span className="font-semibold">Phone:</span> +91 70927 00022
-                </li>
-                <li>
-                  <span className="font-semibold">Address:</span> 248, 11th St,
-                  Kuberan Nagar Extension, Kuberan Nagar, Madipakkam, Chennai,
-                  Tamil Nadu 600091
+                  say@rookhq.com
                 </li>
               </ul>
             </section>
@@ -223,15 +215,11 @@ const Terms = () => {
               conditions. Feel free to reach out with any questions.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a
-                href="https://support.rookhq.com/portal/en/home"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to="/support">
                 <Button className="bg-[#121212] text-white hover:bg-[#121212]/90 transition-colors">
                   Contact Support
                 </Button>
-              </a>
+              </Link>
               <Link to="/privacy">
                 <Button
                   variant="outline"

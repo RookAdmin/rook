@@ -36,7 +36,7 @@ const Privacy = () => {
               className="text-xl text-textSecondary max-w-3xl animate-fade-up"
               style={{ animationDelay: "0.2s" }}
             >
-              Last updated: April 30, 2025
+              Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
             </p>
           </div>
 
@@ -159,7 +159,73 @@ const Privacy = () => {
 
             <section className="mb-10">
               <h2 className="text-2xl font-bold mb-4 text-[#121212]">
-                5. Disclosure of Your Information
+                5. Third-Party Analytics Tools
+              </h2>
+              <p>
+                We use third-party analytics tools to better understand how visitors interact with our Services, improve user experience, and optimize our website performance. We believe in complete transparency about the tools we use and why we use them.
+              </p>
+              
+              <h3 className="text-xl font-semibold mb-3 mt-6 text-[#121212]">
+                5.1 Google Analytics
+              </h3>
+              <p>
+                We use Google Analytics, a web analytics service provided by Google LLC, to collect and analyze information about how visitors use our website. This helps us understand:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 mt-4">
+                <li>Which pages are most popular and how users navigate through our website</li>
+                <li>How long visitors spend on different sections of our Services</li>
+                <li>What content and features are most valuable to our users</li>
+                <li>Technical issues that may affect user experience (such as page load times)</li>
+                <li>Geographic and demographic trends to better serve our global audience</li>
+              </ul>
+              <p className="mt-4">
+                Google Analytics collects information such as your IP address, browser type, device information, pages visited, time spent on pages, and the website you came from. This data is aggregated and anonymized to protect your privacy. Google may use this data in accordance with their own privacy policy.
+              </p>
+              <p className="mt-4">
+                <span className="font-semibold">Why we use it:</span> Google Analytics helps us make data-driven decisions to improve our Services, fix technical issues, and create a better experience for all users. Without understanding how our website is used, we cannot effectively optimize it for your needs.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-3 mt-6 text-[#121212]">
+                5.2 Microsoft Clarity
+              </h3>
+              <p>
+                We use Microsoft Clarity, a free analytics tool provided by Microsoft Corporation, to gain deeper insights into user behavior and website performance. Clarity helps us:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 mt-4">
+                <li>Understand how users interact with our website through session recordings and heatmaps</li>
+                <li>Identify usability issues and areas where users may be experiencing confusion</li>
+                <li>Measure website performance metrics such as page load times and Core Web Vitals</li>
+                <li>Detect and diagnose technical errors that may impact user experience</li>
+                <li>Optimize our website design and content based on real user interactions</li>
+              </ul>
+              <p className="mt-4">
+                Microsoft Clarity collects information including mouse movements, clicks, scrolls, and page interactions. This data is aggregated and anonymized. Microsoft may use this data in accordance with their own privacy policy.
+              </p>
+              <p className="mt-4">
+                <span className="font-semibold">Why we use it:</span> Microsoft Clarity provides visual insights that help us understand user behavior in ways that traditional analytics cannot. This allows us to identify and fix usability issues, improve website navigation, and ensure our Services are intuitive and user-friendly. By seeing how users actually interact with our website, we can make informed improvements that benefit everyone.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-3 mt-6 text-[#121212]">
+                5.3 Our Commitment to Transparency
+              </h3>
+              <p>
+                We are committed to being transparent about our use of analytics tools. We use these tools solely to improve our Services and provide you with a better experience. We do not sell your personal information to third parties, and the data collected by these analytics tools is used exclusively for:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 mt-4">
+                <li>Improving website functionality and user experience</li>
+                <li>Identifying and fixing technical issues</li>
+                <li>Understanding user needs and preferences</li>
+                <li>Making data-driven decisions about our Services</li>
+                <li>Ensuring our website is accessible and performs well for all users</li>
+              </ul>
+              <p className="mt-4">
+                If you have any questions or concerns about our use of these analytics tools, please contact us using the information provided in the Contact Information section below.
+              </p>
+            </section>
+
+            <section className="mb-10">
+              <h2 className="text-2xl font-bold mb-4 text-[#121212]">
+                6. Disclosure of Your Information
               </h2>
               <p>
                 We may disclose personal information that we collect or you
@@ -189,7 +255,7 @@ const Privacy = () => {
 
             <section className="mb-10">
               <h2 className="text-2xl font-bold mb-4 text-[#121212]">
-                6. Data Security
+                7. Data Security
               </h2>
               <p>
                 We have implemented measures designed to secure your personal
@@ -214,7 +280,7 @@ const Privacy = () => {
 
             <section className="mb-10">
               <h2 className="text-2xl font-bold mb-4 text-[#121212]">
-                7. Your Choices About Our Collection, Use, and Disclosure
+                8. Your Choices About Our Collection, Use, and Disclosure
               </h2>
               <p>
                 We strive to provide you with choices regarding the personal
@@ -244,7 +310,7 @@ const Privacy = () => {
 
             <section className="mb-10">
               <h2 className="text-2xl font-bold mb-4 text-[#121212]">
-                8. Contact Information
+                9. Contact Information
               </h2>
               <p>
                 To ask questions or comment about this Privacy Policy and our
@@ -253,15 +319,7 @@ const Privacy = () => {
               <ul className="list-none space-y-1 mt-4">
                 <li>
                   <span className="font-semibold">Email:</span>{" "}
-                  empower@rookhq.com
-                </li>
-                <li>
-                  <span className="font-semibold">Phone:</span> +91 70927 00022
-                </li>
-                <li>
-                  <span className="font-semibold">Address:</span> 248, 11th St,
-                  Kuberan Nagar Extension, Kuberan Nagar, Madipakkam, Chennai,
-                  Tamil Nadu 600091
+                  say@rookhq.com
                 </li>
               </ul>
             </section>
@@ -281,15 +339,11 @@ const Privacy = () => {
               may have about how we protect your personal information.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a
-                href="https://support.rookhq.com/portal/en/home"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link to="/support">
                 <Button className="bg-[#121212] text-white hover:bg-[#121212]/90 transition-colors">
                   Contact Support
                 </Button>
-              </a>
+              </Link>
               <Link to="/terms">
                 <Button
                   variant="outline"
