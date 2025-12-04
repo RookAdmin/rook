@@ -9,6 +9,7 @@ import { X, RotateCcw } from "lucide-react";
 const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [showAnniversaryPopup, setShowAnniversaryPopup] = useState(false);
+  const [videoFinished, setVideoFinished] = useState(false);
   const videoRef = React.useRef<HTMLVideoElement>(null);
 
   const structuredData = [
@@ -175,6 +176,7 @@ const Index = () => {
 
   const handleReplayVideo = () => {
     if (videoRef.current) {
+      setVideoFinished(false);
       videoRef.current.currentTime = 0;
       videoRef.current.play().catch(() => {
         // If play fails, try again with sound enabled
@@ -233,25 +235,28 @@ const Index = () => {
                 className="w-full h-auto"
                 preload="auto"
                 style={{ outline: 'none' }}
+                onEnded={() => setVideoFinished(true)}
               >
                 <source src="/rook-saas-assets/rook-5thyear.MP4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
               
-              {/* Replay Button */}
-              <button
-                onClick={handleReplayVideo}
-                className="absolute bottom-4 right-4 z-10 w-12 h-12 flex items-center justify-center rounded-full bg-black/60 hover:bg-black/80 transition-all backdrop-blur-sm opacity-0 group-hover:opacity-100"
-                aria-label="Replay video"
-              >
-                <RotateCcw className="w-5 h-5 text-white" />
-              </button>
+              {/* Replay Button - Only show after video finishes */}
+              {videoFinished && (
+                <button
+                  onClick={handleReplayVideo}
+                  className="absolute bottom-4 right-4 z-10 w-12 h-12 flex items-center justify-center rounded-full bg-black/60 hover:bg-black/80 transition-all backdrop-blur-sm"
+                  aria-label="Replay video"
+                >
+                  <RotateCcw className="w-5 h-5 text-white" />
+                </button>
+              )}
             </div>
 
             {/* Title Section - Apple Style */}
             <div className="px-8 py-6 text-center bg-white">
               <h2 className="text-3xl font-light tracking-tight text-[#121212] mb-2">
-                Celebrating 5 Years
+                Rook. 5 Years.
               </h2>
               <p className="text-lg text-gray-600 font-light">
                 We Grow Together
