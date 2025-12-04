@@ -120,52 +120,76 @@ const Index = () => {
     if (showAnniversaryPopup && videoRef.current) {
       const video = videoRef.current;
       
-      // Set video properties for mobile autoplay
-      video.muted = false;
+      // Start muted for autoplay compatibility, then unmute once playing
+      video.muted = true;
       video.volume = 1.0;
       
-      // Attempt to play with sound
-      const playPromise = video.play();
-      
-      if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            // Autoplay started successfully with sound
-            video.muted = false;
-            video.volume = 1.0;
-          })
-          .catch((error) => {
-            // Autoplay was prevented, try unmuting and playing again
-            video.muted = false;
-            video.volume = 1.0;
-            video.play().catch(() => {
-              // If still blocked, ensure video is ready for user interaction
+      // Function to attempt playing the video
+      const attemptPlay = () => {
+        if (!video) return;
+        
+        const playPromise = video.play();
+        
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              // Autoplay started successfully, now unmute for sound
               video.muted = false;
               video.volume = 1.0;
+            })
+            .catch((error) => {
+              // Autoplay was prevented, try again
+              video.play().then(() => {
+                video.muted = false;
+                video.volume = 1.0;
+              }).catch(() => {});
             });
-          });
-      }
-      
-      // Also try to enable sound on user interaction with the popup
-      const enableSound = () => {
-        if (video) {
-          video.muted = false;
-          video.volume = 1.0;
-          video.play().catch(() => {});
+        } else {
+          // Fallback: try direct play
+          video.play().then(() => {
+            video.muted = false;
+            video.volume = 1.0;
+          }).catch(() => {});
         }
       };
       
-      // Add click handler to popup container to enable sound
-      const popupContainer = document.querySelector('.anniversary-popup-container');
-      if (popupContainer) {
-        popupContainer.addEventListener('click', enableSound, { once: true });
-      }
+      // Try to play immediately
+      attemptPlay();
       
-      return () => {
-        if (popupContainer) {
-          popupContainer.removeEventListener('click', enableSound);
-        }
-      };
+      // Wait for video to be ready before playing
+      if (video.readyState >= 2) {
+        // Video is already loaded enough to play
+        attemptPlay();
+      } else {
+        // Wait for video to load
+        const handleCanPlay = () => {
+          attemptPlay();
+        };
+        
+        const handleLoadedData = () => {
+          attemptPlay();
+        };
+        
+        const handleLoadedMetadata = () => {
+          attemptPlay();
+        };
+        
+        video.addEventListener('canplay', handleCanPlay);
+        video.addEventListener('loadeddata', handleLoadedData);
+        video.addEventListener('loadedmetadata', handleLoadedMetadata);
+        
+        // Fallback: try after a short delay
+        const timeoutId = setTimeout(() => {
+          attemptPlay();
+        }, 100);
+        
+        return () => {
+          video.removeEventListener('canplay', handleCanPlay);
+          video.removeEventListener('loadeddata', handleLoadedData);
+          video.removeEventListener('loadedmetadata', handleLoadedMetadata);
+          clearTimeout(timeoutId);
+        };
+      }
     }
   }, [showAnniversaryPopup]);
 
@@ -213,7 +237,17 @@ const Index = () => {
 
       {/* 5th Year Anniversary Popup */}
       {showAnniversaryPopup && (
-        <div className="anniversary-popup-container fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fade-in">
+        <div 
+          className="anniversary-popup-container fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fade-in"
+          onClick={(e) => {
+            // If clicking on backdrop (not the popup content), enable video play
+            if (e.target === e.currentTarget && videoRef.current) {
+              videoRef.current.muted = false;
+              videoRef.current.volume = 1.0;
+              videoRef.current.play().catch(() => {});
+            }
+          }}
+        >
           <div className="relative w-full max-w-4xl mx-4 bg-white rounded-2xl shadow-2xl overflow-hidden animate-scale-in">
             {/* Close Button */}
             <button
@@ -234,8 +268,27 @@ const Index = () => {
                 loop={false}
                 className="w-full h-auto"
                 preload="auto"
+                muted={true}
                 style={{ outline: 'none' }}
                 onEnded={() => setVideoFinished(true)}
+                onPlay={() => {
+                  // Unmute immediately once video starts playing (required for autoplay)
+                  if (videoRef.current) {
+                    videoRef.current.muted = false;
+                    videoRef.current.volume = 1.0;
+                  }
+                }}
+                onLoadedData={() => {
+                  if (videoRef.current) {
+                    // Try to play and unmute
+                    videoRef.current.play().then(() => {
+                      if (videoRef.current) {
+                        videoRef.current.muted = false;
+                        videoRef.current.volume = 1.0;
+                      }
+                    }).catch(() => {});
+                  }
+                }}
               >
                 <source src="/rook-saas-assets/rook-5thyear.MP4" type="video/mp4" />
                 Your browser does not support the video tag.
