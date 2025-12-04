@@ -2059,14 +2059,14 @@ Paym.me implements industry-standard security measures to protect your payment d
                     <div className="relative w-full h-full flex items-center justify-center lg:justify-end pr-4 sm:pr-8">
                       {toolSlug === 'rook-links' && (
                         <>
-                          {/* Rectangle shape for Rook Links - 90 degree corners */}
+                          {/* Square shape for Rook Links - 3x larger */}
                           <div 
-                            className="absolute w-40 h-24 sm:w-48 sm:h-28 md:w-56 md:h-32 opacity-40 transform rotate-12"
+                            className="absolute w-24 h-24 sm:w-[120px] sm:h-[120px] md:w-36 md:h-36 opacity-40 transform rotate-12"
                             style={{ 
                               backgroundColor: 'rgba(0, 212, 55, 0.3)',
                               right: '10%',
                               top: '35%',
-                              borderRadius: '0' // 90 degree sharp corners
+                              borderRadius: '4px' // Slightly rounded corners for square
                             }}
                           ></div>
                         </>

@@ -11,77 +11,78 @@ export const Footer = () => {
   return (
     <footer className="bg-[#121212] py-12 w-full overflow-x-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8">
-          {/* Left Column - Mobile: Logo (1st section) */}
-          <div className="col-span-1 md:col-span-1 space-y-4">
-            <Link to="/" className="flex items-center space-x-2">
-              <span className="text-2xl font-bold text-white">
-                <img
-                  src="/logo.png"
-                  alt="Descriptive alt text"
-                  className="w-[100px] h-[40px] object-cover"
-                />
-              </span>
-            </Link>
-            <p className="text-[#f5f5f5] text-sm">
-              Simple tools. Monumental impact.
-            </p>
-            <div className="flex space-x-4 text-white">
-              {/* Facebook */}
-              <a
-                href="https://www.facebook.com/RookCom"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FacebookIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
-              </a>
+        {/* Logo and Social Icons Section - Top */}
+        <div className="mb-8 md:mb-12">
+          <Link to="/" className="flex items-center space-x-2 mb-4">
+            <span className="text-2xl font-bold text-white">
+              <img
+                src="/logo.png"
+                alt="Descriptive alt text"
+                className="w-[100px] h-[40px] object-cover"
+              />
+            </span>
+          </Link>
+          <p className="text-[#f5f5f5] text-sm mb-4">
+            Simple tools. Monumental impact.
+          </p>
+          <div className="flex space-x-4 text-white">
+            {/* Facebook */}
+            <a
+              href="https://www.facebook.com/RookCom"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FacebookIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
+            </a>
 
-              {/* Twitter (X) */}
-              <a
-                href="https://x.com/RookHQ"
-                target="_blank"
-                rel="noopener noreferrer"
+            {/* Twitter (X) */}
+            <a
+              href="https://x.com/RookHQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                className="h-5 w-5 hover:text-[#0096d4] transition-colors"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                fill="currentColor"
               >
-                <svg
-                  className="h-5 w-5 hover:text-[#0096d4] transition-colors"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                  fill="currentColor"
-                >
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
-                </svg>
-              </a>
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+              </svg>
+            </a>
 
-              {/* LinkedIn */}
-              <a
-                href="https://www.linkedin.com/company/rook/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LinkedinIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
-              </a>
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/company/rook/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedinIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
+            </a>
 
-              {/* Instagram */}
-              <a
-                href="https://www.instagram.com/rookhq/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <InstagramIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
-              </a>
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/rookhq/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
+            </a>
 
-              {/* YouTube */}
-              <a
-                href="https://www.youtube.com/@rookl"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <YoutubeIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
-              </a>
-            </div>
+            {/* YouTube */}
+            <a
+              href="https://www.youtube.com/@rookl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <YoutubeIcon className="h-5 w-5 hover:text-[#0096d4] transition-colors" />
+            </a>
           </div>
+        </div>
 
-          {/* Left Column - Mobile: What We Do (2nd section) */}
+        {/* Navigation Sections - 2 Column Layout */}
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8">
+          {/* Left Column - Mobile: What We Do (1st section) */}
           <div className="col-span-1 md:col-span-1 space-y-4">
             <h3 className="font-semibold text-white">What We Do ?</h3>
             <ul className="space-y-2">
@@ -323,8 +324,8 @@ export const Footer = () => {
             </ul>
           </div>
           
-          {/* Resources - Full width on mobile (below), last column on desktop */}
-          <div className="col-span-2 md:col-span-1 space-y-4">
+          {/* Resources - Right column on mobile, last column on desktop */}
+          <div className="col-span-1 md:col-span-1 space-y-4">
             <h3 className="font-semibold text-white">Resources</h3>
             <ul className="space-y-2">
               <li>
