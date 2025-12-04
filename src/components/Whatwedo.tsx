@@ -28,7 +28,7 @@ const Whatwedo = () => {
       icon: <MapPin className="h-16 w-16" />,
       link: "https://realmrook.com/services/geo",
       color: "#0096d4", // Rook Blue
-      ctaText: "Explore Geo Services",
+      ctaText: "Explore GEO Services",
     },
     {
       title: "Agentica",

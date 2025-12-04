@@ -1,14 +1,30 @@
 User-agent: Googlebot
 Allow: /
+Allow: /support/
+Allow: /support/knowledge-base/
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Allow: /support/
+Allow: /support/knowledge-base/
+Crawl-delay: 0
 
 User-agent: Twitterbot
 Allow: /
+Allow: /support/
+Allow: /support/knowledge-base/
 
 User-agent: facebookexternalhit
 Allow: /
+Allow: /support/
+Allow: /support/knowledge-base/
 
 User-agent: *
 Allow: /
+Allow: /support/
+Allow: /support/knowledge-base/
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://rookhq.com/sitemap.xml

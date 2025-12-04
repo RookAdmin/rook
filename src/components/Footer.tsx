@@ -11,8 +11,9 @@ export const Footer = () => {
   return (
     <footer className="bg-[#121212] py-12 w-full overflow-x-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-          <div className="space-y-4">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8">
+          {/* Left Column - Mobile: Logo (1st section) */}
+          <div className="col-span-1 md:col-span-1 space-y-4">
             <Link to="/" className="flex items-center space-x-2">
               <span className="text-2xl font-bold text-white">
                 <img
@@ -80,7 +81,8 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="space-y-4">
+          {/* Left Column - Mobile: What We Do (2nd section) */}
+          <div className="col-span-1 md:col-span-1 space-y-4">
             <h3 className="font-semibold text-white">What We Do ?</h3>
             <ul className="space-y-2">
               <li>
@@ -165,7 +167,9 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="space-y-4">
+          
+          {/* Right Column - Mobile: What Did We Build + For Developers (1st section) */}
+          <div className="col-span-1 md:col-span-1 space-y-4">
             <h3 className="font-semibold text-white">What Did We Build ?</h3>
             <ul className="space-y-2">
               <li>
@@ -236,10 +240,10 @@ export const Footer = () => {
                 </Link>
               </li>
             </ul>
-
-            
           </div>
-          <div className="space-y-4">
+          
+          {/* Right Column - Mobile: Company (2nd section) */}
+          <div className="col-span-1 md:col-span-1 space-y-4">
             <h3 className="font-semibold text-white">Company</h3>
             <ul className="space-y-2">
               <li>
@@ -318,7 +322,9 @@ export const Footer = () => {
               
             </ul>
           </div>
-          <div className="space-y-4">
+          
+          {/* Resources - Full width on mobile (below), last column on desktop */}
+          <div className="col-span-2 md:col-span-1 space-y-4">
             <h3 className="font-semibold text-white">Resources</h3>
             <ul className="space-y-2">
               <li>

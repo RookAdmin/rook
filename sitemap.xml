@@ -198,13 +198,149 @@
     <priority>0.8</priority>
   </url>
   
-  <!-- Resources -->
+  <!-- Support & Knowledge Base -->
   <url>
     <loc>https://rookhq.com/support</loc>
     <lastmod>2025-01-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
+  
+  <!-- Knowledge Base - Tool Pages -->
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/rook-links</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/rook-scoop</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/paym-me</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Knowledge Base - Rook Links Articles -->
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/rook-links/getting-started-with-rook-links</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/rook-links/how-to-add-and-manage-smart-tiles</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/rook-links/setting-up-shop-mode</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/rook-links/understanding-analytics-dashboard</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/rook-links/custom-branding-and-themes</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/rook-links/creator-profile-and-verified-badges</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Knowledge Base - Rook Scoop Articles -->
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/rook-scoop/getting-started-with-rook-scoop</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/rook-scoop/ai-powered-insights-and-analytics</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/rook-scoop/saas-lifecycle-management</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/rook-scoop/tool-integrations-and-workflow</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/rook-scoop/product-launch-scheduling</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/rook-scoop/team-collaboration-features</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Knowledge Base - Paym.me Articles -->
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/paym-me/getting-started-with-paym-me</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/paym-me/creating-and-sharing-payment-links</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/paym-me/managing-payment-gateways</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/paym-me/professional-payment-presentation</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/paym-me/tracking-payments-and-transactions</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rookhq.com/support/knowledge-base/paym-me/security-and-privacy</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Resources -->
   <url>
     <loc>https://rookhq.com/compliance</loc>
     <lastmod>2025-01-27</lastmod>

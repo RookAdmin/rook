@@ -39,6 +39,8 @@ import HloLegal from "./pages/HloLegal";
 import ZohoPartnership from "./pages/ZohoPartnership";
 import Compliance from "./pages/Compliance";
 import ProfitPledge from "./pages/ProfitPledge";
+import ArticleDetail from "./pages/ArticleDetail";
+import ToolKnowledgeBase from "./pages/ToolKnowledgeBase";
 
 const App = () => {
   const queryClient = new QueryClient();
@@ -99,6 +101,8 @@ const App = () => {
                 <Route path="/open-source" element={<OpenSource />} />
                 <Route path="/careers" element={<Careers />} />
                 <Route path="/support" element={<Support />} />
+                <Route path="/support/knowledge-base/:toolSlug" element={<ToolKnowledgeBase />} />
+                <Route path="/support/knowledge-base/:toolSlug/:articleSlug" element={<ArticleDetail />} />
                 <Route path="/links" element={<RookLink />} />
                 <Route path="/scoop" element={<RookScoop />} />
                 <Route path="/developers" element={<Developers />} />
