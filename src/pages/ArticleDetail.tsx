@@ -10,12 +10,12 @@ const ArticleDetail = () => {
   const tools = {
     "rook-links": {
       name: "Rook Links",
-      logo: "/rook-saas-assets/rook-links.png",
+      logo: "/rook-saas-assets/rooklinks-greenwhitelogo.png",
       color: "#0D6E42"
     },
     "rook-scoop": {
       name: "Rook Scoop",
-      logo: "/rook-saas-assets/rook-scoop.png",
+      logo: "/rook-saas-assets/rookscoop-redwhitelogo.png",
       color: "#0096d4"
     },
     "paym-me": {
@@ -1983,8 +1983,8 @@ Paym.me implements industry-standard security measures to protect your payment d
                     <div className="flex items-center mb-2 sm:mb-4">
                       <img 
                         src={
-                          toolSlug === 'rook-links' ? '/rook-saas-assets/rook-links.png' :
-                          toolSlug === 'rook-scoop' ? '/rook-saas-assets/rook-scoop.png' :
+                          toolSlug === 'rook-links' ? '/rook-saas-assets/rooklinks-greenwhitelogo.png' :
+                          toolSlug === 'rook-scoop' ? '/rook-saas-assets/rookscoop-redwhitelogo.png' :
                           '/rook-saas-assets/paym-logo.png'
                         }
                         alt={tool.name}

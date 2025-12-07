@@ -513,7 +513,7 @@ const BrandKit = () => {
               format: "png",
               bg: "white",
               description: "Logo variant for Rook Links primary branding",
-              img: "/rook-saas-assets/rook-links.png",
+              img: "/rook-saas-assets/rooklinks-greenwhitelogo.png",
             },
             {
               name: "Rook Links Black Text",
@@ -551,7 +551,7 @@ const BrandKit = () => {
               format: "png",
               bg: "white",
               description: "Logo variant for Rook Scoop primary branding",
-              img: "/rook-saas-assets/rook-scoop.png",
+              img: "/rook-saas-assets/rookscoop-redwhitelogo.png",
             },
             {
               name: "Rook Scoop Black Text",
@@ -804,7 +804,7 @@ const BrandKit = () => {
                   <div className="text-center p-6 bg-white rounded-lg border border-gray-200">
                     <div className="h-16 flex items-center justify-center mb-3">
                       <img
-                        src="/rook-saas-assets/rook-links.png"
+                        src="/rook-saas-assets/rooklinks-greenwhitelogo.png"
                         alt="Rook Links Icon"
                         className="h-16 w-auto object-contain"
                       />
@@ -815,7 +815,7 @@ const BrandKit = () => {
                   <div className="text-center p-6 bg-white rounded-lg border border-gray-200">
                     <div className="h-16 flex items-center justify-center mb-3">
                       <img
-                        src="/rook-saas-assets/rook-scoop.png"
+                        src="/rook-saas-assets/rookscoop-redwhitelogo.png"
                         alt="Rook Scoop Icon"
                         className="h-16 w-auto object-contain"
                       />

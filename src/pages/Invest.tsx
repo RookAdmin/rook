@@ -158,7 +158,7 @@ const Invest = () => {
               <div className="backdrop-blur-sm bg-gradient-to-br from-white/60 to-gray-100/40 p-8 rounded-2xl shadow-xl">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white/80 p-4 rounded-lg text-center">
-                    <img src="/rook-saas-assets/rook-links.png" alt="Rook Link" className="h-8 w-auto mx-auto mb-2 object-contain" />
+                    <img src="/rook-saas-assets/rooklinks-greenwhitelogo.png" alt="Rook Link" className="h-8 w-auto mx-auto mb-2 object-contain" />
                     <p className="font-semibold text-gray-900">Rook Link</p>
                     <p className="text-sm text-gray-600">Link Management</p>
                   </div>
@@ -168,7 +168,7 @@ const Invest = () => {
                     <p className="text-sm text-gray-600">Affiliate Hub</p>
                   </div>
                   <div className="bg-white/80 p-4 rounded-lg text-center">
-                    <img src="/rook-saas-assets/rook-scoop.png" alt="Rook Scoop" className="h-8 w-auto mx-auto mb-2 object-contain" />
+                    <img src="/rook-saas-assets/rookscoop-redwhitelogo.png" alt="Rook Scoop" className="h-8 w-auto mx-auto mb-2 object-contain" />
                     <p className="font-semibold text-gray-900">Rook Scoop</p>
                     <p className="text-sm text-gray-600">Data Insights</p>
                   </div>

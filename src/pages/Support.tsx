@@ -33,7 +33,7 @@ const Support = () => {
       name: "Rook Links",
       slug: "rook-links",
       logo: "/rook-saas-assets/rook-links-blacktext.png",
-      iconLogo: "/rook-saas-assets/rook-links.png",
+      iconLogo: "/rook-saas-assets/rooklinks-greenwhitelogo.png",
       description: "Link-in-bio tool for creators",
       color: "#0D6E42"
     },
@@ -41,7 +41,7 @@ const Support = () => {
       name: "Rook Scoop",
       slug: "rook-scoop",
       logo: "/rook-saas-assets/rook-scoop-blacktext.png",
-      iconLogo: "/rook-saas-assets/rook-scoop.png",
+      iconLogo: "/rook-saas-assets/rookscoop-redwhitelogo.png",
       description: "AI-powered SaaS publishing platform",
       color: "#0096d4"
     },

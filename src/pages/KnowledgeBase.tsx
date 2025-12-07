@@ -13,7 +13,7 @@ const KnowledgeBase = () => {
     {
       name: "Rook Links",
       slug: "rook-links",
-      logo: "/rook-saas-assets/rook-links.png",
+      logo: "/rook-saas-assets/rooklinks-greenwhitelogo.png",
       description: "Link-in-bio tool for creators",
       color: "#0D6E42",
       articleCount: 6
@@ -21,7 +21,7 @@ const KnowledgeBase = () => {
     {
       name: "Rook Scoop",
       slug: "rook-scoop",
-      logo: "/rook-saas-assets/rook-scoop.png",
+      logo: "/rook-saas-assets/rookscoop-redwhitelogo.png",
       description: "Newsletter platform for creators",
       color: "#0096d4",
       articleCount: 6

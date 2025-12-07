@@ -6,9 +6,12 @@ import { Separator } from "@/components/ui/separator";
 import { Link2, BarChart3, Palette, ShoppingBag, Smartphone, Monitor, Star, Check, ExternalLink, Users, Zap, Globe, Layout, Image, Share2, ArrowRight, User, TrendingUp, Target, Sparkles, Settings, MousePointerClick, ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
+const rotatingWords = ["Creators", "Startups", "Enterprises"];
+
 const RookLink = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [rotatingText, setRotatingText] = useState(0);
 
   const impactMetrics = [
     {
@@ -111,6 +114,15 @@ const RookLink = () => {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
+
+  // Rotating text effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRotatingText((prev) => (prev + 1) % rotatingWords.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [rotatingWords.length]);
 
   const structuredData = [
     {
@@ -258,11 +270,15 @@ const RookLink = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge variant="outline" className="text-[#0D6E42] border-[#0D6E42]">
-                  Rook Links by Rook HQ
-                </Badge>
+                <div className="flex items-center">
+                  <img 
+                    src="/rook-saas-assets/rooklinks-greenwhitelogo.png" 
+                    alt="Rook Links" 
+                    className="h-16 w-auto object-contain"
+                  />
+                </div>
                 <h1 className="text-5xl lg:text-6xl font-bold text-textPrimary leading-tight">
-                  The Smart Bio Link for <span className="text-[#0D6E42]">Creators</span>, Brands & Businesses
+                  The Smart Bio Link for <span className="text-[#0D6E42]">{rotatingWords[rotatingText]}</span>
                 </h1>
                 <h2 className="text-xl text-textSecondary max-w-lg">
                   Turn one link into a hub for everything you do: products, social, videos, and more.

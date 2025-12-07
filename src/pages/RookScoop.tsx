@@ -233,9 +233,13 @@ const RookScoop = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
-                <Badge variant="outline" className="text-[#dc2e3e] border-[#dc2e3e] text-sm font-medium">
-                  Rook Scoop by Rook HQ
-                </Badge>
+                <div className="flex items-center">
+                  <img 
+                    src="/rook-saas-assets/rookscoop-redwhitelogo.png" 
+                    alt="Rook Scoop" 
+                    className="h-16 w-auto object-contain"
+                  />
+                </div>
                 <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   AI-Powered Product Publishing & <span className="text-[#dc2e3e]">Insights</span>
                 </h1>
