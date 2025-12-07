@@ -35,7 +35,7 @@ const Support = () => {
       logo: "/rook-saas-assets/rook-links-blacktext.png",
       iconLogo: "/rook-saas-assets/rooklinks-greenwhitelogo.png",
       description: "Link-in-bio tool for creators",
-      color: "#0D6E42"
+      color: "#34A853"
     },
     {
       name: "Rook Scoop",

@@ -56,7 +56,7 @@ const Invest = () => {
               <a href="mailto:investors@rookhq.com">
               <Button 
                 size="lg" 
-                className="bg-[#0D6E42] hover:bg-[#0A5A35] text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm"
+                className="bg-[#34A853] hover:bg-[#0A5A35] text-white px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm"
               >
                 investors@rookhq.com
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -106,8 +106,8 @@ const Invest = () => {
 
             <Card className="backdrop-blur-sm bg-white/70 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8 text-center">
-                <div className="mb-6 inline-block p-4 bg-[#0D6E42]/10 rounded-full">
-                  <Users className="h-8 w-8 text-[#0D6E42]" />
+                <div className="mb-6 inline-block p-4 bg-[#34A853]/10 rounded-full">
+                  <Users className="h-8 w-8 text-[#34A853]" />
                 </div>
                 <h3 className="text-2xl font-semibold mb-4 text-gray-900">Mutual Growth</h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -129,7 +129,7 @@ const Invest = () => {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-2 h-2 bg-[#0D6E42] rounded-full mt-3 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-[#34A853] rounded-full mt-3 flex-shrink-0"></div>
                   <p className="text-lg text-gray-600">
                     We're not just building products. We're creating an ecosystem that empowers creators and founders.
                   </p>
@@ -253,7 +253,7 @@ const Invest = () => {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#0D6E42] text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
+              <div className="w-16 h-16 bg-[#34A853] text-white rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">
                 2
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">Alignment Discussion</h3>
@@ -286,7 +286,7 @@ const Invest = () => {
               <a href="mailto:investors@rookhq.com" className="inline-block">
                 <Button 
                   size="lg" 
-                  className="bg-[#0D6E42] hover:bg-[#0A5A35] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 text-base sm:text-lg md:text-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm w-full sm:w-auto"
+                  className="bg-[#34A853] hover:bg-[#0A5A35] text-white px-6 sm:px-8 md:px-10 py-4 sm:py-5 text-base sm:text-lg md:text-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm w-full sm:w-auto"
                 >
                   <span className="break-all sm:break-normal">investors@rookhq.com</span>
                   <ArrowRight className="ml-2 sm:ml-3 h-5 w-5 sm:h-6 sm:w-6 flex-shrink-0" />

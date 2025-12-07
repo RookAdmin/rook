@@ -39,21 +39,21 @@ const Trademark = () => {
 
   const dosItems = [
     {
-      icon: <Check className="h-5 w-5 text-[#0D6E42]" />,
+      icon: <Check className="h-5 w-5 text-[#34A853]" />,
       title: "Compatibility References",
       description:
         "Note if your product, service, or solution is interoperable or compatible with a Rook product or service.",
       example: "Nuo software is compatible with Rook platform.",
     },
     {
-      icon: <Check className="h-5 w-5 text-[#0D6E42]" />,
+      icon: <Check className="h-5 w-5 text-[#34A853]" />,
       title: "Integration Communication",
       description:
         "If your product integrates with Rook technology, clearly communicate the relationship.",
       example: "Nuo app is built on Rook infrastructure.",
     },
     {
-      icon: <Check className="h-5 w-5 text-[#0D6E42]" />,
+      icon: <Check className="h-5 w-5 text-[#34A853]" />,
       title: "Truthful References",
       description:
         "Truthfully and accurately refer to Rook and its products and services.",
@@ -61,7 +61,7 @@ const Trademark = () => {
         "Join us for a seminar about digital transformation, including the use of Rook technology.",
     },
     {
-      icon: <Check className="h-5 w-5 text-[#0D6E42]" />,
+      icon: <Check className="h-5 w-5 text-[#34A853]" />,
       title: "Unaltered Text Usage",
       description:
         "Use without alteration in text to refer to Rook and its products and services.",
@@ -69,14 +69,14 @@ const Trademark = () => {
         "Follow these steps to integrate your application using Rook APIs.",
     },
     {
-      icon: <Check className="h-5 w-5 text-[#0D6E42]" />,
+      icon: <Check className="h-5 w-5 text-[#34A853]" />,
       title: "News Articles",
       description:
         "Use in the title of news articles, when truthful and not misleading.",
       example: "Rook announces new enterprise features.",
     },
     {
-      icon: <Check className="h-5 w-5 text-[#0D6E42]" />,
+      icon: <Check className="h-5 w-5 text-[#34A853]" />,
       title: "Adjective Usage",
       description: "Use our brand assets as adjectives before nouns.",
       example: "Rook platform, Rook services, Rook technology.",
@@ -199,8 +199,8 @@ const Trademark = () => {
                       </CardTitle>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <CheckCircle className="h-4 w-4 text-[#0D6E42]" />
-                      <span className="text-sm font-medium text-[#0D6E42]">
+                      <CheckCircle className="h-4 w-4 text-[#34A853]" />
+                      <span className="text-sm font-medium text-[#34A853]">
                         {trademark.status}
                       </span>
                     </div>
@@ -234,7 +234,7 @@ const Trademark = () => {
             {/* Dos Section */}
             <div className="mb-16">
               <div className="flex items-center mb-8">
-                <CheckCircle className="h-8 w-8 text-[#0D6E42] mr-3" />
+                <CheckCircle className="h-8 w-8 text-[#34A853] mr-3" />
                 <h3 className="text-2xl font-bold text-gray-900">
                   What You May Do
                 </h3>
@@ -244,7 +244,7 @@ const Trademark = () => {
                 {dosItems.map((item, index) => (
                   <Card
                     key={index}
-                    className="border-l-4 border-[#0D6E42] shadow-sm bg-green-50/30"
+                    className="border-l-4 border-[#34A853] shadow-sm bg-green-50/30"
                   >
                     <CardContent className="p-6">
                       <div className="flex items-start space-x-3 mb-3">
@@ -254,7 +254,7 @@ const Trademark = () => {
                         </h4>
                       </div>
                       <p className="text-gray-600 mb-3">{item.description}</p>
-                      <div className="bg-white p-3 rounded border-l-2 border-[#0D6E42]">
+                      <div className="bg-white p-3 rounded border-l-2 border-[#34A853]">
                         <p className="text-sm text-gray-700 italic">
                           {item.example}
                         </p>

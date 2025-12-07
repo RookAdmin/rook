@@ -29,23 +29,23 @@ export const ServiceCard = ({
           className="relative h-full bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 transition-all duration-300 hover:bg-gray-900/70 border border-gray-800/50 group overflow-hidden"
         >
           {/* Subtle gradient border on hover */}
-          <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#0D6E42]/20 via-transparent to-[#0096d4]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+          <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#34A853]/20 via-transparent to-[#0096d4]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
           
           {/* Left accent line - different from Why Rook Links */}
-          <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#0D6E42] to-[#0096d4] rounded-l-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#34A853] to-[#0096d4] rounded-l-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
           {/* Icon wrapper */}
           <div className="relative mb-6 inline-flex">
-            <div className="absolute inset-0 bg-[#0D6E42]/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300 opacity-0 group-hover:opacity-100" />
-            <div className="relative bg-gray-800/50 p-4 rounded-2xl border border-gray-700/50 group-hover:border-[#0D6E42]/40 transition-colors duration-300 backdrop-blur-sm">
-              <div className="text-[#0D6E42] transform group-hover:scale-110 transition-transform duration-300">
+            <div className="absolute inset-0 bg-[#34A853]/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300 opacity-0 group-hover:opacity-100" />
+            <div className="relative bg-gray-800/50 p-4 rounded-2xl border border-gray-700/50 group-hover:border-[#34A853]/40 transition-colors duration-300 backdrop-blur-sm">
+              <div className="text-[#34A853] transform group-hover:scale-110 transition-transform duration-300">
                 {icon}
               </div>
             </div>
           </div>
 
           {/* Content */}
-          <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-[#0D6E42] transition-colors duration-300">
+          <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-[#34A853] transition-colors duration-300">
             {title}
           </h3>
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
@@ -53,7 +53,7 @@ export const ServiceCard = ({
           </p>
 
           {/* Learn more link */}
-          <div className="flex items-center text-[#0D6E42] text-sm font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+          <div className="flex items-center text-[#34A853] text-sm font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
             <span>Learn more</span>
             <ArrowRightIcon className="h-4 w-4 ml-1.5 transition-transform duration-300 transform group-hover:translate-x-1" />
           </div>

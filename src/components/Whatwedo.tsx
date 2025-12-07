@@ -35,7 +35,7 @@ const Whatwedo = () => {
       description: "Advanced AI agent platform for intelligent automation",
       icon: <Bot className="h-16 w-16" />,
       link: "https://realmrook.com/services/agentica",
-      color: "#0D6E42", // Rook Green
+      color: "#34A853", // Rook Green
       ctaText: "Discover Agentica",
     },
     {
@@ -59,7 +59,7 @@ const Whatwedo = () => {
       description: "Strategic engagement across platforms that matters",
       icon: <InstagramIcon className="h-16 w-16" />,
       link: "https://realmrook.com/services/social-media-marketing",
-      color: "#0D6E42", // Rook Green
+      color: "#34A853", // Rook Green
       ctaText: "Boost Engagement",
     },
     {
@@ -92,7 +92,7 @@ const Whatwedo = () => {
       description: "Expert guidance for your digital identity",
       icon: <GlobeIcon className="h-16 w-16" />,
       link: "https://realmrook.com/services/domain-name-consultation",
-      color: "#0D6E42", // Rook Green
+      color: "#34A853", // Rook Green
       ctaText: "Get Consultation",
     },
     {

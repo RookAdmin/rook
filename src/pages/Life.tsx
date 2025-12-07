@@ -16,7 +16,7 @@ const Life = () => {
       icon: <TrendingUp className="h-8 w-8" />,
       title: "Growth Mindset",
       description: "Every challenge is an opportunity.",
-      color: "#0D6E42"
+      color: "#34A853"
     },
     {
       icon: <Heart className="h-8 w-8" />,
@@ -100,7 +100,7 @@ const Life = () => {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">The Rook Way</h2>
-            <div className="w-24 h-1 bg-[#0D6E42] mx-auto"></div>
+            <div className="w-24 h-1 bg-[#34A853] mx-auto"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {cultureValues.map((value, index) => (
@@ -164,15 +164,15 @@ const Life = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <div className="h-48 bg-gradient-to-br from-[#0D6E42]/20 to-[#0096d4]/20 rounded-lg backdrop-blur-sm border border-white/30 flex items-center justify-center">
-                  <Sparkles className="h-12 w-12 text-[#0D6E42]" />
+                <div className="h-48 bg-gradient-to-br from-[#34A853]/20 to-[#0096d4]/20 rounded-lg backdrop-blur-sm border border-white/30 flex items-center justify-center">
+                  <Sparkles className="h-12 w-12 text-[#34A853]" />
                 </div>
                 <div className="h-32 bg-gradient-to-br from-[#F4B400]/20 to-[#dc2e3e]/20 rounded-lg backdrop-blur-sm border border-white/30 flex items-center justify-center">
                   <Zap className="h-8 w-8 text-[#F4B400]" />
                 </div>
               </div>
               <div className="space-y-4 mt-8">
-                <div className="h-32 bg-gradient-to-br from-[#dc2e3e]/20 to-[#0D6E42]/20 rounded-lg backdrop-blur-sm border border-white/30 flex items-center justify-center">
+                <div className="h-32 bg-gradient-to-br from-[#dc2e3e]/20 to-[#34A853]/20 rounded-lg backdrop-blur-sm border border-white/30 flex items-center justify-center">
                   <Coffee className="h-8 w-8 text-[#dc2e3e]" />
                 </div>
                 <div className="h-48 bg-gradient-to-br from-[#0096d4]/20 to-[#F4B400]/20 rounded-lg backdrop-blur-sm border border-white/30 flex items-center justify-center">
@@ -194,7 +194,7 @@ const Life = () => {
           <Link to="/careers">
             <Button 
               size="lg" 
-              className="bg-[#0D6E42] hover:bg-[#0D6E42]/90 text-white px-8 py-4 text-lg font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-[#34A853] hover:bg-[#34A853]/90 text-white px-8 py-4 text-lg font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Explore Careers
             </Button>

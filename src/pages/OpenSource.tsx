@@ -99,7 +99,7 @@ const OpenSource = () => {
 
   const timeline = [
     {
-      icon: <Check className="h-4 w-4 text-[#0D6E42]" />,
+      icon: <Check className="h-4 w-4 text-[#34A853]" />,
       text: "Codebase in progress",
       period: "May–June 2025",
     },
@@ -232,19 +232,19 @@ const OpenSource = () => {
                       <span className="font-semibold">Developer Console</span>
                     </div>
                     <div className="bg-white/10 rounded p-4 font-mono text-sm">
-                      <div className="text-[#0D6E42]">
+                      <div className="text-[#34A853]">
                         $ npm install @rook/paym-me
                       </div>
                       <div className="text-gray-300 mt-2">
                         // Accept Swift payments effortlessly
                       </div>
-                      <div className="text-[#0D6E42]">
+                      <div className="text-[#34A853]">
                         {'<PaymMe amount={99} method="swift" id="user@bank" />'}
                       </div>
                       <div className="text-gray-300 mt-2">
                         {'< PaymMe smartLink = "https://paym.me/rook/" />'}
                       </div>
-                      <div className="text-[#0D6E42] mt-1">
+                      <div className="text-[#34A853] mt-1">
                         {"<PaymMe amount={99$} />"}
                       </div>
                     </div>
@@ -271,7 +271,7 @@ const OpenSource = () => {
                   title: "Transparency-first development",
                 },
                 {
-                  icon: <Package className="h-8 w-8 text-[#0D6E42]" />,
+                  icon: <Package className="h-8 w-8 text-[#34A853]" />,
                   title: "Modular, well-documented codebases",
                 },
                 {
@@ -470,7 +470,7 @@ const OpenSource = () => {
                         variant="outline"
                         className={
                           item.status === "in-progress"
-                            ? "text-[#0D6E42] border-[#0D6E42]"
+                            ? "text-[#34A853] border-[#34A853]"
                             : "text-textSecondary"
                         }
                       >

@@ -114,7 +114,7 @@ const ZohoPartnership = () => {
             
             {/* Subheadline */}
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 max-w-4xl mx-auto mb-8 sm:mb-10 md:mb-12 animate-fade-up px-4 sm:px-0" style={{ animationDelay: "0.2s" }}>
-              Everything you need to <span className="text-[#0D6E42] font-semibold">build</span>, <span className="text-[#0096d4] font-semibold">run</span>, and <span className="text-[#dc2e3e] font-semibold">grow</span> your startup faster and smarter.
+              Everything you need to <span className="text-[#34A853] font-semibold">build</span>, <span className="text-[#0096d4] font-semibold">run</span>, and <span className="text-[#dc2e3e] font-semibold">grow</span> your startup faster and smarter.
             </p>
             
             {/* CTA Buttons */}
@@ -122,7 +122,7 @@ const ZohoPartnership = () => {
               <Button 
                 size="lg" 
                 asChild
-                className="bg-[#0D6E42] text-white hover:bg-[#0D6E42]/90 transition-all hover:translate-y-[-2px] text-lg px-12 py-4 rounded-full shadow-premium group"
+                className="bg-[#34A853] text-white hover:bg-[#34A853]/90 transition-all hover:translate-y-[-2px] text-lg px-12 py-4 rounded-full shadow-premium group"
               >
                 <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" rel="noopener noreferrer">
                 Apply for Startup Access
@@ -134,7 +134,7 @@ const ZohoPartnership = () => {
         </div>
         
         {/* Background Elements */}
-        <div className="absolute top-20 right-10 w-32 h-32 rounded-full bg-[#0D6E42]/5 animate-pulse"></div>
+        <div className="absolute top-20 right-10 w-32 h-32 rounded-full bg-[#34A853]/5 animate-pulse"></div>
         <div className="absolute bottom-20 left-10 w-24 h-24 rounded-full bg-[#0096d4]/5 animate-pulse" style={{ animationDelay: "1s" }}></div>
       </section>
 
@@ -169,8 +169,8 @@ const ZohoPartnership = () => {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#0D6E42]/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <TrendingUp className="h-6 w-6 text-[#0D6E42]" />
+                  <div className="w-12 h-12 bg-[#34A853]/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <TrendingUp className="h-6 w-6 text-[#34A853]" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-[#121212] mb-2">Startup growth powered by Rook automation</h3>
@@ -217,7 +217,7 @@ const ZohoPartnership = () => {
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
-            <div className="h-1 w-20 bg-[#0D6E42] mx-auto mb-6"></div>
+            <div className="h-1 w-20 bg-[#34A853] mx-auto mb-6"></div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#121212]">Complete Startup Stack</h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
               Everything you need to launch, manage, and scale your startup in one integrated ecosystem.
@@ -249,10 +249,10 @@ const ZohoPartnership = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-white/90 backdrop-blur-sm border border-[#0D6E42]/20 shadow-premium hover:shadow-card transition-all duration-300 transform hover:-translate-y-2">
+            <Card className="bg-white/90 backdrop-blur-sm border border-[#34A853]/20 shadow-premium hover:shadow-card transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-[#0D6E42]/10 rounded-2xl flex items-center justify-center mb-6">
-                  <Zap className="h-8 w-8 text-[#0D6E42]" />
+                <div className="w-16 h-16 bg-[#34A853]/10 rounded-2xl flex items-center justify-center mb-6">
+                  <Zap className="h-8 w-8 text-[#34A853]" />
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-[#121212]">Growth Stack</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -290,7 +290,7 @@ const ZohoPartnership = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="w-20 h-20 bg-[#0D6E42] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-premium">
+                <div className="w-20 h-20 bg-[#34A853] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-premium">
                   1
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-[#121212]">Apply for Rook × Zoho Startups</h3>
@@ -359,7 +359,7 @@ const ZohoPartnership = () => {
             </div>
 
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[#0D6E42] mb-4">
+              <div className="text-5xl md:text-6xl font-bold text-[#34A853] mb-4">
                 {counters.startupsAccelerated}+
               </div>
               <p className="text-xl text-gray-700 font-medium">Startups Accelerated by Rook</p>
@@ -409,7 +409,7 @@ const ZohoPartnership = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-[#0D6E42]/5 via-[#0096d4]/5 to-[#dc2e3e]/5">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-[#34A853]/5 via-[#0096d4]/5 to-[#dc2e3e]/5">
         <div className="container mx-auto px-4 max-w-7xl text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-[#121212]">
@@ -423,7 +423,7 @@ const ZohoPartnership = () => {
               <Button 
                 size="lg" 
                 asChild
-                className="bg-[#0D6E42] text-white hover:bg-[#0D6E42]/90 transition-all hover:translate-y-[-2px] text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-12 py-3 sm:py-3.5 md:py-4 rounded-full shadow-premium group w-full sm:w-auto"
+                className="bg-[#34A853] text-white hover:bg-[#34A853]/90 transition-all hover:translate-y-[-2px] text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-12 py-3 sm:py-3.5 md:py-4 rounded-full shadow-premium group w-full sm:w-auto"
               >
                 <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" rel="noopener noreferrer" className="text-center">
                 <span className="block sm:inline">Apply Now for Rook × Zoho Startup Credits</span>
@@ -445,15 +445,15 @@ const ZohoPartnership = () => {
 
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-gray-600">
               <div className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
+                <CheckCircle className="h-4 w-4 text-[#34A853] mr-2" />
                 Exclusive startup credits
               </div>
               <div className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
+                <CheckCircle className="h-4 w-4 text-[#34A853] mr-2" />
                 50+ integrated business apps
               </div>
               <div className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
+                <CheckCircle className="h-4 w-4 text-[#34A853] mr-2" />
                 Growth automation included
               </div>
             </div>

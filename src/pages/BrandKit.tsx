@@ -39,8 +39,8 @@ const BrandKit = () => {
     },
     {
       name: "Rook Green",
-      hex: "#0D6E42",
-      rgb: "13, 110, 66",
+      hex: "#34A853",
+      rgb: "52, 168, 83",
       usage: "Success states, positive indicators",
     },
     {
@@ -675,45 +675,45 @@ const BrandKit = () => {
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               {/* Do's */}
-              <Card className="border-2 border-[#0D6E42] shadow-lg bg-white">
-                <CardHeader className="bg-[#0D6E42]/10">
+              <Card className="border-2 border-[#34A853] shadow-lg bg-white">
+                <CardHeader className="bg-[#34A853]/10">
                   <CardTitle className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-                    <CheckCircle className="h-6 w-6 text-[#0D6E42]" />
+                    <CheckCircle className="h-6 w-6 text-[#34A853]" />
                     Do's
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-6">
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                      <div className="h-2 w-2 bg-[#0D6E42] rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="h-2 w-2 bg-[#34A853] rounded-full mt-2 flex-shrink-0"></div>
                       <div>
                         <strong className="text-gray-900">Use logos as provided</strong>
                         <p className="text-gray-600 text-sm mt-1">Download and use the official logo files without modifications</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <div className="h-2 w-2 bg-[#0D6E42] rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="h-2 w-2 bg-[#34A853] rounded-full mt-2 flex-shrink-0"></div>
                       <div>
                         <strong className="text-gray-900">Maintain clear space</strong>
                         <p className="text-gray-600 text-sm mt-1">Provide adequate breathing room around the logo (minimum 20% of logo height)</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <div className="h-2 w-2 bg-[#0D6E42] rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="h-2 w-2 bg-[#34A853] rounded-full mt-2 flex-shrink-0"></div>
                       <div>
                         <strong className="text-gray-900">Keep it minimalistic</strong>
                         <p className="text-gray-600 text-sm mt-1">Use clean backgrounds and avoid cluttered designs around the logo</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <div className="h-2 w-2 bg-[#0D6E42] rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="h-2 w-2 bg-[#34A853] rounded-full mt-2 flex-shrink-0"></div>
                       <div>
                         <strong className="text-gray-900">Preserve proportions</strong>
                         <p className="text-gray-600 text-sm mt-1">Maintain the original aspect ratio when resizing</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
-                      <div className="h-2 w-2 bg-[#0D6E42] rounded-full mt-2 flex-shrink-0"></div>
+                      <div className="h-2 w-2 bg-[#34A853] rounded-full mt-2 flex-shrink-0"></div>
                       <div>
                         <strong className="text-gray-900">Use appropriate variants</strong>
                         <p className="text-gray-600 text-sm mt-1">Choose the right logo variant for light or dark backgrounds</p>

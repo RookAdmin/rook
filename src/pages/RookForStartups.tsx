@@ -140,7 +140,7 @@ const RookForStartups = () => {
             <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#121212]">25M+</p>
             <p className="text-xs sm:text-sm text-gray-600">SaaS Credits</p>
           </div>
-          <div className="bg-white border-l-2 border-[#0D6E42] pl-3 sm:pl-4 col-span-2 md:col-span-1">
+          <div className="bg-white border-l-2 border-[#34A853] pl-3 sm:pl-4 col-span-2 md:col-span-1">
             <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#121212]">100%</p>
             <p className="text-xs sm:text-sm text-gray-600">Success Rate</p>
           </div>
@@ -234,7 +234,7 @@ const RookForStartups = () => {
                       </div>
                     </div>
 
-                    <div className="w-1 h-6 md:h-10 mx-auto bg-gradient-to-b from-transparent to-[#0D6E42]"></div>
+                    <div className="w-1 h-6 md:h-10 mx-auto bg-gradient-to-b from-transparent to-[#34A853]"></div>
 
                     <div
                       className="bg-white rounded-lg p-3 md:p-4 shadow-soft flex items-center justify-center w-32 md:w-40 mx-auto animate-float"
@@ -244,7 +244,7 @@ const RookForStartups = () => {
                         <div className="text-sm md:text-base font-bold mb-1">
                           Scale
                         </div>
-                        <Rocket className="h-6 w-6 md:h-8 md:w-8 mx-auto text-[#0D6E42] rotate-90" />
+                        <Rocket className="h-6 w-6 md:h-8 md:w-8 mx-auto text-[#34A853] rotate-90" />
                       </div>
                     </div>
                   </div>
@@ -317,8 +317,8 @@ const RookForStartups = () => {
               </div>
 
               <div className="bg-white p-8 rounded-xl shadow-soft hover:shadow-premium transition-all duration-300 transform hover:-translate-y-1">
-                <div className="rounded-full bg-[#0D6E42]/10 p-3 w-14 h-14 flex items-center justify-center mb-6">
-                  <Scale className="h-7 w-7 text-[#0D6E42]" />
+                <div className="rounded-full bg-[#34A853]/10 p-3 w-14 h-14 flex items-center justify-center mb-6">
+                  <Scale className="h-7 w-7 text-[#34A853]" />
                 </div>
                 <h3 className="text-xl font-bold mb-4">
                   Incorporation & IP Services

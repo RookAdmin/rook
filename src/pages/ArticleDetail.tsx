@@ -11,7 +11,7 @@ const ArticleDetail = () => {
     "rook-links": {
       name: "Rook Links",
       logo: "/rook-saas-assets/rooklinks-greenwhitelogo.png",
-      color: "#0D6E42"
+      color: "#34A853"
     },
     "rook-scoop": {
       name: "Rook Scoop",
@@ -2024,7 +2024,7 @@ Paym.me implements industry-standard security measures to protect your payment d
                         <Button 
                           className="text-white px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
                           style={{
-                            backgroundColor: toolSlug === 'rook-links' ? '#0D6E42' :
+                            backgroundColor: toolSlug === 'rook-links' ? '#34A853' :
                                            toolSlug === 'rook-scoop' ? '#dc2e3e' :
                                            '#0096d4',
                           }}

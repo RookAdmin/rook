@@ -305,7 +305,7 @@ export const Navbar = () => {
               href="https://links.rookhq.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-1 bg-[#0D6E42] px-2.5 py-1.5 rounded-full hover:bg-[#0D6E42]/90 transition-all shadow-md hover:shadow-lg flex-shrink-0"
+              className="group flex items-center gap-1 bg-[#34A853] px-2.5 py-1.5 rounded-full hover:bg-[#34A853]/90 transition-all shadow-md hover:shadow-lg flex-shrink-0"
             >
               <span className="text-white font-medium text-[10px] sm:text-xs whitespace-nowrap hidden lg:inline">clickl.in/</span>
               <span className="text-white font-medium text-[10px] sm:text-xs whitespace-nowrap lg:hidden">c.in/</span>
@@ -365,7 +365,7 @@ export const Navbar = () => {
         <div className="md:hidden bg-[#121212] py-4 relative">
           {/* Scroll Progress Bar for Mobile */}
           <div
-            className="absolute bottom-0 left-0 h-[3px] bg-gradient-to-r from-[#F4B400] via-[#0D6E42] to-[#0096d4]"
+            className="absolute bottom-0 left-0 h-[3px] bg-gradient-to-r from-[#F4B400] via-[#34A853] to-[#0096d4]"
             style={{
               width: `${scrollProgress}%`,
               transition: "width 0.2s ease-out",
@@ -533,7 +533,7 @@ export const Navbar = () => {
                 href="https://links.rookhq.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-2 bg-[#0D6E42] px-4 py-2 rounded-full hover:bg-[#0D6E42]/90 transition-all shadow-md hover:shadow-lg w-full justify-center"
+                className="group flex items-center gap-2 bg-[#34A853] px-4 py-2 rounded-full hover:bg-[#34A853]/90 transition-all shadow-md hover:shadow-lg w-full justify-center"
               >
                 <span className="text-white font-medium text-sm">clickl.in/</span>
                 <div className="bg-white rounded-full px-3 py-1">

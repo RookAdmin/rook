@@ -88,7 +88,7 @@ const Compliance = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-4 sm:mb-6">
               <div className="p-3 sm:p-4 bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20">
-                <Shield className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 text-[#0D6E42]" />
+                <Shield className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 text-[#34A853]" />
               </div>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-2 sm:px-0">
@@ -100,7 +100,7 @@ const Compliance = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button 
-                className="bg-[#0D6E42] hover:bg-[#0D6E42]/90 text-white px-8 py-3"
+                className="bg-[#34A853] hover:bg-[#34A853]/90 text-white px-8 py-3"
                 onClick={() => {
                   const element = document.getElementById('global-ready-compliance');
                   if (element) {
@@ -143,7 +143,7 @@ const Compliance = () => {
               <Card key={index} className="bg-white/80 backdrop-blur-sm border-white/20 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-6 text-center">
                   <div className="flex justify-center mb-4">
-                    <commitment.icon className="h-12 w-12 text-[#0D6E42]" />
+                    <commitment.icon className="h-12 w-12 text-[#34A853]" />
                   </div>
                   <h3 className="text-lg font-semibold mb-2">{commitment.title}</h3>
                   <p className="text-gray-600 text-sm">{commitment.description}</p>
@@ -190,7 +190,7 @@ const Compliance = () => {
               <div className="relative">
                 <div className="p-6 sm:p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20">
                   <div className="flex justify-center mb-3 sm:mb-4">
-                    <Shield className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 text-[#0D6E42]" />
+                    <Shield className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 text-[#34A853]" />
                   </div>
                   <Globe className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 mx-auto" style={{ color: '#121212' }} />
                 </div>
@@ -206,15 +206,15 @@ const Compliance = () => {
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-[#0D6E42] mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-[#34A853] mt-0.5" />
                   <p className="text-gray-700">Enterprise-grade security and privacy protection</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-[#0D6E42] mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-[#34A853] mt-0.5" />
                   <p className="text-gray-700">Investor confidence through regulatory transparency</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <CheckCircle className="h-6 w-6 text-[#0D6E42] mt-0.5" />
+                  <CheckCircle className="h-6 w-6 text-[#34A853] mt-0.5" />
                   <p className="text-gray-700">Global scalability with local compliance</p>
                 </div>
               </div>
@@ -268,7 +268,7 @@ const Compliance = () => {
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg border border-white/20">
-                <Shield className="h-12 w-12 text-[#0D6E42] mx-auto mb-4" />
+                <Shield className="h-12 w-12 text-[#34A853] mx-auto mb-4" />
                 <h3 className="font-semibold text-lg mb-2">Security Certified</h3>
                 <p className="text-gray-600 text-sm">Industry-standard security compliance</p>
               </div>
@@ -288,7 +288,7 @@ const Compliance = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-[#0D6E42] to-[#0A5A35]">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-[#34A853] to-[#0A5A35]">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">
@@ -300,7 +300,7 @@ const Compliance = () => {
             <div className="flex flex-wrap gap-4 justify-center">
               <Button 
                 variant="secondary" 
-                className="bg-white text-[#0D6E42] hover:bg-gray-100 px-8 py-3"
+                className="bg-white text-[#34A853] hover:bg-gray-100 px-8 py-3"
                 asChild
               >
                 <a 

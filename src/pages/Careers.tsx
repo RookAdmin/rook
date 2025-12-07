@@ -118,8 +118,8 @@ const Careers = () => {
 
             <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300">
               <CardHeader>
-                <div className="w-12 h-12 rounded-full bg-[#0D6E42]/10 flex items-center justify-center mb-4">
-                  <Users className="h-6 w-6 text-[#0D6E42]" />
+                <div className="w-12 h-12 rounded-full bg-[#34A853]/10 flex items-center justify-center mb-4">
+                  <Users className="h-6 w-6 text-[#34A853]" />
           </div>
                 <CardTitle className="text-lg text-[#121212]">Remote-First Culture</CardTitle>
               </CardHeader>
@@ -427,8 +427,8 @@ const Careers = () => {
 
             <Card className="border border-gray-200 text-center">
               <CardHeader>
-                <div className="w-12 h-12 rounded-full bg-[#0D6E42]/10 flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-6 w-6 text-[#0D6E42]" />
+                <div className="w-12 h-12 rounded-full bg-[#34A853]/10 flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-6 w-6 text-[#34A853]" />
                 </div>
                 <CardTitle className="text-lg text-[#121212]">Health & Wellness</CardTitle>
               </CardHeader>

@@ -33,7 +33,7 @@ export const Hero = () => {
             <div className="lg:col-span-7 space-y-8 md:space-y-10 order-1 lg:order-none">
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-gray-500 font-medium">
-                  <span className="w-2 h-2 bg-[#0D6E42] rounded-full"></span>
+                  <span className="w-2 h-2 bg-[#34A853] rounded-full"></span>
                   Simple Tools. Monumental Impact.
                 </div>
                 
@@ -59,7 +59,7 @@ export const Hero = () => {
                 href="https://links.rookhq.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-2 bg-[#0D6E42] px-6 py-3 rounded-full hover:bg-[#0D6E42]/90 transition-all shadow-md hover:shadow-lg w-full sm:w-auto justify-center sm:justify-start"
+                className="group flex items-center gap-2 bg-[#34A853] px-6 py-3 rounded-full hover:bg-[#34A853]/90 transition-all shadow-md hover:shadow-lg w-full sm:w-auto justify-center sm:justify-start"
               >
                 <span className="text-white font-medium">clickl.in/</span>
                 <div className="bg-white rounded-full px-4 py-1.5">
@@ -93,7 +93,7 @@ export const Hero = () => {
                   <div className="flex gap-1.5">
                     <div className="flex-1 h-1.5 bg-[#dc2e3e] rounded-full"></div>
                     <div className="flex-1 h-1.5 bg-[#0096d4] rounded-full"></div>
-                    <div className="flex-1 h-1.5 bg-[#0D6E42] rounded-full"></div>
+                    <div className="flex-1 h-1.5 bg-[#34A853] rounded-full"></div>
                   </div>
                 </div>
               </div>
