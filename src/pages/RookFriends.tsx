@@ -43,7 +43,7 @@ const RookFriends = () => {
             </h2>
             <Button 
               size="lg" 
-              className="bg-[#00d437] hover:bg-[#00c132] text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-[#0D6E42] hover:bg-[#0A5A35] text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Join Now
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -57,8 +57,8 @@ const RookFriends = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="bg-white/60 backdrop-blur-sm border border-white/30 rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300">
-              <div className="w-16 h-16 bg-[#00d437]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <TrendingUp className="h-8 w-8 text-[#00d437]" />
+              <div className="w-16 h-16 bg-[#0D6E42]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <TrendingUp className="h-8 w-8 text-[#0D6E42]" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">Earn with Purpose</h3>
               <p className="text-gray-600">Share Rook products, earn commissions.</p>
@@ -73,8 +73,8 @@ const RookFriends = () => {
             </div>
 
             <div className="bg-white/60 backdrop-blur-sm border border-white/30 rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300">
-              <div className="w-16 h-16 bg-[#ffd800]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="h-8 w-8 text-[#ffd800]" />
+              <div className="w-16 h-16 bg-[#F4B400]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Users className="h-8 w-8 text-[#F4B400]" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">Grow Together</h3>
               <p className="text-gray-600">Be part of Rook's vision of creating new industry standards.</p>
@@ -92,7 +92,7 @@ const RookFriends = () => {
             <div className="grid md:grid-cols-4 gap-8">
               <div className="text-center group">
                 <div className="w-20 h-20 bg-white/80 backdrop-blur-sm border border-white/40 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
-                  <span className="text-2xl font-bold text-[#00d437]">1</span>
+                  <span className="text-2xl font-bold text-[#0D6E42]">1</span>
                 </div>
                 <h3 className="font-semibold mb-2 text-gray-900">Sign Up</h3>
                 <p className="text-gray-600 text-sm">Start at friends.rookhq.com</p>
@@ -108,7 +108,7 @@ const RookFriends = () => {
 
               <div className="text-center group">
                 <div className="w-20 h-20 bg-white/80 backdrop-blur-sm border border-white/40 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
-                  <span className="text-2xl font-bold text-[#ffd800]">3</span>
+                  <span className="text-2xl font-bold text-[#F4B400]">3</span>
                 </div>
                 <h3 className="font-semibold mb-2 text-gray-900">Earn</h3>
                 <p className="text-gray-600 text-sm">Get payouts directly, no hassle</p>
@@ -160,8 +160,8 @@ const RookFriends = () => {
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="bg-white/80 backdrop-blur-sm border border-white/40 rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300">
-              <div className="w-16 h-16 bg-[#00d437]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <CreditCard className="h-8 w-8 text-[#00d437]" />
+              <div className="w-16 h-16 bg-[#0D6E42]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <CreditCard className="h-8 w-8 text-[#0D6E42]" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">Transparent Payouts</h3>
               <p className="text-gray-600">Fast and clear commission structure.</p>
@@ -176,8 +176,8 @@ const RookFriends = () => {
             </div>
 
             <div className="bg-white/80 backdrop-blur-sm border border-white/40 rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300">
-              <div className="w-16 h-16 bg-[#ffd800]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Gift className="h-8 w-8 text-[#ffd800]" />
+              <div className="w-16 h-16 bg-[#F4B400]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Gift className="h-8 w-8 text-[#F4B400]" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-gray-900">Exclusive Friend Perks</h3>
               <p className="text-gray-600">Rook events, merch, and invites.</p>
@@ -198,7 +198,7 @@ const RookFriends = () => {
             </p>
             <Button 
               size="lg" 
-              className="bg-[#00d437] hover:bg-[#00c132] text-white px-12 py-6 text-xl rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-[#0D6E42] hover:bg-[#0A5A35] text-white px-12 py-6 text-xl rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Join Rook Friends
               <ArrowRight className="ml-2 h-6 w-6" />

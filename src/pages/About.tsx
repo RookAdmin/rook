@@ -147,8 +147,8 @@ const About = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white border border-borderLight rounded-lg p-8 hover:shadow-premium transition-all hover:translate-y-[-4px]">
-                <div className="w-12 h-12 bg-[#00d437]/10 flex items-center justify-center rounded-lg mb-6">
-                  <Users className="h-6 w-6 text-[#00d437]" />
+                <div className="w-12 h-12 bg-[#0D6E42]/10 flex items-center justify-center rounded-lg mb-6">
+                  <Users className="h-6 w-6 text-[#0D6E42]" />
                 </div>
                 <h3
                   className="text-xl font-bold mb-3 text-primary"
@@ -163,8 +163,8 @@ const About = () => {
                 </p>
               </div>
               <div className="bg-white border border-borderLight rounded-lg p-8 hover:shadow-premium transition-all hover:translate-y-[-4px]">
-                <div className="w-12 h-12 bg-[#ffd800]/10 flex items-center justify-center rounded-lg mb-6">
-                  <Award className="h-6 w-6 text-[#ffd800]" />
+                <div className="w-12 h-12 bg-[#F4B400]/10 flex items-center justify-center rounded-lg mb-6">
+                  <Award className="h-6 w-6 text-[#F4B400]" />
                 </div>
                 <h3
                   className="text-xl font-bold mb-3 text-primary"

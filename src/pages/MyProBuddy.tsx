@@ -104,7 +104,7 @@ const MyProBuddy = () => {
             
             {/* Subheadline */}
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 max-w-4xl mx-auto mb-8 sm:mb-10 md:mb-12 animate-fade-up px-4 sm:px-0" style={{ animationDelay: "0.2s" }}>
-              The venture-acceleration partnership that empowers founders with <span className="text-[#00d437] font-semibold">smart tools</span>, <span className="text-[#0096d4] font-semibold">strategic mentorship</span>, and <span className="text-[#dc2e3e] font-semibold">investor connections</span>.
+              The venture-acceleration partnership that empowers founders with <span className="text-[#0D6E42] font-semibold">smart tools</span>, <span className="text-[#0096d4] font-semibold">strategic mentorship</span>, and <span className="text-[#dc2e3e] font-semibold">investor connections</span>.
             </p>
             
             {/* CTA Button */}
@@ -112,7 +112,7 @@ const MyProBuddy = () => {
               <Button 
                 size="lg" 
                 asChild
-                className="bg-[#00d437] text-white hover:bg-[#00d437]/90 transition-all hover:translate-y-[-2px] text-lg px-12 py-4 rounded-full shadow-premium group"
+                className="bg-[#0D6E42] text-white hover:bg-[#0D6E42]/90 transition-all hover:translate-y-[-2px] text-lg px-12 py-4 rounded-full shadow-premium group"
               >
                 <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" rel="noopener noreferrer">
                   Get Started Today
@@ -124,7 +124,7 @@ const MyProBuddy = () => {
         </div>
         
         {/* Background Elements */}
-        <div className="absolute top-20 right-10 w-32 h-32 rounded-full bg-[#00d437]/5 animate-pulse"></div>
+        <div className="absolute top-20 right-10 w-32 h-32 rounded-full bg-[#0D6E42]/5 animate-pulse"></div>
         <div className="absolute bottom-20 left-10 w-24 h-24 rounded-full bg-[#0096d4]/5 animate-pulse" style={{ animationDelay: "1s" }}></div>
       </section>
 
@@ -142,8 +142,8 @@ const MyProBuddy = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-soft hover:shadow-premium transition-all duration-300 transform hover:-translate-y-1">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-[#00d437]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Zap className="h-8 w-8 text-[#00d437]" />
+                <div className="w-16 h-16 bg-[#0D6E42]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Zap className="h-8 w-8 text-[#0D6E42]" />
                 </div>
                 <h3 className="text-lg font-bold mb-3 text-[#121212]">AI-Driven Startup Tools</h3>
                 <p className="text-gray-600 text-sm">Rook's smart automation for faster launches</p>
@@ -172,8 +172,8 @@ const MyProBuddy = () => {
 
             <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-soft hover:shadow-premium transition-all duration-300 transform hover:-translate-y-1">
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-[#ffd800]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Shield className="h-8 w-8 text-[#ffd800]" />
+                <div className="w-16 h-16 bg-[#F4B400]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Shield className="h-8 w-8 text-[#F4B400]" />
                 </div>
                 <h3 className="text-lg font-bold mb-3 text-[#121212]">Transparent Processes</h3>
                 <p className="text-gray-600 text-sm">AI-optimized workflows for founders</p>
@@ -187,15 +187,15 @@ const MyProBuddy = () => {
       <section className="py-12 sm:py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <div className="h-1 w-12 sm:w-16 md:w-20 bg-[#00d437] mx-auto mb-4 sm:mb-6"></div>
+            <div className="h-1 w-12 sm:w-16 md:w-20 bg-[#0D6E42] mx-auto mb-4 sm:mb-6"></div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#121212]">Complete Startup Acceleration Suite</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="bg-white/90 backdrop-blur-sm border border-[#00d437]/20 shadow-premium hover:shadow-card transition-all duration-300 transform hover:-translate-y-2">
+            <Card className="bg-white/90 backdrop-blur-sm border border-[#0D6E42]/20 shadow-premium hover:shadow-card transition-all duration-300 transform hover:-translate-y-2">
               <CardContent className="p-10">
-                <div className="w-20 h-20 bg-[#00d437]/10 rounded-2xl flex items-center justify-center mb-8">
-                  <Rocket className="h-10 w-10 text-[#00d437]" />
+                <div className="w-20 h-20 bg-[#0D6E42]/10 rounded-2xl flex items-center justify-center mb-8">
+                  <Rocket className="h-10 w-10 text-[#0D6E42]" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-[#121212]">Startup Toolkit</h3>
                 <p className="text-gray-700 mb-6 leading-relaxed">
@@ -203,15 +203,15 @@ const MyProBuddy = () => {
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                    <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                     Rook Link for smart URLs
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                    <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                     Rook Friends affiliate hub
                   </li>
                   <li className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                    <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                     Rook Scoop insights
                   </li>
                 </ul>
@@ -287,7 +287,7 @@ const MyProBuddy = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="w-20 h-20 bg-[#00d437] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-premium">
+                <div className="w-20 h-20 bg-[#0D6E42] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-premium">
                   1
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-[#121212]">Connect</h3>
@@ -311,7 +311,7 @@ const MyProBuddy = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 bg-[#ffd800] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-premium">
+                <div className="w-20 h-20 bg-[#F4B400] rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl font-bold shadow-premium">
                   4
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-[#121212]">Access Capital</h3>
@@ -340,7 +340,7 @@ const MyProBuddy = () => {
             </div>
 
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-[#00d437] mb-4">
+              <div className="text-5xl md:text-6xl font-bold text-[#0D6E42] mb-4">
                 {counters.startups}+
               </div>
               <p className="text-xl text-gray-700 font-medium">Startups Empowered</p>
@@ -366,7 +366,7 @@ const MyProBuddy = () => {
               <div className="flex justify-center mb-6">
                 <div className="flex space-x-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-6 w-6 text-[#ffd800] fill-current" />
+                    <Star key={i} className="h-6 w-6 text-[#F4B400] fill-current" />
                   ))}
                 </div>
               </div>
@@ -385,7 +385,7 @@ const MyProBuddy = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-[#00d437]/5 via-[#0096d4]/5 to-[#dc2e3e]/5">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-[#0D6E42]/5 via-[#0096d4]/5 to-[#dc2e3e]/5">
         <div className="container mx-auto px-4 max-w-7xl text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-[#121212]">
@@ -399,7 +399,7 @@ const MyProBuddy = () => {
               <Button 
                 size="lg" 
                 asChild
-                className="bg-[#00d437] text-white hover:bg-[#00d437]/90 transition-all hover:translate-y-[-2px] text-lg px-12 py-4 rounded-full shadow-premium group"
+                className="bg-[#0D6E42] text-white hover:bg-[#0D6E42]/90 transition-all hover:translate-y-[-2px] text-lg px-12 py-4 rounded-full shadow-premium group"
               >
                 <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" rel="noopener noreferrer">
                   Start Accelerating
@@ -421,15 +421,15 @@ const MyProBuddy = () => {
 
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-gray-600">
               <div className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                 No setup fees
               </div>
               <div className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                 Expert mentorship included
               </div>
               <div className="flex items-center">
-                <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                 Investor network access
               </div>
             </div>

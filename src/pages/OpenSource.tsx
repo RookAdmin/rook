@@ -99,12 +99,12 @@ const OpenSource = () => {
 
   const timeline = [
     {
-      icon: <Check className="h-4 w-4 text-[#00d437]" />,
+      icon: <Check className="h-4 w-4 text-[#0D6E42]" />,
       text: "Codebase in progress",
       period: "May–June 2025",
     },
     {
-      icon: <Clock className="h-4 w-4 text-[#ffd800]" />,
+      icon: <Clock className="h-4 w-4 text-[#F4B400]" />,
       text: "Private alpha testing",
       period: "July 2025",
     },
@@ -232,19 +232,19 @@ const OpenSource = () => {
                       <span className="font-semibold">Developer Console</span>
                     </div>
                     <div className="bg-white/10 rounded p-4 font-mono text-sm">
-                      <div className="text-[#00d437]">
+                      <div className="text-[#0D6E42]">
                         $ npm install @rook/paym-me
                       </div>
                       <div className="text-gray-300 mt-2">
                         // Accept Swift payments effortlessly
                       </div>
-                      <div className="text-[#00d437]">
+                      <div className="text-[#0D6E42]">
                         {'<PaymMe amount={99} method="swift" id="user@bank" />'}
                       </div>
                       <div className="text-gray-300 mt-2">
                         {'< PaymMe smartLink = "https://paym.me/rook/" />'}
                       </div>
-                      <div className="text-[#00d437] mt-1">
+                      <div className="text-[#0D6E42] mt-1">
                         {"<PaymMe amount={99$} />"}
                       </div>
                     </div>
@@ -271,7 +271,7 @@ const OpenSource = () => {
                   title: "Transparency-first development",
                 },
                 {
-                  icon: <Package className="h-8 w-8 text-[#00d437]" />,
+                  icon: <Package className="h-8 w-8 text-[#0D6E42]" />,
                   title: "Modular, well-documented codebases",
                 },
                 {
@@ -279,7 +279,7 @@ const OpenSource = () => {
                   title: "Community before corporate",
                 },
                 {
-                  icon: <Shield className="h-8 w-8 text-[#ffd800]" />,
+                  icon: <Shield className="h-8 w-8 text-[#F4B400]" />,
                   title: "Security & best practices built in",
                 },
               ].map((item, index) => (
@@ -428,11 +428,11 @@ const OpenSource = () => {
                   >
                     <p className="text-textPrimary italic">"{testimonial}"</p>
                     <div className="flex items-center mt-4 space-x-2">
-                      <Star className="h-4 w-4 text-[#ffd800] fill-current" />
-                      <Star className="h-4 w-4 text-[#ffd800] fill-current" />
-                      <Star className="h-4 w-4 text-[#ffd800] fill-current" />
-                      <Star className="h-4 w-4 text-[#ffd800] fill-current" />
-                      <Star className="h-4 w-4 text-[#ffd800] fill-current" />
+                      <Star className="h-4 w-4 text-[#F4B400] fill-current" />
+                      <Star className="h-4 w-4 text-[#F4B400] fill-current" />
+                      <Star className="h-4 w-4 text-[#F4B400] fill-current" />
+                      <Star className="h-4 w-4 text-[#F4B400] fill-current" />
+                      <Star className="h-4 w-4 text-[#F4B400] fill-current" />
                     </div>
                   </div>
                 ))}
@@ -470,7 +470,7 @@ const OpenSource = () => {
                         variant="outline"
                         className={
                           item.status === "in-progress"
-                            ? "text-[#00d437] border-[#00d437]"
+                            ? "text-[#0D6E42] border-[#0D6E42]"
                             : "text-textSecondary"
                         }
                       >

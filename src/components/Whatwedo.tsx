@@ -35,7 +35,7 @@ const Whatwedo = () => {
       description: "Advanced AI agent platform for intelligent automation",
       icon: <Bot className="h-16 w-16" />,
       link: "https://realmrook.com/services/agentica",
-      color: "#00d437", // Rook Green
+      color: "#0D6E42", // Rook Green
       ctaText: "Discover Agentica",
     },
     {
@@ -59,7 +59,7 @@ const Whatwedo = () => {
       description: "Strategic engagement across platforms that matters",
       icon: <InstagramIcon className="h-16 w-16" />,
       link: "https://realmrook.com/services/social-media-marketing",
-      color: "#00d437", // Rook Green
+      color: "#0D6E42", // Rook Green
       ctaText: "Boost Engagement",
     },
     {
@@ -68,7 +68,7 @@ const Whatwedo = () => {
         "Crafting premium digital-first brand identities for startups",
       icon: <BrushIcon className="h-16 w-16" />,
       link: "https://realmrook.com/services/branding",
-      color: "#ffd800", // Rook Yellow
+      color: "#F4B400", // Rook Yellow
       ctaText: "Build Your Brand",
     },
     {
@@ -92,7 +92,7 @@ const Whatwedo = () => {
       description: "Expert guidance for your digital identity",
       icon: <GlobeIcon className="h-16 w-16" />,
       link: "https://realmrook.com/services/domain-name-consultation",
-      color: "#00d437", // Rook Green
+      color: "#0D6E42", // Rook Green
       ctaText: "Get Consultation",
     },
     {
@@ -100,7 +100,7 @@ const Whatwedo = () => {
       description: "Comprehensive domain portfolio management for enterprises",
       icon: <ServerIcon className="h-16 w-16" />,
       link: "https://realmrook.com/services/enterprise-domain-management",
-      color: "#ffd800", // Rook Yellow
+      color: "#F4B400", // Rook Yellow
       ctaText: "Manage Domains",
     },
   ];

@@ -116,7 +116,7 @@ const HloLegal = () => {
               <Button 
                 size="lg" 
                 asChild
-                className="bg-[#00d437] text-white hover:bg-[#00d437]/90 transition-all hover:translate-y-[-2px] group text-lg px-8 py-4"
+                className="bg-[#0D6E42] text-white hover:bg-[#0D6E42]/90 transition-all hover:translate-y-[-2px] group text-lg px-8 py-4"
               >
                 <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" rel="noopener noreferrer">
                   Get Legal+ Growth Support
@@ -130,7 +130,7 @@ const HloLegal = () => {
               <div className="w-full h-full rounded-full bg-[#0096d4] animate-pulse"></div>
             </div>
             <div className="absolute bottom-20 left-10 w-24 h-24 opacity-5 -z-10">
-              <div className="w-full h-full rounded-full bg-[#00d437] animate-pulse" style={{ animationDelay: "1s" }}></div>
+              <div className="w-full h-full rounded-full bg-[#0D6E42] animate-pulse" style={{ animationDelay: "1s" }}></div>
             </div>
           </div>
         </div>
@@ -159,8 +159,8 @@ const HloLegal = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="rounded-full bg-[#00d437]/10 p-2 mr-4 flex-shrink-0">
-                    <Rocket className="h-5 w-5 text-[#00d437]" />
+                  <div className="rounded-full bg-[#0D6E42]/10 p-2 mr-4 flex-shrink-0">
+                    <Rocket className="h-5 w-5 text-[#0D6E42]" />
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Startup Toolkit Integration</h3>
@@ -186,16 +186,16 @@ const HloLegal = () => {
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-medium text-gray-600">Legal Dashboard</span>
                     <div className="flex space-x-2">
-                      <div className="w-3 h-3 rounded-full bg-[#00d437]"></div>
-                      <div className="w-3 h-3 rounded-full bg-[#ffd800]"></div>
+                      <div className="w-3 h-3 rounded-full bg-[#0D6E42]"></div>
+                      <div className="w-3 h-3 rounded-full bg-[#F4B400]"></div>
                       <div className="w-3 h-3 rounded-full bg-[#dc2e3e]"></div>
                     </div>
                   </div>
                   
                   <div className="space-y-4">
-                    <div className="bg-[#00d437]/10 rounded-lg p-4">
+                    <div className="bg-[#0D6E42]/10 rounded-lg p-4">
                       <div className="flex items-center">
-                        <CheckCircle className="h-5 w-5 text-[#00d437] mr-2" />
+                        <CheckCircle className="h-5 w-5 text-[#0D6E42] mr-2" />
                         <span className="text-sm font-medium">Entity Formation Complete</span>
                       </div>
                     </div>
@@ -205,9 +205,9 @@ const HloLegal = () => {
                         <span className="text-sm font-medium">Investor Docs Ready</span>
                       </div>
                     </div>
-                    <div className="bg-[#ffd800]/10 rounded-lg p-4">
+                    <div className="bg-[#F4B400]/10 rounded-lg p-4">
                       <div className="flex items-center">
-                        <Lock className="h-5 w-5 text-[#ffd800] mr-2" />
+                        <Lock className="h-5 w-5 text-[#F4B400] mr-2" />
                         <span className="text-sm font-medium">IP Protection Active</span>
                       </div>
                     </div>
@@ -241,23 +241,23 @@ const HloLegal = () => {
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                  <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                   Company Registration
                 </li>
                 <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                  <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                   Founder Agreements
                 </li>
                 <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                  <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                   IP & Trademark Protection
                 </li>
               </ul>
             </div>
 
             <div className="bg-white/60 backdrop-blur-sm p-8 rounded-2xl shadow-soft hover:shadow-premium transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-              <div className="rounded-full bg-[#00d437]/10 p-4 w-16 h-16 flex items-center justify-center mb-6">
-                <Shield className="h-8 w-8 text-[#00d437]" />
+              <div className="rounded-full bg-[#0D6E42]/10 p-4 w-16 h-16 flex items-center justify-center mb-6">
+                <Shield className="h-8 w-8 text-[#0D6E42]" />
               </div>
               <h3 className="text-xl font-bold mb-4">Investor-Ready Compliance</h3>
               <p className="text-gray-600 mb-6">
@@ -265,15 +265,15 @@ const HloLegal = () => {
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                  <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                   Cap Table Management
                 </li>
                 <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                  <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                   ESOP Implementation
                 </li>
                 <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                  <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                   Due Diligence Prep
                 </li>
               </ul>
@@ -289,15 +289,15 @@ const HloLegal = () => {
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                  <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                   Rook Tool Integration
                 </li>
                 <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                  <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                   Compliance Automation
                 </li>
                 <li className="flex items-center text-sm text-gray-600">
-                  <CheckCircle className="h-4 w-4 text-[#00d437] mr-2" />
+                  <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-2" />
                   Growth Legal Support
                 </li>
               </ul>
@@ -328,7 +328,7 @@ const HloLegal = () => {
                 </div>
                 
                 <div className="flex items-center">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#00d437] text-white flex items-center justify-center text-xl font-bold">2</div>
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#0D6E42] text-white flex items-center justify-center text-xl font-bold">2</div>
                   <div className="ml-8 bg-white/60 backdrop-blur-sm rounded-xl p-6 shadow-soft flex-grow">
                     <h3 className="text-xl font-bold mb-2">Set Up Legal Infrastructure</h3>
                     <p className="text-gray-600">Entity formation, compliance frameworks, and founder agreements established through automated processes.</p>
@@ -336,7 +336,7 @@ const HloLegal = () => {
                 </div>
                 
                 <div className="flex items-center">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#ffd800] text-white flex items-center justify-center text-xl font-bold">3</div>
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#F4B400] text-white flex items-center justify-center text-xl font-bold">3</div>
                   <div className="ml-8 bg-white/60 backdrop-blur-sm rounded-xl p-6 shadow-soft flex-grow">
                     <h3 className="text-xl font-bold mb-2">Build Smarter with Rook</h3>
                     <p className="text-gray-600">Integrate Rook's automation tools for marketing, payments, and growth while maintaining legal compliance.</p>
@@ -374,7 +374,7 @@ const HloLegal = () => {
             </div>
             
             <div className="text-center bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-soft border border-gray-100">
-              <div className="text-4xl md:text-5xl font-bold mb-2 text-[#00d437]">${counters.funding}M+</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2 text-[#0D6E42]">${counters.funding}M+</div>
               <p className="text-gray-600">In funding raised with investor-ready compliance</p>
             </div>
             
@@ -417,14 +417,14 @@ const HloLegal = () => {
             
             <div className="bg-white/60 backdrop-blur-sm p-8 rounded-2xl shadow-soft border border-gray-100">
               <div className="flex items-start">
-                <div className="text-5xl text-[#00d437] mr-4">"</div>
+                <div className="text-5xl text-[#0D6E42] mr-4">"</div>
                 <div>
                   <p className="text-lg italic mb-6">
                     The legal automation saved us months of paperwork, and Rook's growth tools helped us scale from day one. Perfect partnership.
                   </p>
                   <div className="flex items-center">
-                    <div className="w-12 h-12 rounded-full bg-[#00d437]/10 flex items-center justify-center mr-4">
-                      <Users className="h-6 w-6 text-[#00d437]" />
+                    <div className="w-12 h-12 rounded-full bg-[#0D6E42]/10 flex items-center justify-center mr-4">
+                      <Users className="h-6 w-6 text-[#0D6E42]" />
                     </div>
                     <div>
                       <p className="font-semibold">Marcus Rodriguez</p>
@@ -439,7 +439,7 @@ const HloLegal = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-[#0096d4]/5 to-[#00d437]/5 w-full">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-br from-[#0096d4]/5 to-[#0D6E42]/5 w-full">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Start Smart. Scale Secure.</h2>
@@ -451,7 +451,7 @@ const HloLegal = () => {
               <Button 
                 size="lg" 
                 asChild
-                className="bg-[#00d437] text-white hover:bg-[#00d437]/90 transition-all hover:translate-y-[-2px] group text-lg px-8 py-4"
+                className="bg-[#0D6E42] text-white hover:bg-[#0D6E42]/90 transition-all hover:translate-y-[-2px] group text-lg px-8 py-4"
               >
                 <a href="https://forms.office.com/r/Ap9MBCKhTp?embed=true%22" target="_blank" rel="noopener noreferrer">
                   Apply Now

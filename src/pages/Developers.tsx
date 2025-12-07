@@ -27,13 +27,13 @@ const Developers = () => {
       badge: "Knowledge Hub"
     },
     {
-      icon: <Users className="h-8 w-8 text-[#00d437]" />,
+      icon: <Users className="h-8 w-8 text-[#0D6E42]" />,
       title: "Collaborate", 
       description: "Work together on tools, extensions, and shared resources. Build the future of SaaS development.",
       badge: "Team Up"
     },
     {
-      icon: <Calendar className="h-8 w-8 text-[#ffd800]" />,
+      icon: <Calendar className="h-8 w-8 text-[#F4B400]" />,
       title: "Events & Meetups",
       description: "Join online dev jams, hackathons, AMAs, and community calls. Connect with fellow builders.",
       badge: "Coming Soon"
@@ -117,7 +117,7 @@ const Developers = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge className="bg-[#00d437]/10 text-[#00d437] border-[#00d437]/20">
+                <Badge className="bg-[#0D6E42]/10 text-[#0D6E42] border-[#0D6E42]/20">
                   <Users className="h-4 w-4 mr-2" />
                   Join the Community
                 </Badge>
@@ -133,7 +133,7 @@ const Developers = () => {
               </div>
               
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" asChild className="bg-[#00d437] hover:bg-[#00d437]/90 text-white">
+                <Button size="lg" asChild className="bg-[#0D6E42] hover:bg-[#0D6E42]/90 text-white">
                   <a href="mailto:hustle@rookhq.com?subject=I am ready to join Rook Developers Community&body=Hi,%0D%0A%0D%0AName:%20%0D%0A%0D%0AI am excited to join the Rook Developers Community and contribute to the ecosystem. I am ready to learn, collaborate, and help shape the future of SaaS development with the community.%0D%0A%0D%0ALooking forward to being part of this amazing community!">
                   <Users className="h-5 w-5 mr-2" />
                     Join Dev Community
@@ -167,11 +167,11 @@ const Developers = () => {
                   </div>
                   <div className="flex items-center space-x-4 text-sm">
                     <div className="flex items-center space-x-2">
-                      <div className="w-3 h-3 bg-[#00d437] rounded-full"></div>
+                      <div className="w-3 h-3 bg-[#0D6E42] rounded-full"></div>
                       <span>Active Community</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <div className="w-3 h-3 bg-[#ffd800] rounded-full"></div>
+                      <div className="w-3 h-3 bg-[#F4B400] rounded-full"></div>
                       <span>Growing Fast</span>
                     </div>
                   </div>
@@ -256,7 +256,7 @@ const Developers = () => {
           </div>
           
           <div className="text-center">
-            <Button size="lg" asChild className="bg-[#00d437] hover:bg-[#00d437]/90 text-white">
+            <Button size="lg" asChild className="bg-[#0D6E42] hover:bg-[#0D6E42]/90 text-white">
               <a href="mailto:hustle@rookhq.com?subject=I am ready to join Rook Developers Community&body=Hi,%0D%0A%0D%0AName:%20%0D%0A%0D%0AI am excited to join the Rook Developers Community and contribute to the ecosystem. I am ready to learn, collaborate, and help shape the future of SaaS development with the community.%0D%0A%0D%0ALooking forward to being part of this amazing community!">
               <Star className="h-5 w-5 mr-2" />
                 Join Dev Community
@@ -309,7 +309,7 @@ const Developers = () => {
             <Card className="bg-white border-gray-200">
               <CardHeader>
                 <div className="flex items-center space-x-3">
-                  <Calendar className="h-8 w-8 text-[#ffd800]" />
+                  <Calendar className="h-8 w-8 text-[#F4B400]" />
                   <CardTitle className="text-xl text-[#121212]">Upcoming Events</CardTitle>
                 </div>
               </CardHeader>
@@ -319,7 +319,7 @@ const Developers = () => {
                     <div className="font-semibold text-[#121212]">Monthly Community Call</div>
                     <div className="text-sm text-gray-600">First Friday of every month</div>
                   </div>
-                  <Badge className="bg-[#00d437]/10 text-[#00d437] border-[#00d437]/20">
+                  <Badge className="bg-[#0D6E42]/10 text-[#0D6E42] border-[#0D6E42]/20">
                     Regular
                   </Badge>
                 </div>
@@ -349,11 +349,11 @@ const Developers = () => {
                     <span className="text-[#121212]">Developer Documentation</span>
                   </div>
                   <div className="flex items-center space-x-3 p-3 hover:bg-gray-50 rounded-lg transition-colors">
-                    <Code2 className="h-5 w-5 text-[#00d437]" />
+                    <Code2 className="h-5 w-5 text-[#0D6E42]" />
                     <span className="text-[#121212]">Community Tutorials</span>
                   </div>
                   <div className="flex items-center space-x-3 p-3 hover:bg-gray-50 rounded-lg transition-colors">
-                    <Github className="h-5 w-5 text-[#ffd800]" />
+                    <Github className="h-5 w-5 text-[#F4B400]" />
                     <span className="text-[#121212]">Open Source Projects</span>
                   </div>
                 </div>
@@ -371,7 +371,7 @@ const Developers = () => {
             Join a growing community of builders, innovators, and creators who are shaping the future of SaaS development.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" asChild className="bg-[#00d437] hover:bg-[#00d437]/90 text-white">
+            <Button size="lg" asChild className="bg-[#0D6E42] hover:bg-[#0D6E42]/90 text-white">
               <a href="mailto:hustle@rookhq.com?subject=I am ready to join Rook Developers Community&body=Hi,%0D%0A%0D%0AName:%20%0D%0A%0D%0AI am excited to join the Rook Developers Community and contribute to the ecosystem. I am ready to learn, collaborate, and help shape the future of SaaS development with the community.%0D%0A%0D%0ALooking forward to being part of this amazing community!">
               <Users className="h-5 w-5 mr-2" />
                 Join Dev Community

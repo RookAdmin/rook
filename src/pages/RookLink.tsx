@@ -15,7 +15,7 @@ const RookLink = () => {
       title: "Creator Profile",
       description: "Build a professional profile that showcases your brand and connects with your audience.",
       icon: <User className="h-16 w-16" />,
-      color: "#00d437",
+      color: "#0D6E42",
       ctaText: "Explore Profile Features",
       url: "https://links.rookhq.com/creator-profile"
     },
@@ -39,7 +39,7 @@ const RookLink = () => {
       title: "Influencer Profile",
       description: "Stand out with verified badges and premium profile features that build trust.",
       icon: <Star className="h-16 w-16" />,
-      color: "#ffd800",
+      color: "#F4B400",
       ctaText: "Get Verified",
       url: "https://links.rookhq.com/influencer-profile"
     },
@@ -47,7 +47,7 @@ const RookLink = () => {
       title: "Affiliate Links",
       description: "Monetize your content with seamless affiliate link management and tracking.",
       icon: <Zap className="h-16 w-16" />,
-      color: "#00d437",
+      color: "#0D6E42",
       ctaText: "Start Earning",
       url: "https://links.rookhq.com/affiliate-links"
     },
@@ -71,7 +71,7 @@ const RookLink = () => {
       title: "Retargeting & Pixels",
       description: "Track conversions and retarget visitors with pixel integration and advanced analytics.",
       icon: <Target className="h-16 w-16" />,
-      color: "#ffd800",
+      color: "#F4B400",
       ctaText: "Set Up Pixels",
       url: "https://links.rookhq.com/retargeting-pixels"
     }
@@ -258,11 +258,11 @@ const RookLink = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge variant="outline" className="text-[#00d437] border-[#00d437]">
+                <Badge variant="outline" className="text-[#0D6E42] border-[#0D6E42]">
                   Rook Links by Rook HQ
                 </Badge>
                 <h1 className="text-5xl lg:text-6xl font-bold text-textPrimary leading-tight">
-                  The Smart Bio Link for <span className="text-[#00d437]">Creators</span>, Brands & Businesses
+                  The Smart Bio Link for <span className="text-[#0D6E42]">Creators</span>, Brands & Businesses
                 </h1>
                 <h2 className="text-xl text-textSecondary max-w-lg">
                   Turn one link into a hub for everything you do: products, social, videos, and more.
@@ -274,7 +274,7 @@ const RookLink = () => {
                   href="https://links.rookhq.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-2 bg-[#00d437] px-6 py-3 rounded-full hover:bg-[#00d437]/90 transition-all shadow-md hover:shadow-lg"
+                  className="group flex items-center gap-2 bg-[#0D6E42] px-6 py-3 rounded-full hover:bg-[#0D6E42]/90 transition-all shadow-md hover:shadow-lg"
                 >
                   <span className="text-white font-medium">clickl.in/</span>
                   <div className="bg-white rounded-full px-4 py-1.5">
@@ -426,10 +426,10 @@ const RookLink = () => {
               {/* Step 1 */}
               <div className="relative text-center space-y-4 z-10">
                 <div className="relative">
-                  <div className="w-20 h-20 bg-[#00d437] rounded-full flex items-center justify-center mx-auto text-white shadow-lg">
+                  <div className="w-20 h-20 bg-[#0D6E42] rounded-full flex items-center justify-center mx-auto text-white shadow-lg">
                     <Layout className="h-10 w-10" />
                 </div>
-                  <div className="absolute -top-2 -left-2 w-8 h-8 bg-[#00d437] rounded-full flex items-center justify-center text-white text-sm font-bold border-2 border-white">
+                  <div className="absolute -top-2 -left-2 w-8 h-8 bg-[#0D6E42] rounded-full flex items-center justify-center text-white text-sm font-bold border-2 border-white">
                     1
                   </div>
                 </div>
@@ -514,7 +514,7 @@ const RookLink = () => {
                 
                 {/* Author Info */}
                 <div className="flex items-center space-x-4 pt-6 border-t border-gray-100">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[#00d437] to-[#0096d4] rounded-full flex items-center justify-center text-white font-semibold text-sm sm:text-base flex-shrink-0">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[#0D6E42] to-[#0096d4] rounded-full flex items-center justify-center text-white font-semibold text-sm sm:text-base flex-shrink-0">
                       {testimonial.avatar}
                     </div>
                   <div className="min-w-0 flex-1">
@@ -549,35 +549,35 @@ const RookLink = () => {
               <CardContent className="flex flex-col flex-grow p-6">
                 <div className="space-y-2 text-left mb-4">
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Unlimited Tiles</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Unlimited Social Icons</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Unlimited Scheduled Links</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Picture Tiles</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Mobile responsive</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>SEO optimized</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Social Integration</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Standard support</span>
                   </div>
                 </div>
@@ -585,7 +585,7 @@ const RookLink = () => {
                   href="https://links.rookhq.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="group flex items-center justify-center gap-2 bg-[#00d437] text-white px-6 py-3 rounded-full hover:bg-[#00d437]/90 transition-all shadow-md hover:shadow-lg w-full mt-auto"
+                  className="group flex items-center justify-center gap-2 bg-[#0D6E42] text-white px-6 py-3 rounded-full hover:bg-[#0D6E42]/90 transition-all shadow-md hover:shadow-lg w-full mt-auto"
                 >
                   <span className="text-white font-medium">clickl.in/</span>
                   <div className="bg-white rounded-full px-4 py-1.5">
@@ -597,14 +597,14 @@ const RookLink = () => {
             </Card>
             
             {/* Pro Plan - Most Popular */}
-            <Card className="relative border-[#00d437] border-2 flex flex-col h-full">
-              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#00d437] text-white">
+            <Card className="relative border-[#0D6E42] border-2 flex flex-col h-full">
+              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D6E42] text-white">
                 Most Popular
               </Badge>
               <CardHeader>
                 <div className="flex items-center justify-center gap-2">
                 <CardTitle className="text-2xl">Pro</CardTitle>
-                  <Check className="h-5 w-5 text-[#00d437]" />
+                  <Check className="h-5 w-5 text-[#0D6E42]" />
                 </div>
                 <div className="text-3xl font-bold text-textPrimary my-2">$5<span className="text-lg text-textSecondary font-normal">/month</span></div>
                 <CardDescription>Most popular for creators</CardDescription>
@@ -612,32 +612,32 @@ const RookLink = () => {
               <CardContent className="flex flex-col flex-grow p-6">
                 <div className="space-y-2 text-left mb-4">
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Everything in Free</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Verified Tick</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Video Tiles (1:1, 9:16, 16:9)</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Shop Tiles</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Basic Analytics</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Priority Support</span>
                   </div>
                 </div>
                 <Button 
-                  className="w-full bg-[#00d437] hover:bg-[#00d437]/90 text-white mt-auto"
+                  className="w-full bg-[#0D6E42] hover:bg-[#0D6E42]/90 text-white mt-auto"
                   onClick={() => window.open('https://links.rookhq.com', '_blank')}
                 >
                   Upgrade to Pro
@@ -650,7 +650,7 @@ const RookLink = () => {
               <CardHeader>
                 <div className="flex items-center justify-center gap-2">
                   <CardTitle className="text-2xl">Premium</CardTitle>
-                  <Check className="h-5 w-5 text-[#00d437]" />
+                  <Check className="h-5 w-5 text-[#0D6E42]" />
                 </div>
                 <div className="text-3xl font-bold text-textPrimary my-2">$9<span className="text-lg text-textSecondary font-normal">/month</span></div>
                 <CardDescription>For growing businesses</CardDescription>
@@ -658,23 +658,23 @@ const RookLink = () => {
               <CardContent className="flex flex-col flex-grow p-6">
                 <div className="space-y-2 text-left mb-4">
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Everything in Pro</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Team Members ($1/user/month)</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Advanced Integrations</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Advanced Analytics Dashboard</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Retargeting Pixels</span>
                   </div>
                 </div>
@@ -693,7 +693,7 @@ const RookLink = () => {
               <CardHeader>
                 <div className="flex items-center justify-center gap-2">
                   <CardTitle className="text-2xl">Enterprise</CardTitle>
-                  <Check className="h-5 w-5 text-[#00d437]" />
+                  <Check className="h-5 w-5 text-[#0D6E42]" />
                 </div>
                 <div className="text-3xl font-bold text-textPrimary my-2">Custom</div>
                 <CardDescription>For large organizations</CardDescription>
@@ -701,35 +701,35 @@ const RookLink = () => {
               <CardContent className="flex flex-col flex-grow p-6">
                 <div className="space-y-2 text-left mb-4">
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Everything in Premium</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Custom Domain Support</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>User & Admin Roles</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>API Access</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Custom Integrations</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>White-label Platform</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>Dedicated Account Manager</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Check className="h-4 w-4 text-[#00d437]" />
+                    <Check className="h-4 w-4 text-[#0D6E42]" />
                     <span>SLA & Priority Support</span>
                   </div>
                 </div>
@@ -780,7 +780,7 @@ const RookLink = () => {
               href="https://links.rookhq.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group flex items-center gap-2 bg-[#00d437] px-6 py-3 rounded-full hover:bg-[#00d437]/90 transition-all shadow-md hover:shadow-lg"
+              className="group flex items-center gap-2 bg-[#0D6E42] px-6 py-3 rounded-full hover:bg-[#0D6E42]/90 transition-all shadow-md hover:shadow-lg"
             >
               <span className="text-white font-medium">clickl.in/</span>
               <div className="bg-white rounded-full px-4 py-1.5">

@@ -46,7 +46,7 @@ export default {
           foreground: "#1A1A1A",
         },
         success: {
-          DEFAULT: "#00d437", // Green for success states
+          DEFAULT: "#0D6E42", // Green for success states
           foreground: "#FFFFFF",
         },
         info: {
@@ -54,7 +54,7 @@ export default {
           foreground: "#FFFFFF",
         },
         warning: {
-          DEFAULT: "#ffd800", // Yellow for warnings (use sparingly)
+          DEFAULT: "#F4B400", // Yellow for warnings (use sparingly)
           foreground: "#1A1A1A",
         },
         card: {

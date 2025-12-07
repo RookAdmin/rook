@@ -14,7 +14,7 @@ const ToolKnowledgeBase = () => {
       name: "Rook Links",
       logo: "/rook-saas-assets/rook-links.png",
       description: "Link-in-bio tool for creators",
-      color: "#00d437"
+      color: "#0D6E42"
     },
     "rook-scoop": {
       name: "Rook Scoop",

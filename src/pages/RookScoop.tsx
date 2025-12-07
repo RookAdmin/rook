@@ -403,11 +403,11 @@ const RookScoop = () => {
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-4 mb-6">
-              <Star className="h-6 w-6 text-[#ffd800] fill-current" />
+              <Star className="h-6 w-6 text-[#F4B400] fill-current" />
               <span className="text-lg font-semibold text-gray-900">
                 Trusted by 500+ teams worldwide
               </span>
-              <Star className="h-6 w-6 text-[#ffd800] fill-current" />
+              <Star className="h-6 w-6 text-[#F4B400] fill-current" />
             </div>
             <div className="flex items-center justify-center space-x-12 mb-12 opacity-60">
               <div className="text-gray-600 font-semibold">Rook HQ</div>
@@ -423,7 +423,7 @@ const RookScoop = () => {
                 <CardContent className="p-8">
                   <div className="flex justify-center mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 text-[#ffd800] fill-current" />
+                      <Star key={i} className="h-4 w-4 text-[#F4B400] fill-current" />
                     ))}
                   </div>
                   <p className="text-gray-700 italic mb-6 leading-relaxed">"{testimonial.quote}"</p>

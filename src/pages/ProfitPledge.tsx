@@ -29,8 +29,8 @@ const ProfitPledge = () => {
           {/* Minimalistic Background VFX */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/4 left-1/4 w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 bg-[#dc2e3e] opacity-5 rounded-full blur-3xl"></div>
-            <div className="absolute top-1/3 right-1/4 w-56 sm:w-64 md:w-80 h-56 sm:h-64 md:h-80 bg-[#ffd800] opacity-5 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-1/4 left-1/3 w-48 sm:w-56 md:w-72 h-48 sm:h-56 md:h-72 bg-[#00d437] opacity-5 rounded-full blur-3xl"></div>
+            <div className="absolute top-1/3 right-1/4 w-56 sm:w-64 md:w-80 h-56 sm:h-64 md:h-80 bg-[#F4B400] opacity-5 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-1/4 left-1/3 w-48 sm:w-56 md:w-72 h-48 sm:h-56 md:h-72 bg-[#0D6E42] opacity-5 rounded-full blur-3xl"></div>
           </div>
           <div className="container mx-auto px-4 max-w-7xl relative z-10">
             <div className="max-w-4xl mx-auto text-center">
@@ -52,10 +52,10 @@ const ProfitPledge = () => {
                   <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-[#dc2e3e] flex items-center justify-center">
                     <Droplet className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                   </div>
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-[#ffd800] flex items-center justify-center">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-[#F4B400] flex items-center justify-center">
                     <Heart className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                   </div>
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-[#00d437] flex items-center justify-center">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-[#0D6E42] flex items-center justify-center">
                     <Leaf className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                   </div>
                 </div>
@@ -98,10 +98,10 @@ const ProfitPledge = () => {
               </Card>
 
               {/* Card 2: Orange Impact */}
-              <Card className="border border-[#ffd800] bg-white shadow-sm">
+              <Card className="border border-[#F4B400] bg-white shadow-sm">
                 <CardContent className="p-8">
                   <div className="mb-6">
-                    <Heart className="w-12 h-12 text-[#ffd800]" strokeWidth={1.5} />
+                    <Heart className="w-12 h-12 text-[#F4B400]" strokeWidth={1.5} />
                   </div>
                   <h3 className="text-2xl font-bold mb-4 text-[#121212]">
                     Street Animal Welfare
@@ -171,7 +171,7 @@ const ProfitPledge = () => {
               </div>
 
               {/* Quote 2 */}
-              <div className="bg-white p-8 rounded-lg border-l-4 border-[#ffd800]">
+              <div className="bg-white p-8 rounded-lg border-l-4 border-[#F4B400]">
                 <p className="text-xl text-gray-700 mb-4 italic">
                   "Feeding street animals has never been easier, thanks to this partnership."
                 </p>
@@ -179,7 +179,7 @@ const ProfitPledge = () => {
               </div>
 
               {/* Quote 3 */}
-              <div className="bg-white p-8 rounded-lg border-l-4 border-[#00d437]">
+              <div className="bg-white p-8 rounded-lg border-l-4 border-[#0D6E42]">
                 <p className="text-xl text-gray-700 mb-4 italic">
                   "Education programs are thriving, building brighter tomorrows."
                 </p>
@@ -190,7 +190,7 @@ const ProfitPledge = () => {
         </section>
 
         {/* Closing Statement */}
-        <section className="py-12 sm:py-16 md:py-20 bg-white border-t-4 border-[#00d437]">
+        <section className="py-12 sm:py-16 md:py-20 bg-white border-t-4 border-[#0D6E42]">
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-[#121212]">

@@ -57,9 +57,9 @@ export const Products = () => {
           </Card>
 
           {/* Rook Links Card */}
-          <Card className="border border-[#00d437] shadow-md hover:shadow-lg transition-shadow duration-300 bg-white rounded-md flex flex-col h-full">
+          <Card className="border border-[#0D6E42] shadow-md hover:shadow-lg transition-shadow duration-300 bg-white rounded-md flex flex-col h-full">
             <CardHeader className="pb-0">
-              <div className="h-2 w-12 bg-[#00d437] mb-4"></div>
+              <div className="h-2 w-12 bg-[#0D6E42] mb-4"></div>
               <div className="flex flex-col items-start">
                 <img 
                   src="/rook-saas-assets/rook-links-blacktext.png" 
@@ -77,21 +77,21 @@ export const Products = () => {
                 
                 <ul className="space-y-2 sm:space-y-3">
                   <li className="flex items-start gap-2">
-                    <div className="h-4 sm:h-5 w-[2px] bg-[#00d437] mt-1 flex-shrink-0"></div>
+                    <div className="h-4 sm:h-5 w-[2px] bg-[#0D6E42] mt-1 flex-shrink-0"></div>
                     <span className="text-[#121212] text-sm sm:text-base">Smart tiles with rich content</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <div className="h-4 sm:h-5 w-[2px] bg-[#00d437] mt-1 flex-shrink-0"></div>
+                    <div className="h-4 sm:h-5 w-[2px] bg-[#0D6E42] mt-1 flex-shrink-0"></div>
                     <span className="text-[#121212] text-sm sm:text-base">Shop Mode for direct selling</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <div className="h-4 sm:h-5 w-[2px] bg-[#00d437] mt-1 flex-shrink-0"></div>
+                    <div className="h-4 sm:h-5 w-[2px] bg-[#0D6E42] mt-1 flex-shrink-0"></div>
                     <span className="text-[#121212] text-sm sm:text-base">Real-time analytics dashboard</span>
                   </li>
                 </ul>
               </div>
               <a href="/links" className="block mt-4 sm:mt-5 md:mt-6">
-                <Button className="w-full bg-white hover:bg-gray-50 text-[#00d437] border-[#00d437] border group">
+                <Button className="w-full bg-white hover:bg-gray-50 text-[#0D6E42] border-[#0D6E42] border group">
                   <span>Learn More</span>
                   <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
                 </Button>

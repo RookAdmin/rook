@@ -98,13 +98,13 @@ const DevConference = () => {
       title: "Open Source & Collaboration",
       description: "Build together, grow together in the open source ecosystem",
       icon: <Heart className="h-8 w-8" />,
-      color: "text-[#00d437]"
+      color: "text-[#0D6E42]"
     },
     {
       title: "Future of AI & Development",
       description: "How AI is transforming the way we build software",
       icon: <Zap className="h-8 w-8" />,
-      color: "text-[#ffd800]"
+      color: "text-[#F4B400]"
     },
     {
       title: "Community & Growth",
@@ -241,7 +241,7 @@ const DevConference = () => {
         
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-4xl mx-auto space-y-8">
-            <Badge className="mb-6 bg-[#00d437]/10 text-[#00d437] border-[#00d437]/20 hover:bg-[#00d437]/20">
+            <Badge className="mb-6 bg-[#0D6E42]/10 text-[#0D6E42] border-[#0D6E42]/20 hover:bg-[#0D6E42]/20">
               <Calendar className="h-4 w-4 mr-2" />
               December 2027
             </Badge>
@@ -296,7 +296,7 @@ const DevConference = () => {
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
               <div className="grid grid-cols-3 gap-6 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-[#00d437] mb-2">
+                  <div className="text-3xl font-bold text-[#0D6E42] mb-2">
                     {animatedStats.attendees.toLocaleString()}+
                   </div>
                   <div className="text-sm text-gray-600">Expected Attendees</div>
@@ -308,7 +308,7 @@ const DevConference = () => {
                   <div className="text-sm text-gray-600">Sessions</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-[#ffd800] mb-2">
+                  <div className="text-3xl font-bold text-[#F4B400] mb-2">
                     {animatedStats.startups}+
                   </div>
                   <div className="text-sm text-gray-600">Startups</div>
@@ -404,7 +404,7 @@ const DevConference = () => {
                 className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-gray-100 cursor-pointer group"
               >
                 <CardHeader>
-                  <CardTitle className="text-xl group-hover:text-[#00d437] transition-colors">
+                  <CardTitle className="text-xl group-hover:text-[#0D6E42] transition-colors">
                     {track.title}
                   </CardTitle>
                   <Badge variant="secondary" className="w-fit">
@@ -437,7 +437,7 @@ const DevConference = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="border-gray-100">
               <CardHeader>
-                <div className="text-[#00d437] mb-2">
+                <div className="text-[#0D6E42] mb-2">
                   <Code className="h-8 w-8" />
                 </div>
                 <CardTitle>Interactive Workshops</CardTitle>
@@ -454,7 +454,7 @@ const DevConference = () => {
             
             <Card className="border-gray-100">
               <CardHeader>
-                <div className="text-[#ffd800] mb-2">
+                <div className="text-[#F4B400] mb-2">
                   <Trophy className="h-8 w-8" />
                 </div>
                 <CardTitle>Coding Challenges</CardTitle>
@@ -489,11 +489,11 @@ const DevConference = () => {
               <Card 
                 key={index} 
                 className={`relative border-gray-100 hover:shadow-lg transition-all duration-300 ${
-                  tier.popular ? 'border-[#00d437] shadow-lg scale-105' : ''
+                  tier.popular ? 'border-[#0D6E42] shadow-lg scale-105' : ''
                 }`}
               >
                 {tier.popular && (
-                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#00d437] text-white">
+                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D6E42] text-white">
                     Most Popular
                   </Badge>
                 )}
@@ -506,7 +506,7 @@ const DevConference = () => {
                   <ul className="space-y-3 mb-8">
                     {tier.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center text-sm">
-                        <CheckCircle className="h-4 w-4 text-[#00d437] mr-3 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 text-[#0D6E42] mr-3 flex-shrink-0" />
                         {feature}
                       </li>
                     ))}
@@ -514,7 +514,7 @@ const DevConference = () => {
                   <Button 
                     className={`w-full ${
                       tier.popular 
-                        ? 'bg-[#00d437] hover:bg-[#00d437]/90 text-white' 
+                        ? 'bg-[#0D6E42] hover:bg-[#0D6E42]/90 text-white' 
                         : 'bg-white border border-gray-200 text-[#121212] hover:bg-gray-50'
                     }`}
                   >
@@ -583,7 +583,7 @@ const DevConference = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             <h2 className="text-4xl md:text-6xl font-bold leading-tight">
               Be Part of the Future of
-              <span className="block text-[#00d437]">SaaS Development</span>
+              <span className="block text-[#0D6E42]">SaaS Development</span>
             </h2>
             
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -592,7 +592,7 @@ const DevConference = () => {
             </p>
             
             <div className="flex justify-center mt-12">
-              <div className="bg-[#00d437] text-white px-8 py-4 rounded-full text-lg font-medium">
+              <div className="bg-[#0D6E42] text-white px-8 py-4 rounded-full text-lg font-medium">
                 Registration opens May 2027
               </div>
             </div>
