@@ -207,17 +207,6 @@ export const Navbar = () => {
                       <li className="row-span-1">
                         <NavigationMenuLink asChild>
                           <a
-                            href="/friends"
-                            rel="noopener noreferrer"
-                            className="block p-2 hover:bg-[#f5f5f5] rounded-md text-[#121212]"
-                          >
-                            Rook Friends
-                          </a>
-                        </NavigationMenuLink>
-                      </li>
-                      <li className="row-span-1">
-                        <NavigationMenuLink asChild>
-                          <a
                             href="https://realmrook.com/"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -442,13 +431,6 @@ export const Navbar = () => {
                     className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
                   >
                     Rook Scoop
-                  </a>
-                  <a
-                    href="/friends"
-                    rel="noopener noreferrer"
-                    className="block py-2 text-[#f5f5f5] hover:text-[#0096d4]"
-                  >
-                    Rook Friends
                   </a>
                   <a
                     href="https://realmrook.com/"

@@ -364,15 +364,6 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/friends"
-                  rel="noopener noreferrer"
-                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
-                >
-                  Rook Friends
-                </a>
-              </li>
-              <li>
-                <a
                   href="https://realmrook.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -437,15 +428,6 @@ export const Footer = () => {
                     className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
                   >
                     Rook Scoop
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/friends"
-                    rel="noopener noreferrer"
-                    className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
-                  >
-                    Rook Friends
                   </a>
                 </li>
                 <li>
@@ -680,6 +662,14 @@ export const Footer = () => {
               </li>
               <li>
                 <Link
+                  to="/friends"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Rook Friends
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/rook-for-startups"
                   className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
                 >
@@ -758,6 +748,14 @@ export const Footer = () => {
                   className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
                 >
                   Open Source
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/friends"
+                  className="text-[#f5f5f5] hover:text-[#0096d4] transition-colors text-sm"
+                >
+                  Rook Friends
                 </Link>
               </li>
               <li>
