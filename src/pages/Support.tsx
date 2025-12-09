@@ -32,24 +32,24 @@ const Support = () => {
     {
       name: "Rook Links",
       slug: "rook-links",
-      logo: "/rook-saas-assets/rook-links-blacktext.png",
-      iconLogo: "/rook-saas-assets/rooklinks-greenwhitelogo.png",
+      logo: "/rook-saas-assets/Rook Links/rook-links-blacktext.png",
+      iconLogo: "/rook-saas-assets/Rook Links/rooklinks-greenwhitelogo.png",
       description: "Link-in-bio tool for creators",
       color: "#34A853"
     },
     {
       name: "Rook Scoop",
       slug: "rook-scoop",
-      logo: "/rook-saas-assets/rook-scoop-blacktext.png",
-      iconLogo: "/rook-saas-assets/rookscoop-redwhitelogo.png",
+      logo: "/rook-saas-assets/Rook Scoop/rook-scoop-blacktext.png",
+      iconLogo: "/rook-saas-assets/Rook Scoop/rookscoop-redwhitelogo.png",
       description: "AI-powered SaaS publishing platform",
       color: "#0096d4"
     },
     {
       name: "Paym.me by Rook",
       slug: "paym-me",
-      logo: "/rook-saas-assets/paym-logoname.png",
-      iconLogo: "/rook-saas-assets/paym-logo.png",
+      logo: "/rook-saas-assets/Paym.me by Rook/paym-logoname.png",
+      iconLogo: "/rook-saas-assets/Paym.me by Rook/paymme-bluewhitelogo.png",
       description: "Payment solutions platform",
       color: "#dc2e3e"
     }

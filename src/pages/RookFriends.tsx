@@ -35,6 +35,13 @@ const RookFriends = () => {
       <section className="pt-12 sm:pt-16 md:pt-24 lg:pt-32 pb-12 sm:pb-16 md:pb-20 px-4">
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto bg-white/40 backdrop-blur-sm border border-white/20 rounded-3xl p-12 shadow-2xl">
+            <div className="flex justify-center mb-6">
+              <img 
+                src="/rook-saas-assets/Rook Friends/rookfriends-blackcoloredlogo.png" 
+                alt="Rook Friends" 
+                className="h-16 md:h-24 object-contain"
+              />
+            </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-900">
               Rook Friends
             </h1>

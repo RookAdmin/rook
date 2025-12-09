@@ -19,7 +19,7 @@ export const Products = () => {
               <div className="h-2 w-12 bg-[#dc2e3e] mb-4"></div>
               <div className="flex flex-col items-start">
                 <img 
-                  src="/rook-saas-assets/rook-scoop-blacktext.png" 
+                  src="/rook-saas-assets/Rook Scoop/rook-scoop-blacktext.png" 
                   alt="Rook Scoop" 
                   className="mb-3 sm:mb-4 object-contain"
                   style={{ height: 'clamp(40px, 8vw, 57.6px)' }}
@@ -62,7 +62,7 @@ export const Products = () => {
               <div className="h-2 w-12 bg-[#34A853] mb-4"></div>
               <div className="flex flex-col items-start">
                 <img 
-                  src="/rook-saas-assets/rook-links-blacktext.png" 
+                  src="/rook-saas-assets/Rook Links/rook-links-blacktext.png" 
                   alt="Rook Links" 
                   className="mb-3 sm:mb-4 object-contain"
                   style={{ height: 'clamp(40px, 8vw, 57.6px)' }}
@@ -105,7 +105,7 @@ export const Products = () => {
               <div className="h-2 w-12 bg-[#0096d4] mb-4"></div>
               <div className="flex flex-col items-start">
                 <img 
-                  src="/rook-saas-assets/paym-logoname.png" 
+                  src="/rook-saas-assets/Paym.me by Rook/paym-logoname.png" 
                   alt="Paym.me" 
                   className="mb-3 sm:mb-4 object-contain"
                   style={{ height: 'clamp(40px, 8vw, 57.6px)' }}
@@ -148,7 +148,7 @@ export const Products = () => {
               <div className="h-2 w-12 bg-[#121212] mb-4"></div>
               <div className="flex flex-col items-start">
                 <img 
-                  src="/rook-saas-assets/realm-black.png" 
+                  src="/rook-saas-assets/Realm by Rook/realm-black.png" 
                   alt="Realm by Rook" 
                   className="mb-3 sm:mb-4 object-contain"
                   style={{ height: 'clamp(40px, 8vw, 57.6px)' }}

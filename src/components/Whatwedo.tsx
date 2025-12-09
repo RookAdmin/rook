@@ -156,13 +156,13 @@ const Whatwedo = () => {
               className="inline-block"
             >
               <img 
-                src="/rook-saas-assets/realmlogo-white.png" 
+                src="/rook-saas-assets/Realm by Rook/realmlogo-white.png" 
                 alt="Realm by Rook" 
                 className="inline-block align-middle"
                 style={{ height: '42px' }}
                 onError={(e) => {
                   // Fallback to black logo if white version doesn't exist
-                  (e.target as HTMLImageElement).src = "/rook-saas-assets/realm-black.png";
+                  (e.target as HTMLImageElement).src = "/rook-saas-assets/Realm by Rook/realm-black.png";
                 }}
               />
             </a>

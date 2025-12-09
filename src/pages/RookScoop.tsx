@@ -235,7 +235,7 @@ const RookScoop = () => {
               <div className="space-y-6">
                 <div className="flex items-center">
                   <img 
-                    src="/rook-saas-assets/rookscoop-redwhitelogo.png" 
+                    src="/rook-saas-assets/Rook Scoop/rookscoop-redwhitelogo.png" 
                     alt="Rook Scoop" 
                     className="h-16 w-auto object-contain"
                   />

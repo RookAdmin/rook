@@ -2,7 +2,7 @@ import React from "react";
 import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Download, Copy, CheckCircle, Search } from "lucide-react";
+import { Download, Copy, CheckCircle, Search, ExternalLink } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Link } from "react-router-dom";
@@ -145,14 +145,34 @@ const BrandKit = () => {
       { name: "Rook for Startups Primary Label", description: "Logo variant for Rook for Startups Black Label branding" },
       { name: "Rook for Startups Secondary Label", description: "Logo variant for Rook for Startups White Label branding" },
       { name: "Rook for Startups White Background", description: "Logo variant for Rook for Startups White Background branding" },
-      { name: "Rook Links Primary Logo", description: "Logo variant for Rook Links primary branding" },
-      { name: "Rook Links Black Text", description: "Logo variant for Rook Links with black text" },
-      { name: "Rook Links White Text", description: "Logo variant for Rook Links with white text" },
-      { name: "Rook Links Black Text (JPG)", description: "Logo variant for Rook Links black text in JPG format" },
-      { name: "Rook Scoop Primary Logo", description: "Logo variant for Rook Scoop primary branding" },
-      { name: "Rook Scoop Black Text", description: "Logo variant for Rook Scoop with black text" },
-      { name: "Rook Scoop White Text", description: "Logo variant for Rook Scoop with white text" },
-      { name: "Rook Scoop Black Text (JPG)", description: "Logo variant for Rook Scoop black text in JPG format" },
+      { name: "Rook Links", description: "Rook Links icon and text logos" },
+      { name: "Rook Links Green White", description: "Rook Links icon logo with green and white" },
+      { name: "Rook Links Black Green", description: "Rook Links icon logo with black and green" },
+      { name: "Rook Links White Black", description: "Rook Links icon logo with white and black" },
+      { name: "Rook Links White Green", description: "Rook Links icon logo with white and green" },
+      { name: "Rook Links Black White", description: "Rook Links icon logo with black and white" },
+      { name: "Rook Links Black Text", description: "Rook Links text logo with black text" },
+      { name: "Rook Links White Text", description: "Rook Links text logo with white text" },
+      { name: "Rook Scoop", description: "Rook Scoop icon and text logos" },
+      { name: "Rook Scoop Red White", description: "Rook Scoop icon logo with red and white" },
+      { name: "Rook Scoop Black Red", description: "Rook Scoop icon logo with black and red" },
+      { name: "Rook Scoop White Black", description: "Rook Scoop icon logo with white and black" },
+      { name: "Rook Scoop White Red", description: "Rook Scoop icon logo with white and red" },
+      { name: "Rook Scoop Black White", description: "Rook Scoop icon logo with black and white" },
+      { name: "Rook Scoop Black Text", description: "Rook Scoop text logo with black text" },
+      { name: "Rook Scoop White Text", description: "Rook Scoop text logo with white text" },
+      { name: "Paym.me", description: "Paym.me icon and text logos" },
+      { name: "Paym.me Blue White", description: "Paym.me icon logo with blue and white" },
+      { name: "Paym.me Black Blue", description: "Paym.me icon logo with black and blue" },
+      { name: "Paym.me White Black", description: "Paym.me icon logo with white and black" },
+      { name: "Paym.me White Blue", description: "Paym.me icon logo with white and blue" },
+      { name: "Paym.me Black White", description: "Paym.me icon logo with black and white" },
+      { name: "Rook Friends", description: "Rook Friends icon logos" },
+      { name: "Rook Friends Black Colored", description: "Rook Friends icon logo with black and colored elements" },
+      { name: "Rook Friends Black White", description: "Rook Friends icon logo with black and white" },
+      { name: "Rook Friends White Black", description: "Rook Friends icon logo with white and black" },
+      { name: "Rook Friends White Colored", description: "Rook Friends icon logo with white and colored elements" },
+      { name: "Realm by Rook", description: "Realm by Rook brand kit and assets" },
     ];
     
     const hasLogoMatch = logoSections.some((item) => {
@@ -184,37 +204,38 @@ const BrandKit = () => {
     if (searchQuery.trim() && filteredLogos.length === 0) return null;
     
     return (
-      <section className={`py-16 ${bgClass} w-full`}>
+      <section className={`py-8 sm:py-12 md:py-16 ${bgClass} w-full`}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">
             {title}
           </h2>
           {filteredLogos.length === 0 && searchQuery.trim() ? (
             <p className="text-center text-gray-500">No results found for "{searchQuery}"</p>
           ) : (
-            <div className={`grid ${gridClass} gap-6`}>
-              {filteredLogos.map((logo, index) => (
+            <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6`}>
+              {filteredLogos.map((logo, index) => {
+                return (
               <Card
                 key={index}
                 className="border-0 shadow-sm hover:shadow-md transition-shadow bg-white"
               >
-                <CardContent className="p-6">
+                  <CardContent className="p-4 sm:p-6">
                   <div
-                    className={`h-32 flex items-center justify-center mb-4 rounded-lg ${
+                      className={`flex items-center justify-center mb-3 sm:mb-4 rounded-lg h-36 sm:h-40 ${
                       logo.bg === "black" ? "bg-[#121212]" : "bg-white border"
                     }`}
                   >
                     <img
                       src={logo.img}
                       alt={logo.name}
-                      className="h-24 object-contain"
+                        className="object-contain h-24 sm:h-28 w-auto max-w-full px-2"
                     />
                   </div>
-                  <h3 className="font-semibold text-gray-900 mb-2">
+                    <h3 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">
                     {logo.name}
                   </h3>
                   <p
-                    className="text-sm text-gray-600 mb-4"
+                      className="text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4"
                     style={logo.description.includes('\n') ? { whiteSpace: "pre-line" } : {}}
                   >
                     {logo.description}
@@ -226,17 +247,18 @@ const BrandKit = () => {
                     className="block"
                   >
                     <Button
-                      className="w-full bg-[#dc2e3e] hover:bg-[#cc2934] text-white"
+                        className="w-full bg-[#dc2e3e] hover:bg-[#cc2934] text-white text-xs sm:text-sm"
                       size="sm"
                       type="button"
                     >
-                      <Download className="h-4 w-4 mr-2" />
+                        <Download className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
                       Download {logo.format}
                     </Button>
                   </a>
                 </CardContent>
               </Card>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>
@@ -509,77 +531,273 @@ const BrandKit = () => {
         {renderLogoSection(
           [
             {
-              name: "Rook Links Primary Logo",
-              format: "png",
-              bg: "white",
-              description: "Logo variant for Rook Links primary branding",
-              img: "/rook-saas-assets/rooklinks-greenwhitelogo.png",
-            },
-            {
-              name: "Rook Links Black Text",
-              format: "png",
-              bg: "white",
-              description: "Logo variant for Rook Links with black text",
-              img: "/rook-saas-assets/rook-links-blacktext.png",
-            },
-            {
-              name: "Rook Links White Text",
+              name: "Rook Links - Green White Icon",
               format: "png",
               bg: "black",
-              description: "Logo variant for Rook Links with white text",
-              img: "/rook-saas-assets/rook-links-whitetext.png",
+              description: "Icon logo with green icon on white background",
+              img: "/rook-saas-assets/Rook Links/rooklinks-greenwhitelogo.png",
+              isTextLogo: false,
             },
             {
-              name: "Rook Links Black Text (JPG)",
+              name: "Rook Links - Black Green Icon",
+              format: "png",
+              bg: "white",
+              description: "Icon logo with black and green colors",
+              img: "/rook-saas-assets/Rook Links/rooklinks-blackgreenlogo.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Rook Links - White Black Icon",
+              format: "png",
+              bg: "black",
+              description: "Icon logo with white icon on black background",
+              img: "/rook-saas-assets/Rook Links/rooklinks-whiteblacklogo.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Rook Links - White Green Icon",
+              format: "png",
+              bg: "black",
+              description: "Icon logo with white and green colors",
+              img: "/rook-saas-assets/Rook Links/rooklinks-whitegreenlogo.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Rook Links - Black White Icon",
+              format: "png",
+              bg: "white",
+              description: "Icon logo with black icon on white background",
+              img: "/rook-saas-assets/Rook Links/rooklinks-blackwhite.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Rook Links - Black Text",
+              format: "png",
+              bg: "white",
+              description: "Text logo with black text",
+              img: "/rook-saas-assets/Rook Links/rook-links-blacktext.png",
+              isTextLogo: true,
+            },
+            {
+              name: "Rook Links - White Text",
+              format: "png",
+              bg: "black",
+              description: "Text logo with white text",
+              img: "/rook-saas-assets/Rook Links/rook-links-whitetext.png",
+              isTextLogo: true,
+            },
+            {
+              name: "Rook Links - Black Text (JPG)",
               format: "jpg",
               bg: "white",
-              description: "Logo variant for Rook Links black text in JPG format",
-              img: "/rook-saas-assets/rook-links-blacktext.jpg",
+              description: "Text logo with black text in JPG format",
+              img: "/rook-saas-assets/Rook Links/rook-links-blacktext.jpg",
+              isTextLogo: true,
             },
           ],
           "Rook Links Logos",
           "Rook Links Logos",
-          "bg-white",
-          "md:grid-cols-2 lg:grid-cols-4"
+          "bg-white"
         )}
 
         {/* Rook Scoop Logos */}
         {renderLogoSection(
           [
             {
-              name: "Rook Scoop Primary Logo",
-              format: "png",
-              bg: "white",
-              description: "Logo variant for Rook Scoop primary branding",
-              img: "/rook-saas-assets/rookscoop-redwhitelogo.png",
-            },
-            {
-              name: "Rook Scoop Black Text",
-              format: "png",
-              bg: "white",
-              description: "Logo variant for Rook Scoop with black text",
-              img: "/rook-saas-assets/rook-scoop-blacktext.png",
-            },
-            {
-              name: "Rook Scoop White Text",
+              name: "Rook Scoop - Red White Icon",
               format: "png",
               bg: "black",
-              description: "Logo variant for Rook Scoop with white text",
-              img: "/rook-saas-assets/rook-scoop-whitetext.png",
+              description: "Icon logo with red icon on white background",
+              img: "/rook-saas-assets/Rook Scoop/rookscoop-redwhitelogo.png",
+              isTextLogo: false,
             },
             {
-              name: "Rook Scoop Black Text (JPG)",
+              name: "Rook Scoop - Black Red Icon",
+              format: "png",
+              bg: "white",
+              description: "Icon logo with black and red colors",
+              img: "/rook-saas-assets/Rook Scoop/rookscoop-blackredlogo.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Rook Scoop - White Black Icon",
+              format: "png",
+              bg: "black",
+              description: "Icon logo with white icon on black background",
+              img: "/rook-saas-assets/Rook Scoop/rookscoop-whiteblacklogo.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Rook Scoop - White Red Icon",
+              format: "png",
+              bg: "black",
+              description: "Icon logo with white and red colors",
+              img: "/rook-saas-assets/Rook Scoop/rookscoop-whiteredlogo.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Rook Scoop - Black White Icon",
+              format: "png",
+              bg: "white",
+              description: "Icon logo with black icon on white background",
+              img: "/rook-saas-assets/Rook Scoop/rookscoop-blackwhitelogo.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Rook Scoop - Black Text",
+              format: "png",
+              bg: "white",
+              description: "Text logo with black text",
+              img: "/rook-saas-assets/Rook Scoop/rook-scoop-blacktext.png",
+              isTextLogo: true,
+            },
+            {
+              name: "Rook Scoop - White Text",
+              format: "png",
+              bg: "black",
+              description: "Text logo with white text",
+              img: "/rook-saas-assets/Rook Scoop/rook-scoop-whitetext.png",
+              isTextLogo: true,
+            },
+            {
+              name: "Rook Scoop - Black Text (JPG)",
               format: "jpg",
               bg: "white",
-              description: "Logo variant for Rook Scoop black text in JPG format",
-              img: "/rook-saas-assets/rook-scoop-blacktext.jpg",
+              description: "Text logo with black text in JPG format",
+              img: "/rook-saas-assets/Rook Scoop/rook-scoop-blacktext.jpg",
+              isTextLogo: true,
             },
           ],
           "Rook Scoop Logos",
           "Rook Scoop Logos",
-          "bg-gray-50",
-          "md:grid-cols-2 lg:grid-cols-4"
+          "bg-gray-50"
         )}
+
+        {/* Paym.me Logos */}
+        {renderLogoSection(
+          [
+            {
+              name: "Paym.me - Blue White Icon",
+              format: "png",
+              bg: "black",
+              description: "Icon logo with blue icon on white background",
+              img: "/rook-saas-assets/Paym.me by Rook/paymme-bluewhitelogo.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Paym.me - Black Blue Icon",
+              format: "png",
+              bg: "white",
+              description: "Icon logo with black and blue colors",
+              img: "/rook-saas-assets/Paym.me by Rook/paymme-blackbluelogo.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Paym.me - White Black Icon",
+              format: "png",
+              bg: "black",
+              description: "Icon logo with white icon on black background",
+              img: "/rook-saas-assets/Paym.me by Rook/paymme-whiteblack.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Paym.me - White Blue Icon",
+              format: "png",
+              bg: "black",
+              description: "Icon logo with white and blue colors",
+              img: "/rook-saas-assets/Paym.me by Rook/paymme-whitebluelogo.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Paym.me - Black White Icon",
+              format: "png",
+              bg: "white",
+              description: "Icon logo with black icon on white background",
+              img: "/rook-saas-assets/Paym.me by Rook/paymme-blackwhitelogo.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Paym.me - Logo with Name",
+              format: "png",
+              bg: "white",
+              description: "Text logo with Paym.me name",
+              img: "/rook-saas-assets/Paym.me by Rook/paym-logoname.png",
+              isTextLogo: true,
+            },
+          ],
+          "Paym.me Logos",
+          "Paym.me by Rook Logos",
+          "bg-white"
+        )}
+
+        {/* Rook Friends Logos */}
+        {renderLogoSection(
+          [
+            {
+              name: "Rook Friends - Black Colored Icon",
+              format: "png",
+              bg: "white",
+              description: "Icon logo with black and colored elements",
+              img: "/rook-saas-assets/Rook Friends/rookfriends-blackcoloredlogo.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Rook Friends - Black White Icon",
+              format: "png",
+              bg: "white",
+              description: "Icon logo with black icon on white background",
+              img: "/rook-saas-assets/Rook Friends/rookfriends-blackwhitelogo.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Rook Friends - White Black Icon",
+              format: "png",
+              bg: "black",
+              description: "Icon logo with white icon on black background",
+              img: "/rook-saas-assets/Rook Friends/rookfriends-whiteblacklogo.png",
+              isTextLogo: false,
+            },
+            {
+              name: "Rook Friends - White Colored Icon",
+              format: "png",
+              bg: "black",
+              description: "Icon logo with white and colored elements",
+              img: "/rook-saas-assets/Rook Friends/rookfriends-whitecoloredlogo.png",
+              isTextLogo: false,
+            },
+          ],
+          "Rook Friends Logos",
+          "Rook Friends Logos",
+          "bg-gray-50"
+        )}
+
+        {/* Realm by Rook CTA */}
+        <section className="py-8 sm:py-12 md:py-16 bg-white w-full">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            <div className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-8 sm:p-12 text-center">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                Realm by Rook Brand Kit
+              </h2>
+              <p className="text-base sm:text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+                Access the complete Realm by Rook brand assets, logos, and guidelines on our dedicated brand kit page.
+              </p>
+              <a
+                href="https://realmrook.com/brand-kit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button
+                  className="bg-[#121212] hover:bg-[#1a1a1a] text-white px-8 py-3 text-base sm:text-lg"
+                  type="button"
+                >
+                  <ExternalLink className="h-5 w-5 mr-2" />
+                  Visit Realm Brand Kit
+                </Button>
+              </a>
+            </div>
+          </div>
+        </section>
 
         {/* Color Palette */}
         {(() => {
@@ -804,7 +1022,7 @@ const BrandKit = () => {
                   <div className="text-center p-6 bg-white rounded-lg border border-gray-200">
                     <div className="h-16 flex items-center justify-center mb-3">
                       <img
-                        src="/rook-saas-assets/rooklinks-greenwhitelogo.png"
+                        src="/rook-saas-assets/Rook Links/rooklinks-greenwhitelogo.png"
                         alt="Rook Links Icon"
                         className="h-16 w-auto object-contain"
                       />
@@ -815,7 +1033,7 @@ const BrandKit = () => {
                   <div className="text-center p-6 bg-white rounded-lg border border-gray-200">
                     <div className="h-16 flex items-center justify-center mb-3">
                       <img
-                        src="/rook-saas-assets/rookscoop-redwhitelogo.png"
+                        src="/rook-saas-assets/Rook Scoop/rookscoop-redwhitelogo.png"
                         alt="Rook Scoop Icon"
                         className="h-16 w-auto object-contain"
                       />

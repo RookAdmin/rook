@@ -10,17 +10,17 @@ const ArticleDetail = () => {
   const tools = {
     "rook-links": {
       name: "Rook Links",
-      logo: "/rook-saas-assets/rooklinks-greenwhitelogo.png",
+      logo: "/rook-saas-assets/Rook Links/rooklinks-greenwhitelogo.png",
       color: "#34A853"
     },
     "rook-scoop": {
       name: "Rook Scoop",
-      logo: "/rook-saas-assets/rookscoop-redwhitelogo.png",
+      logo: "/rook-saas-assets/Rook Scoop/rookscoop-redwhitelogo.png",
       color: "#0096d4"
     },
     "paym-me": {
       name: "Paym.me by Rook",
-      logo: "/rook-saas-assets/paym-logo.png",
+      logo: "/rook-saas-assets/Paym.me by Rook/paymme-bluewhitelogo.png",
       color: "#dc2e3e"
     }
   };
@@ -1983,9 +1983,9 @@ Paym.me implements industry-standard security measures to protect your payment d
                     <div className="flex items-center mb-2 sm:mb-4">
                       <img 
                         src={
-                          toolSlug === 'rook-links' ? '/rook-saas-assets/rooklinks-greenwhitelogo.png' :
-                          toolSlug === 'rook-scoop' ? '/rook-saas-assets/rookscoop-redwhitelogo.png' :
-                          '/rook-saas-assets/paym-logo.png'
+                          toolSlug === 'rook-links' ? '/rook-saas-assets/Rook Links/rooklinks-greenwhitelogo.png' :
+                          toolSlug === 'rook-scoop' ? '/rook-saas-assets/Rook Scoop/rookscoop-redwhitelogo.png' :
+                          '/rook-saas-assets/Paym.me by Rook/paymme-bluewhitelogo.png'
                         }
                         alt={tool.name}
                         className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain"

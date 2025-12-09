@@ -13,7 +13,7 @@ const KnowledgeBase = () => {
     {
       name: "Rook Links",
       slug: "rook-links",
-      logo: "/rook-saas-assets/rooklinks-greenwhitelogo.png",
+      logo: "/rook-saas-assets/Rook Links/rooklinks-greenwhitelogo.png",
       description: "Link-in-bio tool for creators",
       color: "#34A853",
       articleCount: 6
@@ -21,7 +21,7 @@ const KnowledgeBase = () => {
     {
       name: "Rook Scoop",
       slug: "rook-scoop",
-      logo: "/rook-saas-assets/rookscoop-redwhitelogo.png",
+      logo: "/rook-saas-assets/Rook Scoop/rookscoop-redwhitelogo.png",
       description: "Newsletter platform for creators",
       color: "#0096d4",
       articleCount: 6
@@ -29,7 +29,7 @@ const KnowledgeBase = () => {
     {
       name: "Paym.me by Rook",
       slug: "paym-me",
-      logo: "/rook-saas-assets/paym-logo.png",
+      logo: "/rook-saas-assets/Paym.me by Rook/paymme-bluewhitelogo.png",
       description: "Payment solutions platform",
       color: "#dc2e3e",
       articleCount: 6

@@ -158,7 +158,7 @@ const Invest = () => {
               <div className="backdrop-blur-sm bg-gradient-to-br from-white/60 to-gray-100/40 p-8 rounded-2xl shadow-xl">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white/80 p-4 rounded-lg text-center">
-                    <img src="/rook-saas-assets/rooklinks-greenwhitelogo.png" alt="Rook Link" className="h-8 w-auto mx-auto mb-2 object-contain" />
+                    <img src="/rook-saas-assets/Rook Links/rooklinks-greenwhitelogo.png" alt="Rook Link" className="h-8 w-auto mx-auto mb-2 object-contain" />
                     <p className="font-semibold text-gray-900">Rook Link</p>
                     <p className="text-sm text-gray-600">Link Management</p>
                   </div>
@@ -168,7 +168,7 @@ const Invest = () => {
                     <p className="text-sm text-gray-600">Affiliate Hub</p>
                   </div>
                   <div className="bg-white/80 p-4 rounded-lg text-center">
-                    <img src="/rook-saas-assets/rookscoop-redwhitelogo.png" alt="Rook Scoop" className="h-8 w-auto mx-auto mb-2 object-contain" />
+                    <img src="/rook-saas-assets/Rook Scoop/rookscoop-redwhitelogo.png" alt="Rook Scoop" className="h-8 w-auto mx-auto mb-2 object-contain" />
                     <p className="font-semibold text-gray-900">Rook Scoop</p>
                     <p className="text-sm text-gray-600">Data Insights</p>
                   </div>
@@ -197,7 +197,7 @@ const Invest = () => {
             <Card className="backdrop-blur-sm bg-white/70 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
                 <div className="mb-4 flex items-center justify-center">
-                  <img src="/rook-saas-assets/rook-scoop-blacktext.png" alt="Rook Scoop" className="h-12 w-auto object-contain" />
+                  <img src="/rook-saas-assets/Rook Scoop/rook-scoop-blacktext.png" alt="Rook Scoop" className="h-12 w-auto object-contain" />
                 </div>
                 <p className="text-gray-600 text-sm">
                   Advanced insights and data analytics platform that transforms raw data into actionable business intelligence.
@@ -208,7 +208,7 @@ const Invest = () => {
             <Card className="backdrop-blur-sm bg-white/70 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               <CardContent className="p-6">
                 <div className="mb-4 flex items-center justify-center">
-                  <img src="/rook-saas-assets/rook-links-blacktext.png" alt="Rook Link" className="h-12 w-auto object-contain" />
+                  <img src="/rook-saas-assets/Rook Links/rook-links-blacktext.png" alt="Rook Link" className="h-12 w-auto object-contain" />
                 </div>
                 <p className="text-gray-600 text-sm">
                   Next-generation link management that goes beyond simple shortening to provide deep analytics and user insights.

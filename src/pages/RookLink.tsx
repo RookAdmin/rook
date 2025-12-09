@@ -272,7 +272,7 @@ const RookLink = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <img 
-                    src="/rook-saas-assets/rooklinks-greenwhitelogo.png" 
+                    src="/rook-saas-assets/Rook Links/rooklinks-greenwhitelogo.png" 
                     alt="Rook Links" 
                     className="h-16 w-auto object-contain"
                   />
