@@ -3,6 +3,7 @@ import { SEO } from "@/components/SEO";
 import { Hero } from "@/components/Hero";
 import { Products } from "@/components/Products";
 import { Press } from "@/components/Press";
+import { JoinRookFriends } from "@/components/JoinRookFriends";
 import Whatwedo from "@/components/Whatwedo";
 import { X, RotateCcw } from "lucide-react";
 
@@ -231,6 +232,7 @@ const Index = () => {
         <div className="relative overflow-hidden">
           <Products />
           <Whatwedo />
+          <JoinRookFriends />
           <Press />
         </div>
       </div>
