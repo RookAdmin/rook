@@ -5,13 +5,9 @@ import { Products } from "@/components/Products";
 import { Press } from "@/components/Press";
 import { JoinRookFriends } from "@/components/JoinRookFriends";
 import Whatwedo from "@/components/Whatwedo";
-import { X, RotateCcw } from "lucide-react";
 
 const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [showAnniversaryPopup, setShowAnniversaryPopup] = useState(false);
-  const [videoFinished, setVideoFinished] = useState(false);
-  const videoRef = React.useRef<HTMLVideoElement>(null);
 
   const structuredData = [
     {
@@ -104,115 +100,8 @@ const Index = () => {
       setIsLoaded(true);
     }, 100);
 
-    // Check if user has seen the anniversary popup
-    const hasSeenPopup = localStorage.getItem('rook-5th-anniversary-seen');
-    if (!hasSeenPopup) {
-      // Show popup after a brief delay for better UX
-      setTimeout(() => {
-        setShowAnniversaryPopup(true);
-      }, 500);
-    }
-
     return () => clearTimeout(timer);
   }, []);
-
-  // Handle video autoplay with sound on mobile/tablet
-  useEffect(() => {
-    if (showAnniversaryPopup && videoRef.current) {
-      const video = videoRef.current;
-      
-      // Start muted for autoplay compatibility, then unmute once playing
-      video.muted = true;
-      video.volume = 1.0;
-      
-      // Function to attempt playing the video
-      const attemptPlay = () => {
-        if (!video) return;
-        
-        const playPromise = video.play();
-        
-        if (playPromise !== undefined) {
-          playPromise
-            .then(() => {
-              // Autoplay started successfully, now unmute for sound
-              video.muted = false;
-              video.volume = 1.0;
-            })
-            .catch((error) => {
-              // Autoplay was prevented, try again
-              video.play().then(() => {
-                video.muted = false;
-                video.volume = 1.0;
-              }).catch(() => {});
-            });
-        } else {
-          // Fallback: try direct play
-          video.play().then(() => {
-            video.muted = false;
-            video.volume = 1.0;
-          }).catch(() => {});
-        }
-      };
-      
-      // Try to play immediately
-      attemptPlay();
-      
-      // Wait for video to be ready before playing
-      if (video.readyState >= 2) {
-        // Video is already loaded enough to play
-        attemptPlay();
-      } else {
-        // Wait for video to load
-        const handleCanPlay = () => {
-          attemptPlay();
-        };
-        
-        const handleLoadedData = () => {
-          attemptPlay();
-        };
-        
-        const handleLoadedMetadata = () => {
-          attemptPlay();
-        };
-        
-        video.addEventListener('canplay', handleCanPlay);
-        video.addEventListener('loadeddata', handleLoadedData);
-        video.addEventListener('loadedmetadata', handleLoadedMetadata);
-        
-        // Fallback: try after a short delay
-        const timeoutId = setTimeout(() => {
-          attemptPlay();
-        }, 100);
-        
-        return () => {
-          video.removeEventListener('canplay', handleCanPlay);
-          video.removeEventListener('loadeddata', handleLoadedData);
-          video.removeEventListener('loadedmetadata', handleLoadedMetadata);
-          clearTimeout(timeoutId);
-        };
-      }
-    }
-  }, [showAnniversaryPopup]);
-
-  const handleClosePopup = () => {
-    setShowAnniversaryPopup(false);
-    localStorage.setItem('rook-5th-anniversary-seen', 'true');
-  };
-
-  const handleReplayVideo = () => {
-    if (videoRef.current) {
-      setVideoFinished(false);
-      videoRef.current.currentTime = 0;
-      videoRef.current.play().catch(() => {
-        // If play fails, try again with sound enabled
-        if (videoRef.current) {
-          videoRef.current.muted = false;
-          videoRef.current.volume = 1.0;
-          videoRef.current.play();
-        }
-      });
-    }
-  };
 
   return (
     <>
@@ -236,90 +125,6 @@ const Index = () => {
           <Press />
         </div>
       </div>
-
-      {/* 5th Year Anniversary Popup */}
-      {showAnniversaryPopup && (
-        <div 
-          className="anniversary-popup-container fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-fade-in"
-          onClick={(e) => {
-            // If clicking on backdrop (not the popup content), enable video play
-            if (e.target === e.currentTarget && videoRef.current) {
-              videoRef.current.muted = false;
-              videoRef.current.volume = 1.0;
-              videoRef.current.play().catch(() => {});
-            }
-          }}
-        >
-          <div className="relative w-full max-w-4xl mx-4 bg-white rounded-2xl shadow-2xl overflow-hidden animate-scale-in">
-            {/* Close Button */}
-            <button
-              onClick={handleClosePopup}
-              className="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-black/20 hover:bg-black/30 transition-colors backdrop-blur-sm"
-              aria-label="Close"
-            >
-              <X className="w-5 h-5 text-white" />
-            </button>
-
-            {/* Video Container */}
-            <div className="relative w-full bg-black group">
-              <video
-                ref={videoRef}
-                autoPlay
-                playsInline
-                webkit-playsinline="true"
-                loop={false}
-                className="w-full h-auto"
-                preload="auto"
-                muted={true}
-                style={{ outline: 'none' }}
-                onEnded={() => setVideoFinished(true)}
-                onPlay={() => {
-                  // Unmute immediately once video starts playing (required for autoplay)
-                  if (videoRef.current) {
-                    videoRef.current.muted = false;
-                    videoRef.current.volume = 1.0;
-                  }
-                }}
-                onLoadedData={() => {
-                  if (videoRef.current) {
-                    // Try to play and unmute
-                    videoRef.current.play().then(() => {
-                      if (videoRef.current) {
-                        videoRef.current.muted = false;
-                        videoRef.current.volume = 1.0;
-                      }
-                    }).catch(() => {});
-                  }
-                }}
-              >
-                <source src="/rook-saas-assets/rook-5thyear.MP4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              
-              {/* Replay Button - Only show after video finishes */}
-              {videoFinished && (
-                <button
-                  onClick={handleReplayVideo}
-                  className="absolute bottom-4 right-4 z-10 w-12 h-12 flex items-center justify-center rounded-full bg-black/60 hover:bg-black/80 transition-all backdrop-blur-sm"
-                  aria-label="Replay video"
-                >
-                  <RotateCcw className="w-5 h-5 text-white" />
-                </button>
-              )}
-            </div>
-
-            {/* Title Section - Apple Style */}
-            <div className="px-8 py-6 text-center bg-white">
-              <h2 className="text-3xl font-light tracking-tight text-[#121212] mb-2">
-                Rook. 5 Years.
-              </h2>
-              <p className="text-lg text-gray-600 font-light">
-                We Grow Together
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
     </>
   );
 };
